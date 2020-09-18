@@ -115,9 +115,19 @@ namespace Helper.Service
         }
         public async Task<string> GET_CATEGORY(REQUEST request)
         {
-            var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
-            var response = await apiresponse.GET_CATEGORY(request);
-            return response;
+            try
+            {
+                var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+                var response = await apiresponse.GET_CATEGORY(request);
+                return response;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+
         }
         public async Task<string> GET_NEWS_BY_CATEGORY(REQUEST request)
         {

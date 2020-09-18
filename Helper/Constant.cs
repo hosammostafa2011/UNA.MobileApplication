@@ -4,7 +4,7 @@ namespace Helper
 {
     public class Constant
     {
-        public static string ApiUrl = "http://api.una-oic.org/UNA/";
+        public static string ApiUrl = "https://api.una-oic.org";
         public static string ApiHostName
         {
             get

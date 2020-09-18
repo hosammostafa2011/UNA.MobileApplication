@@ -7,34 +7,34 @@ namespace Helper.Interface
     public interface IMobileApiManager
     {
         #region UNA APP
-        [Post("/GET_LATEST_NEWS")]
+        [Post("/UNA/GET_LATEST_NEWS")]
         Task<string> GET_LATEST_NEWS([Body] REQUEST request);
 
-        [Post("/GET_CATEGORY")]
+        [Post("/UNA/GET_CATEGORY")]
         Task<string> GET_CATEGORY([Body] REQUEST request);
 
-        [Post("/GET_NEWS_BY_CATEGORY")]
+        [Post("/UNA/GET_NEWS_BY_CATEGORY")]
         Task<string> GET_NEWS_BY_CATEGORY([Body] REQUEST request);
 
-        [Post("/GET_NEWS_DETAIL")]
+        [Post("/UNA/GET_NEWS_DETAIL")]
         Task<string> GET_NEWS_DETAIL([Body] REQUEST request);
 
-        [Post("/GET_TOP_NEWS")]
+        [Post("/UNA/GET_TOP_NEWS")]
         Task<string> GET_TOP_NEWS([Body] REQUEST request);
 
-        [Post("/GET_REPORT")]
+        [Post("/UNA/GET_REPORT")]
         Task<string> GET_REPORT([Body] REQUEST request);
 
-        [Post("/GET_REPORT_DETAIL")]
+        [Post("/UNA/GET_REPORT_DETAIL")]
         Task<string> GET_REPORT_DETAIL([Body] REQUEST request);
 
-        [Post("/GET_PHOTO_ALBUM")]
+        [Post("/UNA/GET_PHOTO_ALBUM")]
         Task<string> GET_PHOTO_ALBUM([Body] REQUEST request);
 
-        [Post("/GET_PHOTO_ALBUM_DETAIL")]
+        [Post("/UNA/GET_PHOTO_ALBUM_DETAIL")]
         Task<string> GET_PHOTO_ALBUM_DETAIL([Body] REQUEST request);
 
-        [Post("/GET_VIDEO")]
+        [Post("/UNA/GET_VIDEO")]
         Task<string> GET_VIDEO([Body] REQUEST request);
         #endregion
     }

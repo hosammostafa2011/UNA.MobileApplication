@@ -12,9 +12,16 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewsList : ContentPage
     {
-        public NewsList()
+        public string CategoryId { get; set; }
+        public NewsList(string categoryID)
         {
             InitializeComponent();
+            CategoryId = categoryID;
+            //load data by cat id
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
         }
     }
 }
