@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grid
+    x:Class="UNA.MobileApplication.Controls.CarouselIndicatorView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="Indicator"
+    BackgroundColor="{DynamicResource mainBackground}"
+    RowSpacing="0">
+    <FlexLayout
+        x:Name="myList"
+        BindableLayout.ItemsSource="{Binding Items, Source={x:Reference Indicator}}"
+        JustifyContent="SpaceAround">
+        <BindableLayout.ItemTemplate>
+            <DataTemplate>
+                <Label
+                    Padding="15,0"
+                    FontSize="Small"
+                    HeightRequest="50"
+                    HorizontalTextAlignment="Center"
+                    Text="{Binding Title}"
+                    TextColor="{DynamicResource mainLabel}"
+                    VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="{Binding .}" Tapped="ChangeTab" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </DataTemplate>
+        </BindableLayout.ItemTemplate>
+    </FlexLayout>
+    <BoxView
+        x:Name="activeIndicator"
+        BackgroundColor="{DynamicResource primaryColor}"
+        HeightRequest="3"
+        HorizontalOptions="Start"
+        VerticalOptions="End"
+        WidthRequest="50" />
+</Grid>

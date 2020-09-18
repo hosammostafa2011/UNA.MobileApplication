@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<StackLayout
+    x:Class="UNA.MobileApplication.Component.NewsComponent"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Name="grid"
+    Margin="20,5"
+    HeightRequest="300">
+    <AbsoluteLayout VerticalOptions="FillAndExpand">
+        <yummy:PancakeView
+            x:Name="container"
+            BackgroundColor="{DynamicResource background}"
+            CornerRadius="10"
+            Elevation="8"
+            HasShadow="True" />
+        <yummy:PancakeView x:Name="imgContainer" CornerRadius="10">
+            <ffimageloading:CachedImage
+                x:Name="img"
+
+                Aspect="AspectFill"
+                Source="{Binding Image}" />
+        </yummy:PancakeView>
+        <StackLayout x:Name="textContainer">
+            <Label
+                Margin="0,20,0,0"
+                FontFamily="{StaticResource InterBold}"
+                FontSize="Small"
+                LineBreakMode="WordWrap"
+                Text="{Binding Title}"
+                TextColor="{DynamicResource mainLabel}" />
+            <Label
+                FontSize="Small"
+                LineBreakMode="WordWrap"
+                Text="{Binding SubTitle}"
+                TextColor="{DynamicResource secondaryLabel}"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </AbsoluteLayout>
+    <StackLayout.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding GoToDetailCommand, Source={x:Reference grid}}" CommandParameter="{Binding}" />
+    </StackLayout.GestureRecognizers>
+</StackLayout>
