@@ -5,6 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:local="clr-namespace:UNA.MobileApplication.Views"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Name="myshell"
     Title="UNA.MobileApplication"
     ios:Page.UseSafeArea="true"
     FlowDirection="RightToLeft">
@@ -68,18 +70,75 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            <Style x:Key="FloutItemStyle" TargetType="Grid">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal" />
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Accent" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
         </ResourceDictionary>
     </Shell.Resources>
-
-    <FlyoutItem Title="UNA" FlyoutDisplayOptions="AsMultipleItems">
-
+    <!--
+        BackgroundGradientEndColor="{StaticResource flyoutGradientEndFaded}"
+        BackgroundGradientStartColor="{StaticResource flyoutGradientStartFaded}"
+    -->
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <yummy:PancakeView
+                HorizontalOptions="FillAndExpand"
+                IsClippedToBounds="true"
+                VerticalOptions="FillAndExpand">
+                <StackLayout Margin="0,10,0,0" Padding="25">
+                    <Label
+                        Margin="0,2,0,0"
+                        FontSize="26"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Header Title Here"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </yummy:PancakeView>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem
+        x:Name="lstCategory"
+        Title="UNA"
+        FlyoutDisplayOptions="AsMultipleItems">
+        <Shell.ItemTemplate>
+            <DataTemplate>
+                <Grid Style="{StaticResource FloutItemStyle}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.8*" />
+                    </Grid.ColumnDefinitions>
+                    <Image
+                        Margin="5"
+                        HeightRequest="45"
+                        Source="{Binding FlyoutIcon}" />
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Italic"
+                        Text="{Binding Title}"
+                        VerticalTextAlignment="Center" />
+                </Grid>
+            </DataTemplate>
+        </Shell.ItemTemplate>
         <ShellContent
-            Title="LISTالصفحة الرئيسية"
+            Title="الصفحة الرئيسية"
             ContentTemplate="{DataTemplate local:HomePageList}"
             Icon="tab_about.png"
             Route="HomePageList" />
 
-        <ShellContent
+        <!--<ShellContent
             Title="الصفحة الرئيسية"
             ContentTemplate="{DataTemplate local:HomePage}"
             Icon="tab_about.png"
@@ -93,7 +152,7 @@
         <ShellContent
             Title="العالم"
             ContentTemplate="{DataTemplate local:ItemsPage}"
-            Icon="tab_feed.png" />
+            Icon="tab_feed.png" />-->
 
     </FlyoutItem>
 

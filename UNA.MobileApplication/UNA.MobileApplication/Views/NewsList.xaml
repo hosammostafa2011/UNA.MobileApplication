@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UNA.MobileApplication.Views.NewsList"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10,10,10,10" RowSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical"
+                    VerticalOptions="FillAndExpand">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*" />
+                            <ColumnDefinition Width="60*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0">
+                            <yummy:PancakeView CornerRadius="10">
+                                <ffimageloading:CachedImage
+                                    Aspect="AspectFill"
+                                    HeightRequest="150"
+                                    Source="http://www.una-oic.org//UploadDir//4b7a5351-f3a3-4567-a81a-4292242aa97f.jpg" />
+                            </yummy:PancakeView>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" HeightRequest="150">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Row="0">
+                                    <Label
+                                        FontFamily="{StaticResource InterBold}"
+                                        FontSize="Small"
+                                        LineBreakMode="WordWrap"
+                                        Text="السعودية تؤكد حرصها على وحدة وسيادة الأراضي العربية ووقوفها إلى جانب الشعب الفلسطيني"
+                                        TextColor="{DynamicResource mainLabel}" />
+                                </StackLayout>
+                                <StackLayout Grid.Row="1">
+                                    <Label
+                                        FontSize="Small"
+                                        LineBreakMode="WordWrap"
+                                        Text="يونا"
+                                        TextColor="{DynamicResource primaryColor}"
+                                        VerticalOptions="Center" />
+                                </StackLayout>
+                                <Label
+                                    Grid.Row="2"
+                                    FontSize="Small"
+                                    LineBreakMode="WordWrap"
+                                    Text="16-9-2020"
+                                    TextColor="{DynamicResource primaryColor}"
+                                    VerticalOptions="Center" />
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical"
+                    VerticalOptions="FillAndExpand">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*" />
+                            <ColumnDefinition Width="60*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0">
+                            <yummy:PancakeView CornerRadius="10">
+                                <ffimageloading:CachedImage
+                                    Aspect="AspectFill"
+                                    CacheType="All"
+                                    HeightRequest="150"
+                                    Source="http://www.una-oic.org//UploadDir//f965e4d6-c176-4019-b84c-a0d82f202379.jpg" />
+                            </yummy:PancakeView>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" HeightRequest="150">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Row="0">
+                                    <Label
+                                        FontFamily="{StaticResource InterBold}"
+                                        FontSize="Small"
+                                        LineBreakMode="WordWrap"
+                                        Text="أبو الغيط: الإجماع العربي على القضية الفلسطينية لن يتأثر بالتطورات الأخيرة"
+                                        TextColor="{DynamicResource mainLabel}" />
+                                </StackLayout>
+                                <StackLayout Grid.Row="1">
+                                    <Label
+                                        FontSize="Small"
+                                        LineBreakMode="WordWrap"
+                                        Text="يونا"
+                                        TextColor="{DynamicResource primaryColor}"
+                                        VerticalOptions="Center" />
+                                </StackLayout>
+                                <Label
+                                    Grid.Row="2"
+                                    FontSize="Small"
+                                    LineBreakMode="WordWrap"
+                                    Text="16-9-2020"
+                                    TextColor="{DynamicResource primaryColor}"
+                                    VerticalOptions="Center" />
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical"
+                    VerticalOptions="FillAndExpand">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*" />
+                            <ColumnDefinition Width="60*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0">
+                            <yummy:PancakeView CornerRadius="10">
+                                <ffimageloading:CachedImage
+                                    Aspect="AspectFill"
+                                    HeightRequest="150"
+                                    Source="http://www.una-oic.org//UploadDir//0d354414-8654-4a67-822c-956b371b1ce0.jpg" />
+                            </yummy:PancakeView>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" HeightRequest="150">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Row="0">
+                                    <Label
+                                        FontFamily="{StaticResource InterBold}"
+                                        FontSize="Small"
+                                        LineBreakMode="WordWrap"
+                                        Text="العيسى عبر منتدى (يونا): التعايش بين أتباع الديانات حاجة ملحة لمواجهة دعاة الكراهية والصراع الحضاري"
+                                        TextColor="{DynamicResource mainLabel}" />
+                                </StackLayout>
+                                <StackLayout Grid.Row="1">
+                                    <Label
+                                        FontSize="Small"
+                                        LineBreakMode="WordWrap"
+                                        Text="يونا"
+                                        TextColor="{DynamicResource primaryColor}"
+                                        VerticalOptions="Center" />
+                                </StackLayout>
+                                <Label
+                                    Grid.Row="2"
+                                    FontSize="Small"
+                                    LineBreakMode="WordWrap"
+                                    Text="16-9-2020"
+                                    TextColor="{DynamicResource primaryColor}"
+                                    VerticalOptions="Center" />
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="4"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    VerticalOptions="End">
+                    <Label Text="جميع الحقوق محفوظة @ يونا" TextColor="{DynamicResource primaryColor}" />
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

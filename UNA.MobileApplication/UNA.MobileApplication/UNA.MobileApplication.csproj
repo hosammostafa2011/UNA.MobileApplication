@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.454" />
     <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1422" />
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
@@ -14,6 +15,10 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />  
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.0.1.698" />  
     <PackageReference Include="Xamarin.Plugin.SharedTransitions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Helper\Helper.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +35,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HomePageList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NewsList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
