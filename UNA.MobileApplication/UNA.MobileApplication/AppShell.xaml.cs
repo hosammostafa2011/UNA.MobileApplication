@@ -53,7 +53,7 @@ namespace UNA.MobileApplication
                         Title = objCATEGORY.CategoryName,
                         Icon = "tab_about.png",
                     };
-                    shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.CategoryID) });
+                    shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.CATEGORY_ID) });
                     lstCategory.Items.Add(shell_section);
                 }
             }

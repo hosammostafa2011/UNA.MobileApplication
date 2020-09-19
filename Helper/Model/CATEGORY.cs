@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 public class CATEGORY
 {
-    public string CategoryID { get; set; }
+    public string CATEGORY_ID { get; set; }
     public string CategoryName { get; set; }
 }

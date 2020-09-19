@@ -10,4 +10,6 @@ using System.Threading.Tasks;
         public string NEWS_ID { get; set; }
     public string FROM_DATE { get; set; }
     public string TO_DATE { get; set; }
+    public string ImageUrl { get; set; }
+    public string TITLE { get; set; }
 }
