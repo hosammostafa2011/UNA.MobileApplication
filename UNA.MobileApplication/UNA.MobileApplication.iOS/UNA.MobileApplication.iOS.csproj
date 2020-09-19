@@ -166,4 +166,13 @@
       <Name>UNA.MobileApplication</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\una_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\una_logo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\una_logo%403x.png" />
+  </ItemGroup>
 </Project>

@@ -84,7 +84,6 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
-
         </ResourceDictionary>
     </Shell.Resources>
     <!--
@@ -97,14 +96,20 @@
                 HorizontalOptions="FillAndExpand"
                 IsClippedToBounds="true"
                 VerticalOptions="FillAndExpand">
-                <StackLayout Margin="0,10,0,0" Padding="25">
-                    <Label
-                        Margin="0,2,0,0"
-                        FontSize="26"
-                        HorizontalOptions="CenterAndExpand"
-                        Text="Header Title Here"
-                        TextColor="White"
-                        VerticalOptions="Center" />
+                <StackLayout BackgroundColor="White">
+                    <BoxView
+                        HeightRequest="3"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="1"
+                        Color="#01856D" />
+                    <StackLayout Margin="0,10,0,0" BackgroundColor="White">
+                        <Image HeightRequest="130" Source="una_logo" />
+                    </StackLayout>
+                    <BoxView
+                        HeightRequest="3"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="1"
+                        Color="#01856D" />
                 </StackLayout>
             </yummy:PancakeView>
         </DataTemplate>
@@ -138,31 +143,7 @@
             Icon="tab_about.png"
             Route="HomePageList" />
 
-        <!--<ShellContent
-            Title="الصفحة الرئيسية"
-            ContentTemplate="{DataTemplate local:HomePage}"
-            Icon="tab_about.png"
-            Route="HomePage" />
-
-        <ShellContent
-            Title="الأخبار"
-            ContentTemplate="{DataTemplate local:AboutPage}"
-            Icon="tab_about.png"
-            Route="AboutPage" />
-        <ShellContent
-            Title="العالم"
-            ContentTemplate="{DataTemplate local:ItemsPage}"
-            Icon="tab_feed.png" />-->
 
     </FlyoutItem>
 
-    <!--<MenuItem
-        Clicked="OnMenuItemClicked"
-        StyleClass="MenuItemLayoutStyle"
-        Text="Logout" />-->
-
-    <!--<ShellContent
-        ContentTemplate="{DataTemplate local:LoginPage}"
-        Route="LoginPage"
-        Shell.FlyoutBehavior="Disabled" />-->
 </Shell>

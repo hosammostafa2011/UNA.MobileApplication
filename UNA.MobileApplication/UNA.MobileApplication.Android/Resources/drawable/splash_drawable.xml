@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="#FFFFFF" />
+      <padding
+        android:left="0dip"
+        android:top="0dip"
+        android:right="0dip"
+        android:bottom="0dip" />
+    </shape>
+  </item>
+  <item>
+    <bitmap
+        android:src="@drawable/una_logo"
+
+          android:layout_width="match_parent"
+
+    android:layout_gravity="center"
+    android:scaleType="center"
+        android:gravity="center" />
+  </item>
+</layer-list>
