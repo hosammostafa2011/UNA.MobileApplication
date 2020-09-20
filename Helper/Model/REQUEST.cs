@@ -54,5 +54,6 @@ namespace Model.Mobile
         public string DEVICE_MANUFACTURER { get; set; }
         public string LANGUAGE { get; set; }
         public string PACKAGE_NAME { get; set; }
+        public string ROW_COUNT { get; set; }
     }
 }

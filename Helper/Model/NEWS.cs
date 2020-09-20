@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-    public class NEWS
-    {
-        public string NEWS_ID { get; set; }
-    public string FROM_DATE { get; set; }
-    public string TO_DATE { get; set; }
-    public string ImageUrl { get; set; }
-    public string TITLE { get; set; }
+public class NEWS
+{
+    public string News_ID { get; set; }
+    public string Publish_Date { get; set; }
+    public string Thumbnail_Image_Path { get; set; }
+    public string Main_Image_Path { get; set; }
+    public string Title { get; set; }
+    public string Brief { get; set; }
 }

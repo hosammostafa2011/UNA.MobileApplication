@@ -29,12 +29,12 @@ namespace UNA.MobileApplication.Views
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;
-            if (_newsListViewModel.obsCollectionNews.Count == 0)
-                _newsListViewModel.LoadNewsCommand.Execute(null);
+            //if (_newsListViewModel.obsCollectionNews.Count == 0)
+            _newsListViewModel.LoadNewsCommand.Execute(CategoryId);
         }
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            
+
             var item = args.SelectedItem as NEWS;
             if (item == null)
                 return;
@@ -42,7 +42,7 @@ namespace UNA.MobileApplication.Views
             // SharedTransitionShell.SetTransitionSelectedGroup(this, item.Id.ToString());
 
             _newsListViewModel.SelectedNews = item;
-            //await Navigation.PushAsync(new ListviewToPage(new ListviewToPageViewModel(item)));//for shared
+            await Navigation.PushAsync(new NewsDetails(new NewsDetailsViewModel(item)));//for shared
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;

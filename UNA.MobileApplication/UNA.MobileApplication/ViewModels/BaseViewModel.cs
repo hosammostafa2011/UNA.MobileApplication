@@ -109,6 +109,13 @@ namespace UNA.MobileApplication.ViewModels
                 if (ShowLoading) UserDialogs.Instance.HideLoading();
             }
         }
-
+        protected void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        public void NotifyAllPropertiesChanged()
+        {
+            NotifyPropertyChanged(null);
+        }
     }
 }

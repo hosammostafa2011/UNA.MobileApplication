@@ -11,13 +11,13 @@ namespace UNA.MobileApplication.ViewModels
     public class NewsListViewModel : BaseViewModel
     {
         private NEWS _selectedNews;
+        
         public string CategoryId { get; set; }
         public NEWS SelectedNews
         {
             get => _selectedNews;
             set => SetProperty(ref _selectedNews, value);
         }
-
         private ObservableCollection<NEWS> _news;
 
         public ObservableCollection<NEWS> obsCollectionNews
@@ -44,16 +44,18 @@ namespace UNA.MobileApplication.ViewModels
             {
                 _REQUEST.LANGUAGE = "1";
                 _REQUEST.USER_TOKEN = "Aa@159357";
-                var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
                 CATEGORY objCATEGORY = new CATEGORY();
-                objCATEGORY.CATEGORY_ID = categoryID;
+                objCATEGORY.CATEGORY_ID = "12";
+                _REQUEST.ROW_COUNT = "10";
+                _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
+                var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
                 _RESPONSE = HelperManger.CastToResponse(result);
-
                 if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
                 {
                     List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
                     obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
                 }
+                NotifyPropertyChanged(nameof(obsCollectionNews));
                 //obsCollectionNews = new ObservableCollection<NEWS>(new List<NEWS>
                 //{
                 //    new NEWS {NEWS_ID = "1",TITLE="Test 1",  FROM_DATE = "12/12/2020", ImageUrl    = "http://www.una-oic.org//UploadDir//4b7a5351-f3a3-4567-a81a-4292242aa97f.jpg"},
