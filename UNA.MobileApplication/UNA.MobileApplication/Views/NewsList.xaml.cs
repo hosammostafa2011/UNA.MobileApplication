@@ -20,7 +20,7 @@ namespace UNA.MobileApplication.Views
         {
             InitializeComponent();
             CategoryId = categoryID;
-            BindingContext = _newsListViewModel = new NewsListViewModel(categoryID);
+            BindingContext = _newsListViewModel = new NewsListViewModel(CategoryId);
         }
         protected override void OnAppearing()
         {

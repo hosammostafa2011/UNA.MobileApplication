@@ -43,9 +43,9 @@ namespace UNA.MobileApplication.ViewModels
             try
             {
                 _REQUEST.LANGUAGE = "1";
-                _REQUEST.USER_TOKEN = "Aa@159357";
+                _REQUEST.USER_TOKEN = "Aa159357";
                 CATEGORY objCATEGORY = new CATEGORY();
-                objCATEGORY.CATEGORY_ID = "12";
+                objCATEGORY.Category_ID = categoryID;
                 _REQUEST.ROW_COUNT = "10";
                 _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
                 var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
@@ -56,13 +56,6 @@ namespace UNA.MobileApplication.ViewModels
                     obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
                 }
                 NotifyPropertyChanged(nameof(obsCollectionNews));
-                //obsCollectionNews = new ObservableCollection<NEWS>(new List<NEWS>
-                //{
-                //    new NEWS {NEWS_ID = "1",TITLE="Test 1",  FROM_DATE = "12/12/2020", ImageUrl    = "http://www.una-oic.org//UploadDir//4b7a5351-f3a3-4567-a81a-4292242aa97f.jpg"},
-                //    new NEWS {NEWS_ID = "2",TITLE="Test 2", FROM_DATE = "12/12/2020" , ImageUrl         = "http://www.una-oic.org//UploadDir//4b7a5351-f3a3-4567-a81a-4292242aa97f.jpg"},
-                //    new NEWS {NEWS_ID = "3", TITLE="Test 3",FROM_DATE = "12/12/2020", ImageUrl         = "http://www.una-oic.org//UploadDir//4b7a5351-f3a3-4567-a81a-4292242aa97f.jpg"},
-                //});
-
             }
             catch (Exception ex)
             {
