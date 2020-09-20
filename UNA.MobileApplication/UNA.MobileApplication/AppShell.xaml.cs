@@ -44,7 +44,6 @@ namespace UNA.MobileApplication
             obj._REQUEST.USER_TOKEN = "Aa@159357";
             var result = await obj.ApiManager.GET_CATEGORY(obj._REQUEST);
             obj._RESPONSE = HelperManger.CastToResponse(result);
-
             if (string.IsNullOrEmpty(obj._RESPONSE[0].ERROR_MESSAGE))
             {
                 List<CATEGORY> lstCATEGORY = JsonConvert.DeserializeObject<List<CATEGORY>>(obj._RESPONSE[0].JSON);
@@ -55,7 +54,7 @@ namespace UNA.MobileApplication
                         Title = objCATEGORY.CategoryName,
                         Icon = "tab_about.png",
                     };
-                    shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.CategoryID) });
+                    shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.CATEGORY_ID) });
                     lstCategory.Items.Add(shell_section);
                 }
             }
