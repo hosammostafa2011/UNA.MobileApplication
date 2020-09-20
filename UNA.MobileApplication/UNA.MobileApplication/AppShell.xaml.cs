@@ -2,6 +2,7 @@
 using Model.Mobile;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Plugin.SharedTransitions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,9 +18,10 @@ using Xamarin.Forms;
 
 namespace UNA.MobileApplication
 {
-    public partial class AppShell : Xamarin.Forms.Shell
+    public partial class AppShell : SharedTransitionShell
     {
         public ObservableCollection<CATEGORY> CATEGORY_DATA { get; set; }
+
         public AppShell()
         {
             InitializeComponent();
