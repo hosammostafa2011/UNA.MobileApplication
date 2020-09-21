@@ -13,7 +13,6 @@
             <ListView
                 x:Name="ItemsListView"
                 CachingStrategy="RecycleElement"
-                Footer=""
                 HasUnevenRows="true"
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
@@ -23,24 +22,18 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10,10,10,10" RowSpacing="15">
+                            <Grid Padding="5,5,5,5" RowSpacing="15">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="110" />
                                 </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50*" />
-                                    <ColumnDefinition Width="50*" />
-                                </Grid.ColumnDefinitions>
                                 <StackLayout
-                                    Grid.Row="1"
-                                    Grid.Column="0"
                                     Grid.ColumnSpan="2"
                                     Orientation="Vertical"
                                     VerticalOptions="FillAndExpand">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="40*" />
-                                            <ColumnDefinition Width="60*" />
+                                            <ColumnDefinition Width="30*" />
+                                            <ColumnDefinition Width="70*" />
                                         </Grid.ColumnDefinitions>
                                         <StackLayout Grid.Column="0">
                                             <yummy:PancakeView CornerRadius="10">
@@ -48,8 +41,9 @@
                                                     sharedTransitions:Transition.Group="{Binding News_ID}"
                                                     sharedTransitions:Transition.Name="NewsImage"
                                                     Aspect="AspectFill"
-                                                    HeightRequest="150"
-                                                    Source="{Binding Main_Image_Path}" />
+                                                    HeightRequest="100"
+                                                    Source="{Binding Main_Image_Path}"
+                                                    WidthRequest="150" />
                                             </yummy:PancakeView>
                                         </StackLayout>
                                         <StackLayout Grid.Column="1" HeightRequest="150">
@@ -65,22 +59,22 @@
                                                         FontSize="Small"
                                                         LineBreakMode="WordWrap"
                                                         Text="{Binding Title}"
-                                                        TextColor="{DynamicResource mainLabel}" />
+                                                        TextColor="{DynamicResource primaryColor}" />
                                                 </StackLayout>
-                                                <StackLayout Grid.Row="1">
-                                                    <Label
-                                                        FontSize="Small"
-                                                        LineBreakMode="WordWrap"
-                                                        Text="{Binding Source_Tag}"
-                                                        TextColor="{DynamicResource primaryColor}"
-                                                        VerticalOptions="Center" />
-                                                </StackLayout>
+
+                                                <Label
+                                                    Grid.Row="1"
+                                                    FontSize="Small"
+                                                    LineBreakMode="WordWrap"
+                                                    Text="{Binding Source_Tag}"
+                                                    TextColor="{DynamicResource ThirdColor}"
+                                                    VerticalOptions="Center" />
                                                 <Label
                                                     Grid.Row="2"
                                                     FontSize="Small"
                                                     LineBreakMode="WordWrap"
                                                     Text="{Binding Publish_Date}"
-                                                    TextColor="{DynamicResource primaryColor}"
+                                                    TextColor="{DynamicResource SecondColor}"
                                                     VerticalOptions="Center" />
                                             </Grid>
                                         </StackLayout>

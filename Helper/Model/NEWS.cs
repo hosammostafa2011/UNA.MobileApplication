@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 public class NEWS
 {
     public string News_ID { get; set; }
@@ -13,4 +12,6 @@ public class NEWS
     public string Main_Image_Path { get; set; }
     public string Title { get; set; }
     public string Brief { get; set; }
+    public string Source_Tag { get; set; }
+    public string Details { get; set; }
 }

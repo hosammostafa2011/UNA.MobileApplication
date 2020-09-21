@@ -7,7 +7,7 @@
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    BackgroundColor="White">
+    BackgroundColor="{DynamicResource entryBackground}">
     <NavigationPage.TitleView>
         <StackLayout Padding="10,0" Orientation="Horizontal">
             <Button
@@ -21,16 +21,19 @@
         </StackLayout>
     </NavigationPage.TitleView>
 
-    <!--<ContentPage.Content>
+    <ContentPage.Content>
+
         <controls:ExtendedScrollView HasTopPadding="False">
-            <StackLayout Padding="0,0,0,40">
-                <Grid>
+
+            <StackLayout Padding="0,0,0,40" BackgroundColor="{DynamicResource entryBackground}">
+                <Grid Margin="0,-10,0,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <ffimageloading:CachedImage
+                        sharedTransitions:Transition.Group="{Binding News_ID}"
                         sharedTransitions:Transition.Name="NewsImage"
                         Aspect="AspectFill"
                         HeightRequest="400"
@@ -39,6 +42,10 @@
                         x:Name="detailContainer"
                         Grid.Row="1"
                         Margin="20,-50,20,0"
+                        Border="{yummy:BorderMarkup Color=#01856D,
+                                                    Thickness=1}"
+                        BorderThickness="13"
+                        HasShadow="True"
                         Style="{StaticResource cardContainerStyle}">
                         <Grid Padding="10,15" RowSpacing="0">
                             <Grid.RowDefinitions>
@@ -47,14 +54,17 @@
                             </Grid.RowDefinitions>
                             <Label
                                 Margin="10,0,0,0"
+                                FontSize="Large"
+                                HorizontalOptions="StartAndExpand"
+                                HorizontalTextAlignment="Start"
                                 Style="{StaticResource cardTitleStyle}"
                                 Text="{Binding SelectedNews.Title}" />
                             <Label
                                 Grid.Row="1"
                                 Margin="10,0,0,10"
                                 FontSize="Small"
-                                Text="{Binding SelectedNews.Brief}"
-                                TextColor="{DynamicResource secondaryLabel}" />
+                                Text="{Binding SelectedNews.Source_Tag}"
+                                TextColor="{DynamicResource ThirdColor}" />
                         </Grid>
                     </yummy:PancakeView>
 
@@ -62,32 +72,32 @@
                         x:Name="descriptionContainer"
                         Grid.Row="2"
                         Margin="20,20,20,0"
-                        Background=""
+                        Border="{yummy:BorderMarkup Color=#01856D,
+                                                    Thickness=1}"
                         Style="{StaticResource cardContainerStyle}">
                         <Grid Padding="10,15" RowSpacing="0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
                             <Label
-                                Grid.Row="2"
+                                Grid.Row="0"
                                 Margin="10"
-                                FontSize="Small"
-                                Text="{Binding SelectedNews.Brief}"
+                                FontSize="Medium"
+                                HorizontalOptions="StartAndExpand"
+                                HorizontalTextAlignment="Start"
+                                Text="{Binding SelectedNews.Details}"
                                 TextColor="{DynamicResource secondaryLabel}" />
                         </Grid>
                     </yummy:PancakeView>
                 </Grid>
+                <StackLayout>
+                    <Button Clicked="Button_Clicked" Text="back" />
+                </StackLayout>
             </StackLayout>
         </controls:ExtendedScrollView>
-    </ContentPage.Content>-->
+    </ContentPage.Content>
 
-    <ContentPage.Content>
+    <!--<ContentPage.Content>
         <StackLayout Padding="10" Spacing="20">
 
             <yummy:PancakeView CornerRadius="10">
@@ -105,5 +115,5 @@
                 Text="{Binding SelectedNews.Title}" />
             <Label Text="{Binding SelectedNews.Brief}" />
         </StackLayout>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
 </ContentPage>

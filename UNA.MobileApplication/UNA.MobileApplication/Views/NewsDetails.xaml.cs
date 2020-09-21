@@ -17,5 +17,21 @@ namespace UNA.MobileApplication.Views
             InitializeComponent();
             BindingContext = newsDetailsViewModel;
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            detailContainer.FadeTo(1, 200, Easing.CubicInOut);
+            detailContainer.TranslateTo(0, 0, 200, Easing.CubicInOut);
+
+            descriptionContainer.FadeTo(1, 350, Easing.CubicInOut);
+            descriptionContainer.TranslateTo(0, 0, 350, Easing.CubicInOut);
+            Shell.SetNavBarIsVisible(this, false);
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Device.BeginInvokeOnMainThread(async () => await Navigation.PopAsync());
+        }
     }
 }

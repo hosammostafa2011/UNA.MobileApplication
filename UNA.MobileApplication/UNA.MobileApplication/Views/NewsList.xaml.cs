@@ -14,27 +14,28 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewsList : ContentPage
     {
-        readonly NewsListViewModel _newsListViewModel;
+        private readonly NewsListViewModel _newsListViewModel;
         public string CategoryId { get; set; }
+
         public NewsList(string categoryID)
         {
             InitializeComponent();
             CategoryId = categoryID;
             BindingContext = _newsListViewModel = new NewsListViewModel(CategoryId);
         }
+
         protected override void OnAppearing()
         {
-            //load data by cat CategoryId
             base.OnAppearing();
-            var safeInsets = On<iOS>().SafeAreaInsets();
-            safeInsets.Bottom = 0;
-            Padding = safeInsets;
-            //if (_newsListViewModel.obsCollectionNews.Count == 0)
+            //var safeInsets = On<iOS>().SafeAreaInsets();
+            //safeInsets.Bottom = 0;
+            //Padding = safeInsets;
+            //Shell.SetNavBarIsVisible(this, true);
             _newsListViewModel.LoadNewsCommand.Execute(CategoryId);
         }
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
-        {
 
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
             var item = args.SelectedItem as NEWS;
             if (item == null)
                 return;
