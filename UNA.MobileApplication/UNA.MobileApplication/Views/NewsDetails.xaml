@@ -8,7 +8,7 @@
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     BackgroundColor="{DynamicResource entryBackground}">
-    <NavigationPage.TitleView>
+    <!--<NavigationPage.TitleView>
         <StackLayout Padding="10,0" Orientation="Horizontal">
             <Button
                 BackgroundColor="{DynamicResource mainBackground}"
@@ -19,10 +19,10 @@
                 TextColor="{DynamicResource mainLabel}"
                 WidthRequest="40" />
         </StackLayout>
-    </NavigationPage.TitleView>
+    </NavigationPage.TitleView>-->
 
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Orientation="Vertical">
             <controls:ExtendedScrollView HasTopPadding="False">
                 <StackLayout Padding="0,0,0,40" BackgroundColor="{DynamicResource entryBackground}">
                     <Grid Margin="0,-10,0,0">
@@ -92,18 +92,22 @@
                 </StackLayout>
             </controls:ExtendedScrollView>
 
-            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <AbsoluteLayout
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End">
                 <Image
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
                     Aspect="AspectFill"
+                    HeightRequest="60"
                     Source="bar.jpg" />
                 <Grid
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Transparent"
                     ColumnSpacing="50"
-                    HeightRequest="80"
+                    HeightRequest="60"
                     HorizontalOptions="Center"
                     VerticalOptions="Center">
                     <Grid.ColumnDefinitions>
@@ -113,6 +117,7 @@
                     </Grid.ColumnDefinitions>
                     <Image
                         Grid.Column="0"
+                        HeightRequest="60"
                         HorizontalOptions="Center"
                         Source="share.png">
                         <Image.GestureRecognizers>
@@ -121,6 +126,7 @@
                     </Image>
                     <Image
                         Grid.Column="1"
+                        HeightRequest="60"
                         HorizontalOptions="Center"
                         Source="star.png">
                         <Image.GestureRecognizers>
@@ -129,6 +135,7 @@
                     </Image>
                     <Image
                         Grid.Column="2"
+                        HeightRequest="60"
                         HorizontalOptions="Center"
                         Source="back.png">
                         <Image.GestureRecognizers>
@@ -137,6 +144,7 @@
                     </Image>
                 </Grid>
             </AbsoluteLayout>
+
         </StackLayout>
     </ContentPage.Content>
 
