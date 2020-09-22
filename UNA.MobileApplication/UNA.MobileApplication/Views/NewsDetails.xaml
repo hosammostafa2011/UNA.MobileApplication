@@ -91,33 +91,52 @@
                     </Grid>
                 </StackLayout>
             </controls:ExtendedScrollView>
-            <StackLayout
-                HeightRequest="40"
-                HorizontalOptions="CenterAndExpand"
-                Orientation="Horizontal"
-                VerticalOptions="Center">
-                <yummy:PancakeView
-                    Border="{yummy:BorderMarkup Color=#01856D,
-                                                Thickness=1}"
-                    BorderThickness="13"
-                    HasShadow="True">
-                    <Button Clicked="Button_Clicked" Text="رجوع" />
-                </yummy:PancakeView>
-                <yummy:PancakeView
-                    Border="{yummy:BorderMarkup Color=#01856D,
-                                                Thickness=1}"
-                    BorderThickness="13"
-                    HasShadow="True">
-                    <Button Text="مشاركة" />
-                </yummy:PancakeView>
-                <yummy:PancakeView
-                    Border="{yummy:BorderMarkup Color=#01856D,
-                                                Thickness=1}"
-                    BorderThickness="13"
-                    HasShadow="True">
-                    <Button Text="أضافة للمفضلة" />
-                </yummy:PancakeView>
-            </StackLayout>
+
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Aspect="AspectFill"
+                    Source="bar.jpg" />
+                <Grid
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="Transparent"
+                    ColumnSpacing="50"
+                    HeightRequest="80"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="60*" />
+                        <ColumnDefinition Width="20*" />
+                    </Grid.ColumnDefinitions>
+                    <Image
+                        Grid.Column="0"
+                        HorizontalOptions="Center"
+                        Source="share.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        Source="star.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image
+                        Grid.Column="2"
+                        HorizontalOptions="Center"
+                        Source="back.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </AbsoluteLayout>
         </StackLayout>
     </ContentPage.Content>
 
