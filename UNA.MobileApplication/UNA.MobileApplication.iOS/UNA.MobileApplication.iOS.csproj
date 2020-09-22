@@ -200,4 +200,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\share%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\back%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\back%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bar%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bar%403x.png" />
+  </ItemGroup>
 </Project>

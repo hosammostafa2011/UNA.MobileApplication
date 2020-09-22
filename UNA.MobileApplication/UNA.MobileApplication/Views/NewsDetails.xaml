@@ -30,6 +30,7 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <ffimageloading:CachedImage
                             sharedTransitions:Transition.Group="{Binding News_ID}"
@@ -88,16 +89,18 @@
                                     TextColor="{DynamicResource secondaryLabel}" />
                             </Grid>
                         </yummy:PancakeView>
+                        <StackLayout Grid.Row="3" HeightRequest="50" />
                     </Grid>
                 </StackLayout>
             </controls:ExtendedScrollView>
 
-            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <AbsoluteLayout>
                 <Image
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
                     Aspect="AspectFill"
-                    Source="bar.jpg" />
+                    HeightRequest="80"
+                    Source="bar.png" />
                 <Grid
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
