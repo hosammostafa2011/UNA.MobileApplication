@@ -1,6 +1,9 @@
-﻿using Plugin.SecureStorage;
+﻿using Acr.UserDialogs;
+using Helper;
+using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +41,7 @@ namespace UNA.MobileApplication.Views
         private async void imgFavourite_Tapped(object sender, EventArgs e)
         {
             string NewsId = lblNews_ID.Text;
+
             if (CrossSecureStorage.Current.HasKey("FavouriteList"))
             {
                 string strFavouriteList = CrossSecureStorage.Current.GetValue("FavouriteList");
@@ -46,11 +50,14 @@ namespace UNA.MobileApplication.Views
                 {
                     FavouriteList.Remove(NewsId);
                     imgFavourite.Source = "star.png";
+
+                    HelperManger.ShowToast("تم ازالة الخبر من المفضلة");
                 }
                 else
                 {
                     FavouriteList.Add(NewsId);
                     imgFavourite.Source = "star_sel.png";
+                    HelperManger.ShowToast("تم اضافة الخبر الى المفضلة");
                 }
                 strFavouriteList = String.Join(",", FavouriteList);
                 CrossSecureStorage.Current.SetValue("FavouriteList", strFavouriteList);
