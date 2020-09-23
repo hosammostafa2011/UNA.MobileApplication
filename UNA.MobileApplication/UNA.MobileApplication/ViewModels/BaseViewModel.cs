@@ -24,18 +24,20 @@ namespace UNA.MobileApplication.ViewModels
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
         public IUserDialogs PageDialog = UserDialogs.Instance;
         public IMobileApiManager ApiManager;
-        IApiService<IMobileApiManager> makeUpApi = new ApiService<IMobileApiManager>(Constant.ApiUrl);
+        private IApiService<IMobileApiManager> makeUpApi = new ApiService<IMobileApiManager>(Constant.ApiUrl);
         public ResourceDictionary Resources = new ResourceDictionary();
         public ObservableCollection<RESPONSE> _RESPONSE { get; set; } = new ObservableCollection<RESPONSE>();
-        public REQUEST _REQUEST = new REQUEST("","");
-        bool isBusy = false;
+        public REQUEST _REQUEST = new REQUEST("", "");
+        private bool isBusy = false;
+
         public bool IsBusy
         {
             get { return isBusy; }
             set { SetProperty(ref isBusy, value); }
         }
 
-        string title = string.Empty;
+        private string title = string.Empty;
+
         public string Title
         {
             get { return title; }
@@ -56,7 +58,9 @@ namespace UNA.MobileApplication.ViewModels
         }
 
         #region INotifyPropertyChanged
+
         public event PropertyChangedEventHandler PropertyChanged;
+
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             var changed = PropertyChanged;
@@ -65,25 +69,27 @@ namespace UNA.MobileApplication.ViewModels
 
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        #endregion
+
+        #endregion INotifyPropertyChanged
 
         //-------------------------
         public BaseViewModel()
         {
             ApiManager = new MobileApiManager(makeUpApi);
-
         }
+
         public BaseViewModel(bool listenCultureChanges = false)
         {
             if (listenCultureChanges)
             {
-                // Listen culture changes so they can be handled 
+                // Listen culture changes so they can be handled
                 // by derived viewmodels if needed
                 //_notifier = new CultureChangeNotifier();
                 //_notifier.CultureChanged += CultureChanged;
             }
             ApiManager = new MobileApiManager(makeUpApi);
         }
+
         public async Task RunSafe(Task task, bool ShowLoading = true, string loadinMessage = null)
         {
             try
@@ -102,7 +108,6 @@ namespace UNA.MobileApplication.ViewModels
                 UserDialogs.Instance.HideLoading();
                 Debug.WriteLine(e.ToString());
                 // await App.Current.MainPage.DisplayAlert("Eror", e.ToString(), "Ok");
-
             }
             finally
             {
@@ -110,14 +115,17 @@ namespace UNA.MobileApplication.ViewModels
                 if (ShowLoading) UserDialogs.Instance.HideLoading();
             }
         }
+
         protected void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
         public void NotifyAllPropertiesChanged()
         {
             NotifyPropertyChanged(null);
         }
+
         public static string HtmlToPlainText(string html)
         {
             const string tagWhiteSpace = @"(>|$)(\W|\n|\r)+<";//matches one or more (white space or line breaks) between '>' and '<'

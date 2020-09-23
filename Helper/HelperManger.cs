@@ -1,4 +1,5 @@
-﻿using Model.Mobile;
+﻿using Acr.UserDialogs;
+using Model.Mobile;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -13,11 +14,14 @@ namespace Helper
 {
     public class HelperManger
     {
+        public static IUserDialogs PageDialog = UserDialogs.Instance;
+
         public static ObservableCollection<RESPONSE> CastToResponse(string result)
         {
             var json = JsonConvert.DeserializeObject<List<RESPONSE>>(result);
             return new ObservableCollection<RESPONSE>(json);
         }
+
         public static String ConvertImageURLToBase64(String url)
         {
             WebClient myWebClient = new WebClient();
@@ -43,8 +47,9 @@ namespace Helper
             }
         }
 
-        static readonly string[] SizeSuffixes =
+        private static readonly string[] SizeSuffixes =
                     { "bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB" };
+
         public static string SizeSuffix(Int64 value, int decimalPlaces = 1)
         {
             if (decimalPlaces < 0) { throw new ArgumentOutOfRangeException("decimalPlaces"); }
@@ -62,6 +67,13 @@ namespace Helper
                 SizeSuffixes[mag]);
         }
 
-
+        public static void ShowToast(string vMESSAGE)
+        {
+            ToastConfig tc = new ToastConfig(vMESSAGE);
+            tc.SetPosition(ToastPosition.Top);
+            tc.BackgroundColor = System.Drawing.Color.FromArgb(1, 133, 109);
+            tc.MessageTextColor = System.Drawing.Color.FromArgb(221, 221, 221);
+            PageDialog.Toast(tc);
+        }
     }
 }
