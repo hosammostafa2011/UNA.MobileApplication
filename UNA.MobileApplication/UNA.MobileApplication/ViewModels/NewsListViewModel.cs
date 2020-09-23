@@ -1,8 +1,10 @@
 ﻿using Helper;
 using Newtonsoft.Json;
+using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -75,8 +77,23 @@ namespace UNA.MobileApplication.ViewModels
 
         private string GetFavouriteImage(string pNews_ID)
         {
-            //check if the user favourite the news before
-            return (Convert.ToInt32(pNews_ID) % 2 == 0) ? "star_sel.png" : "star.png";
+            if (CrossSecureStorage.Current.HasKey("FavouriteList"))
+            {
+                string strFavouriteList = CrossSecureStorage.Current.GetValue("FavouriteList");
+                List<string> FavouriteList = strFavouriteList.Split(',').ToList();
+                if (FavouriteList.Contains(pNews_ID))
+                {
+                    return "star_sel.png";
+                }
+                else
+                {
+                    return "star.png";
+                }
+            }
+            else
+            {
+                return "star.png";
+            }
         }
     }
 }

@@ -61,8 +61,6 @@ namespace UNA.MobileApplication.Views
                 CrossSecureStorage.Current.SetValue("FavouriteList", NewsId);
                 imgFavourite.Source = "star_sel.png";
             }
-            string xxxxxxxxx = CrossSecureStorage.Current.GetValue("FavouriteList");
-            //imgFavourite.Source = "star_sel.png";
         }
     }
 }
