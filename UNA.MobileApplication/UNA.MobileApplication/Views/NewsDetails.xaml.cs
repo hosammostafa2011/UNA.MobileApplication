@@ -1,6 +1,8 @@
 ﻿using Acr.UserDialogs;
 using Helper;
 using Plugin.SecureStorage;
+using Plugin.Share;
+using Plugin.Share.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -68,6 +70,16 @@ namespace UNA.MobileApplication.Views
                 CrossSecureStorage.Current.SetValue("FavouriteList", NewsId);
                 imgFavourite.Source = "star_sel.png";
             }
+        }
+
+        private void imgShare_Tapped(object sender, EventArgs e)
+        {
+            IShare shareInfo = CrossShare.Current;
+            ShareMessage _ShareMessage = new ShareMessage();
+            _ShareMessage.Text = "fff";
+            _ShareMessage.Title = "ddd";
+            _ShareMessage.Url = string.Format("http://www.una-oic.org/page/public/news_details.aspx?id={0}", lblNews_ID.Text);
+            shareInfo.Share(_ShareMessage);
         }
     }
 }

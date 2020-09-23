@@ -102,8 +102,6 @@
                         </Grid>
                     </StackLayout>
                 </controls:ExtendedScrollView>
-
-
             </StackLayout>
             <AbsoluteLayout Grid.Row="1">
                 <Image
@@ -142,16 +140,16 @@
                     </Image>
                     <Image
                         Grid.Column="2"
+                        x:Name="imgShare"
                         HorizontalOptions="Center"
                         Source="back.png">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked" />
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgShare_Tapped" />
                         </Image.GestureRecognizers>
                     </Image>
                 </Grid>
             </AbsoluteLayout>
         </Grid>
-
     </ContentPage.Content>
 
     <!--<ContentPage.Content>
