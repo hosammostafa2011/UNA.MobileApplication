@@ -17,7 +17,7 @@
         <ResourceDictionary>
             <DataTemplate x:Key="listNewsViewTemplate">
                 <ViewCell>
-                    <Grid Padding="5,5,5,5" RowSpacing="15">
+                    <Grid Padding="5,0,5,5" RowSpacing="15">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="110" />
                         </Grid.RowDefinitions>

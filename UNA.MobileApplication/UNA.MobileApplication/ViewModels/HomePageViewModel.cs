@@ -1,11 +1,13 @@
 ﻿using Helper;
 using Newtonsoft.Json;
+using Plugin.SecureStorage;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Navigation.Xaml;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UNA.MobileApplication.Models;
@@ -59,21 +61,15 @@ namespace UNA.MobileApplication.ViewModels
                     List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
                     obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
                 }
-                int count = 0;
                 foreach (NEWS vNEWS in obsCollectionNews)
                 {
-                    if (count == 0)
-                        obsCollectionNewsFirst.Add(vNEWS);
-                    else if (count == 1)
-                        obsCollectionNewsSecond.Add(vNEWS);
-                    else if (count == 2)
-                        obsCollectionNewsThird.Add(vNEWS);
                     vNEWS.Details = HtmlToPlainText(vNEWS.Details);
+                    vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID); ;
                 }
-                NotifyPropertyChanged(nameof(obsCollectionNewsFirst));
-                NotifyPropertyChanged(nameof(obsCollectionNewsSecond));
-                NotifyPropertyChanged(nameof(obsCollectionNewsThird));
                 NotifyPropertyChanged(nameof(obsCollectionNews));
+                /*NotifyPropertyChanged(nameof(obsCollectionNewsFirst));
+                NotifyPropertyChanged(nameof(obsCollectionNewsSecond));
+                NotifyPropertyChanged(nameof(obsCollectionNewsThird));*/
             }
             catch (Exception ex)
             {
@@ -81,6 +77,26 @@ namespace UNA.MobileApplication.ViewModels
             finally
             {
                 IsBusy = false;
+            }
+        }
+        private string GetFavouriteImage(string pNews_ID)
+        {
+            if (CrossSecureStorage.Current.HasKey("FavouriteList"))
+            {
+                string strFavouriteList = CrossSecureStorage.Current.GetValue("FavouriteList");
+                List<string> FavouriteList = strFavouriteList.Split(',').ToList();
+                if (FavouriteList.Contains(pNews_ID))
+                {
+                    return "star_sel.png";
+                }
+                else
+                {
+                    return "star.png";
+                }
+            }
+            else
+            {
+                return "star.png";
             }
         }
     }

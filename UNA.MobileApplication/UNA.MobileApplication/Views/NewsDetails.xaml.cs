@@ -77,7 +77,7 @@ namespace UNA.MobileApplication.Views
         {
             IShare shareInfo = CrossShare.Current;
             ShareMessage _ShareMessage = new ShareMessage();
-            _ShareMessage.Text = "مشاركة الخبر";
+            _ShareMessage.Text = lblTitle.Text;
             _ShareMessage.Url = string.Format(Constant.NewsURL, lblNews_ID.Text);
             shareInfo.Share(_ShareMessage);
         }
