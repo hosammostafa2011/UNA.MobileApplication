@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.SecureStorage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,25 +38,29 @@ namespace UNA.MobileApplication.Views
         private async void imgFavourite_Tapped(object sender, EventArgs e)
         {
             string NewsId = lblNews_ID.Text;
-
-            if (Application.Current.Resources.ContainsKey("FavouriteList"))
+            if (CrossSecureStorage.Current.HasKey("FavouriteList"))
             {
-                string strFavouriteList = Application.Current.Properties["FavouriteList"].ToString();
+                string strFavouriteList = CrossSecureStorage.Current.GetValue("FavouriteList");
                 List<string> FavouriteList = strFavouriteList.Split(',').ToList();
                 if (FavouriteList.Contains(NewsId))
                 {
                     FavouriteList.Remove(NewsId);
+                    imgFavourite.Source = "star.png";
                 }
                 else
                 {
                     FavouriteList.Add(NewsId);
+                    imgFavourite.Source = "star_sel.png";
                 }
                 strFavouriteList = String.Join(",", FavouriteList);
-                Application.Current.Properties["FavouriteList"] = strFavouriteList;
+                CrossSecureStorage.Current.SetValue("FavouriteList", strFavouriteList);
                 await Application.Current.SavePropertiesAsync();
             }
-            string xxxxxxxxx = Application.Current.Properties["FavouriteList"].ToString();
-            //imgFavourite.Source = "star_sel.png";
+            else
+            {
+                CrossSecureStorage.Current.SetValue("FavouriteList", NewsId);
+                imgFavourite.Source = "star_sel.png";
+            }
         }
     }
 }
