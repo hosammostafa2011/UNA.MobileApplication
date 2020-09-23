@@ -8,7 +8,7 @@
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     BackgroundColor="{DynamicResource entryBackground}">
-    <!--<NavigationPage.TitleView>
+    <NavigationPage.TitleView>
         <StackLayout Padding="10,0" Orientation="Horizontal">
             <Button
                 BackgroundColor="{DynamicResource mainBackground}"
@@ -19,14 +19,15 @@
                 TextColor="{DynamicResource mainLabel}"
                 WidthRequest="40" />
         </StackLayout>
-    </NavigationPage.TitleView>-->
+    </NavigationPage.TitleView>
 
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
+        <StackLayout>
             <controls:ExtendedScrollView HasTopPadding="False">
                 <StackLayout Padding="0,0,0,40" BackgroundColor="{DynamicResource entryBackground}">
                     <Grid Margin="0,-10,0,0">
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
@@ -88,26 +89,24 @@
                                     TextColor="{DynamicResource secondaryLabel}" />
                             </Grid>
                         </yummy:PancakeView>
+                        <StackLayout Grid.Row="3" HeightRequest="50" />
                     </Grid>
                 </StackLayout>
             </controls:ExtendedScrollView>
 
-            <AbsoluteLayout
-                HeightRequest="60"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="End">
+            <AbsoluteLayout>
                 <Image
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
                     Aspect="AspectFill"
-                    HeightRequest="60"
-                    Source="bar.jpg" />
+                    HeightRequest="80"
+                    Source="bar.png" />
                 <Grid
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Transparent"
                     ColumnSpacing="50"
-                    HeightRequest="60"
+                    HeightRequest="80"
                     HorizontalOptions="Center"
                     VerticalOptions="Center">
                     <Grid.ColumnDefinitions>
@@ -117,7 +116,6 @@
                     </Grid.ColumnDefinitions>
                     <Image
                         Grid.Column="0"
-                        HeightRequest="60"
                         HorizontalOptions="Center"
                         Source="share.png">
                         <Image.GestureRecognizers>
@@ -126,7 +124,6 @@
                     </Image>
                     <Image
                         Grid.Column="1"
-                        HeightRequest="60"
                         HorizontalOptions="Center"
                         Source="star.png">
                         <Image.GestureRecognizers>
@@ -135,7 +132,6 @@
                     </Image>
                     <Image
                         Grid.Column="2"
-                        HeightRequest="60"
                         HorizontalOptions="Center"
                         Source="back.png">
                         <Image.GestureRecognizers>
@@ -144,7 +140,6 @@
                     </Image>
                 </Grid>
             </AbsoluteLayout>
-
         </StackLayout>
     </ContentPage.Content>
 

@@ -75,7 +75,6 @@
             <Style x:Key="cardTitleStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Large" />
                 <Setter Property="TextColor" Value="{DynamicResource mainLabel}" />
-
             </Style>
 
             <Style x:Key="borderStyle" TargetType="BoxView">
