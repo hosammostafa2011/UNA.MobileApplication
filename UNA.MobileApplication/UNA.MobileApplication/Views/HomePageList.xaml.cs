@@ -27,7 +27,8 @@ namespace UNA.MobileApplication.Views
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;
-            _homePageViewModel.LoadHomeNewsCommand.Execute(null);
+            if (_homePageViewModel.obsCollectionNews.Count <= 0)
+                _homePageViewModel.LoadHomeNewsCommand.Execute(null);
         }
     }
 }
