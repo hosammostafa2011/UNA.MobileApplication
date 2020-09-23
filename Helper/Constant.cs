@@ -5,6 +5,8 @@ namespace Helper
     public class Constant
     {
         public static string ApiUrl = "https://api.una-oic.org";
+        public static string NewsURL = "http://www.una-oic.org/page/public/news_details.aspx?id={0}";
+
         public static string ApiHostName
         {
             get

@@ -76,9 +76,8 @@ namespace UNA.MobileApplication.Views
         {
             IShare shareInfo = CrossShare.Current;
             ShareMessage _ShareMessage = new ShareMessage();
-            _ShareMessage.Text = "fff";
-            _ShareMessage.Title = "ddd";
-            _ShareMessage.Url = string.Format("http://www.una-oic.org/page/public/news_details.aspx?id={0}", lblNews_ID.Text);
+            _ShareMessage.Text = "مشاركة الخبر";
+            _ShareMessage.Url = string.Format(Constant.NewsURL, lblNews_ID.Text);
             shareInfo.Share(_ShareMessage);
         }
     }

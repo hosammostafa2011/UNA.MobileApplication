@@ -126,7 +126,7 @@
                         HorizontalOptions="Center"
                         Source="share.png">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked" />
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgShare_Tapped" />
                         </Image.GestureRecognizers>
                     </Image>
                     <Image
@@ -144,7 +144,7 @@
                         HorizontalOptions="Center"
                         Source="back.png">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgShare_Tapped" />
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked" />
                         </Image.GestureRecognizers>
                     </Image>
                 </Grid>
