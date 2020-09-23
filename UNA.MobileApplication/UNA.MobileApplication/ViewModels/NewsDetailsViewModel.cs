@@ -11,12 +11,13 @@ namespace UNA.MobileApplication.ViewModels
     public class NewsDetailsViewModel : BaseViewModel
     {
         private NEWS _selectedNews;
-        
+
         public NEWS SelectedNews
         {
             get => _selectedNews;
             set => SetProperty(ref _selectedNews, value);
         }
+
         private ObservableCollection<NEWS> _news;
 
         public ObservableCollection<NEWS> obsCollectionNews
@@ -24,10 +25,10 @@ namespace UNA.MobileApplication.ViewModels
             get => _news;
             set => SetProperty(ref _news, value);
         }
+
         public Command LoadNewsCommand { get; set; }
 
-
-        public NewsDetailsViewModel(NEWS item=null)
+        public NewsDetailsViewModel(NEWS item = null)
         {
             SelectedNews = item;
         }

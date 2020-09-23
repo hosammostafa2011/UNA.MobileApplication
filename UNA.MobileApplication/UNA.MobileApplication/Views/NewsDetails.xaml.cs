@@ -33,5 +33,10 @@ namespace UNA.MobileApplication.Views
         {
             Device.BeginInvokeOnMainThread(async () => await Navigation.PopAsync());
         }
+
+        private void imgFavourite_Tapped(object sender, EventArgs e)
+        {
+            imgFavourite.Source = "star_sel.png";
+        }
     }
 }
