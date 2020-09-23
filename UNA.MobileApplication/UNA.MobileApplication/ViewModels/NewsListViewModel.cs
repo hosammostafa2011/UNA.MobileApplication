@@ -60,6 +60,7 @@ namespace UNA.MobileApplication.ViewModels
                 foreach (NEWS vNEWS in obsCollectionNews)
                 {
                     vNEWS.Details = HtmlToPlainText(vNEWS.Details);
+                    vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID); ;
                 }
                 NotifyPropertyChanged(nameof(obsCollectionNews));
             }
@@ -72,5 +73,10 @@ namespace UNA.MobileApplication.ViewModels
             }
         }
 
+        private string GetFavouriteImage(string pNews_ID)
+        {
+            //check if the user favourite the news before
+            return (Convert.ToInt32(pNews_ID) % 2 == 0) ? "star_sel.png" : "star.png";
+        }
     }
 }

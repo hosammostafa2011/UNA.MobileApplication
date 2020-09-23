@@ -23,6 +23,10 @@
 
     <ContentPage.Content>
         <StackLayout>
+            <Label
+                x:Name="lblNews_ID"
+                IsVisible="False"
+                Text="{Binding SelectedNews.News_ID}" />
             <controls:ExtendedScrollView HasTopPadding="False">
                 <StackLayout Padding="0,0,0,40" BackgroundColor="{DynamicResource entryBackground}">
                     <Grid Margin="0,-10,0,0">
@@ -126,7 +130,7 @@
                         x:Name="imgFavourite"
                         Grid.Column="1"
                         HorizontalOptions="Center"
-                        Source="star.png">
+                        Source="{Binding SelectedNews.FavouriteImage}">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgFavourite_Tapped" />
                         </Image.GestureRecognizers>
