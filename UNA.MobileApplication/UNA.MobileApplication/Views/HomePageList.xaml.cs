@@ -14,12 +14,11 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePageList : ContentPage
     {
+        private readonly HomePageViewModel _homePageViewModel;
         public HomePageList()
         {
             InitializeComponent();
-            HomePageViewModel vm = new HomePageViewModel();
-            vm.Navigation = Navigation;
-            BindingContext = vm;
+            BindingContext = _homePageViewModel = new HomePageViewModel();
         }
 
         protected override void OnAppearing()
@@ -28,6 +27,7 @@ namespace UNA.MobileApplication.Views
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;
+            _homePageViewModel.LoadHomeNewsCommand.Execute(null);
         }
     }
 }

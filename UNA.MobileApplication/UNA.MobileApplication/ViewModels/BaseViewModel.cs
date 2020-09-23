@@ -15,6 +15,7 @@ using Helper.Service;
 using Helper.Interface;
 using Helper;
 using Model.Mobile;
+using System.Text.RegularExpressions;
 
 namespace UNA.MobileApplication.ViewModels
 {
@@ -116,6 +117,29 @@ namespace UNA.MobileApplication.ViewModels
         public void NotifyAllPropertiesChanged()
         {
             NotifyPropertyChanged(null);
+        }
+        public static string HtmlToPlainText(string html)
+        {
+            const string tagWhiteSpace = @"(>|$)(\W|\n|\r)+<";//matches one or more (white space or line breaks) between '>' and '<'
+            const string stripFormatting = @"<[^>]*(>|$)";//match any character between '<' and '>', even when end tag is missing
+            const string lineBreak = @"<(br|BR)\s{0,1}\/{0,1}>";//matches: <br>,<br/>,<br />,<BR>,<BR/>,<BR />
+            var lineBreakRegex = new Regex(lineBreak, RegexOptions.Multiline);
+            var stripFormattingRegex = new Regex(stripFormatting, RegexOptions.Multiline);
+            var tagWhiteSpaceRegex = new Regex(tagWhiteSpace, RegexOptions.Multiline);
+
+            var text = html;
+            text = System.Net.WebUtility.HtmlDecode(text);
+            text = tagWhiteSpaceRegex.Replace(text, "><");
+            text = lineBreakRegex.Replace(text, Environment.NewLine);
+            text = stripFormattingRegex.Replace(text, string.Empty);
+
+            //text = "<html>" +
+            //                "<body style=\"text-align: justify;\">" +
+            //                String.Format("<p>{0}</p>", text) +
+            //                "</body>" +
+            //                "</html>";
+
+            return text;
         }
     }
 }

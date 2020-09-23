@@ -41,18 +41,15 @@ namespace UNA.MobileApplication.ViewModels
         {
             if (IsBusy)
                 return;
-
             IsBusy = true;
-
             try
             {
                 _REQUEST.LANGUAGE = "1";
                 _REQUEST.USER_TOKEN = "Aa159357";
                 CATEGORY objCATEGORY = new CATEGORY();
-                objCATEGORY.Category_ID = categoryID;
-                _REQUEST.ROW_COUNT = "10";
+                _REQUEST.ROW_COUNT = "50";
                 _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
-                var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
+                var result = await ApiManager.GET_LATEST_NEWS(_REQUEST);
                 _RESPONSE = HelperManger.CastToResponse(result);
                 if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
                 {
@@ -74,28 +71,5 @@ namespace UNA.MobileApplication.ViewModels
             }
         }
 
-        private static string HtmlToPlainText(string html)
-        {
-            const string tagWhiteSpace = @"(>|$)(\W|\n|\r)+<";//matches one or more (white space or line breaks) between '>' and '<'
-            const string stripFormatting = @"<[^>]*(>|$)";//match any character between '<' and '>', even when end tag is missing
-            const string lineBreak = @"<(br|BR)\s{0,1}\/{0,1}>";//matches: <br>,<br/>,<br />,<BR>,<BR/>,<BR />
-            var lineBreakRegex = new Regex(lineBreak, RegexOptions.Multiline);
-            var stripFormattingRegex = new Regex(stripFormatting, RegexOptions.Multiline);
-            var tagWhiteSpaceRegex = new Regex(tagWhiteSpace, RegexOptions.Multiline);
-
-            var text = html;
-            text = System.Net.WebUtility.HtmlDecode(text);
-            text = tagWhiteSpaceRegex.Replace(text, "><");
-            text = lineBreakRegex.Replace(text, Environment.NewLine);
-            text = stripFormattingRegex.Replace(text, string.Empty);
-
-            //text = "<html>" +
-            //                "<body style=\"text-align: justify;\">" +
-            //                String.Format("<p>{0}</p>", text) +
-            //                "</body>" +
-            //                "</html>";
-
-            return text;
-        }
     }
 }

@@ -1,140 +1,76 @@
-﻿using Prism.Commands;
+﻿using Helper;
+using Newtonsoft.Json;
+using Prism.Commands;
 using Prism.Navigation;
 using Prism.Navigation.Xaml;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 using UNA.MobileApplication.Models;
+using Xamarin.Forms;
 
 namespace UNA.MobileApplication.ViewModels
 {
-    public class HomePageViewModel : ViewModelBase
+    public class HomePageViewModel : BaseViewModel
     {
-        public ObservableCollection<Place> Items { get; set; }
-        public ObservableCollection<Tab> TabItems { get; set; }
-        public Tab Item { get; set; }
-        public string SelectedItemId { get; set; }
-        public ListLayoutOptions ListLayout { get; set; }
-        public string Section { get; set; }
-        public DelegateCommand<Place> GoToDetailCommand { get; set; }
-        public DelegateCommand<object> ChangeLayoutCommand { get; set; }
-        public Xamarin.Forms.INavigation Navigation { get; internal set; }
+        private NEWS _selectedNews;
 
-        private async void GoToDetail(Place place)
+        public string CategoryId { get; set; }
+
+        public NEWS SelectedNews
         {
-            SelectedItemId = place.IdAnimation;
-            //var navParam = new NavigationParameters { { nameof(place), place } };
-            //await NavigationService.NavigateAsync($"{nameof(PlaceDetailPage)}", navParam);
+            get => _selectedNews;
+            set => SetProperty(ref _selectedNews, value);
         }
+
+        private ObservableCollection<NEWS> _news;
+        public ObservableCollection<NEWS> obsCollectionNews
+        {
+            get => _news;
+            set => SetProperty(ref _news, value);
+        }
+        public Command LoadHomeNewsCommand { get; set; }
 
         public HomePageViewModel()
         {
-            GoToDetailCommand = new DelegateCommand<Place>(GoToDetail);
-            Items = new ObservableCollection<Place>();
-            Item = new Tab();
-            ListLayout = ListLayoutOptions.Big;
-            Xamarin.Forms.INavigation xNavigation = Navigation;
-            LoadData();
-            //ChangeLayoutCommand = new DelegateCommand<object>(ChangeLayout);
+            obsCollectionNews = new ObservableCollection<NEWS>();
+            LoadHomeNewsCommand = new Command(async () => await RunSafe(ExecuteLoadItemsCommandAsync(), true));
         }
-
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        private async Task ExecuteLoadItemsCommandAsync()
         {
-            if (parameters.GetNavigationMode() != NavigationMode.Back)
-            {
-                LoadData();
-            }
-            else
-            {
-                SelectedItemId = null;
-            }
-        }
+            if (IsBusy)
+                return;
 
-        private void LoadData()
-        {
-            var all = new List<Place>();
-            var trending = new List<Place>();
-            var featured = new List<Place>();
-            var popular = new List<Place>();
-            for (int i = 0; i < Data.places.Count; i++)
+            IsBusy = true;
+
+            try
             {
-                var element = Data.places[i];
-                all.Add(new Place
+                _REQUEST.LANGUAGE = "1";
+                _REQUEST.USER_TOKEN = "Aa159357";
+                _REQUEST.ROW_COUNT = "10";
+                //_REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
+                var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
+                _RESPONSE = HelperManger.CastToResponse(result);
+                if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
                 {
-                    Id = element.Id,
-                    Description = element.Description,
-                    Title = element.Title,
-                    SubTitle = element.SubTitle,
-                    Images = element.Images,
-                    Image = element.Image,
-                    IdAnimation = $"All{Guid.NewGuid()}"
-                });
-                if (element.IsTrending)
-                    trending.Add(new Place
-                    {
-                        Id = element.Id,
-                        Description = element.Description,
-                        Title = element.Title,
-                        SubTitle = element.SubTitle,
-                        Images = element.Images,
-                        Image = element.Image,
-                        IdAnimation = $"Trending{Guid.NewGuid()}"
-                    });
-
-                if (element.IsFeatured)
-                    featured.Add(new Place
-                    {
-                        Id = element.Id,
-                        Description = element.Description,
-                        Title = element.Title,
-                        SubTitle = element.SubTitle,
-                        Images = element.Images,
-                        Image = element.Image,
-                        IdAnimation = $"Featured${Guid.NewGuid()}"
-                    });
-
-                if (element.IsPopular)
-                    popular.Add(new Place
-                    {
-                        Id = element.Id,
-                        Description = element.Description,
-                        Title = element.Title,
-                        SubTitle = element.SubTitle,
-                        Images = element.Images,
-                        Image = element.Image,
-                        IdAnimation = $"Popular{Guid.NewGuid()}"
-                    });
-            }
-
-            TabItems = new ObservableCollection<Tab>
-            {
-                new Tab
-                {
-                    Title="All",
-                    Selected = true,
-                    Id = "A",
-                    Items = all
-                },
-                 new Tab
-                {
-                    Title="Featured",
-                    Id = "F",
-                    Items = featured
-                },
-                new Tab
-                {
-                    Title="Popular",
-                    Id = "P",
-                    Items = popular
-                },
-                new Tab
-                {
-                    Title="Trending",
-                    Id = "T",
-                    Items = trending
+                    List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
+                    obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
                 }
-            };
+                foreach (NEWS vNEWS in obsCollectionNews)
+                {
+                    vNEWS.Details = HtmlToPlainText(vNEWS.Details);
+                }
+                NotifyPropertyChanged(nameof(obsCollectionNews));
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
     }
 }

@@ -18,7 +18,7 @@ namespace UNA.MobileApplication.Views
         {
             InitializeComponent();
             HomePageViewModel vm = new HomePageViewModel();
-            vm.Navigation = Navigation;
+            //vm.Navigation = Navigation;
             BindingContext = vm;
         }
 
