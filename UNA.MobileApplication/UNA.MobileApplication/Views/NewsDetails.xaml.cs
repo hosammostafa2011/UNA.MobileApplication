@@ -68,6 +68,7 @@ namespace UNA.MobileApplication.Views
             else
             {
                 CrossSecureStorage.Current.SetValue("FavouriteList", NewsId);
+                HelperManger.ShowToast("تم اضافة الخبر الى المفضلة");
                 imgFavourite.Source = "star_sel.png";
             }
         }
