@@ -34,9 +34,28 @@ namespace UNA.MobileApplication.Views
             Device.BeginInvokeOnMainThread(async () => await Navigation.PopAsync());
         }
 
-        private void imgFavourite_Tapped(object sender, EventArgs e)
+        private async void imgFavourite_Tapped(object sender, EventArgs e)
         {
-            imgFavourite.Source = "star_sel.png";
+            string NewsId = lblNews_ID.Text;
+
+            if (Application.Current.Resources.ContainsKey("FavouriteList"))
+            {
+                string strFavouriteList = Application.Current.Properties["FavouriteList"].ToString();
+                List<string> FavouriteList = strFavouriteList.Split(',').ToList();
+                if (FavouriteList.Contains(NewsId))
+                {
+                    FavouriteList.Remove(NewsId);
+                }
+                else
+                {
+                    FavouriteList.Add(NewsId);
+                }
+                strFavouriteList = String.Join(",", FavouriteList);
+                Application.Current.Properties["FavouriteList"] = strFavouriteList;
+                await Application.Current.SavePropertiesAsync();
+            }
+            string xxxxxxxxx = Application.Current.Properties["FavouriteList"].ToString();
+            //imgFavourite.Source = "star_sel.png";
         }
     }
 }

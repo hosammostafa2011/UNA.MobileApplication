@@ -14,4 +14,5 @@ public class NEWS
     public string Brief { get; set; }
     public string Source_Tag { get; set; }
     public string Details { get; set; }
+    public string FavouriteImage { get; set; }
 }
