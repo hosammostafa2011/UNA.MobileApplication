@@ -47,6 +47,7 @@ namespace UNA.MobileApplication.ViewModels
                 _REQUEST.LANGUAGE = "1";
                 _REQUEST.USER_TOKEN = "Aa159357";
                 CATEGORY objCATEGORY = new CATEGORY();
+                objCATEGORY.Category_ID = categoryID;
                 _REQUEST.ROW_COUNT = "10";
                 _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
                 var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
