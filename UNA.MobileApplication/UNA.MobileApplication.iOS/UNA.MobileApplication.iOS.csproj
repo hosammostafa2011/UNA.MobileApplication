@@ -215,4 +215,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\bar%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_sel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_sel%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_sel%402x.png" />
+  </ItemGroup>
 </Project>

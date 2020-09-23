@@ -123,11 +123,12 @@
                         </Image.GestureRecognizers>
                     </Image>
                     <Image
+                        x:Name="imgFavourite"
                         Grid.Column="1"
                         HorizontalOptions="Center"
                         Source="star.png">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked" />
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgFavourite_Tapped" />
                         </Image.GestureRecognizers>
                     </Image>
                     <Image
