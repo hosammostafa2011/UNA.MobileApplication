@@ -30,5 +30,19 @@ namespace UNA.MobileApplication.Views
             //if (_homePageViewModel.obsCollectionNews.Count <= 0)
             //    _homePageViewModel.LoadHomeNewsCommand.Execute(null);
         }
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            var item = args.SelectedItem as NEWS;
+            if (item == null)
+                return;
+            // We can set the SelectedGroup both in binding or using the static method
+            // SharedTransitionShell.SetTransitionSelectedGroup(this, item.Id.ToString());
+
+            _homePageViewModel.SelectedNews = item;
+            await Navigation.PushAsync(new NewsDetails(new NewsDetailsViewModel(item)));//for shared
+
+            // Manually deselect item.
+            ItemsListView.SelectedItem = null;
+        }
     }
 }

@@ -9,10 +9,101 @@
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     x:Name="MainPage"
     sharedTransitions:SharedTransitionNavigationPage.BackgroundAnimation="SlideFromRight"
-    sharedTransitions:SharedTransitionNavigationPage.TransitionSelectedGroup="{Binding SelectedItemId}"
+    sharedTransitions:SharedTransitionShell.TransitionSelectedGroup="{Binding SelectedNews.News_ID}"
     BackgroundColor="{DynamicResource mainBackground}">
     <ContentPage.Content>
-        <ScrollView>
+        <StackLayout Padding="10" Spacing="20">
+            <ListView
+                x:Name="ItemsListView"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="true"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                ItemSelected="OnItemSelected"
+                ItemsSource="{Binding obsCollectionNews}"
+                VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5,5,5,5" RowSpacing="15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="110" />
+                                </Grid.RowDefinitions>
+                                <StackLayout
+                                    Grid.ColumnSpan="2"
+                                    Orientation="Vertical"
+                                    VerticalOptions="FillAndExpand">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30*" />
+                                            <ColumnDefinition Width="70*" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Grid.Column="0">
+                                            <yummy:PancakeView CornerRadius="10">
+                                                <ffimageloading:CachedImage
+                                                    sharedTransitions:Transition.Group="{Binding News_ID}"
+                                                    sharedTransitions:Transition.Name="NewsImage"
+                                                    Aspect="AspectFill"
+                                                    HeightRequest="100"
+                                                    Source="{Binding Main_Image_Path}"
+                                                    WidthRequest="150" />
+                                            </yummy:PancakeView>
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="1" HeightRequest="100">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+                                                <StackLayout Grid.Row="0" HeightRequest="70">
+                                                    <Label
+                                                        FontFamily="{StaticResource InterBold}"
+                                                        FontSize="Small"
+                                                        LineBreakMode="WordWrap"
+                                                        Text="{Binding Title}"
+                                                        TextColor="{DynamicResource primaryColor}" />
+                                                </StackLayout>
+                                                <Grid Grid.Row="1">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="50*" />
+                                                        <ColumnDefinition Width="50*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label
+                                                        Grid.Row="0"
+                                                        Grid.Column="0"
+                                                        FontSize="Small"
+                                                        LineBreakMode="WordWrap"
+                                                        Text="{Binding Source_Tag}"
+                                                        TextColor="{DynamicResource ThirdColor}"
+                                                        VerticalOptions="Center" />
+                                                    <Label
+                                                        Grid.Row="0"
+                                                        Grid.Column="1"
+                                                        FontSize="Small"
+                                                        LineBreakMode="WordWrap"
+                                                        Text="{Binding Publish_Date}"
+                                                        TextColor="{DynamicResource SecondColor}"
+                                                        VerticalOptions="Center" />
+                                                </Grid>
+                                            </Grid>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--<Label Text="{Binding Source={x:Reference SliderDuration}, Path=Value, StringFormat='Transition duration: {0}'}" />
+            <Slider
+                x:Name="SliderDuration"
+                Margin="20,0,20,30"
+                Maximum="5000"
+                MaximumTrackColor="#757575"
+                MinimumTrackColor="Blue"
+                Value="300" />-->
+        </StackLayout>
+        <!--<ScrollView>
             <Grid Padding="10,10,10,10" RowSpacing="15">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -41,7 +132,7 @@
                         <ffimageloading:CachedImage
                             Aspect="AspectFill"
                             HeightRequest="200"
-                            Source="http://www.una-oic.org//UploadDir//4b7a5351-f3a3-4567-a81a-4292242aa97f.jpg" />
+                            Source="http://www.una-oic.org//UploadDir//d7f0e4aa-5156-47aa-a5e3-0cc29b2ba46a.jpg" />
                     </yummy:PancakeView>
                     <StackLayout>
                         <Label
@@ -51,12 +142,6 @@
                             LineBreakMode="WordWrap"
                             Text="السعودية تؤكد حرصها على وحدة وسيادة الأراضي العربية ووقوفها إلى جانب الشعب الفلسطيني"
                             TextColor="{DynamicResource mainLabel}" />
-                        <!--<Label
-                            FontSize="Small"
-                            LineBreakMode="WordWrap"
-                            Text="الأربعاء 28 محرم 1442 - 09:13 بتوقيت مكة المكرمة الموافق 16-9-2020"
-                            TextColor="{DynamicResource secondaryLabel}"
-                            VerticalOptions="Center" />-->
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.Column="0">
@@ -79,12 +164,6 @@
                             LineBreakMode="WordWrap"
                             Text="المالك: الإيسيسكو تعمل بكل قوة لحماية التراث في العالم الإسلامي"
                             TextColor="{DynamicResource mainLabel}" />
-                        <!--<Label
-                            FontSize="Small"
-                            LineBreakMode="WordWrap"
-                            Text="الأربعاء 28 محرم 1442 - 09:13 بتوقيت مكة المكرمة الموافق 16-9-2020"
-                            TextColor="{DynamicResource secondaryLabel}"
-                            VerticalOptions="Center" />-->
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.Column="1">
@@ -107,12 +186,6 @@
                             LineBreakMode="WordWrap"
                             Text="رئيس البنك الإسلامي للتنمية يستعرض أداء صندوق تثمير ممتلكات الأوقاف"
                             TextColor="{DynamicResource mainLabel}" />
-                        <!--<Label
-                            FontSize="Small"
-                            LineBreakMode="WordWrap"
-                            Text="الأربعاء 28 محرم 1442 - 09:13 بتوقيت مكة المكرمة الموافق 16-9-2020"
-                            TextColor="{DynamicResource secondaryLabel}"
-                            VerticalOptions="Center" />-->
                     </StackLayout>
                 </StackLayout>
                 <StackLayout
@@ -285,6 +358,6 @@
                 </StackLayout>
 
             </Grid>
-        </ScrollView>
+        </ScrollView>-->
     </ContentPage.Content>
 </ContentPage>
