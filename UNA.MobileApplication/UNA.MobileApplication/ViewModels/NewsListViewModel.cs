@@ -17,7 +17,7 @@ namespace UNA.MobileApplication.ViewModels
         private NEWS _selectedNews;
         private bool _isRefreshing = false;
         private int CURRENT_PAGE { get; set; } = 1;
-        private int PAGE_SIZE { get; set; } = 10;
+        private int PAGE_SIZE { get; set; } = 30;
         private int LANGUAGE { get; set; } = 1;
         private int TOTAL_MAIL { get; set; } = 100000;
 
@@ -72,8 +72,6 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
                     obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
-                    if (ClearList)
-                        obsCollectionNews.Clear();
                 }
                 foreach (NEWS vNEWS in obsCollectionNews)
                 {

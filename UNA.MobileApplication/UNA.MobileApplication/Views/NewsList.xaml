@@ -16,7 +16,6 @@
                 HasUnevenRows="true"
                 IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-                ItemAppearing="ItemsListView_ItemAppearing"
                 ItemSelected="OnItemSelected"
                 ItemsSource="{Binding obsCollectionNews}"
                 RefreshCommand="{Binding RefreshCommand}"
