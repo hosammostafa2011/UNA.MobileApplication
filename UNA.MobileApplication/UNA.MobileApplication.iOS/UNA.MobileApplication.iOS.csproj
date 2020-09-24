@@ -231,4 +231,31 @@
   <ItemGroup>
     <BundleResource Include="Resources\star_sel%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShadowOverlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShadowOverlay%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShadowOverlay%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ColoredBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ColoredBackground%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ColoredBackground%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eye%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eye%403x.png" />
+  </ItemGroup>
 </Project>
