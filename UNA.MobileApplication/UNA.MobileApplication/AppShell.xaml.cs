@@ -25,7 +25,6 @@ namespace UNA.MobileApplication
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
             /*Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));*/
@@ -35,6 +34,7 @@ namespace UNA.MobileApplication
             {
                 await new BaseViewModel().RunSafe(LoadCategory(), true);
             });
+            Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
         }
 
         private async Task LoadCategory()
@@ -54,7 +54,12 @@ namespace UNA.MobileApplication
                         Title = objCATEGORY.CategoryName,
                         Icon = "tab_about.png",
                     };
-                    shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID) });
+                    if(objCATEGORY.Category_ID== "1100")
+                        shell_section.Items.Add(new ShellContent() { Content = new PhotoAlbum() });
+                    else if (objCATEGORY.Category_ID == "1200")
+                        shell_section.Items.Add(new ShellContent() { Content = new VideoAlbum() });
+                    else
+                        shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID) });
                     lstCategory.Items.Add(shell_section);
                 }
             }

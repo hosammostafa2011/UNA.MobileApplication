@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UNA.MobileApplication.Views.VideoAlbum"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <ContentPage.Content>
+        <Grid>
+            <Image
+                Aspect="Fill"
+                HorizontalOptions="Fill"
+                Source="ColoredBackground"
+                VerticalOptions="Fill" />
+            <ListView
+                BackgroundColor="Transparent"
+                ItemsSource="{Binding obsCollectionPHOTO_ALBUM}"
+                RowHeight="200"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid
+                                Margin="10,5"
+                                ColumnSpacing="0"
+                                RowSpacing="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="AUTO" />
+                                </Grid.RowDefinitions>
+                                <yummy:PancakeView Grid.RowSpan="2" CornerRadius="10">
+                                    <WebView
+                                        HeightRequest="100"
+                                        HorizontalOptions="Fill"
+                                        Source="{Binding Video_Url}"
+                                        VerticalOptions="Fill" />
+                                </yummy:PancakeView>
+                                <Image
+                                    Grid.RowSpan="2"
+                                    Aspect="Fill"
+                                    HorizontalOptions="Fill"
+                                    Source="ShadowOverlay"
+                                    VerticalOptions="End" />
+
+                                <Grid
+                                    Grid.Row="1"
+                                    Margin="10"
+                                    ColumnSpacing="10"
+                                    RowSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="AUTO" />
+                                        <RowDefinition Height="25" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="25" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="AUTO" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label
+                                        Grid.Row="0"
+                                        Grid.ColumnSpan="3"
+                                        LineBreakMode="NoWrap"
+                                        Text="{Binding Title}"
+                                        TextColor="#FFFFFF" />
+
+                                    <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
+                                    <!--<Label
+                                        Grid.Row="1"
+                                        Grid.Column="1"
+                                        Style="{StaticResource HandleLabel}"
+                                        Text="{Binding Handle}"
+                                        VerticalOptions="Center" />-->
+
+                                    <!--<StackLayout
+                                        Grid.Row="1"
+                                        Grid.Column="2"
+                                        Orientation="Horizontal"
+                                        Spacing="5"
+                                        VerticalOptions="Center">
+                                        <Image Source="Eye" />
+                                        <Label Style="{StaticResource HandleLabel}" Text="{Binding ViewCount, StringFormat='{0:N0}'}" />
+                                        <Label Style="{StaticResource BodyLabel}" Text="views" />
+                                    </StackLayout>-->
+                                </Grid>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

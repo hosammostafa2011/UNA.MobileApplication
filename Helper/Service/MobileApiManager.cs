@@ -177,6 +177,12 @@ namespace Helper.Service
             var response = await apiresponse.GET_VIDEO(request);
             return response;
         }
+        public async Task<string> GET_FAVOURITE(REQUEST request)
+        {
+            var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+            var response = await apiresponse.GET_FAVOURITE(request);
+            return response;
+        }
         #endregion
 
     }

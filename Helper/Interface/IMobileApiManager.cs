@@ -36,6 +36,8 @@ namespace Helper.Interface
 
         [Post("/UNA/GET_VIDEO")]
         Task<string> GET_VIDEO([Body] REQUEST request);
+        [Post("/UNA/GET_FAVOURITE")]
+        Task<string> GET_FAVOURITE([Body] REQUEST request);
         #endregion
     }
 }

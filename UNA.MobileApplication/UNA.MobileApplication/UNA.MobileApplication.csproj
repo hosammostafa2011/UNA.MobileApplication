@@ -25,6 +25,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\VideoAlbum.xaml.cs">
+      <DependentUpon>VideoAlbum.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PhotoAlbum.xaml.cs">
+      <DependentUpon>PhotoAlbum.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Component\NewsComponent.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -47,6 +56,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HomePageList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PhotoAlbum.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\NewsDetails.xaml">
