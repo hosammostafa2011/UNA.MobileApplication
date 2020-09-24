@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace UNA.MobileApplication.ViewModels
@@ -14,8 +15,22 @@ namespace UNA.MobileApplication.ViewModels
     public class NewsListViewModel : BaseViewModel
     {
         private NEWS _selectedNews;
+        private bool _isRefreshing = false;
+        private int CURRENT_PAGE { get; set; } = 1;
+        private int PAGE_SIZE { get; set; } = 10;
+        private int LANGUAGE { get; set; } = 1;
+        private int TOTAL_MAIL { get; set; } = 100000;
 
-        public string CategoryId { get; set; }
+        public string CATEGORY_ID { get; set; }
+
+        public NewsListViewModel(string categoryID)
+        {
+            CATEGORY_ID = categoryID;
+            obsCollectionNews = new ObservableCollection<NEWS>();
+            RegiesterMessageCenter();
+            LoadNewsCommand = new Command(async () =>
+            await RunSafe(ExecuteLoadItemsCommandAsync(categoryID, false, false), true));
+        }
 
         public NEWS SelectedNews
         {
@@ -33,24 +48,23 @@ namespace UNA.MobileApplication.ViewModels
 
         public Command LoadNewsCommand { get; set; }
 
-        public NewsListViewModel(string categoryID)
-        {
-            obsCollectionNews = new ObservableCollection<NEWS>();
-            LoadNewsCommand = new Command(async () => await RunSafe(ExecuteLoadItemsCommandAsync(categoryID), true));
-        }
-
-        private async Task ExecuteLoadItemsCommandAsync(string categoryID)
+        private async Task ExecuteLoadItemsCommandAsync(string categoryID, bool isRefresh, bool ClearList)
         {
             if (IsBusy)
                 return;
             IsBusy = true;
+            if (ClearList)
+            {
+                CURRENT_PAGE = 1;
+            }
             try
             {
-                _REQUEST.LANGUAGE = "1";
+                _REQUEST.LANGUAGE = Convert.ToString(LANGUAGE);
                 _REQUEST.USER_TOKEN = "Aa159357";
                 CATEGORY objCATEGORY = new CATEGORY();
                 objCATEGORY.Category_ID = categoryID;
-                _REQUEST.ROW_COUNT = "10";
+                _REQUEST.ROW_COUNT = Convert.ToString(PAGE_SIZE);
+                _REQUEST.PAGE_NUMBER = Convert.ToString(CURRENT_PAGE);
                 _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
                 var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
                 _RESPONSE = HelperManger.CastToResponse(result);
@@ -58,6 +72,8 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
                     obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
+                    if (ClearList)
+                        obsCollectionNews.Clear();
                 }
                 foreach (NEWS vNEWS in obsCollectionNews)
                 {
@@ -72,6 +88,34 @@ namespace UNA.MobileApplication.ViewModels
             finally
             {
                 IsBusy = false;
+                if (isRefresh)
+                    HelperManger.ShowToast("تم تحديث قائمة الأخبار");
+            }
+        }
+
+        public bool IsRefreshing
+        {
+            get { return _isRefreshing; }
+            set
+            {
+                _isRefreshing = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    IsRefreshing = true;
+
+                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, true, true), false);
+
+                    IsRefreshing = false;
+                    NotifyPropertyChanged();
+                });
             }
         }
 
@@ -94,6 +138,27 @@ namespace UNA.MobileApplication.ViewModels
             {
                 return "star.png";
             }
+        }
+
+        private void RegiesterMessageCenter()
+        {
+            MessagingCenter.Subscribe<string, NEWS>("MyApp", "LoadNews", async (sender, arg) =>
+            {
+                int itemPostion = obsCollectionNews.IndexOf(arg);
+
+                if (
+                (itemPostion < (CURRENT_PAGE * PAGE_SIZE) - 1 && itemPostion < TOTAL_MAIL - 1)
+                || itemPostion == TOTAL_MAIL - 1)
+                {
+                    return;
+                }
+                else
+                {
+                    CURRENT_PAGE = CURRENT_PAGE + 1;
+                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, false, false), true);
+                    //await GetInboxData(false);
+                }
+            });
         }
     }
 }

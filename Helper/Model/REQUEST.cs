@@ -55,5 +55,6 @@ namespace Model.Mobile
         public string LANGUAGE { get; set; }
         public string PACKAGE_NAME { get; set; }
         public string ROW_COUNT { get; set; }
+        public string PAGE_NUMBER { get; set; }
     }
 }

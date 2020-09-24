@@ -48,5 +48,10 @@ namespace UNA.MobileApplication.Views
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
         }
+
+        private void ItemsListView_ItemAppearing(object sender, ItemVisibilityEventArgs e)
+        {
+            MessagingCenter.Send<string, NEWS>("MyApp", "LoadNews", e.Item as NEWS);
+        }
     }
 }

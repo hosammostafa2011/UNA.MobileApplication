@@ -12,12 +12,14 @@
         <StackLayout Padding="10" Spacing="20">
             <ListView
                 x:Name="ItemsListView"
-                CachingStrategy="RecycleElement"
+                CachingStrategy="RecycleElementAndDataTemplate"
                 HasUnevenRows="true"
-                IsPullToRefreshEnabled="true"
+                IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                ItemAppearing="ItemsListView_ItemAppearing"
                 ItemSelected="OnItemSelected"
                 ItemsSource="{Binding obsCollectionNews}"
+                RefreshCommand="{Binding RefreshCommand}"
                 VerticalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
                     <DataTemplate>
