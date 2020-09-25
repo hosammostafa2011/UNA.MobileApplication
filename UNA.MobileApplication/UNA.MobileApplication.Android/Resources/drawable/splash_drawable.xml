@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
   <item>
     <shape android:shape="rectangle">
-      <solid android:color="#FFFFFF" />
+      <solid android:color="#016b56" />
       <padding
         android:left="0dip"
         android:top="0dip"
@@ -13,7 +13,7 @@
   </item>
   <item>
     <bitmap
-        android:src="@drawable/una_logo"
+        android:src="@drawable/splash"
 
           android:layout_width="match_parent"
 

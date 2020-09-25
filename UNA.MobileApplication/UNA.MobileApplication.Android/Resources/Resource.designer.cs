@@ -15629,31 +15629,34 @@ namespace UNA.MobileApplication.Droid
 			public const int share = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int splash_drawable = 2131165312;
+			public const int splash = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int star = 2131165313;
+			public const int splash_drawable = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int star_sel = 2131165314;
+			public const int star = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int tab_about = 2131165315;
+			public const int star_sel = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int tab_feed = 2131165316;
+			public const int tab_about = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int tooltip_frame_dark = 2131165317;
+			public const int tab_feed = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int tooltip_frame_light = 2131165318;
+			public const int tooltip_frame_dark = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int una_logo = 2131165319;
+			public const int tooltip_frame_light = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int xamarin_logo = 2131165320;
+			public const int una_logo = 2131165320;
+			
+			// aapt resource value: 0x7F070089
+			public const int xamarin_logo = 2131165321;
 			
 			static Drawable()
 			{

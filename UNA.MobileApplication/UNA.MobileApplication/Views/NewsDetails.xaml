@@ -51,7 +51,7 @@
                                 x:Name="detailContainer"
                                 Grid.Row="1"
                                 Margin="20,-50,20,0"
-                                Border="{yummy:BorderMarkup Color=#01856D,
+                                Border="{yummy:BorderMarkup Color=#016b56,
                                                             Thickness=1}"
                                 BorderThickness="13"
                                 HasShadow="True"
@@ -82,7 +82,7 @@
                                 x:Name="descriptionContainer"
                                 Grid.Row="2"
                                 Margin="20,10,20,0"
-                                Border="{yummy:BorderMarkup Color=#01856D,
+                                Border="{yummy:BorderMarkup Color=#016b56,
                                                             Thickness=1}"
                                 Style="{StaticResource cardContainerStyle}">
                                 <Grid Padding="10,15" RowSpacing="0">
