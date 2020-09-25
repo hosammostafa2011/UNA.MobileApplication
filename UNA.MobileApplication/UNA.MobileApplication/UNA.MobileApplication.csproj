@@ -25,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\PhotoAlbumDetails.xaml.cs">
+      <DependentUpon>PhotoAlbumDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\VideoAlbum.xaml.cs">
       <DependentUpon>VideoAlbum.xaml</DependentUpon>
     </Compile>
