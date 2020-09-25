@@ -83,7 +83,10 @@
             </DataTemplate>
             <DataTemplate x:Key="oneNewsViewTemplate">
                 <ViewCell>
-                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                    <StackLayout
+                        Padding="-6"
+                        Orientation="Vertical"
+                        VerticalOptions="FillAndExpand">
                         <yummy:PancakeView
                             BackgroundColor="{DynamicResource background}"
                             CornerRadius="10"
@@ -175,7 +178,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="20">
+        <StackLayout Padding="0" Spacing="20">
             <ListView
                 x:Name="ItemsListView"
                 CachingStrategy="RecycleElement"
