@@ -58,6 +58,8 @@ namespace UNA.MobileApplication
                         shell_section.Items.Add(new ShellContent() { Content = new PhotoAlbum() });
                     else if (objCATEGORY.Category_ID == "1200")
                         shell_section.Items.Add(new ShellContent() { Content = new VideoAlbum() });
+                    else if (objCATEGORY.Category_ID == "7000")
+                        shell_section.Items.Add(new ShellContent() { Content = new FavouritePage("7000") });
                     else
                         shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID) });
                     lstCategory.Items.Add(shell_section);

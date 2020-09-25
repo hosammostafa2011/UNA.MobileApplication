@@ -61,24 +61,41 @@ namespace UNA.MobileApplication.ViewModels
             {
                 _REQUEST.LANGUAGE = Convert.ToString(LANGUAGE);
                 _REQUEST.USER_TOKEN = "Aa159357";
-                CATEGORY objCATEGORY = new CATEGORY();
-                objCATEGORY.Category_ID = categoryID;
-                _REQUEST.ROW_COUNT = Convert.ToString(PAGE_SIZE);
-                _REQUEST.PAGE_NUMBER = Convert.ToString(CURRENT_PAGE);
-                _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
-                var result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
-                _RESPONSE = HelperManger.CastToResponse(result);
-                if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
+                var result = "";
+                if (categoryID == "7000")
                 {
-                    List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
-                    obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
+                    if (CrossSecureStorage.Current.HasKey("FavouriteList"))
+                    {
+                        NEWS objNews = new NEWS();
+                        objNews.FAVOURITE_IDS = CrossSecureStorage.Current.GetValue("FavouriteList");
+                        _REQUEST.JSON = JsonConvert.SerializeObject(objNews);
+                        result = await ApiManager.GET_FAVOURITE(_REQUEST);
+                    }
                 }
-                foreach (NEWS vNEWS in obsCollectionNews)
+                else
                 {
-                    vNEWS.Details = HtmlToPlainText(vNEWS.Details);
-                    vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID); ;
+                    CATEGORY objCATEGORY = new CATEGORY();
+                    objCATEGORY.Category_ID = categoryID;
+                    _REQUEST.ROW_COUNT = Convert.ToString(PAGE_SIZE);
+                    _REQUEST.PAGE_NUMBER = Convert.ToString(CURRENT_PAGE);
+                    _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
+                    result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
                 }
-                NotifyPropertyChanged(nameof(obsCollectionNews));
+                if (!string.IsNullOrEmpty(result))
+                {
+                    _RESPONSE = HelperManger.CastToResponse(result);
+                    if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
+                    {
+                        List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
+                        obsCollectionNews = new ObservableCollection<NEWS>(lstNEWS);
+                    }
+                    foreach (NEWS vNEWS in obsCollectionNews)
+                    {
+                        vNEWS.Details = HtmlToPlainText(vNEWS.Details);
+                        vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID); ;
+                    }
+                    NotifyPropertyChanged(nameof(obsCollectionNews));
+                }
             }
             catch (Exception ex)
             {
