@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="UNA.MobileApplication.Views.PhotoAlbum"
+    x:Class="UNA.MobileApplication.Views.PhotoAlbumDetails"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
@@ -13,9 +13,7 @@
                 Source="ColoredBackground"
                 VerticalOptions="Fill" />
             <ListView
-                x:Name="ItemsListView"
                 BackgroundColor="Transparent"
-                ItemSelected="OnItemSelected"
                 ItemsSource="{Binding obsCollectionPHOTO_ALBUM}"
                 RowHeight="200"
                 SeparatorVisibility="None">
@@ -59,12 +57,12 @@
                                         <ColumnDefinition Width="AUTO" />
                                     </Grid.ColumnDefinitions>
 
-                                    <Label
+                                    <!--<Label
                                         Grid.Row="0"
                                         Grid.ColumnSpan="3"
                                         LineBreakMode="NoWrap"
                                         Text="{Binding Title}"
-                                        TextColor="#FFFFFF" />
+                                        TextColor="#FFFFFF" />-->
 
                                     <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
                                     <!--<Label

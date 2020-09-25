@@ -29,5 +29,20 @@ namespace UNA.MobileApplication.Views
             if (photoAlbumViewModel.obsCollectionPHOTO_ALBUM.Count == 0)
                 photoAlbumViewModel.LoadPHOTO_ALBUMCommand.Execute(null);
         }
+
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            var item = args.SelectedItem as PHOTO_ALBUM;
+            if (item == null)
+                return;
+            // We can set the SelectedGroup both in binding or using the static method
+            // SharedTransitionShell.SetTransitionSelectedGroup(this, item.Id.ToString());
+
+            //photoAlbumViewModel.SelectedNews = item;
+            await Navigation.PushAsync(new PhotoAlbumDetails(new PhotoAlbumDetailsViewModel(item)));//for shared
+
+            // Manually deselect item.
+            ItemsListView.SelectedItem = null;
+        }
     }
 }
