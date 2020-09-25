@@ -78,46 +78,61 @@
     <BundleResource Include="Resources\InterLight.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1201.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\401.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\402.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\581.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\801.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
     <BundleResource Include="Resources\tab_about.png" />
@@ -257,5 +272,119 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Eye%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\740.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\header%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\header%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash.png" />
   </ItemGroup>
 </Project>
