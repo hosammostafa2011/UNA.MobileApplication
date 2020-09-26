@@ -62,6 +62,7 @@ namespace UNA.MobileApplication.ViewModels
                 _REQUEST.LANGUAGE = Convert.ToString(LANGUAGE);
                 _REQUEST.USER_TOKEN = "Aa159357";
                 var result = "";
+                _REQUEST.JSON = string.Empty;
                 if (categoryID == "7000")
                 {
                     if (CrossSecureStorage.Current.HasKey("FavouriteList"))
@@ -71,6 +72,11 @@ namespace UNA.MobileApplication.ViewModels
                         _REQUEST.JSON = JsonConvert.SerializeObject(objNews);
                         result = await ApiManager.GET_FAVOURITE(_REQUEST);
                     }
+                }
+                else if (categoryID == "8000")
+                {
+                    _REQUEST.ROW_COUNT = Convert.ToString(50);
+                    result = await ApiManager.GET_REPORT(_REQUEST);
                 }
                 else
                 {

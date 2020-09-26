@@ -12,38 +12,47 @@ using Xamarin.Forms.Xaml;
 namespace UNA.MobileApplication.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PhotoAlbum : ContentPage
+    public partial class ReportPage : ContentPage
     {
-        PhotoAlbumViewModel photoAlbumViewModel = null;
-        public PhotoAlbum()
+        private readonly NewsListViewModel _newsListViewModel;
+        public string CategoryId { get; set; }
+
+        public ReportPage()
         {
             InitializeComponent();
-            BindingContext = photoAlbumViewModel = new PhotoAlbumViewModel();
+            BindingContext = _newsListViewModel = new NewsListViewModel("8000");
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            var safeInsets = On<iOS>().SafeAreaInsets();
-            safeInsets.Bottom = 0;
-            Padding = safeInsets;
-            if (photoAlbumViewModel.obsCollectionPHOTO_ALBUM.Count == 0)
-                photoAlbumViewModel.LoadPHOTO_ALBUMCommand.Execute(null);
+            //var safeInsets = On<iOS>().SafeAreaInsets();
+            //safeInsets.Bottom = 0;
+            //Padding = safeInsets;
+            //Shell.SetNavBarIsVisible(this, true);
+            _newsListViewModel.LoadNewsCommand.Execute("8000");
         }
 
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as PHOTO_ALBUM;
+            var item = args.SelectedItem as NEWS;
             if (item == null)
                 return;
             // We can set the SelectedGroup both in binding or using the static method
             // SharedTransitionShell.SetTransitionSelectedGroup(this, item.Id.ToString());
 
+
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
 
-            //photoAlbumViewModel.SelectedNews = item;
-            await Navigation.PushAsync(new PhotoAlbumDetails(new PhotoAlbumDetailsViewModel(item)));//for shared
+            _newsListViewModel.SelectedNews = item;
+            await Navigation.PushAsync(new NewsDetails(new NewsDetailsViewModel(item)));//for shared
 
+        }
+
+        private void ItemsListView_ItemAppearing(object sender, ItemVisibilityEventArgs e)
+        {
+            MessagingCenter.Send<string, NEWS>("MyApp", "LoadNews", e.Item as NEWS);
         }
     }
 }

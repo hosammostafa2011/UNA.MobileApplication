@@ -14,7 +14,7 @@ namespace UNA.MobileApplication.ViewModels
 
         public NEWS SelectedNews
         {
-            get => _selectedNews;
+            get { return _selectedNews; }
             set => SetProperty(ref _selectedNews, value);
         }
 

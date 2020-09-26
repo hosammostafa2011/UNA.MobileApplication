@@ -115,6 +115,7 @@
             </yummy:PancakeView>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
+
     <FlyoutItem
         x:Name="lstCategory"
         Title="UNA"
@@ -144,4 +145,9 @@
             Icon="tab_about.png"
             Route="HomePageList" />
     </FlyoutItem>
+    <ShellContent
+        Title=" تقارير وحوارات"
+        ContentTemplate="{DataTemplate local:ReportPage}"
+        Icon="tab_about.png"
+        Route="ReportPage" />
 </sharedTransitions:SharedTransitionShell>

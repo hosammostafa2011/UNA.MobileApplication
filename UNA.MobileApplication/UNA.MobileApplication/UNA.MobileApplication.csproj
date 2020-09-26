@@ -25,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\ReportPage.xaml.cs">
+      <DependentUpon>ReportPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\FavouritePage.xaml.cs">
       <DependentUpon>FavouritePage.xaml</DependentUpon>
     </Compile>

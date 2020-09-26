@@ -35,6 +35,7 @@ namespace UNA.MobileApplication
                 await new BaseViewModel().RunSafe(LoadCategory(), true);
             });
             Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
+            Routing.RegisterRoute(nameof(ReportPage), typeof(ReportPage));
         }
 
         private async Task LoadCategory()
