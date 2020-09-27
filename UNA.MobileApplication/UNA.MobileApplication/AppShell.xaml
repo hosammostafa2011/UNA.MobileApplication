@@ -147,7 +147,7 @@
             Icon="tab_about.png"
             Route="HomePageList" />
     </FlyoutItem>
-    <FlyoutItem
+    <!--<FlyoutItem
         x:Name="lstLang"
         Title="UNA"
         FlyoutDisplayOptions="AsSingleItem">
@@ -167,24 +167,30 @@
 
             </DataTemplate>
         </Shell.ItemTemplate>
-    </FlyoutItem>
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" />
+    </FlyoutItem>-->
     <ShellContent
         Title=" تقارير وحوارات"
         ContentTemplate="{DataTemplate local:ReportPage}"
         Icon="tab_about.png"
         Route="ReportPage" />
+    <FlyoutItem>
+        <Tab>
+            <ShellContent Title="Tab0" ContentTemplate="{DataTemplate local:HomePageList}" />
+        </Tab>
+        <Tab>
+            <ShellContent Title="Tab1" ContentTemplate="{DataTemplate local:HomePageList}" />
+        </Tab>
+    </FlyoutItem>
 
-    <!--<ShellContent>
+    <!--<FlyoutItem>
         <Shell.ItemTemplate>
             <DataTemplate>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="عربي" />
-                    <Label Text="English" />
-                    <Label Text="French" />
+                <StackLayout Background="red" Orientation="Vertical">
+                    <Button Text="عربي" />
+                    <Button Text="English" />
+                    <Button Text="French" />
                 </StackLayout>
             </DataTemplate>
         </Shell.ItemTemplate>
-    </ShellContent>-->
-
+    </FlyoutItem>-->
 </sharedTransitions:SharedTransitionShell>
