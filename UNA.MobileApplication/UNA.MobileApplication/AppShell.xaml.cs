@@ -66,6 +66,30 @@ namespace UNA.MobileApplication
                     lstCategory.Items.Add(shell_section);
                 }
             }
+            //-------
+            ShellSection langShell = new ShellSection
+            {
+                Title = "عربي",
+                Icon = "tab_about.png",
+            };
+            langShell.Items.Add(new ShellContent() { Content = new HomePageList() });
+            lstLang.Items.Add(langShell);
+
+            ShellSection langShell2 = new ShellSection
+            {
+                Title = "English",
+                Icon = "tab_about.png",
+            };
+            langShell2.Items.Add(new ShellContent() { Content = new HomePageList() });
+            lstLang.Items.Add(langShell2);
+
+            ShellSection langShell3 = new ShellSection
+            {
+                Title = "French",
+                Icon = "tab_about.png",
+            };
+            langShell3.Items.Add(new ShellContent() { Content = new HomePageList() });
+            lstLang.Items.Add(langShell3);
         }
     }
 }

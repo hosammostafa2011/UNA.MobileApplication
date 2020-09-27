@@ -116,6 +116,8 @@
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
+
+
     <FlyoutItem
         x:Name="lstCategory"
         Title="UNA"
@@ -145,9 +147,44 @@
             Icon="tab_about.png"
             Route="HomePageList" />
     </FlyoutItem>
+    <FlyoutItem
+        x:Name="lstLang"
+        Title="UNA"
+        FlyoutDisplayOptions="AsSingleItem">
+        <Shell.ItemTemplate>
+            <DataTemplate>
+
+                <CarouselView>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Label
+                                FontAttributes="Italic"
+                                Text="{Binding Title}"
+                                VerticalTextAlignment="Center" />
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+            </DataTemplate>
+        </Shell.ItemTemplate>
+    </FlyoutItem>
+    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" />
     <ShellContent
         Title=" تقارير وحوارات"
         ContentTemplate="{DataTemplate local:ReportPage}"
         Icon="tab_about.png"
         Route="ReportPage" />
+
+    <!--<ShellContent>
+        <Shell.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="عربي" />
+                    <Label Text="English" />
+                    <Label Text="French" />
+                </StackLayout>
+            </DataTemplate>
+        </Shell.ItemTemplate>
+    </ShellContent>-->
+
 </sharedTransitions:SharedTransitionShell>
