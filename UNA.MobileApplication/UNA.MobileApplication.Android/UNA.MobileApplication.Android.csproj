@@ -96,7 +96,9 @@
     <AndroidAsset Include="Assets\InterBold.ttf" />
     <AndroidAsset Include="Assets\InterLight.ttf" />
     <AndroidAsset Include="Assets\InterMedium.ttf" />
-    <EmbeddedResource Include="Assets\DroidKufiBold.ttf" />
+    <AndroidAsset Include="Assets\DroidKufiBold.ttf" />
+    <AndroidAsset Include="Assets\ArabotoLight.ttf" />
+    <AndroidAsset Include="Assets\DroidKufiRegular.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

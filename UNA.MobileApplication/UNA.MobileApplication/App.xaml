@@ -40,21 +40,29 @@
                 <On Platform="Android" Value="InterMedium.ttf#Medium" />
                 <On Platform="iOS" Value="Inter-Medium" />
             </OnPlatform>
+            <OnPlatform x:Key="ArabotoLight" x:TypeArguments="x:String">
+                <On Platform="Android" Value="ArabotoLight.ttf#Light" />
+                <On Platform="iOS" Value="ArabotoLight" />
+            </OnPlatform>
 
             <OnPlatform x:Key="InterBold" x:TypeArguments="x:String">
                 <On Platform="Android" Value="InterBold.ttf#Bold" />
                 <On Platform="iOS" Value="Inter-Bold" />
             </OnPlatform>
             <OnPlatform x:Key="DroidKufiBold" x:TypeArguments="x:String">
-                <On Platform="Android" Value="DroidKufiBold.ttf" />
+                <On Platform="Android" Value="DroidKufiBold.ttf#Bold" />
                 <On Platform="iOS" Value="DroidKufiBold" />
+            </OnPlatform>
+            <OnPlatform x:Key="DroidKufiRegular" x:TypeArguments="x:String">
+                <On Platform="Android" Value="DroidKufiRegular.ttf#Regular" />
+                <On Platform="iOS" Value="DroidKufiRegular" />
             </OnPlatform>
             <OnPlatform x:Key="InterLight" x:TypeArguments="x:String">
                 <On Platform="Android" Value="InterLight.ttf#Light" />
                 <On Platform="iOS" Value="Inter-Light" />
             </OnPlatform>
-            <!--<Style TargetType="Label">
-                <Setter Property="FontFamily" Value="{StaticResource InterLight}" />
+            <!--<Style x:Key="lblTitle">
+                <Setter Property="FontFamily" Value="{StaticResource DroidKufiRegular}" />
             </Style>-->
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="{StaticResource DroidKufiBold}" />

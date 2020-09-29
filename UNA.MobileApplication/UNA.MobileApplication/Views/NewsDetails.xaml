@@ -64,7 +64,7 @@
                                     <Label
                                         x:Name="lblTitle"
                                         Margin="10,0,0,0"
-                                        FontFamily="DroidKufiBold"
+                                        FontFamily="{StaticResource DroidKufiRegular}"
                                         FontSize="Large"
                                         HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Start"
@@ -73,7 +73,7 @@
                                     <Label
                                         Grid.Row="1"
                                         Margin="10,0,0,10"
-                                        FontFamily="DroidKufiBold"
+                                        FontFamily="{StaticResource DroidKufiRegular}"
                                         FontSize="Small"
                                         Text="{Binding SelectedNews.Source_Tag}"
                                         TextColor="{DynamicResource ThirdColor}" />
@@ -94,8 +94,7 @@
                                     <Label
                                         Grid.Row="0"
                                         Margin="10"
-                                        FontFamily="DroidKufiBold"
-                                        FontSize="Medium"
+                                        FontFamily="{StaticResource DroidKufiRegular}"
                                         HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Start"
                                         Text="{Binding SelectedNews.Details}"
