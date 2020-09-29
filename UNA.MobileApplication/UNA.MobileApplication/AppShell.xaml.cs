@@ -45,8 +45,8 @@ namespace UNA.MobileApplication
             {
                 await new BaseViewModel().RunSafe(LoadCategory(), true);
             });
-            Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
-            Routing.RegisterRoute(nameof(ReportPage), typeof(ReportPage));
+            //Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
+            //Routing.RegisterRoute(nameof(ReportPage), typeof(ReportPage));
         }
 
         private async Task LoadCategory()
@@ -73,7 +73,11 @@ namespace UNA.MobileApplication
                         Title = objCATEGORY.CategoryName,
                         Icon = "tab_about.png",
                     };
-                    if (objCATEGORY.Category_ID == "1100")
+                    if (objCATEGORY.Category_ID == "0")
+                        shell_section.Items.Add(new ShellContent() { Content = new HomePageList() });
+                    else if (objCATEGORY.Category_ID == "1000")
+                        shell_section.Items.Add(new ShellContent() { Content = new ReportPage() });
+                    else if (objCATEGORY.Category_ID == "1100")
                         shell_section.Items.Add(new ShellContent() { Content = new PhotoAlbum() });
                     else if (objCATEGORY.Category_ID == "1200")
                         shell_section.Items.Add(new ShellContent() { Content = new VideoAlbum() });
@@ -122,7 +126,7 @@ namespace UNA.MobileApplication
         {
             CrossSecureStorage.Current.SetValue("Language", "2");
             HelperManger.ShowToast("The language of the application has been changed to English");
-            myshell.FlowDirection = FlowDirection.LeftToRight;
+            //myshell.FlowDirection = FlowDirection.LeftToRight;
             (Application.Current).MainPage = new AppShell();
         }
 
@@ -130,7 +134,7 @@ namespace UNA.MobileApplication
         {
             CrossSecureStorage.Current.SetValue("Language", "3");
             HelperManger.ShowToast("La langue de l’application a été modifiée pour Français");
-            myshell.FlowDirection = FlowDirection.LeftToRight;
+            //myshell.FlowDirection = FlowDirection.LeftToRight;
             (Application.Current).MainPage = new AppShell();
         }
     }
