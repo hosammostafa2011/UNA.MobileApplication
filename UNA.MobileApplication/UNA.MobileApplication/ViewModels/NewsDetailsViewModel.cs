@@ -4,6 +4,7 @@ using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -27,8 +28,29 @@ namespace UNA.MobileApplication.ViewModels
             SelectedNews = item;
             if (string.IsNullOrEmpty(item.Details))
                 LoadDetailsCommand.Execute(null);
+            SelectedNews.FavouriteImage = GetFavouriteImage(item.News_ID);
+            NotifyPropertyChanged(nameof(SelectedNews));
         }
-
+        private string GetFavouriteImage(string pNews_ID)
+        {
+            if (CrossSecureStorage.Current.HasKey("FavouriteList"))
+            {
+                string strFavouriteList = CrossSecureStorage.Current.GetValue("FavouriteList");
+                List<string> FavouriteList = strFavouriteList.Split(',').ToList();
+                if (FavouriteList.Contains(pNews_ID))
+                {
+                    return "star_sel.png";
+                }
+                else
+                {
+                    return "star.png";
+                }
+            }
+            else
+            {
+                return "star.png";
+            }
+        }
         private async Task ExecuteLoadDetailsCommandAsync(NEWS objNEWS)
         {
             try
