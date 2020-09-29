@@ -388,4 +388,31 @@
   <ItemGroup>
     <BundleResource Include="Resources\splash.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sa%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sa%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fa%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fa%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\en%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\en%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\en.png" />
+  </ItemGroup>
 </Project>

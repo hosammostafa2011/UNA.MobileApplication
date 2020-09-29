@@ -1,5 +1,6 @@
 ﻿using Helper;
 using Newtonsoft.Json;
+using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +11,6 @@ namespace UNA.MobileApplication.ViewModels
 {
     public class PhotoAlbumDetailsViewModel : BaseViewModel
     {
-
         private ObservableCollection<PHOTO_ALBUM> _PhotoAlbumDetails;
 
         public ObservableCollection<PHOTO_ALBUM> obsCollectionPHOTO_ALBUM
@@ -35,7 +35,14 @@ namespace UNA.MobileApplication.ViewModels
             IsBusy = true;
             try
             {
-                _REQUEST.LANGUAGE = "1";
+                try
+                {
+                    _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                }
+                catch (Exception)
+                {
+                    _REQUEST.LANGUAGE = "1";
+                }
                 _REQUEST.USER_TOKEN = "Aa159357";
                 _REQUEST.ROW_COUNT = "50";
                 _REQUEST.JSON = JsonConvert.SerializeObject(objPHOTO_ALBUM);
@@ -56,6 +63,5 @@ namespace UNA.MobileApplication.ViewModels
                 IsBusy = false;
             }
         }
-
     }
 }

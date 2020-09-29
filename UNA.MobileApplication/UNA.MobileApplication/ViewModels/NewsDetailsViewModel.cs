@@ -1,5 +1,6 @@
 ﻿using Helper;
 using Newtonsoft.Json;
+using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,13 +12,15 @@ namespace UNA.MobileApplication.ViewModels
     public class NewsDetailsViewModel : BaseViewModel
     {
         private NEWS _selectedNews;
-        private int LANGUAGE { get; set; } = 1;
+
         public NEWS SelectedNews
         {
             get { return _selectedNews; }
             set => SetProperty(ref _selectedNews, value);
         }
+
         public Command LoadDetailsCommand { get; set; }
+
         public NewsDetailsViewModel(NEWS item = null)
         {
             LoadDetailsCommand = new Command(async () => await RunSafe(ExecuteLoadDetailsCommandAsync(item), true));
@@ -25,9 +28,17 @@ namespace UNA.MobileApplication.ViewModels
             if (string.IsNullOrEmpty(item.Details))
                 LoadDetailsCommand.Execute(null);
         }
+
         private async Task ExecuteLoadDetailsCommandAsync(NEWS objNEWS)
         {
-            _REQUEST.LANGUAGE = Convert.ToString(LANGUAGE);
+            try
+            {
+                _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+            }
+            catch (Exception)
+            {
+                _REQUEST.LANGUAGE = "1";
+            }
             _REQUEST.USER_TOKEN = "Aa159357";
             _REQUEST.JSON = JsonConvert.SerializeObject(objNEWS);
             var result = await ApiManager.GET_NEWS_DETAIL(_REQUEST);
