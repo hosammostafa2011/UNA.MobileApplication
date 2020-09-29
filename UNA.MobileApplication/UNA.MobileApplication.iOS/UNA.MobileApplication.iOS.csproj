@@ -76,6 +76,7 @@
     <BundleResource Include="Resources\FontAwesome5Solid.otf" />
     <BundleResource Include="Resources\InterBold.ttf" />
     <BundleResource Include="Resources\InterLight.ttf" />
+    <BundleResource Include="Resources\DroidKufi-Bold.ttf" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png">

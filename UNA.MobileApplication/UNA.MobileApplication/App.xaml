@@ -45,13 +45,19 @@
                 <On Platform="Android" Value="InterBold.ttf#Bold" />
                 <On Platform="iOS" Value="Inter-Bold" />
             </OnPlatform>
-
+            <OnPlatform x:Key="DroidKufiBold" x:TypeArguments="x:String">
+                <On Platform="Android" Value="DroidKufiBold.ttf" />
+                <On Platform="iOS" Value="DroidKufiBold" />
+            </OnPlatform>
             <OnPlatform x:Key="InterLight" x:TypeArguments="x:String">
                 <On Platform="Android" Value="InterLight.ttf#Light" />
                 <On Platform="iOS" Value="Inter-Light" />
             </OnPlatform>
-            <Style TargetType="Label">
+            <!--<Style TargetType="Label">
                 <Setter Property="FontFamily" Value="{StaticResource InterLight}" />
+            </Style>-->
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource DroidKufiBold}" />
             </Style>
             <Style TargetType="Button">
                 <Setter Property="FontFamily" Value="{StaticResource InterLight}" />

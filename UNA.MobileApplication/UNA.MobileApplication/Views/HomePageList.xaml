@@ -46,7 +46,7 @@
                                         </Grid.RowDefinitions>
                                         <StackLayout Grid.Row="0" HeightRequest="70">
                                             <Label
-                                                FontFamily="{StaticResource InterBold}"
+                                                FontFamily="{StaticResource DroidKufiBold}"
                                                 FontSize="Small"
                                                 LineBreakMode="WordWrap"
                                                 Text="{Binding Title}"
@@ -103,7 +103,7 @@
                         <StackLayout>
                             <Label
                                 Margin="0,20,0,0"
-                                FontFamily="{StaticResource InterBold}"
+                                FontFamily="{StaticResource DroidKufiBold}"
                                 FontSize="Small"
                                 LineBreakMode="WordWrap"
                                 Text="{Binding Title}"
@@ -136,7 +136,7 @@
                             <StackLayout>
                                 <Label
                                     Margin="0,20,0,0"
-                                    FontFamily="{StaticResource InterBold}"
+                                    FontFamily="{StaticResource DroidKufiBold}"
                                     FontSize="Small"
                                     LineBreakMode="WordWrap"
                                     Text="{Binding Title}"

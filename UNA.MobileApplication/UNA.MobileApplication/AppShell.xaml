@@ -216,7 +216,7 @@
                         Source="{Binding FlyoutIcon}" />
                     <Label
                         Grid.Column="1"
-                        FontAttributes="Italic"
+                        FontFamily="DroidKufi-Bold"
                         Text="{Binding Title}"
                         VerticalTextAlignment="Center" />
                 </Grid>
