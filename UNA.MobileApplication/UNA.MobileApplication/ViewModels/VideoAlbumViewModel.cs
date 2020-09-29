@@ -1,6 +1,7 @@
 ﻿using Helper;
 using Helper.Model;
 using Newtonsoft.Json;
+using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,7 +12,6 @@ namespace UNA.MobileApplication.ViewModels
 {
     public class VideoAlbumViewModel : BaseViewModel
     {
-
         private ObservableCollection<VIDEO> _video;
 
         public ObservableCollection<VIDEO> obsCollectionVIDEO
@@ -35,7 +35,14 @@ namespace UNA.MobileApplication.ViewModels
             IsBusy = true;
             try
             {
-                _REQUEST.LANGUAGE = "1";
+                try
+                {
+                    _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                }
+                catch (Exception)
+                {
+                    _REQUEST.LANGUAGE = "1";
+                }
                 _REQUEST.USER_TOKEN = "Aa159357";
                 _REQUEST.ROW_COUNT = "50";
                 var result = await ApiManager.GET_VIDEO(_REQUEST);
@@ -55,6 +62,5 @@ namespace UNA.MobileApplication.ViewModels
                 IsBusy = false;
             }
         }
-
     }
 }

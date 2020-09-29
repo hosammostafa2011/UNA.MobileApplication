@@ -2,6 +2,7 @@
 using Model.Mobile;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Plugin.SecureStorage;
 using Plugin.SharedTransitions;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,16 @@ namespace UNA.MobileApplication
         public AppShell()
         {
             InitializeComponent();
+            if (!CrossSecureStorage.Current.HasKey("Language"))
+            {
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
+
+            if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                myshell.FlowDirection = FlowDirection.RightToLeft;
+            else
+                myshell.FlowDirection = FlowDirection.LeftToRight;
+
             /*Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));*/
@@ -41,7 +52,14 @@ namespace UNA.MobileApplication
         private async Task LoadCategory()
         {
             BaseViewModel obj = new BaseViewModel();
-            obj._REQUEST.LANGUAGE = "1";
+            try
+            {
+                obj._REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+            }
+            catch (Exception)
+            {
+                obj._REQUEST.LANGUAGE = "1";
+            }
             obj._REQUEST.USER_TOKEN = "Aa@159357";
             var result = await obj.ApiManager.GET_CATEGORY(obj._REQUEST);
             obj._RESPONSE = HelperManger.CastToResponse(result);
@@ -55,7 +73,7 @@ namespace UNA.MobileApplication
                         Title = objCATEGORY.CategoryName,
                         Icon = "tab_about.png",
                     };
-                    if(objCATEGORY.Category_ID== "1100")
+                    if (objCATEGORY.Category_ID == "1100")
                         shell_section.Items.Add(new ShellContent() { Content = new PhotoAlbum() });
                     else if (objCATEGORY.Category_ID == "1200")
                         shell_section.Items.Add(new ShellContent() { Content = new VideoAlbum() });
@@ -90,6 +108,30 @@ namespace UNA.MobileApplication
             //};
             //langShell3.Items.Add(new ShellContent() { Content = new HomePageList() });
             //lstLang.Items.Add(langShell3);
+        }
+
+        private void Arabic_Tapped(object sender, EventArgs e)
+        {
+            CrossSecureStorage.Current.SetValue("Language", "1");
+            HelperManger.ShowToast("تم تغيير لغة التطبيق إلى العربية");
+            myshell.FlowDirection = FlowDirection.RightToLeft;
+            (Application.Current).MainPage = new AppShell();
+        }
+
+        private void English_Tapped(object sender, EventArgs e)
+        {
+            CrossSecureStorage.Current.SetValue("Language", "2");
+            HelperManger.ShowToast("The language of the application has been changed to English");
+            myshell.FlowDirection = FlowDirection.LeftToRight;
+            (Application.Current).MainPage = new AppShell();
+        }
+
+        private void French_Tapped(object sender, EventArgs e)
+        {
+            CrossSecureStorage.Current.SetValue("Language", "3");
+            HelperManger.ShowToast("La langue de l’application a été modifiée pour Français");
+            myshell.FlowDirection = FlowDirection.LeftToRight;
+            (Application.Current).MainPage = new AppShell();
         }
     }
 }

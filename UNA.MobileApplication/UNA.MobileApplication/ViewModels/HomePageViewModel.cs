@@ -26,7 +26,9 @@ namespace UNA.MobileApplication.ViewModels
             get => _selectedNews;
             set => SetProperty(ref _selectedNews, value);
         }
+
         private ObservableCollection<NEWS> _news;
+
         public ObservableCollection<NEWS> obsCollectionNews
         {
             get => _news;
@@ -44,6 +46,7 @@ namespace UNA.MobileApplication.ViewModels
             Device.BeginInvokeOnMainThread(async () => await RunSafe(ExecuteLoadItemsCommandAsync(), true));
             //LoadHomeNewsCommand = new Command(async () => await RunSafe(ExecuteLoadItemsCommandAsync(), true));
         }
+
         private async Task ExecuteLoadItemsCommandAsync()
         {
             if (IsBusy)
@@ -51,7 +54,14 @@ namespace UNA.MobileApplication.ViewModels
             IsBusy = true;
             try
             {
-                _REQUEST.LANGUAGE = "1";
+                try
+                {
+                    _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                }
+                catch (Exception)
+                {
+                    _REQUEST.LANGUAGE = "1";
+                }
                 _REQUEST.USER_TOKEN = "Aa159357";
                 _REQUEST.ROW_COUNT = "10";
                 var result = await ApiManager.GET_LATEST_NEWS(_REQUEST);
@@ -79,6 +89,7 @@ namespace UNA.MobileApplication.ViewModels
                 IsBusy = false;
             }
         }
+
         private string GetFavouriteImage(string pNews_ID)
         {
             if (CrossSecureStorage.Current.HasKey("FavouriteList"))
