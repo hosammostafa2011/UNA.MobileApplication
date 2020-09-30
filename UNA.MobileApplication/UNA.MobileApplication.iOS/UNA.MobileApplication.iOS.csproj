@@ -77,7 +77,9 @@
     <BundleResource Include="Resources\InterBold.ttf" />
     <BundleResource Include="Resources\InterLight.ttf" />
     <BundleResource Include="Resources\DroidKufi-Bold.ttf" />
-    <BundleResource Include="Resources\HelveticaNeue.ttf" />
+    <EmbeddedResource Include="Resources\HelveticaNeue.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <BundleResource Include="Resources\HelveticaW23.ttf" />
   </ItemGroup>
   <ItemGroup>

@@ -77,4 +77,14 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Resources\" />
+		<Folder Include="Resources\Fonts\" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="Resources\Fonts\HelveticaNeue.ttf" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Fonts\HelveticaNeue.ttf" />
+	</ItemGroup>
 </Project>

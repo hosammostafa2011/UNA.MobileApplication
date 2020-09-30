@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using UNA.MobileApplication.Services;
 using UNA.MobileApplication.Views;
-
+[assembly: ExportFont("HelveticaNeue.ttf", Alias = "HelveticaNeue")]
 namespace UNA.MobileApplication
 {
     public partial class App : Application
