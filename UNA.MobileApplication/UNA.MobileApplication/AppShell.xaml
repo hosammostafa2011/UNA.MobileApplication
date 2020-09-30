@@ -29,6 +29,7 @@
 
             <Style Class="FlyoutItemLabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="{StaticResource HelveticaNeue}" />
             </Style>
             <Style
                 ApplyToDerivedTypes="True"
@@ -42,6 +43,7 @@
                                 <VisualState.Setters>
                                     <Setter Property="BackgroundColor" Value="White" />
                                     <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.FontFamily" Value="{StaticResource HelveticaNeue}" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Selected">
@@ -135,6 +137,7 @@
                             </Image>
                             <Label
                                 Grid.Column="1"
+                                FontFamily="{StaticResource HelveticaNeue}"
                                 HeightRequest="30"
                                 HorizontalTextAlignment="Start"
                                 Text="العربية"
@@ -161,6 +164,7 @@
                             </Image>
                             <Label
                                 Grid.Column="1"
+                                FontFamily="{StaticResource HelveticaNeue}"
                                 HeightRequest="30"
                                 HorizontalTextAlignment="Start"
                                 Text="English"
@@ -187,6 +191,7 @@
                             </Image>
                             <Label
                                 Grid.Column="1"
+                                FontFamily="{StaticResource HelveticaNeue}"
                                 HeightRequest="30"
                                 HorizontalTextAlignment="Start"
                                 Text="Française"
@@ -219,7 +224,7 @@
                         Source="{Binding FlyoutIcon}" />
                     <Label
                         Grid.Column="1"
-                        FontFamily="{StaticResource DroidKufiRegular}"
+                        FontFamily="{StaticResource HelveticaNeue}"
                         Text="{Binding Title}"
                         VerticalTextAlignment="Center" />
                 </Grid>

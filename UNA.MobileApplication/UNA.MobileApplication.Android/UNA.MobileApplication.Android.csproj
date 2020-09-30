@@ -99,6 +99,8 @@
     <AndroidAsset Include="Assets\DroidKufiBold.ttf" />
     <AndroidAsset Include="Assets\ArabotoLight.ttf" />
     <AndroidAsset Include="Assets\DroidKufiRegular.ttf" />
+    <AndroidAsset Include="Assets\HelveticaW23.ttf" />
+    <AndroidAsset Include="Assets\HelveticaNeue.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

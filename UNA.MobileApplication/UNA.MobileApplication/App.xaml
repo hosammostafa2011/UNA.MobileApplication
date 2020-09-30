@@ -57,6 +57,10 @@
                 <On Platform="Android" Value="DroidKufiRegular.ttf#Regular" />
                 <On Platform="iOS" Value="DroidKufiRegular" />
             </OnPlatform>
+            <OnPlatform x:Key="HelveticaNeue" x:TypeArguments="x:String">
+                <On Platform="Android" Value="HelveticaNeue.ttf#Regular" />
+                <On Platform="iOS" Value="HelveticaNeue" />
+            </OnPlatform>
             <OnPlatform x:Key="InterLight" x:TypeArguments="x:String">
                 <On Platform="Android" Value="InterLight.ttf#Light" />
                 <On Platform="iOS" Value="Inter-Light" />

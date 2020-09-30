@@ -62,6 +62,7 @@
                                     <Label
                                         Grid.Row="0"
                                         Grid.ColumnSpan="3"
+                                        FontFamily="{StaticResource HelveticaNeue}"
                                         LineBreakMode="NoWrap"
                                         Text="{Binding Title}"
                                         TextColor="#FFFFFF" />
