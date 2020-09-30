@@ -4,7 +4,7 @@
 <dict>
 <key>UIAppFonts</key>
 <array>
-    <string>DroidKufi-Bold.ttf</string>
+    <string>HelveticaNeue.ttf</string>
 </array>
 
 	<key>UIDeviceFamily</key>
@@ -37,6 +37,8 @@
 	<string>UNA.MobileApplication</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>XSAppFontAssets</key>
+	<string>HelveticaNeue.ttf</string>
 	<key>CFBundleDisplayName</key>
 	<string>UNA-OIC (يونا)</string>
 </dict>
