@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.SecureStorage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,22 @@ namespace UNA.MobileApplication.Views
         public ReportPage()
         {
             InitializeComponent();
-            BindingContext = _newsListViewModel = new NewsListViewModel("8000");
+            string _title = string.Empty;
+            switch (CrossSecureStorage.Current.GetValue("Language"))
+            {
+                case "1":
+                    _title = "تقارير";
+                    break;
+
+                case "2":
+                    _title = "Report";
+                    break;
+
+                case "3":
+                    Title = "Rapports";
+                    break;
+            }
+            BindingContext = _newsListViewModel = new NewsListViewModel("8000", _title);
         }
 
         protected override void OnAppearing()
@@ -41,13 +57,11 @@ namespace UNA.MobileApplication.Views
             // We can set the SelectedGroup both in binding or using the static method
             // SharedTransitionShell.SetTransitionSelectedGroup(this, item.Id.ToString());
 
-
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
 
             _newsListViewModel.SelectedNews = item;
             await Navigation.PushAsync(new NewsDetails(new NewsDetailsViewModel(item)));//for shared
-
         }
 
         private void ItemsListView_ItemAppearing(object sender, ItemVisibilityEventArgs e)

@@ -17,11 +17,11 @@ namespace UNA.MobileApplication.Views
         private readonly NewsListViewModel _newsListViewModel;
         public string CategoryId { get; set; }
 
-        public NewsList(string categoryID)
+        public NewsList(string categoryID, string categoryName)
         {
             InitializeComponent();
             CategoryId = categoryID;
-            BindingContext = _newsListViewModel = new NewsListViewModel(CategoryId);
+            BindingContext = _newsListViewModel = new NewsListViewModel(CategoryId, categoryName);
         }
 
         protected override void OnAppearing()

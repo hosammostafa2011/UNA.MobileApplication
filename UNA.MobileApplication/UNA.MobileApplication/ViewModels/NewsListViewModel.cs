@@ -22,14 +22,24 @@ namespace UNA.MobileApplication.ViewModels
         private int TOTAL_MAIL { get; set; } = 100000;
 
         public string CATEGORY_ID { get; set; }
+        public string CATEGORY_NAME { get; set; }
 
-        public NewsListViewModel(string categoryID)
+        public NewsListViewModel(string categoryID, string categoryName)
         {
             CATEGORY_ID = categoryID;
+            CATEGORY_NAME = categoryName;
             obsCollectionNews = new ObservableCollection<NEWS>();
             RegiesterMessageCenter();
             LoadNewsCommand = new Command(async () =>
-            await RunSafe(ExecuteLoadItemsCommandAsync(categoryID, false, false), true));
+            await RunSafe(ExecuteLoadItemsCommandAsync(categoryID, categoryName, false, false), true));
+        }
+
+        private string _TitleName;
+
+        public string TitleName
+        {
+            get { return _TitleName; }
+            set => SetProperty(ref _TitleName, value);
         }
 
         public NEWS SelectedNews
@@ -48,8 +58,11 @@ namespace UNA.MobileApplication.ViewModels
 
         public Command LoadNewsCommand { get; set; }
 
-        private async Task ExecuteLoadItemsCommandAsync(string categoryID, bool isRefresh, bool ClearList)
+        private async Task ExecuteLoadItemsCommandAsync(string categoryID, string categoryName, bool isRefresh, bool ClearList)
         {
+            TitleName = categoryName;
+            NotifyPropertyChanged(nameof(TitleName));
+
             if (IsBusy)
                 return;
             IsBusy = true;
@@ -139,7 +152,7 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     IsRefreshing = true;
 
-                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, true, true), false);
+                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, CATEGORY_NAME, true, true), false);
 
                     IsRefreshing = false;
                     NotifyPropertyChanged();
@@ -183,7 +196,7 @@ namespace UNA.MobileApplication.ViewModels
                 else
                 {
                     CURRENT_PAGE = CURRENT_PAGE + 1;
-                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, false, false), true);
+                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, CATEGORY_NAME, false, false), true);
                     //await GetInboxData(false);
                 }
             });

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.SecureStorage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,22 @@ namespace UNA.MobileApplication.Views
         {
             InitializeComponent();
             CategoryId = categoryID;
-            BindingContext = _newsListViewModel = new NewsListViewModel("7000");
+            string _title = string.Empty;
+            switch (CrossSecureStorage.Current.GetValue("Language"))
+            {
+                case "1":
+                    _title = "المفضلة";
+                    break;
+
+                case "2":
+                    _title = "Favourite";
+                    break;
+
+                case "3":
+                    Title = "Préférée";
+                    break;
+            }
+            BindingContext = _newsListViewModel = new NewsListViewModel("7000", _title);
         }
 
         protected override void OnAppearing()
