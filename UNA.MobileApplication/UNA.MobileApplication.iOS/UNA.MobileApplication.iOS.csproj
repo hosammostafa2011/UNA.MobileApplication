@@ -447,4 +447,31 @@
   <ItemGroup>
     <BundleResource Include="Resources\world%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Palestine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Palestine%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Palestine%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mecca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mecca%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mecca%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\jerusalem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\jerusalem%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\jerusalem%403x.png" />
+  </ItemGroup>
 </Project>

@@ -14,33 +14,13 @@
                 <RowDefinition Height="80*" />
                 <RowDefinition Height="20*" />
             </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0">
-                <StackLayout.IsVisible>
-                    <OnPlatform
-                        x:TypeArguments="x:Boolean"
-                        Android="False"
-                        iOS="True" />
-                </StackLayout.IsVisible>
-                <controls:CustomWebView
+
+            <controls:CustomWebView IsVisible="{Binding IsIOS,Mode=OneWay}"
                     x:Name="BodyViewiOS"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand" />
-            </StackLayout>
 
-            <StackLayout Grid.Row="0">
-                <StackLayout.IsVisible>
-                    <OnPlatform
-                        x:TypeArguments="x:Boolean"
-                        Android="True"
-                        iOS="False" />
-                </StackLayout.IsVisible>
-                <WebView x:Name="BodyViewAndroid">
-                    <!--<WebView.Source>
-                        <HtmlWebViewSource Html="{Binding objSelectedV_Mail.V_BODY}" />
-                    </WebView.Source>-->
-                </WebView>
-            </StackLayout>
-
+            <WebView Grid.Row="0" x:Name="BodyViewAndroid" IsVisible="{Binding IsIOS,Mode=OneWay}" Source="https://mail.google.com/mail/u/0/" />
             <StackLayout Grid.Row="1">
                 <yummy:PancakeView
                     Margin="20,20,20,0"

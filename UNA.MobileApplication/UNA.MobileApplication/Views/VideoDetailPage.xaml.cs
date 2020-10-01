@@ -13,6 +13,7 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VideoDetailPage : ContentPage
     {
+        public bool IsIOS { get; set; }
         public VideoDetailPage(VIDEO vVIDEO)
         {
             InitializeComponent();
@@ -23,10 +24,12 @@ namespace UNA.MobileApplication.Views
                     </iframe>", vVIDEO.Video_Code);
             if (Device.RuntimePlatform == Device.iOS)
             {
+                IsIOS = true;
                 BodyViewiOS.Html = _content;
             }
             else if (Device.RuntimePlatform == Device.Android)
             {
+                IsIOS = false;
                 var html = new HtmlWebViewSource
                 {
                     Html = _content
