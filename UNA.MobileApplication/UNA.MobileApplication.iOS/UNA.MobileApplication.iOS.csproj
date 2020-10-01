@@ -420,4 +420,31 @@
   <ItemGroup>
     <BundleResource Include="Resources\en.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\more%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\more%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\world%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\world%403x.png" />
+  </ItemGroup>
 </Project>

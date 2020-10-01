@@ -10,7 +10,6 @@
     x:Name="myshell"
     Title="UNA.MobileApplication"
     ios:Page.UseSafeArea="true">
-
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
