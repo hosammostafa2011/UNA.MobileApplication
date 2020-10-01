@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Helper.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,12 +15,14 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VideoAlbum : ContentPage
     {
-        VideoAlbumViewModel videoAlbumViewModel = null;
+        private VideoAlbumViewModel videoAlbumViewModel = null;
+
         public VideoAlbum()
         {
             InitializeComponent();
             BindingContext = videoAlbumViewModel = new VideoAlbumViewModel();
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -28,6 +31,19 @@ namespace UNA.MobileApplication.Views
             Padding = safeInsets;
             if (videoAlbumViewModel.obsCollectionVIDEO.Count == 0)
                 videoAlbumViewModel.LoadVIDEOCommand.Execute(null);
+        }
+
+        [Obsolete]
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            var item = args.SelectedItem as VIDEO;
+            if (item == null)
+                return;
+            ItemsListView.SelectedItem = null;
+            //open in browser
+            //Device.OpenUri(new Uri(item.Video_Url));
+
+            await Navigation.PushAsync(new VideoDetailPage(item.Video_Url));
         }
     }
 }

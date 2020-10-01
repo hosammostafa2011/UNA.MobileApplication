@@ -13,8 +13,10 @@
                 Source="ColoredBackground"
                 VerticalOptions="Fill" />
             <ListView
+                x:Name="ItemsListView"
                 BackgroundColor="Transparent"
-                ItemsSource="{Binding obsCollectionPHOTO_ALBUM}"
+                ItemSelected="OnItemSelected"
+                ItemsSource="{Binding obsCollectionVIDEO}"
                 RowHeight="200"
                 SeparatorVisibility="None">
                 <ListView.ItemTemplate>
@@ -29,11 +31,11 @@
                                     <RowDefinition Height="AUTO" />
                                 </Grid.RowDefinitions>
                                 <yummy:PancakeView Grid.RowSpan="2" CornerRadius="10">
-                                    <WebView
+                                    <ffimageloading:CachedImage
+                                        Aspect="AspectFill"
                                         HeightRequest="100"
-                                        HorizontalOptions="Fill"
-                                        Source="{Binding Video_Url}"
-                                        VerticalOptions="Fill" />
+                                        Source="{Binding Thumbnail_Image_Path}"
+                                        WidthRequest="150" />
                                 </yummy:PancakeView>
                                 <Image
                                     Grid.RowSpan="2"
