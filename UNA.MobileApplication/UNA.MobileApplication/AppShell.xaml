@@ -222,7 +222,6 @@
                         HeightRequest="45"
                         Source="{Binding FlyoutIcon}" />
                     <Label
-                        Grid.Column="1"
                         FontFamily="{StaticResource HelveticaNeue}"
                         Text="{Binding Title}"
                         VerticalTextAlignment="Center" />
