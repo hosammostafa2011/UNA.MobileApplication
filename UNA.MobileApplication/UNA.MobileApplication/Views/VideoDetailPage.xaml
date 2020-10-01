@@ -14,11 +14,33 @@
                 <RowDefinition Height="80*" />
                 <RowDefinition Height="20*" />
             </Grid.RowDefinitions>
-            <controls:CustomWebView
-                x:Name="BodyView"
-                Grid.Row="0"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand" />
+            <StackLayout Grid.Row="0">
+                <StackLayout.IsVisible>
+                    <OnPlatform
+                        x:TypeArguments="x:Boolean"
+                        Android="False"
+                        iOS="True" />
+                </StackLayout.IsVisible>
+                <controls:CustomWebView
+                    x:Name="BodyViewiOS"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="0">
+                <StackLayout.IsVisible>
+                    <OnPlatform
+                        x:TypeArguments="x:Boolean"
+                        Android="True"
+                        iOS="False" />
+                </StackLayout.IsVisible>
+                <WebView x:Name="BodyViewAndroid">
+                    <!--<WebView.Source>
+                        <HtmlWebViewSource Html="{Binding objSelectedV_Mail.V_BODY}" />
+                    </WebView.Source>-->
+                </WebView>
+            </StackLayout>
+
             <StackLayout Grid.Row="1">
                 <yummy:PancakeView
                     Margin="20,20,20,0"

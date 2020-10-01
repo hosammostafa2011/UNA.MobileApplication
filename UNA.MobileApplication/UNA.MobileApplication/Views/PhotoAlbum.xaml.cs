@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.SecureStorage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,12 +15,28 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PhotoAlbum : ContentPage
     {
-        PhotoAlbumViewModel photoAlbumViewModel = null;
+        private PhotoAlbumViewModel photoAlbumViewModel = null;
+
         public PhotoAlbum()
         {
             InitializeComponent();
+            switch (CrossSecureStorage.Current.GetValue("Language"))
+            {
+                case "1":
+                    Title = "البوم الصور";
+                    break;
+
+                case "2":
+                    Title = "Photo Album";
+                    break;
+
+                case "3":
+                    Title = "Album Photo";
+                    break;
+            }
             BindingContext = photoAlbumViewModel = new PhotoAlbumViewModel();
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -43,7 +60,6 @@ namespace UNA.MobileApplication.Views
 
             //photoAlbumViewModel.SelectedNews = item;
             await Navigation.PushAsync(new PhotoAlbumDetails(new PhotoAlbumDetailsViewModel(item)));//for shared
-
         }
     }
 }

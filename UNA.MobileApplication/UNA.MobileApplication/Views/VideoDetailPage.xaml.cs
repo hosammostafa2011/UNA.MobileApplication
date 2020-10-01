@@ -16,11 +16,24 @@ namespace UNA.MobileApplication.Views
         public VideoDetailPage(VIDEO vVIDEO)
         {
             InitializeComponent();
-            BodyView.Html = string.Format(@"<iframe style='width:100%;height:100%;'
+            string _content = string.Format(@"<iframe style='width:100%;height:100%;'
                     src='https://www.youtube.com/embed/{0}?autoplay=1'
                     frameborder='0' allow='accelerometer; autoplay; clipboard-write;
                     encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
-                    </iframe>", vVIDEO.Video_Code, Application.Current.MainPage.Width);
+                    </iframe>", vVIDEO.Video_Code);
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                BodyViewiOS.Html = _content;
+            }
+            else if (Device.RuntimePlatform == Device.Android)
+            {
+                var html = new HtmlWebViewSource
+                {
+                    Html = _content
+                };
+                BodyViewAndroid.Source = html;
+            }
+
             lblTitle.Text = vVIDEO.Title;
         }
     }

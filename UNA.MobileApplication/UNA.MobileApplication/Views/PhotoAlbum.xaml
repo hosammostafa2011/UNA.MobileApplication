@@ -4,14 +4,15 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="{DynamicResource entryBackground}">
     <ContentPage.Content>
         <Grid>
-            <Image
+            <!--<Image
                 Aspect="Fill"
                 HorizontalOptions="Fill"
                 Source="ColoredBackground"
-                VerticalOptions="Fill" />
+                VerticalOptions="Fill" />-->
             <ListView
                 x:Name="ItemsListView"
                 BackgroundColor="Transparent"
