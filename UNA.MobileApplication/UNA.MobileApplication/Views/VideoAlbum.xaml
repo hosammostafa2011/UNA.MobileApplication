@@ -4,14 +4,16 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Name="frmVideo"
+    BackgroundColor="{DynamicResource entryBackground}">
     <ContentPage.Content>
         <Grid>
-            <Image
+            <!--<Image
                 Aspect="Fill"
                 HorizontalOptions="Fill"
-                Source="ColoredBackground"
-                VerticalOptions="Fill" />
+                Source="bar"
+                VerticalOptions="Fill" />-->
             <ListView
                 x:Name="ItemsListView"
                 BackgroundColor="Transparent"
@@ -23,7 +25,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <Grid
-                                Margin="10,5"
+                                Margin="10,10"
                                 ColumnSpacing="0"
                                 RowSpacing="5">
                                 <Grid.RowDefinitions>
@@ -49,42 +51,17 @@
                                     Margin="10"
                                     ColumnSpacing="10"
                                     RowSpacing="10">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="AUTO" />
-                                        <RowDefinition Height="25" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="25" />
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="AUTO" />
-                                    </Grid.ColumnDefinitions>
+
 
                                     <Label
                                         Grid.Row="0"
                                         Grid.ColumnSpan="3"
                                         FontFamily="{StaticResource HelveticaNeue}"
-                                        LineBreakMode="NoWrap"
+                                        LineBreakMode="TailTruncation"
                                         Text="{Binding Title}"
                                         TextColor="#FFFFFF" />
 
-                                    <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
-                                    <!--<Label
-                                        Grid.Row="1"
-                                        Grid.Column="1"
-                                        Style="{StaticResource HandleLabel}"
-                                        Text="{Binding Handle}"
-                                        VerticalOptions="Center" />-->
 
-                                    <!--<StackLayout
-                                        Grid.Row="1"
-                                        Grid.Column="2"
-                                        Orientation="Horizontal"
-                                        Spacing="5"
-                                        VerticalOptions="Center">
-                                        <Image Source="Eye" />
-                                        <Label Style="{StaticResource HandleLabel}" Text="{Binding ViewCount, StringFormat='{0:N0}'}" />
-                                        <Label Style="{StaticResource BodyLabel}" Text="views" />
-                                    </StackLayout>-->
                                 </Grid>
                             </Grid>
                         </ViewCell>

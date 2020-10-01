@@ -29,8 +29,10 @@ namespace UNA.MobileApplication.ViewModels
             if (string.IsNullOrEmpty(item.Details))
                 LoadDetailsCommand.Execute(null);
             SelectedNews.FavouriteImage = GetFavouriteImage(item.News_ID);
+
             NotifyPropertyChanged(nameof(SelectedNews));
         }
+
         private string GetFavouriteImage(string pNews_ID)
         {
             if (CrossSecureStorage.Current.HasKey("FavouriteList"))
@@ -51,6 +53,7 @@ namespace UNA.MobileApplication.ViewModels
                 return "star.png";
             }
         }
+
         private async Task ExecuteLoadDetailsCommandAsync(NEWS objNEWS)
         {
             try

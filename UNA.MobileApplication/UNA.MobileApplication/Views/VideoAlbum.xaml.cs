@@ -1,4 +1,5 @@
 ﻿using Helper.Model;
+using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,20 @@ namespace UNA.MobileApplication.Views
         {
             InitializeComponent();
             BindingContext = videoAlbumViewModel = new VideoAlbumViewModel();
+            switch (CrossSecureStorage.Current.GetValue("Language"))
+            {
+                case "1":
+                    Title = "المرئيات";
+                    break;
+
+                case "2":
+                    Title = "Media";
+                    break;
+
+                case "3":
+                    Title = "Médias";
+                    break;
+            }
         }
 
         protected override void OnAppearing()
@@ -43,7 +58,7 @@ namespace UNA.MobileApplication.Views
             //open in browser
             //Device.OpenUri(new Uri(item.Video_Url));
 
-            await Navigation.PushAsync(new VideoDetailPage(item.Video_Url));
+            await Navigation.PushAsync(new VideoDetailPage(item));
         }
     }
 }
