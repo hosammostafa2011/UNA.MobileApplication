@@ -71,7 +71,7 @@ namespace UNA.MobileApplication
                     ShellSection shell_section = new ShellSection
                     {
                         Title = objCATEGORY.CategoryName,
-                        Icon = "tab_about.png",
+                        Icon = string.IsNullOrEmpty(objCATEGORY.App_Menu_Ico) ? "world.png" : objCATEGORY.App_Menu_Ico,
                     };
                     if (objCATEGORY.Category_ID == "0")
                         shell_section.Items.Add(new ShellContent() { Content = new HomePageList() });
@@ -136,6 +136,12 @@ namespace UNA.MobileApplication
             HelperManger.ShowToast("La langue de l’application a été modifiée pour Français");
             //myshell.FlowDirection = FlowDirection.LeftToRight;
             (Application.Current).MainPage = new AppShell();
+        }
+
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            /*var dialog = new ActionView();//popup
+            await PopupNavigation.Instance.PushAsync(dialog);*/
         }
     }
 }
