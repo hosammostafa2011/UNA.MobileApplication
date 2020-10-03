@@ -110,7 +110,6 @@
                             </StackLayout>
                         </StackLayout>
                     </Grid>
-
                 </ViewCell>
             </DataTemplate>
             <DataTemplate x:Key="twoColumnViewTemplate">
@@ -178,19 +177,24 @@
                 TemplateTwo="{StaticResource twoColumnViewTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="more.png" Order="Primary" />
         <ToolbarItem
             x:Name="logo"
             IconImageSource="logo.png"
-            Order="Primary"
-            Priority="1" />
-        <!--<ToolbarItem
-            Clicked="ToolbarItem_Clicked"
-            IconImageSource="more.png"
-            Order="Primary"
-            Priority="2" />-->
-    </ContentPage.ToolbarItems>
+            Order="Secondary" />
+    </ContentPage.ToolbarItems>-->
+    <Shell.TitleView>
+        <StackLayout HeightRequest="10" VerticalOptions="CenterAndExpand">
+            <Image
+                Margin="50,0,0,0"
+                HeightRequest="40"
+                Source="logowhite.png" />
+        </StackLayout>
+    </Shell.TitleView>
+
     <ContentPage.Content>
+
         <StackLayout Padding="0" Spacing="20">
             <ListView
                 x:Name="ItemsListView"
@@ -464,7 +468,6 @@
                     VerticalOptions="Center">
                     <Label Text="جميع الحقوق محفوظة @ يونا" TextColor="{DynamicResource primaryColor}" />
                 </StackLayout>
-
             </Grid>
         </ScrollView>-->
     </ContentPage.Content>

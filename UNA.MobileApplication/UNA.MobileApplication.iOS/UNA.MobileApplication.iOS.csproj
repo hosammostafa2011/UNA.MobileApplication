@@ -2922,4 +2922,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\zimbabwe%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logowhite%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logowhite%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moreread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moreread%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moreread%403x.png" />
+  </ItemGroup>
 </Project>
