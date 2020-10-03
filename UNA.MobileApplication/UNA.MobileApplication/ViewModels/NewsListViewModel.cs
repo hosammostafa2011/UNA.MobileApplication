@@ -108,6 +108,11 @@ namespace UNA.MobileApplication.ViewModels
                         _REQUEST.ROW_COUNT = Convert.ToString(50);
                         result = await ApiManager.GET_REPORT(_REQUEST);
                     }
+                    else if (categoryID == "1400")
+                    {
+                        _REQUEST.ROW_COUNT = Convert.ToString(50);
+                        result = await ApiManager.GET_LATEST_NEWS(_REQUEST);
+                    }
                     else
                     {
                         CATEGORY objCATEGORY = new CATEGORY();
