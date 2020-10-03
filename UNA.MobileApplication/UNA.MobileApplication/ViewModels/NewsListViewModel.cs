@@ -117,7 +117,8 @@ namespace UNA.MobileApplication.ViewModels
                     }
                     foreach (NEWS vNEWS in obsCollectionNews)
                     {
-                        //vNEWS.Details = HtmlToPlainText(vNEWS.Details);
+                        if (!string.IsNullOrEmpty(vNEWS.Details))
+                            vNEWS.Details = HtmlToPlainText(vNEWS.Details);
                         vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID);
                     }
                     NotifyPropertyChanged(nameof(obsCollectionNews));

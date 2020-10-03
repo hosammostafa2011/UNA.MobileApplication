@@ -28,9 +28,12 @@ namespace UNA.MobileApplication.ViewModels
             SelectedNews = item;
             if (string.IsNullOrEmpty(item.Details))
                 LoadDetailsCommand.Execute(null);
-            SelectedNews.FavouriteImage = GetFavouriteImage(item.News_ID);
-
-            NotifyPropertyChanged(nameof(SelectedNews));
+            string favImage = GetFavouriteImage(item.News_ID);
+            if (SelectedNews.FavouriteImage != favImage)
+            {
+                SelectedNews.FavouriteImage = favImage;
+                NotifyPropertyChanged(nameof(SelectedNews));
+            }
         }
 
         private string GetFavouriteImage(string pNews_ID)

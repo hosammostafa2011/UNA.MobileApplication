@@ -180,6 +180,7 @@
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
         <ToolbarItem
+            x:Name="logo"
             IconImageSource="logo.png"
             Order="Primary"
             Priority="1" />
