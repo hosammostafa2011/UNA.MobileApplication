@@ -2958,4 +2958,40 @@
   <ItemGroup>
     <BundleResource Include="Resources\economy%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\miscellaneous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\miscellaneous%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\miscellaneous%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\islam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\islam%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\islam%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\islamic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\islamic%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\islamic%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\humanitarian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\humanitarian%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\humanitarian%403x.png" />
+  </ItemGroup>
 </Project>
