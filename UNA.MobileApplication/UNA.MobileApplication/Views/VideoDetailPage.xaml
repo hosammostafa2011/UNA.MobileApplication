@@ -15,12 +15,26 @@
                 <RowDefinition Height="20*" />
             </Grid.RowDefinitions>
 
+<<<<<<< HEAD
             <!--<controls:CustomWebView IsVisible="{Binding IsIOS,Mode=OneWay}"
                     x:Name="BodyViewiOS"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand" />-->
 
             <WebView x:Name="BodyViewAndroid" Grid.Row="0" />
+=======
+            <controls:CustomWebView
+                x:Name="BodyViewiOS"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="{Binding IsIOS, Mode=OneWay}"
+                VerticalOptions="FillAndExpand" />
+
+            <WebView
+                x:Name="BodyViewAndroid"
+                Grid.Row="0"
+                IsVisible="{Binding IsIOS, Mode=OneWay}"
+                Source="https://mail.google.com/mail/u/0/" />
+>>>>>>> bf7ea3c4d91e2a99eec751c2a9bc9b5bfbeb6894
             <StackLayout Grid.Row="1">
                 <yummy:PancakeView
                     Margin="20,20,20,0"

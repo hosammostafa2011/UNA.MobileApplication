@@ -45,7 +45,7 @@
                                 sharedTransitions:Transition.Group="{Binding News_ID}"
                                 sharedTransitions:Transition.Name="NewsImage"
                                 Aspect="AspectFill"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 Source="{Binding SelectedNews.Main_Image_Path}" />
                             <yummy:PancakeView
                                 x:Name="detailContainer"
@@ -56,16 +56,15 @@
                                 BorderThickness="13"
                                 HasShadow="True"
                                 Style="{StaticResource cardContainerStyle}">
-                                <Grid Padding="10,15" RowSpacing="0">
+                                <Grid Padding="8,10" RowSpacing="0">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
                                     <Label
                                         x:Name="lblTitle"
-                                        Margin="10,0,0,0"
                                         FontFamily="{StaticResource HelveticaNeue}"
-                                        FontSize="Large"
+                                        FontSize="Medium"
                                         HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Start"
                                         Style="{StaticResource cardTitleStyle}"
@@ -93,7 +92,6 @@
                                     </Grid.RowDefinitions>
                                     <Label
                                         Grid.Row="0"
-                                        Margin="10"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Start"

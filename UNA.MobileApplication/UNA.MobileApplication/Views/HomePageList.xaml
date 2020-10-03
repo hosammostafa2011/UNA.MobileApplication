@@ -81,7 +81,7 @@
             </DataTemplate>
             <DataTemplate x:Key="oneNewsViewTemplate">
                 <ViewCell>
-                    <Grid Padding="10,0,10,10" RowSpacing="15">
+                    <Grid Padding="0,-7,0,0" RowSpacing="15">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
@@ -91,7 +91,7 @@
                                 CornerRadius="10"
                                 Elevation="8"
                                 HasShadow="True" />
-                            <yummy:PancakeView CornerRadius="10">
+                            <yummy:PancakeView>
                                 <ffimageloading:CachedImage
                                     sharedTransitions:Transition.Group="{Binding News_ID}"
                                     sharedTransitions:Transition.Name="NewsImage"
@@ -103,10 +103,10 @@
                                 <Label
                                     Margin="10,0,0,0"
                                     FontFamily="{StaticResource HelveticaNeue}"
-                                    FontSize="Small"
+                                    FontSize="Medium"
                                     LineBreakMode="WordWrap"
                                     Text="{Binding Title}"
-                                    TextColor="{DynamicResource mainLabel}" />
+                                    TextColor="{DynamicResource primaryColor}" />
                             </StackLayout>
                         </StackLayout>
                     </Grid>
