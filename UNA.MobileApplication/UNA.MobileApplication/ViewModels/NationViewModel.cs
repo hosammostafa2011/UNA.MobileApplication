@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace UNA.MobileApplication.ViewModels
@@ -21,11 +22,29 @@ namespace UNA.MobileApplication.ViewModels
         }
 
         public Command LoadNATIONCommand { get; set; }
+
+        public ICommand PerformSearch => new Command<string>((string query) =>
+        {
+            obsCollectionNATION = GetSearchResults(query);
+        });
+
+        private ObservableCollection<NATION> GetSearchResults(string query)
+        {
+            ObservableCollection<NATION> _temp = new ObservableCollection<NATION>();
+            foreach (NATION _NATION in obsCollectionNATION)
+            {
+                if (_NATION.Nation_Name.Contains(query))
+                    _temp.Add(_NATION);
+            }
+            return _temp;
+        }
+
         public NationViewModel()
         {
             obsCollectionNATION = new ObservableCollection<NATION>();
             LoadNATIONCommand = new Command(async () => await RunSafe(ExecuteLoadItemsCommandAsync(), true));
         }
+
         private async Task ExecuteLoadItemsCommandAsync()
         {
             if (IsBusy)

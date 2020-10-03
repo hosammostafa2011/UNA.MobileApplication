@@ -6,13 +6,24 @@
     BackgroundColor="{DynamicResource entryBackground}">
     <ContentPage.Content>
         <Grid>
-            <!--<Image
-                Aspect="Fill"
-                HorizontalOptions="Fill"
-                Source="ColoredBackground"
-                VerticalOptions="Fill" />-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <SearchBar
+                Grid.Row="0"
+                CancelButtonColor="{DynamicResource primaryColor}"
+                FontFamily="{StaticResource HelveticaNeue}"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Placeholder="Search items..."
+                PlaceholderColor="{DynamicResource primaryColor}"
+                SearchCommand="{Binding PerformSearch}"
+                SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"
+                TextColor="{DynamicResource primaryColor}" />
             <ListView
                 x:Name="ItemsListView"
+                Grid.Row="1"
                 BackgroundColor="Transparent"
                 HasUnevenRows="True"
                 ItemSelected="OnItemSelected"
@@ -32,8 +43,6 @@
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
 
-
-
                                 <Image
                                     Grid.Row="0"
                                     HeightRequest="50"
@@ -45,7 +54,6 @@
                                     LineBreakMode="NoWrap"
                                     Text="{Binding Nation_Name}"
                                     TextColor="{DynamicResource primaryColor}" />
-
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
