@@ -2940,4 +2940,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\moreread%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\worldmap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\worldmap%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\worldmap%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\economy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\economy%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\economy%403x.png" />
+  </ItemGroup>
 </Project>
