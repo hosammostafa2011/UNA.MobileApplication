@@ -14,6 +14,7 @@ namespace UNA.MobileApplication.ViewModels
     public class NationViewModel : BaseViewModel
     {
         private ObservableCollection<NATION> _NATION;
+        public ObservableCollection<NATION> obsAllCountries;
 
         public ObservableCollection<NATION> obsCollectionNATION
         {
@@ -63,8 +64,10 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     List<NATION> lstNATION = JsonConvert.DeserializeObject<List<NATION>>(_RESPONSE[0].JSON);
                     obsCollectionNATION = new ObservableCollection<NATION>(lstNATION);
+                    obsAllCountries = obsCollectionNATION;
                 }
                 NotifyPropertyChanged(nameof(obsCollectionNATION));
+                NotifyPropertyChanged(nameof(obsAllCountries));
             }
             catch (Exception ex)
             {
@@ -77,13 +80,20 @@ namespace UNA.MobileApplication.ViewModels
 
         internal void DoSearch(string query)
         {
-            ObservableCollection<NATION> _temp = new ObservableCollection<NATION>();
-            foreach (NATION _NATION in obsCollectionNATION)
+            if (string.IsNullOrEmpty(query))
             {
-                if (_NATION.Nation_Name.Contains(query))
-                    _temp.Add(_NATION);
+                obsCollectionNATION = obsAllCountries;
             }
-            obsCollectionNATION = _temp;
+            else
+            {
+                ObservableCollection<NATION> _temp = new ObservableCollection<NATION>();
+                foreach (NATION _NATION in obsAllCountries)
+                {
+                    if (_NATION.Nation_Name.Contains(query))
+                        _temp.Add(_NATION);
+                }
+                obsCollectionNATION = _temp;
+            }
             NotifyPropertyChanged(nameof(obsCollectionNATION));
         }
     }
