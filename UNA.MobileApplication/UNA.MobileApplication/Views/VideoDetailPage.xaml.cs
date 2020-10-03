@@ -14,6 +14,7 @@ namespace UNA.MobileApplication.Views
     public partial class VideoDetailPage : ContentPage
     {
         public bool IsIOS { get; set; }
+
         public VideoDetailPage(VIDEO vVIDEO)
         {
             InitializeComponent();
@@ -22,20 +23,20 @@ namespace UNA.MobileApplication.Views
                     frameborder='0' allow='accelerometer; autoplay; clipboard-write;
                     encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
                     </iframe>", vVIDEO.Video_Code);
-            if (Device.RuntimePlatform == Device.iOS)
+            //if (Device.RuntimePlatform == Device.iOS)
+            //{
+            //    IsIOS = true;
+            //    BodyViewiOS.Html = _content;
+            //}
+            //else if (Device.RuntimePlatform == Device.Android)
+            //{
+            IsIOS = false;
+            var html = new HtmlWebViewSource
             {
-                IsIOS = true;
-                BodyViewiOS.Html = _content;
-            }
-            else if (Device.RuntimePlatform == Device.Android)
-            {
-                IsIOS = false;
-                var html = new HtmlWebViewSource
-                {
-                    Html = _content
-                };
-                BodyViewAndroid.Source = html;
-            }
+                Html = _content
+            };
+            BodyViewAndroid.Source = html;
+            //}
 
             lblTitle.Text = vVIDEO.Title;
         }
