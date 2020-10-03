@@ -22,21 +22,11 @@ namespace UNA.MobileApplication.Views
                     frameborder='0' allow='accelerometer; autoplay; clipboard-write;
                     encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
                     </iframe>", vVIDEO.Video_Code);
-            if (Device.RuntimePlatform == Device.iOS)
-            {
-                IsIOS = true;
-                BodyViewiOS.Html = _content;
-            }
-            else if (Device.RuntimePlatform == Device.Android)
-            {
-                IsIOS = false;
-                var html = new HtmlWebViewSource
+            var html = new HtmlWebViewSource
                 {
                     Html = _content
                 };
                 BodyViewAndroid.Source = html;
-            }
-
             lblTitle.Text = vVIDEO.Title;
         }
     }
