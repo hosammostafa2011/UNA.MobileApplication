@@ -15,6 +15,9 @@ namespace Helper.Interface
 
         [Post("/UNA/GET_NEWS_BY_CATEGORY")]
         Task<string> GET_NEWS_BY_CATEGORY([Body] REQUEST request);
+        
+        [Post("/UNA/GET_NEWS_BY_NATION")]
+        Task<string> GET_NEWS_BY_NATION([Body] REQUEST request);
 
         [Post("/UNA/GET_NEWS_DETAIL")]
         Task<string> GET_NEWS_DETAIL([Body] REQUEST request);

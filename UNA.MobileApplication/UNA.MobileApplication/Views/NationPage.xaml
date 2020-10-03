@@ -15,6 +15,7 @@
                 x:Name="ItemsListView"
                 BackgroundColor="Transparent"
                 HasUnevenRows="True"
+                ItemSelected="OnItemSelected"
                 ItemsSource="{Binding obsCollectionNATION}"
                 RowHeight="50"
                 SeparatorVisibility="Default">
@@ -33,7 +34,10 @@
 
 
 
-                                <Image Grid.Row="0" Source="{Binding icon_name}" />
+                                <Image
+                                    Grid.Row="0"
+                                    HeightRequest="50"
+                                    Source="{Binding icon_name}" />
                                 <Label
                                     Grid.Column="1"
                                     FontFamily="{StaticResource HelveticaNeue}"

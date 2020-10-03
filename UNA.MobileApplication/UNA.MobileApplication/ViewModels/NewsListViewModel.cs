@@ -17,21 +17,21 @@ namespace UNA.MobileApplication.ViewModels
         private NEWS _selectedNews;
         private bool _isRefreshing = false;
         private int CURRENT_PAGE { get; set; } = 1;
-        private int PAGE_SIZE { get; set; } = 30;
+        private int PAGE_SIZE { get; set; } = 50;
 
         private int TOTAL_MAIL { get; set; } = 100000;
 
         public string CATEGORY_ID { get; set; }
         public string CATEGORY_NAME { get; set; }
 
-        public NewsListViewModel(string categoryID, string categoryName)
+        public NewsListViewModel(string categoryID, string categoryName, string Nation_id)
         {
             CATEGORY_ID = categoryID;
             CATEGORY_NAME = categoryName;
             obsCollectionNews = new ObservableCollection<NEWS>();
             RegiesterMessageCenter();
             LoadNewsCommand = new Command(async () =>
-            await RunSafe(ExecuteLoadItemsCommandAsync(categoryID, categoryName, false, false), true));
+            await RunSafe(ExecuteLoadItemsCommandAsync(categoryID, categoryName, Nation_id, false, false), true));
         }
 
         private string _TitleName;
@@ -58,7 +58,7 @@ namespace UNA.MobileApplication.ViewModels
 
         public Command LoadNewsCommand { get; set; }
 
-        private async Task ExecuteLoadItemsCommandAsync(string categoryID, string categoryName, bool isRefresh, bool ClearList)
+        private async Task ExecuteLoadItemsCommandAsync(string categoryID, string categoryName, string Nation_id, bool isRefresh, bool ClearList)
         {
             TitleName = categoryName;
             NotifyPropertyChanged(nameof(TitleName));
@@ -83,29 +83,40 @@ namespace UNA.MobileApplication.ViewModels
                 _REQUEST.USER_TOKEN = "Aa159357";
                 var result = "";
                 _REQUEST.JSON = string.Empty;
-                if (categoryID == "7000")
+                if (!string.IsNullOrEmpty(Nation_id))
                 {
-                    if (CrossSecureStorage.Current.HasKey("FavouriteList"))
-                    {
-                        NEWS objNews = new NEWS();
-                        objNews.FAVOURITE_IDS = CrossSecureStorage.Current.GetValue("FavouriteList");
-                        _REQUEST.JSON = JsonConvert.SerializeObject(objNews);
-                        result = await ApiManager.GET_FAVOURITE(_REQUEST);
-                    }
-                }
-                else if (categoryID == "8000")
-                {
-                    _REQUEST.ROW_COUNT = Convert.ToString(50);
-                    result = await ApiManager.GET_REPORT(_REQUEST);
+                    NATION objNATION = new NATION();
+                    objNATION.Nation_id = Nation_id;
+                    _REQUEST.ROW_COUNT = Convert.ToString(PAGE_SIZE);
+                    _REQUEST.JSON = JsonConvert.SerializeObject(objNATION);
+                    result = await ApiManager.GET_NEWS_BY_NATION(_REQUEST);
                 }
                 else
                 {
-                    CATEGORY objCATEGORY = new CATEGORY();
-                    objCATEGORY.Category_ID = categoryID;
-                    _REQUEST.ROW_COUNT = Convert.ToString(PAGE_SIZE);
-                    _REQUEST.PAGE_NUMBER = Convert.ToString(CURRENT_PAGE);
-                    _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
-                    result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
+                    if (categoryID == "7000")
+                    {
+                        if (CrossSecureStorage.Current.HasKey("FavouriteList"))
+                        {
+                            NEWS objNews = new NEWS();
+                            objNews.FAVOURITE_IDS = CrossSecureStorage.Current.GetValue("FavouriteList");
+                            _REQUEST.JSON = JsonConvert.SerializeObject(objNews);
+                            result = await ApiManager.GET_FAVOURITE(_REQUEST);
+                        }
+                    }
+                    else if (categoryID == "8000")
+                    {
+                        _REQUEST.ROW_COUNT = Convert.ToString(50);
+                        result = await ApiManager.GET_REPORT(_REQUEST);
+                    }
+                    else
+                    {
+                        CATEGORY objCATEGORY = new CATEGORY();
+                        objCATEGORY.Category_ID = categoryID;
+                        _REQUEST.ROW_COUNT = Convert.ToString(PAGE_SIZE);
+                        _REQUEST.PAGE_NUMBER = Convert.ToString(CURRENT_PAGE);
+                        _REQUEST.JSON = JsonConvert.SerializeObject(objCATEGORY);
+                        result = await ApiManager.GET_NEWS_BY_CATEGORY(_REQUEST);
+                    }
                 }
                 if (!string.IsNullOrEmpty(result))
                 {
@@ -153,7 +164,7 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     IsRefreshing = true;
 
-                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, CATEGORY_NAME, true, true), false);
+                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, CATEGORY_NAME, string.Empty, true, true), false);
 
                     IsRefreshing = false;
                     NotifyPropertyChanged();
@@ -197,7 +208,7 @@ namespace UNA.MobileApplication.ViewModels
                 else
                 {
                     CURRENT_PAGE = CURRENT_PAGE + 1;
-                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, CATEGORY_NAME, false, false), true);
+                    await RunSafe(ExecuteLoadItemsCommandAsync(CATEGORY_ID, CATEGORY_NAME, string.Empty, false, false), true);
                     //await GetInboxData(false);
                 }
             });

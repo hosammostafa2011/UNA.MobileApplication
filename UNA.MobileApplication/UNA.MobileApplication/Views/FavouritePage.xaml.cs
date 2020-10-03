@@ -37,7 +37,7 @@ namespace UNA.MobileApplication.Views
                     Title = "Préférée";
                     break;
             }
-            BindingContext = _newsListViewModel = new NewsListViewModel("7000", _title);
+            BindingContext = _newsListViewModel = new NewsListViewModel("7000", _title, string.Empty);
         }
 
         protected override void OnAppearing()
