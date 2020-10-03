@@ -183,6 +183,25 @@ namespace Helper.Service
             var response = await apiresponse.GET_FAVOURITE(request);
             return response;
         }
+
+        public async Task<string> GET_NATION(REQUEST request)
+        {
+            try
+            {
+                var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+                var response = await apiresponse.GET_NATION(request);
+                return response;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+
+        }
+
+
         #endregion
 
     }
