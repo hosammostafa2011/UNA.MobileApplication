@@ -89,7 +89,7 @@ namespace UNA.MobileApplication.ViewModels
                 ObservableCollection<NATION> _temp = new ObservableCollection<NATION>();
                 foreach (NATION _NATION in obsAllCountries)
                 {
-                    if (_NATION.Nation_Name.Contains(query))
+                    if (_NATION.Nation_Name.ToLower().Contains(query.ToLower()))
                         _temp.Add(_NATION);
                 }
                 obsCollectionNATION = _temp;
