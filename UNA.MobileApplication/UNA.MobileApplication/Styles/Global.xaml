@@ -19,37 +19,15 @@
         <On Platform="Android" Value="FontAwesome5Regular.otf#Regular" />
         <On Platform="iOS" Value="FontAwesome5Free-Regular" />
     </OnPlatform>
-    <OnPlatform x:Key="ArabotoLight" x:TypeArguments="x:String">
-        <On Platform="Android" Value="Araboto Light.ttf#Light" />
-        <On Platform="iOS" Value="ArabotoLight" />
-    </OnPlatform>
-    <OnPlatform x:Key="InterMedium" x:TypeArguments="x:String">
-        <On Platform="Android" Value="InterMedium.ttf#Medium" />
-        <On Platform="iOS" Value="Inter-Medium" />
-    </OnPlatform>
-
-    <OnPlatform x:Key="InterBold" x:TypeArguments="x:String">
-        <On Platform="Android" Value="InterBold.ttf#Bold" />
-        <On Platform="iOS" Value="Inter-Bold" />
-    </OnPlatform>
-
-    <OnPlatform x:Key="InterLight" x:TypeArguments="x:String">
-        <On Platform="Android" Value="InterLight.ttf#Light" />
-        <On Platform="iOS" Value="Inter-Light" />
-    </OnPlatform>
-    <OnPlatform x:Key="DroidKufiBold" x:TypeArguments="x:String">
-        <On Platform="Android" Value="DroidKufiBold.ttf" />
-        <On Platform="iOS" Value="DroidKufi-Bold" />
-    </OnPlatform>
-    <OnPlatform x:Key="DroidKufiRegular" x:TypeArguments="x:String">
-        <On Platform="Android" Value="DroidKufiRegular.ttf" />
-        <On Platform="iOS" Value="DroidKufiRegular" />
+    <OnPlatform x:Key="HelveticaNeue" x:TypeArguments="x:String">
+        <On Platform="Android" Value="HelveticaNeue.ttf#Regular" />
+        <On Platform="iOS" Value="HelveticaNeue" />
     </OnPlatform>
     <Style TargetType="Label">
-        <Setter Property="FontFamily" Value="{StaticResource InterLight}" />
+        <Setter Property="FontFamily" Value="{StaticResource HelveticaNeue}" />
     </Style>
     <Style TargetType="Button">
-        <Setter Property="FontFamily" Value="{StaticResource InterLight}" />
+        <Setter Property="FontFamily" Value="{StaticResource HelveticaNeue}" />
     </Style>
 
     <Style x:Key="buttonContainerStyle" TargetType="yummy:PancakeView">

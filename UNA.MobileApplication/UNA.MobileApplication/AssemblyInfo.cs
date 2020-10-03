@@ -1,5 +1,4 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-[assembly: ExportFont("DroidKufiBold.ttf", Alias = "DroidKufiBold")]
+[assembly: ExportFont("HelveticaNeue.ttf", Alias = "HelveticaNeue")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-//[assembly: ExportFont("ArabotoLight.ttf", Alias = "Araboto Light")]

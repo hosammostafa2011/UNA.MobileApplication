@@ -56,7 +56,10 @@ namespace UNA.MobileApplication.ViewModels
             {
                 try
                 {
-                    _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                    if (CrossSecureStorage.Current.HasKey("Language"))
+                        _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                    else
+                        _REQUEST.LANGUAGE = "1";
                 }
                 catch (Exception)
                 {

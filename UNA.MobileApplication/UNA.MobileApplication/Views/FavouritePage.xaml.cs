@@ -23,7 +23,12 @@ namespace UNA.MobileApplication.Views
             InitializeComponent();
             CategoryId = categoryID;
             string _title = string.Empty;
-            switch (CrossSecureStorage.Current.GetValue("Language"))
+            string strLanguage = string.Empty;
+            if (CrossSecureStorage.Current.HasKey("Language"))
+                strLanguage = CrossSecureStorage.Current.GetValue("Language");
+            else
+                strLanguage = "1";
+            switch (strLanguage)
             {
                 case "1":
                     _title = "المفضلة";

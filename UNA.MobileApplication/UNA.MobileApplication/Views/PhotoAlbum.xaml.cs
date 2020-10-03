@@ -20,7 +20,12 @@ namespace UNA.MobileApplication.Views
         public PhotoAlbum()
         {
             InitializeComponent();
-            switch (CrossSecureStorage.Current.GetValue("Language"))
+            string strLanguage = string.Empty;
+            if (CrossSecureStorage.Current.HasKey("Language"))
+                strLanguage = CrossSecureStorage.Current.GetValue("Language");
+            else
+                strLanguage = "1";
+            switch (strLanguage)
             {
                 case "1":
                     Title = "البوم الصور";
