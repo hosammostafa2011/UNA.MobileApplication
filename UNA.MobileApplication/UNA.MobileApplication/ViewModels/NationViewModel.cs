@@ -23,11 +23,6 @@ namespace UNA.MobileApplication.ViewModels
 
         public Command LoadNATIONCommand { get; set; }
 
-        public ICommand PerformSearch => new Command<string>((string query) =>
-        {
-            obsCollectionNATION = GetSearchResults(query);
-        });
-
         private ObservableCollection<NATION> GetSearchResults(string query)
         {
             ObservableCollection<NATION> _temp = new ObservableCollection<NATION>();
@@ -78,6 +73,18 @@ namespace UNA.MobileApplication.ViewModels
             {
                 IsBusy = false;
             }
+        }
+
+        internal void DoSearch(string query)
+        {
+            ObservableCollection<NATION> _temp = new ObservableCollection<NATION>();
+            foreach (NATION _NATION in obsCollectionNATION)
+            {
+                if (_NATION.Nation_Name.Contains(query))
+                    _temp.Add(_NATION);
+            }
+            obsCollectionNATION = _temp;
+            NotifyPropertyChanged(nameof(obsCollectionNATION));
         }
     }
 }

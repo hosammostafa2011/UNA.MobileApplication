@@ -12,14 +12,13 @@
             </Grid.RowDefinitions>
             <SearchBar
                 Grid.Row="0"
+                x:Name="txtSearch"
                 CancelButtonColor="{DynamicResource primaryColor}"
                 FontFamily="{StaticResource HelveticaNeue}"
                 FontSize="Medium"
+                TextChanged="SearchBar_TextChanged"
                 HorizontalTextAlignment="Center"
-                Placeholder="Search items..."
                 PlaceholderColor="{DynamicResource primaryColor}"
-                SearchCommand="{Binding PerformSearch}"
-                SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"
                 TextColor="{DynamicResource primaryColor}" />
             <ListView
                 x:Name="ItemsListView"
