@@ -104,7 +104,6 @@ namespace UNA.MobileApplication.ViewModels
                     {
                         SelectedNews.Details = HtmlToPlainText(lstNEWS[0].Details);
                         NotifyPropertyChanged(nameof(SelectedNews));
-                        SelectedNews.Details = string.Empty;
                     }
                 }
             }
