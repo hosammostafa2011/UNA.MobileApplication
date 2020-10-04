@@ -28,8 +28,18 @@ namespace UNA.MobileApplication.ViewModels
             SelectedNews = item;
             if (string.IsNullOrEmpty(item.Details))
                 LoadDetailsCommand.Execute(null);
-            string favImage = GetFavouriteImage(item.News_ID);
-            if (SelectedNews.FavouriteImage != favImage)
+            string favImage = string.Empty;
+            try
+            {
+                favImage = GetFavouriteImage(item.News_ID);
+            }
+            catch (Exception)
+            {
+
+                favImage = "star.png";
+            }
+            
+            if (SelectedNews.FavouriteImage != null || SelectedNews.FavouriteImage != favImage)
             {
                 SelectedNews.FavouriteImage = favImage;
                 NotifyPropertyChanged(nameof(SelectedNews));
@@ -81,7 +91,8 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     if (!string.IsNullOrEmpty(SelectedNews.Details))
                     {
-                        SelectedNews.Details = HtmlToPlainText(lstNEWS[0].Details);
+                        //SelectedNews.Details = HtmlToPlainText(lstNEWS[0].Details);
+                        SelectedNews.Details = lstNEWS[0].Details;
                         NotifyPropertyChanged(nameof(SelectedNews));
                     }
                 }

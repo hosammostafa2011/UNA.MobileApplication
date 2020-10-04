@@ -126,7 +126,7 @@ namespace UNA.MobileApplication.ViewModels
             NotifyPropertyChanged(null);
         }
 
-        public static string HtmlToPlainText(string html)
+        /*public static string HtmlToPlainText(string html)
         {
             const string tagWhiteSpace = @"(>|$)(\W|\n|\r)+<";//matches one or more (white space or line breaks) between '>' and '<'
             const string stripFormatting = @"<[^>]*(>|$)";//match any character between '<' and '>', even when end tag is missing
@@ -148,6 +148,6 @@ namespace UNA.MobileApplication.ViewModels
             //                "</html>";
 
             return text;
-        }
+        }*/
     }
 }
