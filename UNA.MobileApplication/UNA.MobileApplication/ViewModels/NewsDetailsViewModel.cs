@@ -79,8 +79,11 @@ namespace UNA.MobileApplication.ViewModels
                 List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
                 if (lstNEWS.Count > 0)
                 {
-                    SelectedNews.Details = HtmlToPlainText(lstNEWS[0].Details);
-                    NotifyPropertyChanged(nameof(SelectedNews));
+                    if (!string.IsNullOrEmpty(SelectedNews.Details))
+                    {
+                        SelectedNews.Details = HtmlToPlainText(lstNEWS[0].Details);
+                        NotifyPropertyChanged(nameof(SelectedNews));
+                    }
                 }
             }
         }
