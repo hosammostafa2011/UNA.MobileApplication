@@ -17,4 +17,5 @@ public class NEWS
     public string RowNumber { get; set; }
     public string FavouriteImage { get; set; }
     public string FAVOURITE_IDS { get; set; }
+    public string Category_ID { get; set; }
 }

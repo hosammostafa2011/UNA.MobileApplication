@@ -44,10 +44,5 @@ namespace UNA.MobileApplication.Views
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
         }
-
-        private void ToolbarItem_Clicked(object sender, EventArgs e)
-        {
-
-        }
     }
 }

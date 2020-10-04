@@ -1,16 +1,11 @@
 ﻿using Helper;
 using Newtonsoft.Json;
 using Plugin.SecureStorage;
-using Prism.Commands;
-using Prism.Navigation;
-using Prism.Navigation.Xaml;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using UNA.MobileApplication.Models;
 using Xamarin.Forms;
 
 namespace UNA.MobileApplication.ViewModels
@@ -34,17 +29,10 @@ namespace UNA.MobileApplication.ViewModels
             get => _news;
             set => SetProperty(ref _news, value);
         }
-
-        public ObservableCollection<NEWS> obsCollectionNewsFirst { get; set; }
-        public ObservableCollection<NEWS> obsCollectionNewsSecond { get; set; }
-        public ObservableCollection<NEWS> obsCollectionNewsThird { get; set; }
-        //public Command LoadHomeNewsCommand { get; set; }
-
         public HomePageViewModel()
         {
             obsCollectionNews = new ObservableCollection<NEWS>();
             Device.BeginInvokeOnMainThread(async () => await RunSafe(ExecuteLoadItemsCommandAsync(), true));
-            //LoadHomeNewsCommand = new Command(async () => await RunSafe(ExecuteLoadItemsCommandAsync(), true));
         }
 
         private async Task ExecuteLoadItemsCommandAsync()
@@ -76,7 +64,6 @@ namespace UNA.MobileApplication.ViewModels
                 }
                 foreach (NEWS vNEWS in obsCollectionNews)
                 {
-                    //vNEWS.Details = HtmlToPlainText(vNEWS.Details);
                     try
                     {
                         vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID);
@@ -87,9 +74,6 @@ namespace UNA.MobileApplication.ViewModels
                     }
                 }
                 NotifyPropertyChanged(nameof(obsCollectionNews));
-                /*NotifyPropertyChanged(nameof(obsCollectionNewsFirst));
-                NotifyPropertyChanged(nameof(obsCollectionNewsSecond));
-                NotifyPropertyChanged(nameof(obsCollectionNewsThird));*/
             }
             catch (Exception ex)
             {

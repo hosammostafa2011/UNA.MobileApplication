@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -38,8 +37,8 @@ namespace UNA.MobileApplication.ViewModels
 
                 favImage = "star.png";
             }
-            
-            if (SelectedNews.FavouriteImage != null || SelectedNews.FavouriteImage != favImage)
+
+            if (SelectedNews.FavouriteImage == null || SelectedNews.FavouriteImage != favImage)
             {
                 SelectedNews.FavouriteImage = favImage;
                 NotifyPropertyChanged(nameof(SelectedNews));
@@ -81,19 +80,31 @@ namespace UNA.MobileApplication.ViewModels
                 _REQUEST.LANGUAGE = "1";
             }
             _REQUEST.USER_TOKEN = "Aa159357";
-            _REQUEST.JSON = JsonConvert.SerializeObject(objNEWS);
-            var result = await ApiManager.GET_NEWS_DETAIL(_REQUEST);
+
+            var result = string.Empty;
+            if (objNEWS.Category_ID == "8000")//reports
+            {
+                REPORT objREPORT = new REPORT();
+                objREPORT.REPORT_ID = objNEWS.News_ID;
+                _REQUEST.JSON = JsonConvert.SerializeObject(objREPORT);
+                result = await ApiManager.GET_REPORT_DETAIL(_REQUEST);
+            }
+            else
+            {
+                _REQUEST.JSON = JsonConvert.SerializeObject(objNEWS);
+                result = await ApiManager.GET_NEWS_DETAIL(_REQUEST);
+            }
             _RESPONSE = HelperManger.CastToResponse(result);
             if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
             {
                 List<NEWS> lstNEWS = JsonConvert.DeserializeObject<List<NEWS>>(_RESPONSE[0].JSON);
                 if (lstNEWS.Count > 0)
                 {
-                    if (!string.IsNullOrEmpty(SelectedNews.Details))
+                    if (string.IsNullOrEmpty(SelectedNews.Details))
                     {
-                        //SelectedNews.Details = HtmlToPlainText(lstNEWS[0].Details);
-                        SelectedNews.Details = lstNEWS[0].Details;
+                        SelectedNews.Details = HtmlToPlainText(lstNEWS[0].Details);
                         NotifyPropertyChanged(nameof(SelectedNews));
+                        SelectedNews.Details = string.Empty;
                     }
                 }
             }
