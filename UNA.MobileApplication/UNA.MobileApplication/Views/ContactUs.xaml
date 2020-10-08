@@ -5,32 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    BackgroundColor="{DynamicResource entryBackground}">
+    BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout>
-                <Grid Margin="0,0,0,0">
-                    <StackLayout Margin="20,0,20,0" Spacing="20">
-                        <Image
-                            HeightRequest="30"
-                            HorizontalOptions="Start"
-                            Source="hamburgerMenu"
-                            VerticalOptions="Start"
-                            WidthRequest="30" />
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="28"
-                            HorizontalOptions="StartAndExpand"
-                            Text="Start Your Workday Comfortably"
-                            TextColor="White"
-                            VerticalOptions="StartAndExpand"
-                            WidthRequest="200" />
-                    </StackLayout>
+                <Grid Margin="0,5,0,0">
                     <Image
-                        HorizontalOptions="EndAndExpand"
-                        Source="bgImage"
-                        WidthRequest="200" />
-                    <yummy:PancakeView
+                        HeightRequest="50"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="aboutheader" />
+                    <!--<yummy:PancakeView
                         Margin="20,0,20,-20"
                         Padding="10,0,0,0"
                         BackgroundColor="White"
@@ -54,119 +38,205 @@
                                 PlaceholderColor="#99A1B3"
                                 TextColor="#484848" />
                         </StackLayout>
-                    </yummy:PancakeView>
+                    </yummy:PancakeView>-->
                 </Grid>
                 <yummy:PancakeView
-                    Margin="0,30,0,0"
-                    Padding="30,0,30,30"
-                    BackgroundColor="White"
+                    Padding="10,10,10,10"
+                    BackgroundColor="{StaticResource primaryColor}"
                     CornerRadius="40,40,0,0"
                     VerticalOptions="FillAndExpand">
-                    <StackLayout>
-                        <Label
-                            Margin="20"
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            HorizontalOptions="CenterAndExpand"
-                            HorizontalTextAlignment="Center"
-                            Text="How to get started?"
-                            TextColor="#791AE5"
-                            VerticalOptions="Center" />
-                        <Grid
-                            Margin="5"
-                            ColumnSpacing="20"
-                            RowSpacing="30">
+                    <ScrollView>
+                        <Grid RowSpacing="15">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="230" />
-                                <RowDefinition Height="230" />
+                                <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
                             <yummy:PancakeView
                                 Grid.Row="0"
-                                Grid.Column="0"
-                                Padding="10"
                                 BackgroundColor="White"
                                 BorderThickness="1"
                                 CornerRadius="15"
-                                Elevation="3">
-                                <StackLayout>
-                                    <Image Source="im1" />
+                                Elevation="15">
+                                <Grid Margin="10,0" RowSpacing="0">
                                     <Label
-                                        FontAttributes="Bold"
-                                        FontSize="20"
-                                        HorizontalOptions="CenterAndExpand"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Center"
-                                        Text="Create your account"
-                                        TextColor="Black"
-                                        VerticalOptions="CenterAndExpand" />
-                                </StackLayout>
-                            </yummy:PancakeView>
-                            <yummy:PancakeView
-                                Grid.Row="0"
-                                Grid.Column="1"
-                                Padding="10"
-                                BackgroundColor="White"
-                                BorderThickness="1"
-                                CornerRadius="15"
-                                Elevation="3">
-                                <StackLayout>
-                                    <Image Source="im2" />
+                                        TextColor="{StaticResource primaryColor}"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="المدير العام" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
                                     <Label
+                                        Grid.Row="1"
                                         FontAttributes="Bold"
-                                        FontSize="20"
-                                        HorizontalOptions="CenterAndExpand"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Center"
-                                        Text="Plan your journeys"
                                         TextColor="Black"
-                                        VerticalOptions="CenterAndExpand" />
-                                </StackLayout>
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="احمد محمد على " />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
                             </yummy:PancakeView>
                             <yummy:PancakeView
                                 Grid.Row="1"
-                                Grid.Column="0"
-                                Padding="10"
                                 BackgroundColor="White"
                                 BorderThickness="1"
                                 CornerRadius="15"
-                                Elevation="3">
-                                <StackLayout>
-                                    <Image Source="im3" />
+                                Elevation="15">
+                                <Grid Margin="10,0" RowSpacing="0">
                                     <Label
-                                        FontAttributes="Bold"
-                                        FontSize="20"
-                                        HorizontalOptions="CenterAndExpand"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Center"
-                                        Text="Make your driver"
+                                        TextColor="{StaticResource primaryColor}"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="المدير العام" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalTextAlignment="Center"
                                         TextColor="Black"
-                                        VerticalOptions="CenterAndExpand" />
-                                </StackLayout>
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="احمد محمد على " />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
                             </yummy:PancakeView>
                             <yummy:PancakeView
-                                Grid.Row="1"
-                                Grid.Column="1"
-                                Padding="10"
+                                Grid.Row="2"
                                 BackgroundColor="White"
                                 BorderThickness="1"
                                 CornerRadius="15"
-                                Elevation="3">
-                                <StackLayout>
-                                    <Image Source="im4" />
+                                Elevation="15">
+                                <Grid Margin="10,0" RowSpacing="0">
                                     <Label
-                                        FontAttributes="Bold"
-                                        FontSize="20"
-                                        HorizontalOptions="CenterAndExpand"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
                                         HorizontalTextAlignment="Center"
-                                        Text="Enjoy your journey"
+                                        TextColor="{StaticResource primaryColor}"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="المدير العام" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalTextAlignment="Center"
                                         TextColor="Black"
-                                        VerticalOptions="CenterAndExpand" />
-                                </StackLayout>
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="احمد محمد على " />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
+                            </yummy:PancakeView>
+                            <yummy:PancakeView
+                                Grid.Row="3"
+                                BackgroundColor="White"
+                                BorderThickness="1"
+                                CornerRadius="15"
+                                Elevation="15">
+                                <Grid Margin="10,0" RowSpacing="0">
+                                    <Label
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalTextAlignment="Center"
+                                        TextColor="{StaticResource primaryColor}"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="المدير العام" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalTextAlignment="Center"
+                                        TextColor="Black"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="احمد محمد على " />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
+                            </yummy:PancakeView>
+                            <yummy:PancakeView
+                                Grid.Row="4"
+                                BackgroundColor="White"
+                                BorderThickness="1"
+                                CornerRadius="15"
+                                Elevation="15">
+                                <Grid Margin="10,0" RowSpacing="0">
+                                    <Label
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalTextAlignment="Center"
+                                        TextColor="{StaticResource primaryColor}"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="المدير العام" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label
+                                        Grid.Row="1"
+                                        FontAttributes="Bold"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Medium"
+                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalTextAlignment="Center"
+                                        TextColor="Black"
+                                        VerticalOptions="CenterAndExpand">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span LineHeight="1.3" Text="احمد محمد على " />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
                             </yummy:PancakeView>
                         </Grid>
-                    </StackLayout>
-
+                    </ScrollView>
                 </yummy:PancakeView>
             </StackLayout>
         </ScrollView>
