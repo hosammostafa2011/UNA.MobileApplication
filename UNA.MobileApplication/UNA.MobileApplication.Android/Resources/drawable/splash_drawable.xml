@@ -1,28 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
-	<item>
-		<shape android:shape="rectangle">
-			<solid android:color="#016b56" />
-			<padding
-			  android:left="0dip"
-			  android:top="0dip"
-			  android:right="0dip"
-			  android:bottom="0dip" />
-		</shape>
-	</item>
-	<item
-	  android:width="200dp"
-	  android:height="200dp"
-	  android:drawable="@drawable/splash"
-	  android:gravity="center" />
-	<item android:left="0dip" android:right="0dip">
-		<bitmap
-			android:src="@drawable/header"
-			 android:tileMode="disabled"
-			  android:layout_width="match_parent"
-		android:layout_gravity="top"
-		android:scaleType="fitCenter"
-			android:gravity="top" />
-	</item>
-</layer-list>
+<resources>
+  <style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splashbackground</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsTranslucent">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+</resources>

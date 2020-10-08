@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X5k-f2-b5h">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238" />
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -9,39 +9,31 @@
             <objects>
                 <viewController id="X5k-f2-b5h" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Y8P-hJ-Z43"/>
-                        <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
+                        <viewControllerLayoutGuide type="top" id="Y8P-hJ-Z43" />
+                        <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ" />
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yd7-JS-zBw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.00392156862745098" green="0.41960784313725491" blue="0.33725490196078434" alpha="1"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1454" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="header.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
-                                <rect key="frame" x="-140" y="-17" width="685" height="362"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="368" verticalHuggingPriority="251" id="1847" image="splash.png" verticalCompressionResistancePriority="529" horizontalCompressionResistancePriority="517" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="43" y="331" width="328" height="234"/>
-                                <constraints>
-                                    <constraint id="2251" firstAttribute="height" constant="234"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Icon-60.png" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                                <rect key="frame" x="270" y="270" width="60" height="60" />
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0" />
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB" />
                         <constraints>
-                            <constraint id="2252" firstItem="1847" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX"/>
-                            <constraint id="2253" firstItem="1847" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY"/>
+                            <constraint firstItem="23" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" priority="1" id="39" />
+                            <constraint firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" priority="1" id="41" />
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder" />
             </objects>
-            <point key="canvasLocation" x="349" y="339"/>
+            <point key="canvasLocation" x="349" y="339" />
         </scene>
     </scenes>
     <resources>
-        <image name="header.png" width="590" height="428"/>
-        <image name="splash.png" width="398" height="381"/>
+        <image name="Icon-60.png" width="180" height="180" />
     </resources>
-    <color key="tintColor" colorSpace="calibratedRGB" red="0.00392156862745098" green="0.52156862745098043" blue="0.42745098039215684" alpha="1"/>
 </document>
