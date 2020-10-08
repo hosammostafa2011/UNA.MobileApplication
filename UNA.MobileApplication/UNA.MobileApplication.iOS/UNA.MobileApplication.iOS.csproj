@@ -1131,4 +1131,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\splashbackground%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\uganda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\uganda%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\uganda%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\unitedarabemirates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\unitedarabemirates%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\unitedarabemirates%403x.png" />
+  </ItemGroup>
 </Project>
