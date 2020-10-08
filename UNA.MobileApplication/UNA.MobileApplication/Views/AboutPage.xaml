@@ -20,6 +20,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Label Text="Hello" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Label
+            Grid.Row="0"
+            HorizontalOptions="Center"
+            Text="Hello"
+            VerticalOptions="Center" />
     </Grid>
 </ContentPage>
