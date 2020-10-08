@@ -1149,4 +1149,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\unitedarabemirates%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\call%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\call%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\setting%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\setting%403x.png" />
+  </ItemGroup>
 </Project>
