@@ -7,50 +7,59 @@
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     BackgroundColor="{DynamicResource entryBackground}">
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="20*" />
-                <RowDefinition Height="20*" />
-            </Grid.RowDefinitions>
-            <yummy:PancakeView
-                Grid.Row="0"
-                Margin="20,0,20,0"
-                Border="{yummy:BorderMarkup Color=#016b56,
-                                            Thickness=1}"
-                BorderThickness="13"
-                HasShadow="True"
-                Style="{StaticResource cardContainerStyle}">
-                <Grid Padding="8,10" RowSpacing="0">
+        
+            <StackLayout Padding="0,0,0,40" BackgroundColor="{DynamicResource entryBackground}">
+                <Grid Margin="0,-10,0,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <Label
-                        x:Name="lblTitle"
-                        FontFamily="{StaticResource HelveticaNeue}"
-                        FontSize="Medium"
-                        HorizontalOptions="StartAndExpand"
-                        HorizontalTextAlignment="Start"
-                        Style="{StaticResource cardTitleStyle}">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span LineHeight="1.3" Text="المدير العام" />
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
-                    <Label
-                        FontFamily="{StaticResource HelveticaNeue}"
-                        FontSize="Medium"
-                        HorizontalOptions="StartAndExpand"
-                        HorizontalTextAlignment="Start"
-                        Style="{StaticResource cardTitleStyle}">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span LineHeight="1.3" Text="المدير العام" />
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
+                    <ffimageloading:CachedImage
+                        Aspect="AspectFill"
+                        HeightRequest="250"
+                        Source="{Binding SelectedNews.Main_Image_Path}" />
+                    <yummy:PancakeView
+                        x:Name="detailContainer"
+                        Grid.Row="1"
+                        Margin="20,-50,20,0"
+                        Border="{yummy:BorderMarkup Color=#016b56,
+                                                    Thickness=1}"
+                        BorderThickness="13"
+                        HasShadow="True"
+                        Style="{StaticResource cardContainerStyle}">
+                        <Grid Padding="8,10" RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <!--<RowDefinition Height="Auto" />-->
+                            </Grid.RowDefinitions>
+                            <Label
+                                x:Name="lblTitle"
+                                FontFamily="{StaticResource HelveticaNeue}"
+                                FontSize="Medium"
+                                HorizontalOptions="StartAndExpand"
+                                HorizontalTextAlignment="Start"
+                                Style="{StaticResource cardTitleStyle}">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span LineHeight="1.3" Text="{Binding SelectedNews.Title}" />
+                                        <Span
+                                            LineHeight="1.3"
+                                            Text="{Binding SelectedNews.Source_Tag, StringFormat='  ({0})'}"
+                                            TextColor="{DynamicResource ThirdColor}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <!--<Label
+                                        Grid.Row="1"
+                                        Margin="10,0,0,10"
+                                        FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="Small"
+                                        Text="{Binding SelectedNews.Source_Tag}"
+                                        TextColor="{DynamicResource ThirdColor}" />-->
+                        </Grid>
+                    </yummy:PancakeView>
+
+                    
                 </Grid>
-            </yummy:PancakeView>
-        </Grid>
     </ContentPage.Content>
 </ContentPage>

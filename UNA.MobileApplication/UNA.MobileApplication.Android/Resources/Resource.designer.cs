@@ -15835,74 +15835,77 @@ namespace UNA.MobileApplication.Droid
 			// aapt resource value: 0x7F0700C4
 			public const int splash = 2131165380;
 			
+			// aapt resource value: 0x7F0700C6
+			public const int splashbackground = 2131165382;
+			
 			// aapt resource value: 0x7F0700C5
 			public const int splash_drawable = 2131165381;
 			
-			// aapt resource value: 0x7F0700C6
-			public const int star = 2131165382;
-			
 			// aapt resource value: 0x7F0700C7
-			public const int star_sel = 2131165383;
+			public const int star = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int sudan = 2131165384;
+			public const int star_sel = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int suriname = 2131165385;
+			public const int sudan = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int syria = 2131165386;
+			public const int suriname = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int tab_about = 2131165387;
+			public const int syria = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int tab_feed = 2131165388;
+			public const int tab_about = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int tajikistan = 2131165389;
+			public const int tab_feed = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int technology = 2131165390;
+			public const int tajikistan = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int togo = 2131165391;
+			public const int technology = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int tooltip_frame_dark = 2131165392;
+			public const int togo = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int tooltip_frame_light = 2131165393;
+			public const int tooltip_frame_dark = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int tunisia = 2131165394;
+			public const int tooltip_frame_light = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int turkey = 2131165395;
+			public const int tunisia = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int turkmenistan = 2131165396;
+			public const int turkey = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int una_logo = 2131165397;
+			public const int turkmenistan = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int uzbekistn = 2131165398;
+			public const int una_logo = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int vedio = 2131165399;
+			public const int uzbekistn = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int world = 2131165400;
+			public const int vedio = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int worldmap = 2131165401;
+			public const int world = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int xamarin_logo = 2131165402;
+			public const int worldmap = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int yemen = 2131165403;
+			public const int xamarin_logo = 2131165403;
+			
+			// aapt resource value: 0x7F0700DC
+			public const int yemen = 2131165404;
 			
 			static Drawable()
 			{
