@@ -47,11 +47,11 @@
             </OnPlatform>
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="{StaticResource HelveticaNeue}" />
+                <Setter Property="TextColor" Value="{StaticResource primaryColor}" />
             </Style>
             <Style TargetType="Button">
                 <Setter Property="FontFamily" Value="{StaticResource HelveticaNeue}" />
             </Style>
-
             <Style x:Key="buttonContainerStyle" TargetType="yummy:PancakeView">
                 <Setter Property="HasShadow" Value="True" />
                 <Setter Property="Elevation" Value="5" />
