@@ -45,7 +45,7 @@
                                 sharedTransitions:Transition.Group="{Binding News_ID}"
                                 sharedTransitions:Transition.Name="NewsImage"
                                 Aspect="AspectFill"
-                                HeightRequest="300"
+                                HeightRequest="250"
                                 Source="{Binding SelectedNews.Main_Image_Path}" />
                             <yummy:PancakeView
                                 x:Name="detailContainer"
@@ -59,7 +59,7 @@
                                 <Grid Padding="8,10" RowSpacing="0">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
-                                        <RowDefinition Height="Auto" />
+                                        <!--<RowDefinition Height="Auto" />-->
                                     </Grid.RowDefinitions>
                                     <Label
                                         x:Name="lblTitle"
@@ -71,16 +71,20 @@
                                         <Label.FormattedText>
                                             <FormattedString>
                                                 <Span LineHeight="1.3" Text="{Binding SelectedNews.Title}" />
+                                                <Span
+                                                    LineHeight="1.3"
+                                                    Text="{Binding SelectedNews.Source_Tag, StringFormat='  ({0})'}"
+                                                    TextColor="{DynamicResource ThirdColor}" />
                                             </FormattedString>
                                         </Label.FormattedText>
                                     </Label>
-                                    <Label
+                                    <!--<Label
                                         Grid.Row="1"
                                         Margin="10,0,0,10"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Small"
                                         Text="{Binding SelectedNews.Source_Tag}"
-                                        TextColor="{DynamicResource ThirdColor}" />
+                                        TextColor="{DynamicResource ThirdColor}" />-->
                                 </Grid>
                             </yummy:PancakeView>
 
