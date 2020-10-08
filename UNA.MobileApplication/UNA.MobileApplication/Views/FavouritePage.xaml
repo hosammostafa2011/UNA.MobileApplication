@@ -58,8 +58,13 @@
                                                         FontFamily="{StaticResource InterBold}"
                                                         FontSize="Small"
                                                         LineBreakMode="WordWrap"
-                                                        Text="{Binding Title}"
-                                                        TextColor="{DynamicResource primaryColor}" />
+                                                        TextColor="{DynamicResource primaryColor}" >
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span LineHeight="1.3" Text="{Binding Title}" />
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
+                                                    </Label>
                                                 </StackLayout>
                                                 <Grid Grid.Row="1">
                                                     <Grid.ColumnDefinitions>
