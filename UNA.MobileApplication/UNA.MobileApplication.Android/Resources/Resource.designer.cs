@@ -15887,25 +15887,31 @@ namespace UNA.MobileApplication.Droid
 			public const int turkmenistan = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int una_logo = 2131165398;
+			public const int uganda = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int uzbekistn = 2131165399;
+			public const int una_logo = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int vedio = 2131165400;
+			public const int unitedarabemirates = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int world = 2131165401;
+			public const int uzbekistn = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int worldmap = 2131165402;
+			public const int vedio = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int xamarin_logo = 2131165403;
+			public const int world = 2131165403;
 			
 			// aapt resource value: 0x7F0700DC
-			public const int yemen = 2131165404;
+			public const int worldmap = 2131165404;
+			
+			// aapt resource value: 0x7F0700DD
+			public const int xamarin_logo = 2131165405;
+			
+			// aapt resource value: 0x7F0700DE
+			public const int yemen = 2131165406;
 			
 			static Drawable()
 			{
