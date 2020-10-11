@@ -140,12 +140,13 @@ namespace UNA.MobileApplication.ViewModels
             text = tagWhiteSpaceRegex.Replace(text, "><");
             text = lineBreakRegex.Replace(text, Environment.NewLine);
             text = stripFormattingRegex.Replace(text, string.Empty);
-
-            //text = "<html>" +
-            //                "<body style=\"text-align: justify;\">" +
-            //                String.Format("<p>{0}</p>", text) +
-            //                "</body>" +
-            //                "</html>";
+            //string fontSize = "14";
+            //text = "<html><head>" +
+            //    "<link href='https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap' rel='stylesheet'>"
+            //    + "</head>"
+            //    + "<body >" +
+            //String.Format("<p style=\"text-align:justify;font-family:HelveticaNeue;font-size:20px;\">{0}</p>", text) +
+            //                "</body></html>";
 
             return text;
         }

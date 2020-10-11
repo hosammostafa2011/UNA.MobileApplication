@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using LabelHtml.Forms.Plugin.iOS;
 using UIKit;
 
 namespace UNA.MobileApplication.iOS
@@ -23,6 +24,8 @@ namespace UNA.MobileApplication.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Xamarin.Forms.Forms.SetFlags(new string[] { "CarouselView_Experimental", "IndicatorView_Experimental" });
+            HtmlLabelRenderer.Initialize();
+
             global::Xamarin.Forms.Forms.Init();
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             LoadApplication(new App());
