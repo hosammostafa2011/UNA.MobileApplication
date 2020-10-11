@@ -3,42 +3,122 @@
     x:Class="UNA.MobileApplication.Views.ContactUs"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    BackgroundColor="White">
+    BackgroundColor="{StaticResource GrayColor}">
     <ContentPage.Content>
-        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="0">
+                <StackLayout Margin="10" Spacing="10">
+                    <Frame Style="{StaticResource DefaultFrame}">
+                        <StackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="المدير العام" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="director.general@una-oic.org"
+                                TextColor="{DynamicResource ThirdColor}" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource DefaultFrame}">
+                        <StackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="  الشؤون الإدارية" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="Info@una-oic.org"
+                                TextColor="{DynamicResource ThirdColor}" />
+
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="0,0,0,20" Style="{StaticResource DefaultFrame}">
+                        <StackLayout>
+                            <Label
+                                FontSize="Medium"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="الدعم الفني" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="Tech@una-oic.org"
+                                TextColor="{DynamicResource ThirdColor}" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="0,0,0,20" Style="{StaticResource DefaultFrame}">
+                        <StackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text=" الشؤون المالية والموارد البشرية" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="Fin@una-oic.org"
+                                TextColor="{DynamicResource ThirdColor}" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="0,0,0,20" Style="{StaticResource DefaultFrame}">
+                        <StackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="التحرير" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="News@una-oic.org"
+                                TextColor="{DynamicResource ThirdColor}" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="0,0,0,20" Style="{StaticResource DefaultFrame}">
+                        <StackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="الهاتف والعنوان البريدي" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text=" ت: 6652056 -12-966+ "
+                                TextColor="{DynamicResource ThirdColor}" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="ف: 6659358 -12-966+"
+                                TextColor="{DynamicResource ThirdColor}" />
+                            <Label
+                                FontSize="Body"
+                                LineBreakMode="WordWrap"
+                                LineHeight="1"
+                                Text="ص ب 5054 جدة 21422"
+                                TextColor="{DynamicResource ThirdColor}" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+        <!--<ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Grid Margin="0,5,0,0">
                     <Image
                         HeightRequest="50"
                         HorizontalOptions="CenterAndExpand"
                         Source="aboutheader" />
-                    <!--<yummy:PancakeView
-                        Margin="20,0,20,-20"
-                        Padding="10,0,0,0"
-                        BackgroundColor="White"
-                        BorderThickness="1"
-                        CornerRadius="25"
-                        HeightRequest="50"
-                        VerticalOptions="EndAndExpand">
-                        <StackLayout Orientation="Horizontal">
-                            <Image
-                                HeightRequest="25"
-                                HorizontalOptions="Start"
-                                Source="search"
-                                VerticalOptions="CenterAndExpand"
-                                WidthRequest="25" />
-                            <Entry
-                                ClearButtonVisibility="WhileEditing"
-                                FontSize="18"
-                                HorizontalOptions="FillAndExpand"
-                                Keyboard="Text"
-                                Placeholder="Search here "
-                                PlaceholderColor="#99A1B3"
-                                TextColor="#484848" />
-                        </StackLayout>
-                    </yummy:PancakeView>-->
                 </Grid>
                 <yummy:PancakeView
                     Padding="10,10,10,10"
@@ -239,6 +319,6 @@
                     </ScrollView>
                 </yummy:PancakeView>
             </StackLayout>
-        </ScrollView>
+        </ScrollView>-->
     </ContentPage.Content>
 </ContentPage>
