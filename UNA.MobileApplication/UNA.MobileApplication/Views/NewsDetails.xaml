@@ -110,9 +110,10 @@
                                     <Label
                                         Grid.Row="0"
                                         FontFamily="{StaticResource HelveticaNeue}"
+                                        FontSize="{Binding FontSize}"
                                         HorizontalOptions="StartAndExpand"
-                                        HorizontalTextAlignment="Start"
-                                        LineHeight="1.2"
+                                        HorizontalTextAlignment="End"
+                                        LineHeight="1.3"
                                         Text="{Binding SelectedNews.Details}"
                                         TextColor="{DynamicResource secondaryLabel}" />
                                 </Grid>
@@ -129,6 +130,7 @@
                     Aspect="AspectFill"
                     Source="bar.png" />-->
                 <Grid
+                    Margin="7,0,7,20"
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Transparent"
@@ -137,11 +139,29 @@
                     VerticalOptions="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="20*" />
-                        <ColumnDefinition Width="60*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="20*" />
                         <ColumnDefinition Width="20*" />
                     </Grid.ColumnDefinitions>
                     <Image
                         Grid.Column="0"
+                        HorizontalOptions="Center"
+                        Source="minus.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding FontMinusCommand}" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        Source="plus.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding FontPlusCommand}" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image
+                        Grid.Column="2"
                         HorizontalOptions="Center"
                         Source="share.png">
                         <Image.GestureRecognizers>
@@ -150,7 +170,7 @@
                     </Image>
                     <Image
                         x:Name="imgFavourite"
-                        Grid.Column="1"
+                        Grid.Column="3"
                         HorizontalOptions="Center"
                         Source="{Binding SelectedNews.FavouriteImage}">
                         <Image.GestureRecognizers>
@@ -159,7 +179,7 @@
                     </Image>
                     <Image
                         x:Name="imgShare"
-                        Grid.Column="2"
+                        Grid.Column="4"
                         HorizontalOptions="Center"
                         Source="back.png">
                         <Image.GestureRecognizers>

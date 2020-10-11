@@ -20,10 +20,27 @@ namespace UNA.MobileApplication.ViewModels
         }
 
         public Command LoadDetailsCommand { get; set; }
+        public Command FontMinusCommand { get; set; }
+        public Command FontPlusCommand { get; set; }
+
+        public int FontSize { get; set; }
 
         public NewsDetailsViewModel(NEWS item = null)
         {
+            if (CrossSecureStorage.Current.HasKey("FontSize"))
+            {
+                FontSize = Convert.ToInt32(CrossSecureStorage.Current.GetValue("FontSize"));
+            }
+            else
+            {
+                FontSize = 20;
+                CrossSecureStorage.Current.SetValue("FontSize", FontSize.ToString());
+            }
+
             LoadDetailsCommand = new Command(async () => await RunSafe(ExecuteLoadDetailsCommandAsync(item), true));
+
+            FontMinusCommand = new Command(async () => await FontMinus());
+            FontPlusCommand = new Command(async () => await FontPlus());
             SelectedNews = item;
             if (string.IsNullOrEmpty(item.Details))
                 LoadDetailsCommand.Execute(null);
@@ -34,7 +51,6 @@ namespace UNA.MobileApplication.ViewModels
             }
             catch (Exception)
             {
-
                 favImage = "star.png";
             }
 
@@ -43,6 +59,22 @@ namespace UNA.MobileApplication.ViewModels
                 SelectedNews.FavouriteImage = favImage;
                 NotifyPropertyChanged(nameof(SelectedNews));
             }
+
+            NotifyPropertyChanged(nameof(FontSize));
+        }
+
+        private async Task FontMinus()
+        {
+            --FontSize;
+            CrossSecureStorage.Current.SetValue("FontSize", FontSize.ToString());
+            NotifyPropertyChanged(nameof(FontSize));
+        }
+
+        private async Task FontPlus()
+        {
+            ++FontSize;
+            CrossSecureStorage.Current.SetValue("FontSize", FontSize.ToString());
+            NotifyPropertyChanged(nameof(FontSize));
         }
 
         private string GetFavouriteImage(string pNews_ID)
