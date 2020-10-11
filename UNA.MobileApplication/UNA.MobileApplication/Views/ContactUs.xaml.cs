@@ -11,13 +11,15 @@ namespace UNA.MobileApplication.Views
         public ContactUs()
         {
             InitializeComponent();
-            BindingContext = contactUsViewModel;
+            BindingContext = contactUsViewModel = new ContactUsViewModel();
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
             Shell.SetNavBarIsVisible(this, true);
+            if (contactUsViewModel.obsContactData.Count <= 0)
+                contactUsViewModel.LoadContactDataCommand.Execute(null);
         }
     }
 }

@@ -58,13 +58,9 @@
                                                         FontFamily="{StaticResource HelveticaNeue}"
                                                         FontSize="Small"
                                                         LineBreakMode="WordWrap"
-                                                        TextColor="{DynamicResource primaryColor}">
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span LineHeight="1.3" Text="{Binding Title}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
+                                                        LineHeight="0.8"
+                                                        Text="{Binding Title}"
+                                                        TextColor="{DynamicResource primaryColor}" />
                                                 </StackLayout>
                                                 <Grid Grid.Row="1">
                                                     <Grid.ColumnDefinitions>

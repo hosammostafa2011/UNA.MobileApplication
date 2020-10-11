@@ -1181,21 +1181,12 @@
     <BundleResource Include="Resources\search%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\minus%402x.png" />
+    <BundleResource Include="Resources\twitter.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\minus%403x.png" />
+    <BundleResource Include="Resources\facebook.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\plus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\plus%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\plus%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\minus.png" />
+    <BundleResource Include="Resources\google.png" />
   </ItemGroup>
 </Project>
