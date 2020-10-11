@@ -205,7 +205,12 @@ namespace Helper.Service
 
 
         }
-
+        public async Task<string> GET_CONTACT(REQUEST request)
+        {
+            var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+            var response = await apiresponse.GET_CONTACT(request);
+            return response;
+        }
 
         #endregion
 

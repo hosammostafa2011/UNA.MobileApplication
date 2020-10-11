@@ -1,15 +1,4 @@
-﻿using Acr.UserDialogs;
-using Helper;
-using Plugin.SecureStorage;
-using Plugin.Share;
-using Plugin.Share.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UNA.MobileApplication.ViewModels;
+﻿using UNA.MobileApplication.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,10 +7,11 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ContactUs : ContentPage
     {
+        private readonly  ContactUsViewModel contactUsViewModel = null;
         public ContactUs()
         {
             InitializeComponent();
-            //BindingContext = newsDetailsViewModel;
+            BindingContext = contactUsViewModel;
         }
 
         protected override void OnAppearing()
