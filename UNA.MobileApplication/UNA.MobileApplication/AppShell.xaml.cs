@@ -30,11 +30,19 @@ namespace UNA.MobileApplication
             {
                 CrossSecureStorage.Current.SetValue("Language", "1");
             }
-
-            if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    myshell.FlowDirection = FlowDirection.RightToLeft;
+                else
+                    myshell.FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
                 myshell.FlowDirection = FlowDirection.RightToLeft;
-            else
-                myshell.FlowDirection = FlowDirection.LeftToRight;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
+
 
             /*Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
