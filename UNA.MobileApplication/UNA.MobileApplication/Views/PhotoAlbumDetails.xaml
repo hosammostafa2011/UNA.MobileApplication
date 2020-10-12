@@ -7,12 +7,34 @@
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
     <ContentPage.Content>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="90*" />
+            </Grid.RowDefinitions>
+            <Label
+                x:Name="lblAlbumTitle"
+                IsVisible="false"
+                Text="{Binding SELECTED_PHOTO_ALBUM.Title}" />
+            <Label
+                x:Name="lblAlbum_ID"
+                IsVisible="false"
+                Text="{Binding SELECTED_PHOTO_ALBUM.Album_ID}" />
             <Image
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                Source="share.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgShare_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image
+                Grid.Row="1"
                 Aspect="Fill"
                 HorizontalOptions="Fill"
                 Source="ColoredBackground"
                 VerticalOptions="Fill" />
             <ListView
+                Grid.Row="1"
                 BackgroundColor="Transparent"
                 ItemsSource="{Binding obsCollectionPHOTO_ALBUM}"
                 RowHeight="200"

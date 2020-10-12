@@ -15,6 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UNA.MobileApplication.ViewModels;
 using UNA.MobileApplication.Views;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace UNA.MobileApplication
@@ -100,6 +101,24 @@ namespace UNA.MobileApplication
                     else
                         shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID, objCATEGORY.CategoryName, string.Empty) });
                     lstCategory.Items.Add(shell_section);
+                }
+                try
+                {
+                    VersionTracking.Track();
+                    var currentVersion = VersionTracking.CurrentVersion;
+                    if (currentVersion != lstCATEGORY[0].CurrentVersion)
+                    {
+                        if (obj._REQUEST.LANGUAGE == "1")
+                            HelperManger.ShowToast("توجد نسخة حديثة من التطبيق - قم بتحديث التطبيق");
+                        else if (obj._REQUEST.LANGUAGE == "2")
+                            HelperManger.ShowToast("There is a fresh version of the application - update the application.");
+                        else
+                            HelperManger.ShowToast("Il existe une nouvelle version de l'application-mettez à jour l'application.");
+                    }
+                }
+                catch (System.Exception)
+                {
+
                 }
             }
             //-------

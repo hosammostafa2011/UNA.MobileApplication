@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Helper;
+using Plugin.Share;
+using Plugin.Share.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +30,15 @@ namespace UNA.MobileApplication.Views
             Padding = safeInsets;
             //if (photoAlbumDetailsViewModel.obsCollectionPHOTO_ALBUM.Count == 0)
             //photoAlbumDetailsViewModel.LoadPHOTO_ALBUMCommand.Execute(null);
+        }
+
+        private void imgShare_Tapped(object sender, EventArgs e)
+        {
+            IShare shareInfo = CrossShare.Current;
+            ShareMessage _ShareMessage = new ShareMessage();
+            _ShareMessage.Text = lblAlbumTitle.Text;
+            _ShareMessage.Url = string.Format(Constant.PhotoAlbumURL, lblAlbum_ID.Text);
+            shareInfo.Share(_ShareMessage);
         }
     }
 }
