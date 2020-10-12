@@ -8,6 +8,9 @@ using Android.Widget;
 using Android.OS;
 using Acr.UserDialogs;
 using LabelHtml.Forms.Plugin.Droid;
+using System.Threading.Tasks;
+using Firebase.Iid;
+using Plugin.FirebasePushNotification;
 
 namespace UNA.MobileApplication.Droid
 {
@@ -20,6 +23,26 @@ namespace UNA.MobileApplication.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
             base.OnCreate(savedInstanceState);
+            Task.Run(() =>
+            {
+                var instanceid = FirebaseInstanceId.Instance;
+                instanceid.DeleteInstanceId();
+            });
+            if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.O)
+            {
+                FirebasePushNotificationManager.DefaultNotificationChannelId = "FirebasePushNotificationChannel";
+
+                FirebasePushNotificationManager.DefaultNotificationChannelName = "General";
+            }
+#if DEBUG
+            FirebasePushNotificationManager.Initialize(this, true);
+#else
+              FirebasePushNotificationManager.Initialize(this,false);
+#endif
+            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+            {
+            };
+
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             HtmlLabelRenderer.Initialize();
