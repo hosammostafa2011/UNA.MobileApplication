@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "727030931518",
+    "firebase_url": "https://unaapp-63e03.firebaseio.com",
+    "project_id": "unaapp-63e03",
+    "storage_bucket": "unaapp-63e03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727030931518:android:00b2aad9a7a3a0fd",
+        "android_client_info": {
+          "package_name": "com.marshal.iina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727030931518-s4vrpfo4kaif74h3kup0mq0d0ltdb3hd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaVT1t8zPAa9-oIu6GxWU0eSkV4e2E_cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727030931518-s4vrpfo4kaif74h3kup0mq0d0ltdb3hd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "727030931518-8o1f8m86kvpd08rhvdctosl70tn3p6d0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marshal.iina",
+                "app_store_id": "1093423683"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
