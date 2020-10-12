@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UNA.MobileApplication.ViewModels;
+﻿using UNA.MobileApplication.ViewModels;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
@@ -19,6 +15,16 @@ namespace UNA.MobileApplication.Views
         {
             InitializeComponent();
             BindingContext = _homePageViewModel = new HomePageViewModel();
+            try
+            {
+                VersionTracking.Track();
+                var currentVersion = VersionTracking.CurrentVersion;
+                _homePageViewModel.VersionTracking(currentVersion);
+            }
+            catch (System.Exception)
+            {
+
+            }
         }
 
         protected override void OnAppearing()

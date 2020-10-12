@@ -19,8 +19,7 @@
         <yummy:PancakeView x:Name="imgContainer" CornerRadius="10">
             <ffimageloading:CachedImage
                 x:Name="img"
-
-                Aspect="AspectFill"
+                Aspect="AspectFit"
                 Source="{Binding Image}" />
         </yummy:PancakeView>
         <StackLayout x:Name="textContainer">

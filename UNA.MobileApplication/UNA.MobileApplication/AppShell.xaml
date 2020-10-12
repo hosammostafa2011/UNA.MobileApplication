@@ -111,16 +111,13 @@
                         HorizontalOptions="FillAndExpand"
                         WidthRequest="1"
                         Color="#016b56" />
-                    <Grid HeightRequest="50">
+                    <Grid Margin="5" HeightRequest="25">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="33*" />
                             <ColumnDefinition Width="33*" />
                             <ColumnDefinition Width="33*" />
                         </Grid.ColumnDefinitions>
-                        <Grid
-                            Grid.Column="0"
-                            Margin="10,10,10,10"
-                            VerticalOptions="CenterAndExpand">
+                        <Grid Grid.Column="0" VerticalOptions="CenterAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="30*" />
                                 <ColumnDefinition Width="70*" />

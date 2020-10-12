@@ -23,12 +23,17 @@ namespace UNA.MobileApplication.ViewModels
         }
 
         private ObservableCollection<NEWS> _news;
-
         public ObservableCollection<NEWS> obsCollectionNews
         {
             get => _news;
             set => SetProperty(ref _news, value);
         }
+
+        public void VersionTracking(string currentVersion)
+        {
+
+        }
+
         public HomePageViewModel()
         {
             obsCollectionNews = new ObservableCollection<NEWS>();
