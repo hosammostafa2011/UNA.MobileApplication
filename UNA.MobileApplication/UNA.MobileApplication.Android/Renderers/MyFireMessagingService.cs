@@ -31,6 +31,8 @@ namespace UNA.MobileApplication.Droid.Renderers
 
             new NotificationHelper().CreateNotification(title, body);
 
+            // Send Acknowldge to server to check alive
+
             //SendNotificatios(body, title);
             //SendNotificatios(message.GetNotification().Body, message.GetNotification().Title);
         }
