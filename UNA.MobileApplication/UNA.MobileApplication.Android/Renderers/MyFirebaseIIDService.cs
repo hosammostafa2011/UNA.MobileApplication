@@ -28,12 +28,14 @@ namespace UNA.MobileApplication.Droid.Renderers
         public override void OnTokenRefresh()
         {
             var refreshedToken = FirebaseInstanceId.Instance.Token;
-
+            
             Log.Debug(TAG, "Refreshed token: " + refreshedToken);
             SendRegistrationToServer(refreshedToken);
         }
 
-        private void SendRegistrationToServer(string token)
+        
+
+private void SendRegistrationToServer(string token)
         {
             if (!string.IsNullOrEmpty(token))
                 CrossSecureStorage.Current.SetValue("FCMToken", token);

@@ -11,6 +11,8 @@ using LabelHtml.Forms.Plugin.Droid;
 using System.Threading.Tasks;
 using Firebase.Iid;
 using Plugin.FirebasePushNotification;
+using Firebase.Messaging;
+using Android.Content;
 
 namespace UNA.MobileApplication.Droid
 {
@@ -34,14 +36,12 @@ namespace UNA.MobileApplication.Droid
 
                 FirebasePushNotificationManager.DefaultNotificationChannelName = "General";
             }
+
 #if DEBUG
             FirebasePushNotificationManager.Initialize(this, true);
 #else
-              FirebasePushNotificationManager.Initialize(this,false);
+                          FirebasePushNotificationManager.Initialize(this,false);
 #endif
-            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
-            {
-            };
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -57,5 +57,8 @@ namespace UNA.MobileApplication.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        
+       
     }
 }

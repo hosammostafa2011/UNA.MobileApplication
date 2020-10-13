@@ -19,14 +19,19 @@ namespace UNA.MobileApplication
 
         protected override void OnStart()
         {
+            base.OnStart();
+            
         }
 
         protected override void OnSleep()
         {
+            base.OnSleep();
         }
 
         protected override void OnResume()
         {
+            base.OnResume();
         }
+
     }
 }
