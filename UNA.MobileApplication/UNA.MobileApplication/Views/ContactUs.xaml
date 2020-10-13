@@ -8,17 +8,17 @@
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="93*" />
-                <RowDefinition Height="7*" />
+                <RowDefinition Height="90*" />
+                <RowDefinition Height="10*" />
             </Grid.RowDefinitions>
             <StackLayout
                 Grid.Row="1"
                 HorizontalOptions="CenterAndExpand"
                 Orientation="Horizontal"
-                Spacing="10">
+                Spacing="10"
+                VerticalOptions="EndAndExpand">
                 <StackLayout>
                     <yummy:PancakeView
-                        BackgroundColor="#FF5A00"
                         BorderThickness="1"
                         CornerRadius="20"
                         Elevation="3"
@@ -28,16 +28,53 @@
                         <Image
                             Margin="15"
                             Aspect="AspectFit"
-                            HeightRequest="20"
-                            Source="google"
-                            WidthRequest="20" />
+                            HeightRequest="60"
+                            Source="googleplus"
+                            WidthRequest="60" />
+                    </yummy:PancakeView>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="https://docs.microsoft.com/xamarin/" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout>
+                    <yummy:PancakeView
+                        BorderThickness="1"
+                        CornerRadius="20"
+                        Elevation="3"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        WidthRequest="60">
+                        <Image
+                            Margin="15"
+                            Aspect="AspectFit"
+                            HeightRequest="60"
+                            Source="youtube"
+                            WidthRequest="60" />
+                    </yummy:PancakeView>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="https://docs.microsoft.com/xamarin/" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout>
+                    <yummy:PancakeView
+                        BorderThickness="1"
+                        CornerRadius="20"
+                        Elevation="3"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        WidthRequest="60">
+                        <Image
+                            Margin="15"
+                            Aspect="AspectFit"
+                            HeightRequest="60"
+                            Source="instegram"
+                            WidthRequest="60" />
                     </yummy:PancakeView>
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer CommandParameter="https://docs.microsoft.com/xamarin/" />
                     </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <yummy:PancakeView
-                    BackgroundColor="#4359AC"
                     BorderThickness="1"
                     CornerRadius="20"
                     Elevation="3"
@@ -47,12 +84,11 @@
                     <Image
                         Margin="15"
                         Aspect="AspectFit"
-                        HeightRequest="20"
+                        HeightRequest="60"
                         Source="facebook"
-                        WidthRequest="20" />
+                        WidthRequest="60" />
                 </yummy:PancakeView>
                 <yummy:PancakeView
-                    BackgroundColor="#1DA1F2"
                     BorderThickness="1"
                     CornerRadius="20"
                     Elevation="3"

@@ -11,14 +11,14 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <SearchBar
-                Grid.Row="0"
                 x:Name="txtSearch"
+                Grid.Row="0"
                 CancelButtonColor="{DynamicResource primaryColor}"
                 FontFamily="{StaticResource HelveticaNeue}"
                 FontSize="Medium"
-                TextChanged="SearchBar_TextChanged"
                 HorizontalTextAlignment="Center"
                 PlaceholderColor="{DynamicResource primaryColor}"
+                TextChanged="SearchBar_TextChanged"
                 TextColor="{DynamicResource primaryColor}" />
             <ListView
                 x:Name="ItemsListView"

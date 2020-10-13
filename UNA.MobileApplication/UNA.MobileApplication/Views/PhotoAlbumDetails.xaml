@@ -8,8 +8,8 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="10*" />
-                <RowDefinition Height="90*" />
+                <RowDefinition Height="7*" />
+                <RowDefinition Height="93*" />
             </Grid.RowDefinitions>
             <Label
                 x:Name="lblAlbumTitle"
@@ -19,14 +19,21 @@
                 x:Name="lblAlbum_ID"
                 IsVisible="false"
                 Text="{Binding SELECTED_PHOTO_ALBUM.Album_ID}" />
-            <Image
+            <StackLayout
                 Grid.Row="0"
                 HorizontalOptions="Center"
-                Source="share.png">
-                <Image.GestureRecognizers>
+                Orientation="Horizontal">
+                <Image
+                    Grid.Row="0"
+                    HeightRequest="20"
+                    HorizontalOptions="Center"
+                    Source="share.png" />
+                <Label FontSize="Medium" Text="شارك الصور" />
+
+                <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgShare_Tapped" />
-                </Image.GestureRecognizers>
-            </Image>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
             <Image
                 Grid.Row="1"
                 Aspect="Fill"
