@@ -28,8 +28,10 @@ namespace UNA.MobileApplication.Droid.Renderers
 
             string body = message.Data["body"];
             string title = message.Data["title"];
+            string image = message.Data["image"];
+            string id = message.Data["id"];
 
-            new NotificationHelper().CreateNotification(title, body);
+            new NotificationHelper().CreateNotification(title, body,image,id);
 
             // Send Acknowldge to server to check alive
 
@@ -37,7 +39,7 @@ namespace UNA.MobileApplication.Droid.Renderers
             //SendNotificatios(message.GetNotification().Body, message.GetNotification().Title);
         }
 
-        public void SendNotificatios(string body, string Header)
+        public void SendNotificatios(string body, string Header,string image)
         {
             Notification.Builder builder = new Notification.Builder(this);
             builder.SetSmallIcon(Resource.Drawable.icon);

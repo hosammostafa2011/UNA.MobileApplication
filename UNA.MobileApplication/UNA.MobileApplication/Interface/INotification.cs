@@ -6,6 +6,6 @@ namespace UNA.MobileApplication.Interface
 {
     public interface INotification
     {
-        void CreateNotification(String title, String message);
+        void CreateNotification(String title, String message,string image,string id);
     }
 }
