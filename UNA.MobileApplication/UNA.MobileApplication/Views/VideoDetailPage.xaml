@@ -23,7 +23,7 @@
                     HeightRequest="20"
                     HorizontalOptions="Center"
                     Source="share.png" />
-                <Label FontSize="Medium" Text="شارك الفديو" />
+                <Label x:Name="lblShareVedio" FontSize="Medium" />
 
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgShare_Tapped" />

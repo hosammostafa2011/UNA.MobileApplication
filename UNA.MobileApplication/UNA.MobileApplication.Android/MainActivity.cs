@@ -16,7 +16,7 @@ using Android.Content;
 
 namespace UNA.MobileApplication.Droid
 {
-    [Activity(Label = "UNA-OIC (يونا)", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
+    [Activity(Label = "UNA-OIC (يونا)", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -25,7 +25,7 @@ namespace UNA.MobileApplication.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
             base.OnCreate(savedInstanceState);
-            Task.Run(() =>
+            /*Task.Run(() =>
             {
                 var instanceid = FirebaseInstanceId.Instance;
                 instanceid.DeleteInstanceId();
@@ -42,7 +42,7 @@ namespace UNA.MobileApplication.Droid
 #else
                           FirebasePushNotificationManager.Initialize(this,false);
 #endif
-
+            */
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             HtmlLabelRenderer.Initialize();
