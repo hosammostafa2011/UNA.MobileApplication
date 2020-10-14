@@ -27,7 +27,6 @@ namespace UNA.MobileApplication
         private async void ScaleIcon()
         {
             // wait until the UI is present
-            await Task.Delay(300);
 
             // animate the splash logo
             await SplashIcon.ScaleTo(0.5, 500, Easing.CubicInOut);
