@@ -143,9 +143,17 @@ namespace Helper.Service
         }
         public async Task<string> GET_TOP_NEWS(REQUEST request)
         {
-            var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
-            var response = await apiresponse.GET_TOP_NEWS(request);
-            return response;
+            try
+            {
+                var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+                var response = await apiresponse.GET_TOP_NEWS(request);
+                return response;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public async Task<string> GET_REPORT(REQUEST request)
         {

@@ -39,7 +39,7 @@ namespace UNA.MobileApplication.Views
                     break;
 
                 case "3":
-                    Title = "Les plus lus";
+                    _title = "Les plus lus";
                     break;
             }
             BindingContext = _newsListViewModel = new NewsListViewModel("1400", _title, string.Empty);
