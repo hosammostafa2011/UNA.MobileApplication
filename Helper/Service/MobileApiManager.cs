@@ -17,15 +17,19 @@ namespace Helper.Service
 {
     public class MobileApiManager : IMobileApiManager
     {
-        IUserDialogs _userDialogs = UserDialogs.Instance;
-        IConnectivity _connectivity = CrossConnectivity.Current;
+        private IUserDialogs _userDialogs = UserDialogs.Instance;
+        private IConnectivity _connectivity = CrossConnectivity.Current;
+
         //IApiService<IMakeUpApi> makeUpApi;
-        IApiService<IMobileApiManager> makeUpApi;
+        private IApiService<IMobileApiManager> makeUpApi;
+
         public bool IsConnected { get; set; }
         public bool IsReachable { get; set; }
-        Dictionary<int, CancellationTokenSource> runningTasks = new Dictionary<int, CancellationTokenSource>();
-        Dictionary<string, Task<HttpResponseMessage>> taskContainer = new Dictionary<string, Task<HttpResponseMessage>>();
+        private Dictionary<int, CancellationTokenSource> runningTasks = new Dictionary<int, CancellationTokenSource>();
+        private Dictionary<string, Task<HttpResponseMessage>> taskContainer = new Dictionary<string, Task<HttpResponseMessage>>();
+
         #region General Setting
+
         public MobileApiManager(IApiService<IMobileApiManager> _makeUpApi)
         {
             makeUpApi = _makeUpApi;
@@ -33,7 +37,7 @@ namespace Helper.Service
             _connectivity.ConnectivityChanged += OnConnectivityChanged;
         }
 
-        void OnConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        private void OnConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             IsConnected = e.IsConnected;
 
@@ -49,8 +53,8 @@ namespace Helper.Service
             }
         }
 
+        #endregion General Setting
 
-        #endregion
         protected async Task<TData> RemoteRequestAsync<TData>(Task<TData> task)
             where TData : HttpResponseMessage,
             new()
@@ -96,7 +100,7 @@ namespace Helper.Service
 
                 if (result.StatusCode == HttpStatusCode.Unauthorized)
                 {
-                    //Logout the user 
+                    //Logout the user
                 }
                 runningTasks.Remove(task.Id);
 
@@ -107,12 +111,14 @@ namespace Helper.Service
         }
 
         #region UNA APP
+
         public async Task<string> GET_LATEST_NEWS(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_LATEST_NEWS(request);
             return response;
         }
+
         public async Task<string> GET_CATEGORY(REQUEST request)
         {
             try
@@ -123,24 +129,24 @@ namespace Helper.Service
             }
             catch (Exception ex)
             {
-
                 throw;
             }
-
-
         }
+
         public async Task<string> GET_NEWS_BY_CATEGORY(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_NEWS_BY_CATEGORY(request);
             return response;
         }
+
         public async Task<string> GET_NEWS_DETAIL(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_NEWS_DETAIL(request);
             return response;
         }
+
         public async Task<string> GET_TOP_NEWS(REQUEST request)
         {
             try
@@ -155,48 +161,56 @@ namespace Helper.Service
                 throw;
             }
         }
+
         public async Task<string> GET_REPORT(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_REPORT(request);
             return response;
         }
+
         public async Task<string> GET_REPORT_DETAIL(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_REPORT_DETAIL(request);
             return response;
         }
+
         public async Task<string> GET_PHOTO_ALBUM(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_PHOTO_ALBUM(request);
             return response;
         }
+
         public async Task<string> GET_PHOTO_ALBUM_DETAIL(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_PHOTO_ALBUM_DETAIL(request);
             return response;
         }
+
         public async Task<string> GET_VIDEO(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_VIDEO(request);
             return response;
         }
+
         public async Task<string> GET_FAVOURITE(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_FAVOURITE(request);
             return response;
         }
+
         public async Task<string> GET_NEWS_BY_NATION(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.GET_NEWS_BY_NATION(request);
             return response;
         }
+
         public async Task<string> GET_NATION(REQUEST request)
         {
             try
@@ -207,12 +221,10 @@ namespace Helper.Service
             }
             catch (Exception ex)
             {
-
                 throw;
             }
-
-
         }
+
         public async Task<string> GET_CONTACT(REQUEST request)
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
@@ -220,7 +232,13 @@ namespace Helper.Service
             return response;
         }
 
-        #endregion
+        public async Task<string> SET_FCM_TOKEN(REQUEST request)
+        {
+            var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+            var response = await apiresponse.SET_FCM_TOKEN(request);
+            return response;
+        }
 
+        #endregion UNA APP
     }
 }

@@ -44,7 +44,6 @@ namespace UNA.MobileApplication
                 CrossSecureStorage.Current.SetValue("Language", "1");
             }
 
-
             /*Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));*/
@@ -56,6 +55,27 @@ namespace UNA.MobileApplication
             });
             //Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
             //Routing.RegisterRoute(nameof(ReportPage), typeof(ReportPage));
+            RegiesterMessageCenter();
+        }
+
+        private void RegiesterMessageCenter()
+        {
+            MessagingCenter.Subscribe<string, string>("MyApp", "TokenChanges", async (sender, arg) =>
+            {
+                BaseViewModel obj = new BaseViewModel();
+                try
+                {
+                    obj._REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                }
+                catch (Exception)
+                {
+                    obj._REQUEST.LANGUAGE = "1";
+                }
+                obj._REQUEST.USER_TOKEN = "Aa@159357";
+                obj._REQUEST.FCM_TOKEN = arg.ToString();
+                obj._REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
+                var result = await obj.ApiManager.SET_FCM_TOKEN(obj._REQUEST);
+            });
         }
 
         private async Task LoadCategory()
@@ -118,7 +138,6 @@ namespace UNA.MobileApplication
                 }
                 catch (System.Exception)
                 {
-
                 }
             }
             //-------

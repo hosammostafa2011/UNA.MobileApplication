@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Firebase.Iid;
 using Plugin.SecureStorage;
+using Xamarin.Forms;
 
 namespace UNA.MobileApplication.Droid.Renderers
 {
@@ -28,14 +29,13 @@ namespace UNA.MobileApplication.Droid.Renderers
         public override void OnTokenRefresh()
         {
             var refreshedToken = FirebaseInstanceId.Instance.Token;
-            
+
             Log.Debug(TAG, "Refreshed token: " + refreshedToken);
             SendRegistrationToServer(refreshedToken);
+            MessagingCenter.Send<string, string>("MyApp", "TokenChanges", refreshedToken);
         }
 
-        
-
-private void SendRegistrationToServer(string token)
+        private void SendRegistrationToServer(string token)
         {
             if (!string.IsNullOrEmpty(token))
                 CrossSecureStorage.Current.SetValue("FCMToken", token);
