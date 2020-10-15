@@ -57,6 +57,9 @@
     <PackageReference Include="Acr.UserDialogs">
       <Version>7.1.0.454</Version>
     </PackageReference>
+    <PackageReference Include="FirebaseAdmin">
+      <Version>1.17.1</Version>
+    </PackageReference>
     <PackageReference Include="HtmlAgilityPack">
       <Version>1.11.24</Version>
     </PackageReference>

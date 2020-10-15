@@ -30,6 +30,7 @@ namespace UNA.MobileApplication.Droid
                 var instanceid = FirebaseInstanceId.Instance;
                 instanceid.DeleteInstanceId();
             });
+
             if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.O)
             {
                 FirebasePushNotificationManager.DefaultNotificationChannelId = "FirebasePushNotificationChannel";

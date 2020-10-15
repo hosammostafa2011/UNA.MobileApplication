@@ -11,6 +11,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Firebase.Iid;
+using Firebase.Messaging;
 using Plugin.SecureStorage;
 using Xamarin.Forms;
 
@@ -26,12 +27,15 @@ namespace UNA.MobileApplication.Droid.Renderers
         private const string TAG = "MyFirebaseIIDService";
 
         [Obsolete]
-        public override void OnTokenRefresh()
+        public async override void OnTokenRefresh()
         {
             var refreshedToken = FirebaseInstanceId.Instance.Token;
 
             Log.Debug(TAG, "Refreshed token: " + refreshedToken);
             SendRegistrationToServer(refreshedToken);
+
+            //var response = FirebaseMessaging.Instance.SubscribeToTopic("ARABIC");
+
             MessagingCenter.Send<string, string>("MyApp", "TokenChanges", refreshedToken);
         }
 
