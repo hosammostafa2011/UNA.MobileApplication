@@ -1,5 +1,6 @@
 ﻿using Helper;
 using Helper.Model;
+using Plugin.SecureStorage;
 using Plugin.Share;
 using Plugin.Share.Abstractions;
 using System;
@@ -18,6 +19,42 @@ namespace UNA.MobileApplication.Views
     {
         public bool IsIOS { get; set; }
         public string lblVedio_ID { get; set; }
+        public string _shareVedio = string.Empty;
+        public string ShareVedio
+        {
+            get
+            {
+                try
+                {
+                    string strLanguage = string.Empty;
+                    if (CrossSecureStorage.Current.HasKey("Language"))
+                        strLanguage = CrossSecureStorage.Current.GetValue("Language");
+                    else
+                        strLanguage = "1";
+                    switch (strLanguage)
+                    {
+                        case "1":
+                            _shareVedio = "شارك الفديو";
+                            break;
+
+                        case "2":
+                            _shareVedio = "Share vedio";
+                            break;
+
+                        case "3":
+                            _shareVedio = "Partagez la vidéo";
+                            break;
+                    }
+                }
+                catch (Exception)
+                {
+                }
+                return _shareVedio;
+            }
+        }
+
+        public string Video_Code { get; set; }
+
         public VideoDetailPage(VIDEO vVIDEO)
         {
             InitializeComponent();
@@ -33,6 +70,8 @@ namespace UNA.MobileApplication.Views
             BodyViewAndroid.Source = html;
             lblTitle.Text = vVIDEO.Title;
             lblVedio_ID = vVIDEO.Video_ID;
+            lblShareVedio.Text = ShareVedio;
+            Video_Code=vVIDEO.Video_Code;
         }
 
         private void imgShare_Tapped(object sender, EventArgs e)
@@ -40,7 +79,7 @@ namespace UNA.MobileApplication.Views
             IShare shareInfo = CrossShare.Current;
             ShareMessage _ShareMessage = new ShareMessage();
             _ShareMessage.Text = lblTitle.Text;
-            _ShareMessage.Url = string.Format(Constant.VedioURL, lblVedio_ID);
+            _ShareMessage.Url = string.Format(string.Format("https://www.youtube.com/embed/{0}?autoplay=1", Video_Code), lblVedio_ID);
             shareInfo.Share(_ShareMessage);
         }
     }

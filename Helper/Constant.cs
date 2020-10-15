@@ -16,7 +16,5 @@ namespace Helper
                 return apiHostName;
             }
         }
-
-        public static System.IFormatProvider VedioURL { get; set; }
     }
 }

@@ -45,7 +45,7 @@
                             <ffimageloading:CachedImage
                                 sharedTransitions:Transition.Group="{Binding News_ID}"
                                 sharedTransitions:Transition.Name="NewsImage"
-                                Aspect="AspectFit"
+                                Aspect="AspectFill"
                                 HeightRequest="250"
                                 Source="{Binding SelectedNews.Main_Image_Path}" />
                             <yummy:PancakeView

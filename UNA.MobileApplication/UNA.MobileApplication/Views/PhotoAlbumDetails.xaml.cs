@@ -1,4 +1,5 @@
 ﻿using Helper;
+using Plugin.SecureStorage;
 using Plugin.Share;
 using Plugin.Share.Abstractions;
 using System;
@@ -17,6 +18,39 @@ namespace UNA.MobileApplication.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PhotoAlbumDetails : ContentPage
     {
+        public string _sharePhoto = string.Empty;
+        public string SharePhoto
+        {
+            get
+            {
+                try
+                {
+                    string strLanguage = string.Empty;
+                    if (CrossSecureStorage.Current.HasKey("Language"))
+                        strLanguage = CrossSecureStorage.Current.GetValue("Language");
+                    else
+                        strLanguage = "1";
+                    switch (strLanguage)
+                    {
+                        case "1":
+                            _sharePhoto = "شارك الصور";
+                            break;
+
+                        case "2":
+                            _sharePhoto = "Share album";
+                            break;
+
+                        case "3":
+                            _sharePhoto = "Partager des photos";
+                            break;
+                    }
+                }
+                catch (Exception)
+                {
+                }
+                return _sharePhoto;
+            }
+        }
         public PhotoAlbumDetails(PhotoAlbumDetailsViewModel photoAlbumDetailsViewModel)
         {
             InitializeComponent();
@@ -30,6 +64,7 @@ namespace UNA.MobileApplication.Views
             Padding = safeInsets;
             //if (photoAlbumDetailsViewModel.obsCollectionPHOTO_ALBUM.Count == 0)
             //photoAlbumDetailsViewModel.LoadPHOTO_ALBUMCommand.Execute(null);
+            lblSharePhoto.Text = SharePhoto;
         }
 
         private void imgShare_Tapped(object sender, EventArgs e)

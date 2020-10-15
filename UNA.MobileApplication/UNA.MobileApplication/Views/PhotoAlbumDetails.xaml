@@ -28,7 +28,7 @@
                     HeightRequest="20"
                     HorizontalOptions="Center"
                     Source="share.png" />
-                <Label FontSize="Medium" Text="شارك الصور" />
+                <Label x:Name="lblSharePhoto" FontSize="Medium" />
 
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="imgShare_Tapped" />
