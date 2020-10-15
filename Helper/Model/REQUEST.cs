@@ -14,6 +14,10 @@ namespace Model.Mobile
             this.FCM_TOKEN = fcm_token;
         }
 
+        public REQUEST()
+        {
+        }
+
         public REQUEST(string user_token, string developer_token, string language,
             string package_name,
             string device_id, string device_name,
@@ -34,10 +38,6 @@ namespace Model.Mobile
             this.PACKAGE_NAME = package_name;
             this.USER_TOKEN = user_token;
             this.FCM_TOKEN = fcm_token;
-        }
-
-        public REQUEST()
-        {
         }
 
         public string JSON { get; set; }

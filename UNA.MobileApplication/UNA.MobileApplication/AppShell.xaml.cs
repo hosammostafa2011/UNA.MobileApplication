@@ -62,8 +62,19 @@ namespace UNA.MobileApplication
         {
             MessagingCenter.Subscribe<string, string>("MyApp", "TokenChanges", async (sender, arg) =>
             {
-                string xx = arg.ToString();
-                HelperManger.ShowToast(arg.ToString());
+                BaseViewModel obj = new BaseViewModel();
+                try
+                {
+                    obj._REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                }
+                catch (Exception)
+                {
+                    obj._REQUEST.LANGUAGE = "1";
+                }
+                obj._REQUEST.USER_TOKEN = "Aa@159357";
+                obj._REQUEST.FCM_TOKEN = arg.ToString();
+                obj._REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
+                var result = await obj.ApiManager.SET_FCM_TOKEN(obj._REQUEST);
             });
         }
 

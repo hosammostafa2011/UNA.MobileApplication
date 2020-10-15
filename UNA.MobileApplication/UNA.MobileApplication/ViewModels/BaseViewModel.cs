@@ -31,7 +31,7 @@ namespace UNA.MobileApplication.ViewModels
         public ObservableCollection<RESPONSE> _RESPONSE { get; set; } = new ObservableCollection<RESPONSE>();
 
         //public REQUEST _REQUEST = new REQUEST("", "");
-        public REQUEST _REQUEST = new REQUEST(DeviceInfo.Platform.ToString(), FCM_TOKEN);
+        public REQUEST _REQUEST = new REQUEST();
 
         public static string FCM_TOKEN { get { return CrossSecureStorage.Current.GetValue("FCMToken"); } }
         private bool isBusy = false;
