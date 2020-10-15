@@ -30,6 +30,9 @@
     <Compile Update="Views\ContactUs.xaml.cs">
       <DependentUpon>ContactUs.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\MostReadPage.xaml.cs">
+      <DependentUpon>MostReadPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ReportPage.xaml.cs">
       <DependentUpon>ReportPage.xaml</DependentUpon>
     </Compile>

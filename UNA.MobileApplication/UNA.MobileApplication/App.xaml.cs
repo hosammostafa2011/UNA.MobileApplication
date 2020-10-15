@@ -13,16 +13,17 @@ namespace UNA.MobileApplication
         public App()
         {
             InitializeComponent();
-
             DependencyService.Register<MockDataStore>();
-            if (Device.RuntimePlatform == Device.iOS)
+            MainPage = new SplashPage();
+            /*if (Device.RuntimePlatform == Device.iOS)
             {
                 MainPage = new SplashPage();
             }
             else if (Device.RuntimePlatform == Device.Android)
             {
-                MainPage = new AppShell();
-            }
+                MainPage = new SplashPage();
+                //MainPage = new AppShell();
+            }*/
         }
 
         protected override void OnStart()

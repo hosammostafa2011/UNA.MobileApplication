@@ -114,7 +114,7 @@ namespace UNA.MobileApplication.ViewModels
                     else if (categoryID == "1400")
                     {
                         _REQUEST.ROW_COUNT = Convert.ToString(50);
-                        result = await ApiManager.GET_LATEST_NEWS(_REQUEST);
+                        result = await ApiManager.GET_TOP_NEWS(_REQUEST);
                     }
                     else
                     {

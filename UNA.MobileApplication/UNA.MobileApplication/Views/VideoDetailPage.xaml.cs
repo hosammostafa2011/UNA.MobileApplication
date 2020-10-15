@@ -52,6 +52,9 @@ namespace UNA.MobileApplication.Views
                 return _shareVedio;
             }
         }
+
+        public string Video_Code { get; set; }
+
         public VideoDetailPage(VIDEO vVIDEO)
         {
             InitializeComponent();
@@ -68,6 +71,7 @@ namespace UNA.MobileApplication.Views
             lblTitle.Text = vVIDEO.Title;
             lblVedio_ID = vVIDEO.Video_ID;
             lblShareVedio.Text = ShareVedio;
+            Video_Code=vVIDEO.Video_Code;
         }
 
         private void imgShare_Tapped(object sender, EventArgs e)
@@ -75,7 +79,7 @@ namespace UNA.MobileApplication.Views
             IShare shareInfo = CrossShare.Current;
             ShareMessage _ShareMessage = new ShareMessage();
             _ShareMessage.Text = lblTitle.Text;
-            _ShareMessage.Url = string.Format(Constant.VedioURL, lblVedio_ID);
+            _ShareMessage.Url = string.Format(string.Format("https://www.youtube.com/embed/{0}?autoplay=1", Video_Code), lblVedio_ID);
             shareInfo.Share(_ShareMessage);
         }
     }

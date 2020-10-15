@@ -95,7 +95,7 @@ namespace UNA.MobileApplication
                     else if (objCATEGORY.Category_ID == "7000")
                         shell_section.Items.Add(new ShellContent() { Content = new FavouritePage("7000") });
                     else if (objCATEGORY.Category_ID == "1400")
-                        shell_section.Items.Add(new ShellContent() { Content = new FavouritePage("7000") });
+                        shell_section.Items.Add(new ShellContent() { Content = new MostReadPage("1400") });
                     else if (objCATEGORY.Category_ID == "1600")
                         shell_section.Items.Add(new ShellContent() { Content = new ContactUs() });
                     else
