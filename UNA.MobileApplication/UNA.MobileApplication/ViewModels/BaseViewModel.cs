@@ -16,6 +16,8 @@ using Helper.Interface;
 using Helper;
 using Model.Mobile;
 using System.Text.RegularExpressions;
+using Plugin.SecureStorage;
+using Xamarin.Essentials;
 
 namespace UNA.MobileApplication.ViewModels
 {
@@ -27,7 +29,11 @@ namespace UNA.MobileApplication.ViewModels
         private IApiService<IMobileApiManager> makeUpApi = new ApiService<IMobileApiManager>(Constant.ApiUrl);
         public ResourceDictionary Resources = new ResourceDictionary();
         public ObservableCollection<RESPONSE> _RESPONSE { get; set; } = new ObservableCollection<RESPONSE>();
-        public REQUEST _REQUEST = new REQUEST("", "");
+
+        //public REQUEST _REQUEST = new REQUEST("", "");
+        public REQUEST _REQUEST = new REQUEST(DeviceInfo.Platform.ToString(), FCM_TOKEN);
+
+        public static string FCM_TOKEN { get { return CrossSecureStorage.Current.GetValue("FCMToken"); } }
         private bool isBusy = false;
 
         public bool IsBusy

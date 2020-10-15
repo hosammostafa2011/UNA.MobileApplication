@@ -44,7 +44,6 @@ namespace UNA.MobileApplication
                 CrossSecureStorage.Current.SetValue("Language", "1");
             }
 
-
             /*Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));*/
@@ -56,6 +55,16 @@ namespace UNA.MobileApplication
             });
             //Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
             //Routing.RegisterRoute(nameof(ReportPage), typeof(ReportPage));
+            RegiesterMessageCenter();
+        }
+
+        private void RegiesterMessageCenter()
+        {
+            MessagingCenter.Subscribe<string, string>("MyApp", "TokenChanges", async (sender, arg) =>
+            {
+                string xx = arg.ToString();
+                HelperManger.ShowToast(arg.ToString());
+            });
         }
 
         private async Task LoadCategory()
@@ -118,7 +127,6 @@ namespace UNA.MobileApplication
                 }
                 catch (System.Exception)
                 {
-
                 }
             }
             //-------
