@@ -132,6 +132,7 @@
                             </Image>
                             <Label
                                 Grid.Column="1"
+                                Margin="2,-5"
                                 FontFamily="{StaticResource HelveticaNeue}"
                                 HeightRequest="30"
                                 HorizontalTextAlignment="Start"
@@ -159,6 +160,7 @@
                             </Image>
                             <Label
                                 Grid.Column="1"
+                                Margin="2,-5"
                                 FontFamily="{StaticResource HelveticaNeue}"
                                 HeightRequest="30"
                                 HorizontalTextAlignment="Start"
@@ -186,6 +188,7 @@
                             </Image>
                             <Label
                                 Grid.Column="1"
+                                Margin="2,-5"
                                 FontFamily="{StaticResource HelveticaNeue}"
                                 HeightRequest="30"
                                 HorizontalTextAlignment="Start"
