@@ -23,23 +23,21 @@ namespace UNA.MobileApplication.Droid.Renderers
         public override void OnMessageReceived(RemoteMessage message)
         {
             base.OnMessageReceived(message);
+
             ICollection<string> lstKeys = message.Data.Keys;
             ICollection<string> lstValues = message.Data.Values;
-
             string body = message.Data["body"];
             string title = message.Data["title"];
             string image = message.Data["image"];
             string id = message.Data["id"];
 
-            new NotificationHelper().CreateNotification(title, body,image,id);
+            new NotificationHelper().CreateNotification(title, body, image, id);
 
             // Send Acknowldge to server to check alive
-
-            //SendNotificatios(body, title);
-            //SendNotificatios(message.GetNotification().Body, message.GetNotification().Title);
+            //SendNotificatios(message.GetNotification().Body, message.GetNotification().Title, message.Data);
         }
 
-        public void SendNotificatios(string body, string Header,string image)
+        public void SendNotificatios(string body, string Header, IDictionary<string, string> data)
         {
             Notification.Builder builder = new Notification.Builder(this);
             builder.SetSmallIcon(Resource.Drawable.icon);

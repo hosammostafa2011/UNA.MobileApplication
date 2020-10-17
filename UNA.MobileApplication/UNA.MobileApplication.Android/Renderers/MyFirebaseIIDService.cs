@@ -34,7 +34,7 @@ namespace UNA.MobileApplication.Droid.Renderers
             Log.Debug(TAG, "Refreshed token: " + refreshedToken);
             SendRegistrationToServer(refreshedToken);
 
-            //var response = FirebaseMessaging.Instance.SubscribeToTopic("ARABIC");
+            var response1 = FirebaseMessaging.Instance.SubscribeToTopic("1");
 
             MessagingCenter.Send<string, string>("MyApp", "TokenChanges", refreshedToken);
         }
