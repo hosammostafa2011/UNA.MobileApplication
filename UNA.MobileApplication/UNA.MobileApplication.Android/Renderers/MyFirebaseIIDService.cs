@@ -29,6 +29,7 @@ namespace UNA.MobileApplication.Droid.Renderers
         [Obsolete]
         public async override void OnTokenRefresh()
         {
+            /*
             var refreshedToken = FirebaseInstanceId.Instance.Token;
 
             Log.Debug(TAG, "Refreshed token: " + refreshedToken);
@@ -37,6 +38,7 @@ namespace UNA.MobileApplication.Droid.Renderers
             var response1 = FirebaseMessaging.Instance.SubscribeToTopic("1");
 
             MessagingCenter.Send<string, string>("MyApp", "TokenChanges", refreshedToken);
+            */
         }
 
         private void SendRegistrationToServer(string token)

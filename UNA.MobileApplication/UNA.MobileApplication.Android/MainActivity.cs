@@ -25,7 +25,7 @@ namespace UNA.MobileApplication.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
             base.OnCreate(savedInstanceState);
-            Task.Run(() =>
+            /*Task.Run(() =>
             {
                 var instanceid = FirebaseInstanceId.Instance;
                 instanceid.DeleteInstanceId();
@@ -42,7 +42,7 @@ namespace UNA.MobileApplication.Droid
             FirebasePushNotificationManager.Initialize(this, true);
 #else
                           FirebasePushNotificationManager.Initialize(this,false);
-#endif
+#endif*/
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

@@ -5,8 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
             <Image
                 x:Name="SplashIcon"
+                Grid.Row="0"
+                Grid.Column="0"
                 HorizontalOptions="Center"
                 VerticalOptions="Center">
                 <Image.Source>
