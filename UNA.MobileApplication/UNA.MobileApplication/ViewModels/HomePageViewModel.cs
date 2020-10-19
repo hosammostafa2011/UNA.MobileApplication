@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace UNA.MobileApplication.ViewModels
@@ -13,7 +14,7 @@ namespace UNA.MobileApplication.ViewModels
     public class HomePageViewModel : BaseViewModel
     {
         private NEWS _selectedNews;
-
+        private bool _isRefreshing = false;
         public string CategoryId { get; set; }
 
         public NEWS SelectedNews
@@ -23,6 +24,7 @@ namespace UNA.MobileApplication.ViewModels
         }
 
         private ObservableCollection<NEWS> _news;
+
         public ObservableCollection<NEWS> obsCollectionNews
         {
             get => _news;
@@ -31,7 +33,32 @@ namespace UNA.MobileApplication.ViewModels
 
         public void VersionTracking(string currentVersion)
         {
+        }
 
+        public bool IsRefreshing
+        {
+            get { return _isRefreshing; }
+            set
+            {
+                _isRefreshing = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    IsRefreshing = true;
+
+                    await RunSafe(ExecuteLoadItemsCommandAsync(), true);
+
+                    IsRefreshing = false;
+                    NotifyPropertyChanged();
+                });
+            }
         }
 
         public HomePageViewModel()

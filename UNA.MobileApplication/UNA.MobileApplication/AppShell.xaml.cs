@@ -44,19 +44,17 @@ namespace UNA.MobileApplication
                 myshell.FlowDirection = FlowDirection.RightToLeft;
                 CrossSecureStorage.Current.SetValue("Language", "1");
             }
-
-            /*Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));*/
             Shell.SetTabBarIsVisible(this, false);
-            //BindingContext = _viewModel = new vmAppShell();
             Device.BeginInvokeOnMainThread(async () =>
             {
                 await new BaseViewModel().RunSafe(LoadCategory(), true);
             });
-            //Routing.RegisterRoute(nameof(HomePageList), typeof(HomePageList));
-            //Routing.RegisterRoute(nameof(ReportPage), typeof(ReportPage));
             RegiesterMessageCenter();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
         }
 
         private void RegiesterMessageCenter()

@@ -29,10 +29,10 @@ namespace UNA.MobileApplication
             // wait until the UI is present
 
             // animate the splash logo
-            await SplashIcon.ScaleTo(0.5, 500, Easing.CubicInOut);
+            await SplashIcon.ScaleTo(0.5, 1000, Easing.CubicInOut);
             var animationTasks = new[]{
-                SplashIcon.ScaleTo(100.0, 1000, Easing.CubicInOut),
-                SplashIcon.FadeTo(0, 700, Easing.CubicInOut)
+                SplashIcon.ScaleTo(100.0, 2000, Easing.CubicInOut),
+                SplashIcon.FadeTo(0, 1400, Easing.CubicInOut)
             };
             await Task.WhenAll(animationTasks);
 
