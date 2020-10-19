@@ -1255,4 +1255,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\facebook%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\folder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\folder%403x.png" />
+  </ItemGroup>
 </Project>
