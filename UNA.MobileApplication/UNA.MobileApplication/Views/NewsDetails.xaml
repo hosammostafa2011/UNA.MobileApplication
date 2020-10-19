@@ -46,12 +46,12 @@
                                 sharedTransitions:Transition.Group="{Binding News_ID}"
                                 sharedTransitions:Transition.Name="NewsImage"
                                 Aspect="AspectFill"
-                                HeightRequest="250"
+                                HeightRequest="230"
                                 Source="{Binding SelectedNews.Main_Image_Path}" />
                             <yummy:PancakeView
                                 x:Name="detailContainer"
                                 Grid.Row="1"
-                                Margin="20,-50,20,0"
+                                Margin="20,-30,20,0"
                                 Border="{yummy:BorderMarkup Color=#016b56,
                                                             Thickness=1}"
                                 BorderThickness="13"
