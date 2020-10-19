@@ -18,7 +18,7 @@ namespace UNA.MobileApplication.ViewModels
             get => _PhotoAlbumDetails;
             set => SetProperty(ref _PhotoAlbumDetails, value);
         }
-
+        
         public Command LoadPHOTO_ALBUMCommand { get; set; }
 
         public PhotoAlbumDetailsViewModel(PHOTO_ALBUM item)
@@ -56,6 +56,7 @@ namespace UNA.MobileApplication.ViewModels
                     List<PHOTO_ALBUM> lstPHOTO_ALBUM = JsonConvert.DeserializeObject<List<PHOTO_ALBUM>>(_RESPONSE[0].JSON);
                     obsCollectionPHOTO_ALBUM = new ObservableCollection<PHOTO_ALBUM>(lstPHOTO_ALBUM);
                     SELECTED_PHOTO_ALBUM = objPHOTO_ALBUM;
+                    NotifyPropertyChanged(nameof(SELECTED_PHOTO_ALBUM));
                 }
                 NotifyPropertyChanged(nameof(obsCollectionPHOTO_ALBUM));
             }
