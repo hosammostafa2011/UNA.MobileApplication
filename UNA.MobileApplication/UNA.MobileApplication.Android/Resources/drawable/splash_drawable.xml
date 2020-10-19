@@ -16,7 +16,6 @@
         android:src="@drawable/splashbackground"
 
           android:layout_width="match_parent"
-
     android:layout_gravity="center"
     android:scaleType="center"
         android:gravity="center" />
