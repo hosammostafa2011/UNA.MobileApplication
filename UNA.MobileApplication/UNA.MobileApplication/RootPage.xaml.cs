@@ -10,6 +10,8 @@ using UNA.MobileApplication.Interface;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Plugin.SharedTransitions;
+
 namespace UNA.MobileApplication
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -54,7 +56,7 @@ namespace UNA.MobileApplication
 
             Detail = new NavigationPage(page);
             IsPresented = false;
-
+            IconImageSource = "hamburguer_icon";
             MasterPage.ListView.SelectedItem = null;
         }
     }

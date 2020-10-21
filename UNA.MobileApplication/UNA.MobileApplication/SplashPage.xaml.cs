@@ -32,8 +32,8 @@ namespace UNA.MobileApplication
                 SplashIcon.FadeTo(0, 700, Easing.CubicInOut)
             };
             await Task.WhenAll(animationTasks);
-            Application.Current.MainPage = new AppShell();
-            //Application.Current.MainPage = new RootPage();
+            //Application.Current.MainPage = new AppShell();
+            Application.Current.MainPage = new RootPage();
         }
     }
 }

@@ -8,7 +8,7 @@
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     x:Name="masterPage">
     <MasterDetailPage.Master>
-        <pages:RootPageMaster x:Name="MasterPage" />
+        <pages:RootPageMaster x:Name="MasterPage" IconImageSource="hamburguer_icon" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <sharedTransitions:SharedTransitionNavigationPage>

@@ -11,7 +11,8 @@
     x:Name="MainPage"
     sharedTransitions:SharedTransitionNavigationPage.BackgroundAnimation="SlideFromRight"
     sharedTransitions:SharedTransitionNavigationPage.TransitionSelectedGroup="{Binding SelectedItemId}"
-    BackgroundColor="{DynamicResource mainBackground}">
+    BackgroundColor="{DynamicResource mainBackground}"
+    IconImageSource="hamburguer_icon.png">
 
     <ContentPage.Content>
 

@@ -3,9 +3,10 @@
     x:Class="UNA.MobileApplication.Views.NationPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="{DynamicResource entryBackground}">
+    BackgroundColor="{DynamicResource entryBackground}"
+    FlowDirection="MatchParent">
     <ContentPage.Content>
-        <Grid>
+        <Grid FlowDirection="MatchParent">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -24,6 +25,7 @@
                 x:Name="ItemsListView"
                 Grid.Row="1"
                 BackgroundColor="Transparent"
+                FlowDirection="MatchParent"
                 HasUnevenRows="True"
                 ItemSelected="OnItemSelected"
                 ItemsSource="{Binding obsCollectionNATION}"

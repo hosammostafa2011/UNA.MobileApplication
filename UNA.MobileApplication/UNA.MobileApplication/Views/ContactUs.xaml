@@ -142,7 +142,6 @@
                                 LineHeight="1"
                                 Text="{Binding TITLE_02_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
-
                         </StackLayout>
                     </Frame>
                     <Frame Style="{StaticResource DefaultFrame}">

@@ -56,6 +56,8 @@ namespace UNA.MobileApplication.ViewModels
                             MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(PhotoAlbum)));
                         else if (objCATEGORY.Category_ID == "1200")
                             MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(VideoAlbum)));
+                        else if (objCATEGORY.Category_ID == "1300")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(NationPage)));
                         else if (objCATEGORY.Category_ID == "7000")
                             MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(FavouritePage)));
                         else if (objCATEGORY.Category_ID == "1400")
@@ -93,23 +95,23 @@ namespace UNA.MobileApplication.ViewModels
                     //    shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID, objCATEGORY.CategoryName, string.Empty) });
                     ////lstCategory.Items.Add(shell_section);
                 }
-                try
-                {
-                    VersionTracking.Track();
-                    var currentVersion = VersionTracking.CurrentVersion;
-                    if (currentVersion != lstCATEGORY[0].CurrentVersion)
-                    {
-                        if (_REQUEST.LANGUAGE == "1")
-                            HelperManger.ShowToast("توجد نسخة حديثة من التطبيق - قم بتحديث التطبيق");
-                        else if (_REQUEST.LANGUAGE == "2")
-                            HelperManger.ShowToast("There is a fresh version of the application - update the application.");
-                        else
-                            HelperManger.ShowToast("Il existe une nouvelle version de l'application-mettez à jour l'application.");
-                    }
-                }
-                catch (System.Exception)
-                {
-                }
+                //try
+                //{
+                //    VersionTracking.Track();
+                //    var currentVersion = VersionTracking.CurrentVersion;
+                //    if (currentVersion != lstCATEGORY[0].CurrentVersion)
+                //    {
+                //        if (_REQUEST.LANGUAGE == "1")
+                //            HelperManger.ShowToast("توجد نسخة حديثة من التطبيق - قم بتحديث التطبيق");
+                //        else if (_REQUEST.LANGUAGE == "2")
+                //            HelperManger.ShowToast("There is a fresh version of the application - update the application.");
+                //        else
+                //            HelperManger.ShowToast("Il existe une nouvelle version de l'application-mettez à jour l'application.");
+                //    }
+                //}
+                //catch (System.Exception)
+                //{
+                //}
                 NotifyPropertyChanged(nameof(MenuItems));
             }
         }
