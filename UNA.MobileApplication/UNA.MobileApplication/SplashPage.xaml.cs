@@ -37,7 +37,8 @@ namespace UNA.MobileApplication
             await Task.WhenAll(animationTasks);
 
             //// navigate to main page
-            Application.Current.MainPage = new AppShell();
+            //Application.Current.MainPage = new AppShell();
+            Application.Current.MainPage = new RootPage();
         }
     }
 }
