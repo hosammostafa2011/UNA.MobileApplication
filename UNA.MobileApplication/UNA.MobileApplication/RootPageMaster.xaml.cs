@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Helper;
+using Plugin.SecureStorage;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -24,6 +26,30 @@ namespace UNA.MobileApplication
 
             BindingContext = new RootPageMasterViewModel();
             ListView = MenuItemsListView;
+        }
+
+        private void Arabic_Tapped(object sender, EventArgs e)
+        {
+            CrossSecureStorage.Current.SetValue("Language", "1");
+            HelperManger.ShowToast("تم تغيير لغة التطبيق إلى العربية");
+
+            (Application.Current).MainPage = new RootPage();
+        }
+
+        private void English_Tapped(object sender, EventArgs e)
+        {
+            CrossSecureStorage.Current.SetValue("Language", "2");
+            HelperManger.ShowToast("The language of the application has been changed to English");
+            //myshell.FlowDirection = FlowDirection.LeftToRight;
+            (Application.Current).MainPage = new RootPage();
+        }
+
+        private void French_Tapped(object sender, EventArgs e)
+        {
+            CrossSecureStorage.Current.SetValue("Language", "3");
+            HelperManger.ShowToast("La langue de l’application a été modifiée pour Français");
+            //myshell.FlowDirection = FlowDirection.LeftToRight;
+            (Application.Current).MainPage = new RootPage();
         }
     }
 }

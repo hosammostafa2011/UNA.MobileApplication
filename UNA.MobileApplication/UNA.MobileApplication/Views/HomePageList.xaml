@@ -215,11 +215,11 @@
                 CachingStrategy="RecycleElement"
                 HasUnevenRows="true"
                 IsPullToRefreshEnabled="true"
-                RefreshCommand="{Binding RefreshCommand}"
                 IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
                 ItemSelected="OnItemSelected"
                 ItemTemplate="{StaticResource newsDataTemplateSelector}"
                 ItemsSource="{Binding obsCollectionNews}"
+                RefreshCommand="{Binding RefreshCommand}"
                 VerticalOptions="FillAndExpand" />
             <!--<Label Text="{Binding Source={x:Reference SliderDuration}, Path=Value, StringFormat='Transition duration: {0}'}" />
             <Slider

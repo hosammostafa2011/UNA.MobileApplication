@@ -18,7 +18,7 @@ namespace UNA.MobileApplication.Views
     {
         private VideoAlbumViewModel videoAlbumViewModel = null;
 
-        public VideoAlbum()
+        public VideoAlbum(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
             BindingContext = videoAlbumViewModel = new VideoAlbumViewModel();

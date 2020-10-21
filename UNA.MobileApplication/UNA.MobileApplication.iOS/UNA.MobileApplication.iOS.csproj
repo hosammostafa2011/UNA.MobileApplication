@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="PathManager_IOS.cs" />
     <Compile Include="Renderers\CustomLabelRenderer.cs" />
     <Compile Include="Renderers\CustomWebViewRenderer.cs" />
     <Compile Include="Renderers\ExtendedScrollViewRenderer.cs" />

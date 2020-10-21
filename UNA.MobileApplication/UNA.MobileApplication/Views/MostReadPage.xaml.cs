@@ -18,7 +18,7 @@ namespace UNA.MobileApplication.Views
         private readonly NewsListViewModel _newsListViewModel;
         public string CategoryId { get; set; }
 
-        public MostReadPage(string categoryID)
+        public MostReadPage(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
             CategoryId = categoryID;

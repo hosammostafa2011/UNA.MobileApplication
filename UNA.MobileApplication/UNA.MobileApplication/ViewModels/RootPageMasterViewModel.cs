@@ -36,18 +36,39 @@ namespace UNA.MobileApplication.ViewModels
                 _REQUEST.LANGUAGE = "1";
             }
             _REQUEST.USER_TOKEN = "Aa@159357";
+            string icon = string.Empty;
             var result = await ApiManager.GET_CATEGORY(_REQUEST);
             _RESPONSE = HelperManger.CastToResponse(result);
             if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
             {
                 List<CATEGORY> lstCATEGORY = JsonConvert.DeserializeObject<List<CATEGORY>>(_RESPONSE[0].JSON);
+                MenuItems = new ObservableCollection<RootPageMasterMenuItem>();
                 foreach (CATEGORY objCATEGORY in lstCATEGORY)
                 {
-                    MenuItems.Add(new RootPageMasterMenuItem(
-                        objCATEGORY.CategoryName,
-                        string.IsNullOrEmpty(objCATEGORY.App_Menu_Ico) ? "world.png" : objCATEGORY.App_Menu_Ico,
-                        typeof(NewsList)));
-                    //ShellSection shell_section = new ShellSection
+                    try
+                    {
+                        icon = string.IsNullOrEmpty(objCATEGORY.App_Menu_Ico) ? "world.png" : objCATEGORY.App_Menu_Ico;
+                        if (objCATEGORY.Category_ID == "0")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(HomePageList)));
+                        else if (objCATEGORY.Category_ID == "1000")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(ReportPage)));
+                        else if (objCATEGORY.Category_ID == "1100")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(PhotoAlbum)));
+                        else if (objCATEGORY.Category_ID == "1200")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(VideoAlbum)));
+                        else if (objCATEGORY.Category_ID == "7000")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(FavouritePage)));
+                        else if (objCATEGORY.Category_ID == "1400")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(MostReadPage)));
+                        else if (objCATEGORY.Category_ID == "1600")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(ContactUs)));
+                        else
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(NewsList)));
+                    }
+                    catch (Exception ex)
+                    {
+                    }
+                    //ShellSection shell_section = new ShellSectionf
                     //{
                     //    Title = objCATEGORY.CategoryName,
                     //    Icon = string.IsNullOrEmpty(objCATEGORY.App_Menu_Ico) ? "world.png" : objCATEGORY.App_Menu_Ico,

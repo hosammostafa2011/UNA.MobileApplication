@@ -72,7 +72,20 @@
                 <Setter Property="FontSize" Value="Large" />
                 <Setter Property="TextColor" Value="{DynamicResource mainLabel}" />
             </Style>
-
+            <Style x:Key="FloutItemStyle" TargetType="Grid">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal" />
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#D6FADC" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
             <Style x:Key="borderStyle" TargetType="BoxView">
                 <Setter Property="BackgroundColor" Value="{DynamicResource borderColor}" />
                 <Setter Property="HeightRequest" Value="1" />

@@ -10,7 +10,8 @@ namespace UNA.MobileApplication.Views
     public partial class ContactUs : ContentPage
     {
         private readonly ContactUsViewModel contactUsViewModel = null;
-        public ContactUs()
+
+        public ContactUs(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
             BindingContext = contactUsViewModel = new ContactUsViewModel();
@@ -23,6 +24,7 @@ namespace UNA.MobileApplication.Views
             if (contactUsViewModel.obsContactData.Count <= 0)
                 contactUsViewModel.LoadContactDataCommand.Execute(null);
         }
+
         private void FaceBook_Tapped(object sender, System.EventArgs e)
         {
             try
@@ -38,6 +40,7 @@ namespace UNA.MobileApplication.Views
             {
             }
         }
+
         private void Twitter_Tapped(object sender, System.EventArgs e)
         {
             try
@@ -53,6 +56,7 @@ namespace UNA.MobileApplication.Views
             {
             }
         }
+
         private void Instegram_Tapped(object sender, System.EventArgs e)
         {
             try
@@ -68,6 +72,7 @@ namespace UNA.MobileApplication.Views
             {
             }
         }
+
         /*private void GooglePlus_Tapped(object sender, System.EventArgs e)
         {
             try
@@ -83,6 +88,7 @@ namespace UNA.MobileApplication.Views
             {
             }
         }*/
+
         private void YouTube_Tapped(object sender, System.EventArgs e)
         {
             try

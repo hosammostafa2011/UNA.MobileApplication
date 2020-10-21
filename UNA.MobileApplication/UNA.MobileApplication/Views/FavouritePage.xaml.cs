@@ -18,7 +18,7 @@ namespace UNA.MobileApplication.Views
         private readonly NewsListViewModel _newsListViewModel;
         public string CategoryId { get; set; }
 
-        public FavouritePage(string categoryID)
+        public FavouritePage(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
             CategoryId = categoryID;

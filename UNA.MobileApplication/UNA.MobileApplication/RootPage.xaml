@@ -1,16 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UNA.MobileApplication.RootPage"
-             xmlns:pages="clr-namespace:UNA.MobileApplication">
-  <MasterDetailPage.Master>
-    <pages:RootPageMaster x:Name="MasterPage" />
-  </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        <pages:RootPageDetail />
-      </x:Arguments>
-    </NavigationPage>
-  </MasterDetailPage.Detail>
+<MasterDetailPage
+    x:Class="UNA.MobileApplication.RootPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:UNA.MobileApplication"
+    xmlns:pages1="clr-namespace:UNA.MobileApplication.Views"
+    xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+    x:Name="masterPage">
+    <MasterDetailPage.Master>
+        <pages:RootPageMaster x:Name="MasterPage" />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <sharedTransitions:SharedTransitionNavigationPage>
+            <x:Arguments>
+                <pages1:HomePageList />
+            </x:Arguments>
+        </sharedTransitions:SharedTransitionNavigationPage>
+    </MasterDetailPage.Detail>
+
+    <!--<MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages1:HomePageList />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>-->
 </MasterDetailPage>

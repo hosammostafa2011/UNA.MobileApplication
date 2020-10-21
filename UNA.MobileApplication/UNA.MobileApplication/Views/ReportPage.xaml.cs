@@ -18,7 +18,7 @@ namespace UNA.MobileApplication.Views
         private readonly NewsListViewModel _newsListViewModel;
         public string CategoryId { get; set; }
 
-        public ReportPage()
+        public ReportPage(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
             string _title = string.Empty;

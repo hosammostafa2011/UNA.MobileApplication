@@ -17,7 +17,7 @@ namespace UNA.MobileApplication.Views
     {
         private PhotoAlbumViewModel photoAlbumViewModel = null;
 
-        public PhotoAlbum()
+        public PhotoAlbum(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
             string strLanguage = string.Empty;
@@ -41,6 +41,31 @@ namespace UNA.MobileApplication.Views
             }
             BindingContext = photoAlbumViewModel = new PhotoAlbumViewModel();
         }
+
+        //public PhotoAlbum()
+        //{
+        //    InitializeComponent();
+        //    string strLanguage = string.Empty;
+        //    if (CrossSecureStorage.Current.HasKey("Language"))
+        //        strLanguage = CrossSecureStorage.Current.GetValue("Language");
+        //    else
+        //        strLanguage = "1";
+        //    switch (strLanguage)
+        //    {
+        //        case "1":
+        //            Title = "البوم الصور";
+        //            break;
+
+        //        case "2":
+        //            Title = "Photo Album";
+        //            break;
+
+        //        case "3":
+        //            Title = "Album Photo";
+        //            break;
+        //    }
+        //    BindingContext = photoAlbumViewModel = new PhotoAlbumViewModel();
+        //}
 
         protected override void OnAppearing()
         {

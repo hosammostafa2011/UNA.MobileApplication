@@ -28,6 +28,8 @@ namespace UNA.MobileApplication.iOS
 
             global::Xamarin.Forms.Forms.Init();
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
+            PathManager_IOS pathManager = new PathManager_IOS();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

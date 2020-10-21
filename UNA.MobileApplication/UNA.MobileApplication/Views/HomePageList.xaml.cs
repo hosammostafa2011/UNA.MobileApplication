@@ -1,4 +1,5 @@
-﻿using UNA.MobileApplication.ViewModels;
+﻿using Plugin.SharedTransitions;
+using UNA.MobileApplication.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
@@ -11,6 +12,7 @@ namespace UNA.MobileApplication.Views
     public partial class HomePageList : ContentPage
     {
         private readonly HomePageViewModel _homePageViewModel;
+
         public HomePageList()
         {
             InitializeComponent();
@@ -23,7 +25,21 @@ namespace UNA.MobileApplication.Views
             }
             catch (System.Exception)
             {
+            }
+        }
 
+        public HomePageList(string categoryID, string categoryName, string nationID)
+        {
+            InitializeComponent();
+            BindingContext = _homePageViewModel = new HomePageViewModel();
+            try
+            {
+                VersionTracking.Track();
+                var currentVersion = VersionTracking.CurrentVersion;
+                _homePageViewModel.VersionTracking(currentVersion);
+            }
+            catch (System.Exception)
+            {
             }
         }
 
@@ -36,6 +52,7 @@ namespace UNA.MobileApplication.Views
             //if (_homePageViewModel.obsCollectionNews.Count <= 0)
             //    _homePageViewModel.LoadHomeNewsCommand.Execute(null);
         }
+
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             var item = args.SelectedItem as NEWS;

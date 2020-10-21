@@ -102,21 +102,21 @@ namespace UNA.MobileApplication
                         Icon = string.IsNullOrEmpty(objCATEGORY.App_Menu_Ico) ? "world.png" : objCATEGORY.App_Menu_Ico,
                     };
                     if (objCATEGORY.Category_ID == "0")
-                        shell_section.Items.Add(new ShellContent() { Content = new HomePageList() });
+                        shell_section.Items.Add(new ShellContent() { Content = new HomePageList(string.Empty, string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "1000")
-                        shell_section.Items.Add(new ShellContent() { Content = new ReportPage() });
+                        shell_section.Items.Add(new ShellContent() { Content = new ReportPage(string.Empty, string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "1100")
-                        shell_section.Items.Add(new ShellContent() { Content = new PhotoAlbum() });
+                        shell_section.Items.Add(new ShellContent() { Content = new PhotoAlbum(string.Empty, string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "1200")
-                        shell_section.Items.Add(new ShellContent() { Content = new VideoAlbum() });
+                        shell_section.Items.Add(new ShellContent() { Content = new VideoAlbum(string.Empty, string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "1300")
-                        shell_section.Items.Add(new ShellContent() { Content = new NationPage() });
+                        shell_section.Items.Add(new ShellContent() { Content = new NationPage(string.Empty, string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "7000")
-                        shell_section.Items.Add(new ShellContent() { Content = new FavouritePage("7000") });
+                        shell_section.Items.Add(new ShellContent() { Content = new FavouritePage("7000", string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "1400")
-                        shell_section.Items.Add(new ShellContent() { Content = new MostReadPage("1400") });
+                        shell_section.Items.Add(new ShellContent() { Content = new MostReadPage("1400", string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "1600")
-                        shell_section.Items.Add(new ShellContent() { Content = new ContactUs() });
+                        shell_section.Items.Add(new ShellContent() { Content = new ContactUs(string.Empty, string.Empty, string.Empty) });
                     else
                         shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID, objCATEGORY.CategoryName, string.Empty) });
                     lstCategory.Items.Add(shell_section);

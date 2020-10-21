@@ -17,7 +17,7 @@ namespace UNA.MobileApplication.Views
     {
         private NationViewModel _NationViewModel = null;
 
-        public NationPage()
+        public NationPage(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
             string strLanguage = string.Empty;
