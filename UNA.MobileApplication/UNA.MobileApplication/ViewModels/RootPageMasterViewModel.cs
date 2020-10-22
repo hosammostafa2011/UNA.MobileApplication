@@ -23,6 +23,26 @@ namespace UNA.MobileApplication.ViewModels
         public RootPageMasterViewModel()
         {
             Device.BeginInvokeOnMainThread(async () => await RunSafe(LoadCategory(), true));
+            RegiesterMessageCenter();
+        }
+
+        private void RegiesterMessageCenter()
+        {
+            MessagingCenter.Subscribe<string, string>("MyApp", "TokenChanges", async (sender, arg) =>
+            {
+                try
+                {
+                    _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                }
+                catch (Exception)
+                {
+                    _REQUEST.LANGUAGE = "1";
+                }
+                _REQUEST.USER_TOKEN = "Aa@159357";
+                _REQUEST.FCM_TOKEN = arg.ToString();
+                _REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
+                var result = await ApiManager.SET_FCM_TOKEN(_REQUEST);
+            });
         }
 
         private async Task LoadCategory()

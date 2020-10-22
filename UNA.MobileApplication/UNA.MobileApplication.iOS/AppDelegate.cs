@@ -4,7 +4,11 @@ using System.Linq;
 
 using Foundation;
 using LabelHtml.Forms.Plugin.iOS;
+using Plugin.FirebasePushNotification;
+using Plugin.SecureStorage;
 using UIKit;
+using UserNotifications;
+using Xamarin.Forms;
 
 namespace UNA.MobileApplication.iOS
 {
@@ -32,7 +36,108 @@ namespace UNA.MobileApplication.iOS
 
             LoadApplication(new App());
 
+            FirebasePushNotificationManager.Initialize(options, new NotificationUserCategory[]
+            {
+                new NotificationUserCategory("message",new List<NotificationUserAction> {
+                    new NotificationUserAction("Reply","Reply",NotificationActionType.Foreground)
+                }),
+                new NotificationUserCategory("request",new List<NotificationUserAction> {
+                    new NotificationUserAction("Accept","Accept"),
+                    new NotificationUserAction("Reject","Reject",NotificationActionType.Destructive)
+                })
+            });
+
+            var notificationSettings = UIUserNotificationSettings.GetSettingsForTypes(
+    UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, null
+);
+            app.RegisterUserNotificationSettings(notificationSettings);
+
+            if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+            {
+                UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.Sound,
+                                                                        (granted, error) =>
+                                                                        {
+                                                                            if (granted)
+                                                                                InvokeOnMainThread(UIApplication.SharedApplication.RegisterForRemoteNotifications);
+                                                                        });
+            }
+            else if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
+            {
+                var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
+                        UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
+                        new NSSet());
+
+                UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
+                UIApplication.SharedApplication.RegisterForRemoteNotifications();
+            }
+            else
+            {
+                UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
+                UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
+            }
+
+            CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
+            {
+                CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
+                MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
+
+                //System.Diagnostics.Debug.WriteLine($"TOKEN : {p.Token}");
+                //UIPasteboard clipboard = UIPasteboard.General;
+                //clipboard.String = p.Token;
+                //Helper.Settings.Token = p.Token;
+            };
+
+            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+            {
+                Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
+                // if (dic["targetUserId"].ToString() != null && Helper.Settings.UserId == dic["targetUserId"].ToString())
+                // {
+                System.Diagnostics.Debug.WriteLine("Received");
+                //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
+                //Helper.Settings.callingStatus = true;
+                // Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
+                FirebasePushNotificationManager.CurrentNotificationPresentationOption = UNNotificationPresentationOptions.Alert;
+                //  MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
+                // }
+            };
+
+            CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
+            {
+                //Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
+                //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
+                //Helper.Settings.callingStatus = true;
+                //Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
+                //MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
+            };
+
             return base.FinishedLaunching(app, options);
+        }
+
+        public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
+        {
+            FirebasePushNotificationManager.DidRegisterRemoteNotifications(deviceToken);
+        }
+
+        public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
+        {
+            FirebasePushNotificationManager.RemoteNotificationRegistrationFailed(error);
+        }
+
+        // To receive notifications in foregroung on iOS 9 and below.
+        // To receive notifications in background in any iOS version
+        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
+        {
+            // If you are receiving a notification message while your app is in the background,
+            // this callback will not be fired 'till the user taps on the notification launching the application.
+
+            // If you disable method swizzling, you'll need to call this method.
+            // This lets FCM track message delivery and analytics, which is performed
+            // automatically with method swizzling enabled.
+            FirebasePushNotificationManager.DidReceiveMessage(userInfo);
+            // Do your magic to handle the notification data
+            System.Console.WriteLine(userInfo);
+
+            completionHandler(UIBackgroundFetchResult.NewData);
         }
     }
 }
