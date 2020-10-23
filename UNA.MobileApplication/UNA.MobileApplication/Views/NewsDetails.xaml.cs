@@ -21,7 +21,7 @@ namespace UNA.MobileApplication.Views
         public NewsDetails(NewsDetailsViewModel newsDetailsViewModel)
         {
             InitializeComponent();
-                        NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, false);
 
 
             BindingContext = newsDetailsViewModel;
@@ -36,7 +36,7 @@ namespace UNA.MobileApplication.Views
             detailContainer.TranslateTo(0, 0, 200, Easing.CubicInOut);
             descriptionContainer.FadeTo(1, 350, Easing.CubicInOut);
             descriptionContainer.TranslateTo(0, 0, 350, Easing.CubicInOut);
-            
+
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -82,7 +82,10 @@ namespace UNA.MobileApplication.Views
             IShare shareInfo = CrossShare.Current;
             ShareMessage _ShareMessage = new ShareMessage();
             _ShareMessage.Text = lblTitle.Text;
-            _ShareMessage.Url = string.Format(Constant.NewsURL, lblNews_ID.Text);
+            if (((NewsDetailsViewModel)this.BindingContext).SelectedNews.Category_ID == "8000")
+                _ShareMessage.Url = string.Format(Constant.ReportsURL, lblNews_ID.Text);
+            else
+                _ShareMessage.Url = string.Format(Constant.NewsURL, lblNews_ID.Text);
             shareInfo.Share(_ShareMessage);
         }
     }

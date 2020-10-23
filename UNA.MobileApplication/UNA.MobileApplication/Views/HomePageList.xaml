@@ -5,8 +5,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:local="clr-namespace:UNA.MobileApplication.Util"
+    xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     x:Name="MainPage"
+    sharedTransitions:SharedTransitionNavigationPage.BackgroundAnimation="SlideFromRight"
+    sharedTransitions:SharedTransitionShell.TransitionSelectedGroup="{Binding SelectedNews.News_ID}"
     BackgroundColor="{DynamicResource mainBackground}">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -25,6 +28,8 @@
                                 <StackLayout Grid.Column="0">
                                     <yummy:PancakeView Margin="5,5,5,5" CornerRadius="10">
                                         <ffimageloading:CachedImage
+                                            sharedTransitions:Transition.Group="{Binding News_ID}"
+                                            sharedTransitions:Transition.Name="NewsImage"
                                             Aspect="AspectFill"
                                             HeightRequest="110"
                                             Source="{Binding Main_Image_Path}"
@@ -91,6 +96,8 @@
                                 HasShadow="True" />
                             <yummy:PancakeView>
                                 <ffimageloading:CachedImage
+                                    sharedTransitions:Transition.Group="{Binding News_ID}"
+                                    sharedTransitions:Transition.Name="NewsImage"
                                     Aspect="AspectFill"
                                     HeightRequest="180"
                                     Source="{Binding Main_Image_Path}" />
@@ -133,6 +140,8 @@
                                 HasShadow="True" />
                             <yummy:PancakeView CornerRadius="10">
                                 <ffimageloading:CachedImage
+                                    sharedTransitions:Transition.Group="{Binding News_ID}"
+                                    sharedTransitions:Transition.Name="NewsImage"
                                     Aspect="AspectFit"
                                     HeightRequest="120"
                                     Source="{Binding Main_Image_Path}" />
@@ -206,11 +215,11 @@
                 CachingStrategy="RecycleElement"
                 HasUnevenRows="true"
                 IsPullToRefreshEnabled="true"
+                RefreshCommand="{Binding RefreshCommand}"
                 IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
                 ItemSelected="OnItemSelected"
                 ItemTemplate="{StaticResource newsDataTemplateSelector}"
                 ItemsSource="{Binding obsCollectionNews}"
-                RefreshCommand="{Binding RefreshCommand}"
                 VerticalOptions="FillAndExpand" />
             <!--<Label Text="{Binding Source={x:Reference SliderDuration}, Path=Value, StringFormat='Transition duration: {0}'}" />
             <Slider

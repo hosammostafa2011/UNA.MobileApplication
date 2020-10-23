@@ -32,8 +32,10 @@ namespace UNA.MobileApplication
                 SplashIcon.FadeTo(0, 700, Easing.CubicInOut)
             };
             await Task.WhenAll(animationTasks);
-            //Application.Current.MainPage = new AppShell();
-            Application.Current.MainPage = new RootPage();
+            if (Device.RuntimePlatform == Device.iOS)
+                Application.Current.MainPage = new RootPage();
+            else
+                Application.Current.MainPage = new AppShell();
         }
     }
 }
