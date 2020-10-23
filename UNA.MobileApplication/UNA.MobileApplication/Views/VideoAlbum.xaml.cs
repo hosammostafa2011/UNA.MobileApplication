@@ -21,6 +21,7 @@ namespace UNA.MobileApplication.Views
         public VideoAlbum(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
+            
             BindingContext = videoAlbumViewModel = new VideoAlbumViewModel();
             string strLanguage = string.Empty;
             if (CrossSecureStorage.Current.HasKey("Language"))
@@ -46,6 +47,8 @@ namespace UNA.MobileApplication.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            //((Xamarin.Forms.NavigationPage)Xamarin.Forms.Application.Current.MainPage).BarBackgroundColor = Color.Red;
+            //((Xamarin.Forms.NavigationPage)Xamarin.Forms.Application.Current.MainPage).BarTextColor = Color.White;
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;

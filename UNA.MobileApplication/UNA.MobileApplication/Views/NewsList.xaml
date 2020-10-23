@@ -4,8 +4,11 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    Title="{Binding TitleName, Mode=OneWay}">
+    Title="{Binding TitleName, Mode=OneWay}"
+    sharedTransitions:SharedTransitionShell.TransitionSelectedGroup="{Binding SelectedNews.News_ID}">
     <ContentPage.Content>
         <StackLayout Padding="10" Spacing="20">
             <ListView
@@ -37,6 +40,8 @@
                                         <StackLayout Grid.Column="0">
                                             <yummy:PancakeView CornerRadius="10">
                                                 <ffimageloading:CachedImage
+                                                    sharedTransitions:Transition.Group="{Binding News_ID}"
+                                                    sharedTransitions:Transition.Name="NewsImage"
                                                     Aspect="AspectFill"
                                                     HeightRequest="110"
                                                     Source="{Binding Main_Image_Path}"

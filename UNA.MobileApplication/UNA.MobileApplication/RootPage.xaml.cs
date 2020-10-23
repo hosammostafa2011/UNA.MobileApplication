@@ -51,10 +51,14 @@ namespace UNA.MobileApplication
             if (item == null)
                 return;
             //categoryID, string categoryName, string nationID
-            var page = (Page)Activator.CreateInstance(item.TargetType, new object[] { item.CategoryID, item.Title, item.NationID });
+            var page = (Page)Activator.CreateInstance(
+                item.TargetType, new object[] { item.CategoryID, item.Title, item.NationID }
+                );
             page.Title = item.Title;
-
-            Detail = new NavigationPage(page);
+            
+            Detail = new SharedTransitionNavigationPage(page);
+            
+            //Navigation.PushAsync(new Profile());
             IsPresented = false;
             IconImageSource = "hamburguer_icon";
             MasterPage.ListView.SelectedItem = null;

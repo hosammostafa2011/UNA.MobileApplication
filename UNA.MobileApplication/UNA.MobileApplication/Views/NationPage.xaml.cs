@@ -1,9 +1,4 @@
 ﻿using Plugin.SecureStorage;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UNA.MobileApplication.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
@@ -20,6 +15,7 @@ namespace UNA.MobileApplication.Views
         public NationPage(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
+            
             string strLanguage = string.Empty;
             if (CrossSecureStorage.Current.HasKey("Language"))
                 strLanguage = CrossSecureStorage.Current.GetValue("Language");
