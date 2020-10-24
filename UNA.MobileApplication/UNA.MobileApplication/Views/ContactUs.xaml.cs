@@ -1,4 +1,6 @@
 ﻿using Helper.Model;
+using Plugin.SecureStorage;
+using System;
 using UNA.MobileApplication.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -14,6 +16,18 @@ namespace UNA.MobileApplication.Views
         public ContactUs(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
             BindingContext = contactUsViewModel = new ContactUsViewModel();
         }
 

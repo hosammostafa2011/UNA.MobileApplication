@@ -21,8 +21,19 @@ namespace UNA.MobileApplication.Views
         public NewsDetails(NewsDetailsViewModel newsDetailsViewModel)
         {
             InitializeComponent();
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
             NavigationPage.SetHasNavigationBar(this, false);
-
 
             BindingContext = newsDetailsViewModel;
         }
@@ -36,7 +47,6 @@ namespace UNA.MobileApplication.Views
             detailContainer.TranslateTo(0, 0, 200, Easing.CubicInOut);
             descriptionContainer.FadeTo(1, 350, Easing.CubicInOut);
             descriptionContainer.TranslateTo(0, 0, 350, Easing.CubicInOut);
-
         }
 
         private void Button_Clicked(object sender, EventArgs e)

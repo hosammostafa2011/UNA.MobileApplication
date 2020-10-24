@@ -46,6 +46,7 @@
                                             <Label
                                                 FontFamily="{StaticResource HelveticaNeue}"
                                                 FontSize="Small"
+                                                HorizontalTextAlignment="{Binding HorizontalDirection}"
                                                 LineBreakMode="WordWrap"
                                                 LineHeight="0.8"
                                                 MaxLines="3"
@@ -61,6 +62,7 @@
                                                 Grid.Row="0"
                                                 Grid.Column="0"
                                                 FontSize="12"
+                                                HorizontalTextAlignment="{Binding HorizontalDirection}"
                                                 LineBreakMode="WordWrap"
                                                 LineHeight="0.8"
                                                 Text="{Binding Source_Tag}"
@@ -107,6 +109,7 @@
                                     Margin="10,0,10,10"
                                     FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Medium"
+                                    HorizontalTextAlignment="{Binding HorizontalDirection}"
                                     LineBreakMode="WordWrap"
                                     LineHeight="0.8"
                                     Text="{Binding Title}"
@@ -215,11 +218,11 @@
                 CachingStrategy="RecycleElement"
                 HasUnevenRows="true"
                 IsPullToRefreshEnabled="true"
-                RefreshCommand="{Binding RefreshCommand}"
                 IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
                 ItemSelected="OnItemSelected"
                 ItemTemplate="{StaticResource newsDataTemplateSelector}"
                 ItemsSource="{Binding obsCollectionNews}"
+                RefreshCommand="{Binding RefreshCommand}"
                 VerticalOptions="FillAndExpand" />
             <!--<Label Text="{Binding Source={x:Reference SliderDuration}, Path=Value, StringFormat='Transition duration: {0}'}" />
             <Slider

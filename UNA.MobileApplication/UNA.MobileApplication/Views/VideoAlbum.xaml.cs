@@ -21,7 +21,18 @@ namespace UNA.MobileApplication.Views
         public VideoAlbum(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
-            
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
             BindingContext = videoAlbumViewModel = new VideoAlbumViewModel();
             string strLanguage = string.Empty;
             if (CrossSecureStorage.Current.HasKey("Language"))

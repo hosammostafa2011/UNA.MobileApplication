@@ -20,6 +20,7 @@ namespace UNA.MobileApplication.Views
         public bool IsIOS { get; set; }
         public string lblVedio_ID { get; set; }
         public string _shareVedio = string.Empty;
+
         public string ShareVedio
         {
             get
@@ -58,6 +59,18 @@ namespace UNA.MobileApplication.Views
         public VideoDetailPage(VIDEO vVIDEO)
         {
             InitializeComponent();
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
             string _content = string.Format(@"<iframe style='width:100%;height:100%;'
                     src='https://www.youtube.com/embed/{0}?autoplay=1'
                     frameborder='0' allow='accelerometer; autoplay; clipboard-write;
@@ -71,7 +84,7 @@ namespace UNA.MobileApplication.Views
             lblTitle.Text = vVIDEO.Title;
             lblVedio_ID = vVIDEO.Video_ID;
             lblShareVedio.Text = ShareVedio;
-            Video_Code=vVIDEO.Video_Code;
+            Video_Code = vVIDEO.Video_Code;
         }
 
         private void imgShare_Tapped(object sender, EventArgs e)

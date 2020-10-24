@@ -58,6 +58,7 @@
                                                     <Label
                                                         FontFamily="{StaticResource HelveticaNeue}"
                                                         FontSize="Small"
+                                                        HorizontalTextAlignment="{Binding HorizontalDirection}"
                                                         LineBreakMode="WordWrap"
                                                         LineHeight="0.8"
                                                         MaxLines="3"

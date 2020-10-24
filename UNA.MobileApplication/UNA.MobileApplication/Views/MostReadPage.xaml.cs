@@ -21,6 +21,18 @@ namespace UNA.MobileApplication.Views
         public MostReadPage(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
             CategoryId = categoryID;
             string _title = string.Empty;
             string strLanguage = string.Empty;

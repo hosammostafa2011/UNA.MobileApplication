@@ -31,13 +31,15 @@ namespace UNA.MobileApplication.iOS.Renderers
             var paragraphStyle = new NSMutableParagraphStyle
             {
                 LineSpacing = (nfloat)label.LineHeight,
-                Alignment = UITextAlignment.Justified
+                //Alignment = UITextAlignment.Right
+                //Alignment = UITextAlignment.Justified
             };
             var style = UIStringAttributeKey.ParagraphStyle;
             var range = new NSRange(0, labelString.Length);
 
             labelString.AddAttribute(style, paragraphStyle, range);
-            Control.TextAlignment = UITextAlignment.Justified;
+            //Control.TextAlignment = UITextAlignment.Justified;
+            //Control.TextAlignment = UITextAlignment.Right;
             Control.AttributedText = labelString;
         }
     }

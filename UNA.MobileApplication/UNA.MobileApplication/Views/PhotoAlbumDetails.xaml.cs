@@ -19,6 +19,7 @@ namespace UNA.MobileApplication.Views
     public partial class PhotoAlbumDetails : ContentPage
     {
         public string _sharePhoto = string.Empty;
+
         public string SharePhoto
         {
             get
@@ -51,11 +52,25 @@ namespace UNA.MobileApplication.Views
                 return _sharePhoto;
             }
         }
+
         public PhotoAlbumDetails(PhotoAlbumDetailsViewModel photoAlbumDetailsViewModel)
         {
             InitializeComponent();
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
             BindingContext = photoAlbumDetailsViewModel;
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();

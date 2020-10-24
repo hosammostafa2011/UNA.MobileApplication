@@ -30,6 +30,9 @@ namespace UNA.MobileApplication.ViewModels
         public ResourceDictionary Resources = new ResourceDictionary();
         public ObservableCollection<RESPONSE> _RESPONSE { get; set; } = new ObservableCollection<RESPONSE>();
 
+        private string USER_LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+        private FlowDirection DEVICE_DIRECTION = Device.FlowDirection;
+
         //public REQUEST _REQUEST = new REQUEST("", "");
         public REQUEST _REQUEST = new REQUEST();
 
@@ -119,6 +122,44 @@ namespace UNA.MobileApplication.ViewModels
             {
                 IsBusy = false;
                 if (ShowLoading) UserDialogs.Instance.HideLoading();
+            }
+        }
+
+        private TextAlignment _hPos;
+
+        public TextAlignment HorizontalDirection
+        {
+            get
+            {
+                // get the device language and the current seelct user language and compare
+                //FlowDirection xx = DEVICE_DIRECTION;
+                if (DEVICE_DIRECTION.Equals(FlowDirection.RightToLeft)) // Arabic
+                {
+                    if (USER_LANGUAGE.Equals("1"))
+                    {
+                        return TextAlignment.Start;
+                    }
+                    else
+                    {
+                        return TextAlignment.End;
+                    }
+                }
+                else
+                {
+                    if (USER_LANGUAGE.Equals("1"))
+                    {
+                        return TextAlignment.End;
+                    }
+                    else
+                    {
+                        return TextAlignment.Start;
+                    }
+                }
+            }
+            set
+            {
+                _hPos = value;
+                OnPropertyChanged();
             }
         }
 

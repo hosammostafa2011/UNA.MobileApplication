@@ -1,4 +1,6 @@
-﻿using Plugin.SharedTransitions;
+﻿using Plugin.SecureStorage;
+using Plugin.SharedTransitions;
+using System;
 using UNA.MobileApplication.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -17,6 +19,19 @@ namespace UNA.MobileApplication.Views
         {
             InitializeComponent();
             BindingContext = _homePageViewModel = new HomePageViewModel();
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
+
             try
             {
                 VersionTracking.Track();

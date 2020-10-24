@@ -20,6 +20,19 @@ namespace UNA.MobileApplication.Views
         public PhotoAlbum(string categoryID, string categoryName, string nationID)
         {
             InitializeComponent();
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                    FlowDirection = FlowDirection.RightToLeft;
+                else
+                    FlowDirection = FlowDirection.LeftToRight;
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
+
             string strLanguage = string.Empty;
             if (CrossSecureStorage.Current.HasKey("Language"))
                 strLanguage = CrossSecureStorage.Current.GetValue("Language");

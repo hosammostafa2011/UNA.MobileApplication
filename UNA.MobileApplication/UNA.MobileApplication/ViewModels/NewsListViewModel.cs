@@ -26,6 +26,7 @@ namespace UNA.MobileApplication.ViewModels
 
         public NewsListViewModel(string categoryID, string categoryName, string Nation_id)
         {
+            NotifyPropertyChanged(nameof(HorizontalDirection));
             CATEGORY_ID = categoryID;
             CATEGORY_NAME = categoryName;
             obsCollectionNews = new ObservableCollection<NEWS>();

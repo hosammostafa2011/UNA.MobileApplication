@@ -9,18 +9,6 @@
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     BackgroundColor="{DynamicResource entryBackground}">
-    <!--<NavigationPage.TitleView>
-        <StackLayout Padding="10,0" Orientation="Horizontal">
-            <Button
-                BackgroundColor="{DynamicResource mainBackground}"
-                CornerRadius="10"
-                FontFamily="{StaticResource HelveticaNeue}"
-                HeightRequest="40"
-                Text="back"
-                TextColor="{DynamicResource mainLabel}"
-                WidthRequest="40" />
-        </StackLayout>
-    </NavigationPage.TitleView>-->
 
     <ContentPage.Content>
         <Grid>
@@ -66,8 +54,7 @@
                                         x:Name="lblTitle"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Medium"
-                                        HorizontalOptions="StartAndExpand"
-                                        HorizontalTextAlignment="Start"
+                                        HorizontalTextAlignment="{Binding HorizontalDirection}"
                                         Style="{StaticResource cardTitleStyle}">
                                         <Label.FormattedText>
                                             <FormattedString>
@@ -111,7 +98,7 @@
                                         Grid.Row="0"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="{Binding FontSize}"
-                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalTextAlignment="{Binding HorizontalDirection}"
                                         LineHeight="0.8"
                                         Text="{Binding SelectedNews.Details}"
                                         TextColor="{DynamicResource secondaryLabel}" />
