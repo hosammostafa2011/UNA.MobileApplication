@@ -147,6 +147,7 @@ namespace UNA.MobileApplication.ViewModels
                         {
                             vNEWS.FavouriteImage = "star.png";
                         }
+                        vNEWS.HorizontalDirection = HelperManger.GetTextAlignment(_REQUEST.LANGUAGE);
                     }
                     NotifyPropertyChanged(nameof(obsCollectionNews));
                 }

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Plugin.SecureStorage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 public class NEWS
 {
@@ -18,4 +20,37 @@ public class NEWS
     public string FavouriteImage { get; set; }
     public string FAVOURITE_IDS { get; set; }
     public string Category_ID { get; set; }
+    public TextAlignment HorizontalDirection { get; set; }
+    //private static string USER_LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+    //private static FlowDirection DEVICE_DIRECTION = Device.FlowDirection;
+    //public TextAlignment _hPos;
+
+    //public TextAlignment HorizontalDirection
+    //{
+    //    get
+    //    {
+    //        if (DEVICE_DIRECTION.Equals(FlowDirection.RightToLeft)) // Arabic
+    //        {
+    //            if (USER_LANGUAGE.Equals("1"))
+    //            {
+    //                return TextAlignment.Start;
+    //            }
+    //            else
+    //            {
+    //                return TextAlignment.End;
+    //            }
+    //        }
+    //        else
+    //        {
+    //            if (USER_LANGUAGE.Equals("1"))
+    //            {
+    //                return TextAlignment.End;
+    //            }
+    //            else
+    //            {
+    //                return TextAlignment.Start;
+    //            }
+    //        }
+    //    }
+    //}
 }

@@ -2,6 +2,7 @@
 using Model.Mobile;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Helper
 {
@@ -74,6 +76,34 @@ namespace Helper
             tc.BackgroundColor = System.Drawing.Color.FromArgb(1, 133, 109);
             tc.MessageTextColor = System.Drawing.Color.FromArgb(221, 221, 221);
             PageDialog.Toast(tc);
+        }
+
+        private static FlowDirection DEVICE_DIRECTION = Device.FlowDirection;
+
+        public static TextAlignment GetTextAlignment(string pLANGUAGE)
+        {
+            if (DEVICE_DIRECTION.Equals(FlowDirection.RightToLeft)) // Arabic
+            {
+                if (pLANGUAGE.Equals("1"))
+                {
+                    return TextAlignment.Start;
+                }
+                else
+                {
+                    return TextAlignment.End;
+                }
+            }
+            else
+            {
+                if (pLANGUAGE.Equals("1"))
+                {
+                    return TextAlignment.End;
+                }
+                else
+                {
+                    return TextAlignment.Start;
+                }
+            }
         }
     }
 }

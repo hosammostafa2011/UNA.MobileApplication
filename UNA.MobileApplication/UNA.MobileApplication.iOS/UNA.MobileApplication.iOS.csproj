@@ -719,7 +719,7 @@
     <BundleResource Include="Resources\logo%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\logowhite%401x.png" />
+    <BundleResource Include="Resources\logowhite.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\logowhite%402x.png" />

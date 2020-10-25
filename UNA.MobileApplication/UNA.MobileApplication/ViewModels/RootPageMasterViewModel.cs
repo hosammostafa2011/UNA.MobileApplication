@@ -115,23 +115,29 @@ namespace UNA.MobileApplication.ViewModels
                     //    shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID, objCATEGORY.CategoryName, string.Empty) });
                     ////lstCategory.Items.Add(shell_section);
                 }
-                //try
-                //{
-                //    VersionTracking.Track();
-                //    var currentVersion = VersionTracking.CurrentVersion;
-                //    if (currentVersion != lstCATEGORY[0].CurrentVersion)
-                //    {
-                //        if (_REQUEST.LANGUAGE == "1")
-                //            HelperManger.ShowToast("توجد نسخة حديثة من التطبيق - قم بتحديث التطبيق");
-                //        else if (_REQUEST.LANGUAGE == "2")
-                //            HelperManger.ShowToast("There is a fresh version of the application - update the application.");
-                //        else
-                //            HelperManger.ShowToast("Il existe une nouvelle version de l'application-mettez à jour l'application.");
-                //    }
-                //}
-                //catch (System.Exception)
-                //{
-                //}
+                try
+                {
+                    VersionTracking.Track();
+                    var currentVersion = VersionTracking.CurrentVersion;
+                    string dbVersion = string.Empty;
+                    if (Device.RuntimePlatform == Device.iOS)
+                        dbVersion = lstCATEGORY[0].CurrentVersioniOS;
+                    else
+                        dbVersion = lstCATEGORY[0].CurrentVersionAndroid;
+
+                    if (currentVersion != dbVersion)
+                    {
+                        if (_REQUEST.LANGUAGE == "1")
+                            HelperManger.ShowToast("توجد نسخة حديثة من التطبيق - قم بتحديث التطبيق");
+                        else if (_REQUEST.LANGUAGE == "2")
+                            HelperManger.ShowToast("There is a new version of the application - update the application.");
+                        else
+                            HelperManger.ShowToast("Il existe une nouvelle version de l'application-mettez à jour l'application.");
+                    }
+                }
+                catch (System.Exception)
+                {
+                }
                 NotifyPropertyChanged(nameof(MenuItems));
             }
         }

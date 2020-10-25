@@ -36,8 +36,10 @@ namespace UNA.MobileApplication.iOS
 
             LoadApplication(new App());
 
-            FirebasePushNotificationManager.Initialize(options, new NotificationUserCategory[]
+            if (false)
             {
+                FirebasePushNotificationManager.Initialize(options, new NotificationUserCategory[]
+                            {
                 new NotificationUserCategory("message",new List<NotificationUserAction> {
                     new NotificationUserAction("Reply","Reply",NotificationActionType.Foreground)
                 }),
@@ -45,41 +47,41 @@ namespace UNA.MobileApplication.iOS
                     new NotificationUserAction("Accept","Accept"),
                     new NotificationUserAction("Reject","Reject",NotificationActionType.Destructive)
                 })
-            });
+                            });
 
-            var notificationSettings = UIUserNotificationSettings.GetSettingsForTypes(
-    UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, null
-);
-            app.RegisterUserNotificationSettings(notificationSettings);
+                var notificationSettings = UIUserNotificationSettings.GetSettingsForTypes(
+                    UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, null
+                );
+                app.RegisterUserNotificationSettings(notificationSettings);
 
-            if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
-            {
-                UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.Sound,
-                                                                        (granted, error) =>
-                                                                        {
-                                                                            if (granted)
-                                                                                InvokeOnMainThread(UIApplication.SharedApplication.RegisterForRemoteNotifications);
-                                                                        });
-            }
-            else if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
-            {
-                var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
-                        UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
-                        new NSSet());
+                if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+                {
+                    UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.Sound,
+                                                                            (granted, error) =>
+                                                                            {
+                                                                                if (granted)
+                                                                                    InvokeOnMainThread(UIApplication.SharedApplication.RegisterForRemoteNotifications);
+                                                                            });
+                }
+                else if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
+                {
+                    var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
+                            UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
+                            new NSSet());
 
-                UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
-                UIApplication.SharedApplication.RegisterForRemoteNotifications();
-            }
-            else
-            {
-                UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
-                UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
-            }
+                    UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
+                    UIApplication.SharedApplication.RegisterForRemoteNotifications();
+                }
+                else
+                {
+                    UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
+                    UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
+                }
 
-            CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
-            {
-                CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
-                MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
+                CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
+                {
+                    CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
+                    MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
 
                 //System.Diagnostics.Debug.WriteLine($"TOKEN : {p.Token}");
                 //UIPasteboard clipboard = UIPasteboard.General;
@@ -87,9 +89,9 @@ namespace UNA.MobileApplication.iOS
                 //Helper.Settings.Token = p.Token;
             };
 
-            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
-            {
-                Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
+                CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+                {
+                    Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
                 // if (dic["targetUserId"].ToString() != null && Helper.Settings.UserId == dic["targetUserId"].ToString())
                 // {
                 System.Diagnostics.Debug.WriteLine("Received");
@@ -101,14 +103,15 @@ namespace UNA.MobileApplication.iOS
                 // }
             };
 
-            CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
-            {
+                CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
+                {
                 //Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
                 //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
                 //Helper.Settings.callingStatus = true;
                 //Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
                 //MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
             };
+            }
 
             return base.FinishedLaunching(app, options);
         }

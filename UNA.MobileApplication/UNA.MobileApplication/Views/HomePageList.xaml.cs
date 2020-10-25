@@ -18,7 +18,7 @@ namespace UNA.MobileApplication.Views
         public HomePageList()
         {
             InitializeComponent();
-            BindingContext = _homePageViewModel = new HomePageViewModel();
+
             try
             {
                 if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
@@ -31,6 +31,8 @@ namespace UNA.MobileApplication.Views
                 FlowDirection = FlowDirection.RightToLeft;
                 CrossSecureStorage.Current.SetValue("Language", "1");
             }
+
+            BindingContext = _homePageViewModel = new HomePageViewModel();
 
             try
             {

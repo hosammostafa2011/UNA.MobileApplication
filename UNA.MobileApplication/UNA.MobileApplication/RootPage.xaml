@@ -6,7 +6,7 @@
     xmlns:pages="clr-namespace:UNA.MobileApplication"
     xmlns:pages1="clr-namespace:UNA.MobileApplication.Views"
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-    x:Name="masterPage" >
+    x:Name="masterPage">
     <MasterDetailPage.Master>
         <pages:RootPageMaster x:Name="MasterPage" IconImageSource="hamburguer_icon" />
     </MasterDetailPage.Master>
