@@ -45,7 +45,13 @@
                         FontSize="Large"
                         HorizontalOptions="CenterAndExpand"
                         HorizontalTextAlignment="Center"
-                        Style="{StaticResource cardTitleStyle}" />
+                        Style="{StaticResource cardTitleStyle}">
+                        <Label.HorizontalTextAlignment>
+                            <OnPlatform x:TypeArguments="TextAlignment">
+                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                            </OnPlatform>
+                        </Label.HorizontalTextAlignment>
+                    </Label>
                 </yummy:PancakeView>
             </StackLayout>
         </Grid>

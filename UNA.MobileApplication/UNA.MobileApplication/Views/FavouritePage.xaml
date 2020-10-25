@@ -61,7 +61,13 @@
                                                         LineBreakMode="WordWrap"
                                                         LineHeight="0.8"
                                                         Text="{Binding Title}"
-                                                        TextColor="{DynamicResource primaryColor}" />
+                                                        TextColor="{DynamicResource primaryColor}">
+                                                        <Label.HorizontalTextAlignment>
+                                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                                                            </OnPlatform>
+                                                        </Label.HorizontalTextAlignment>
+                                                    </Label>
                                                 </StackLayout>
                                                 <Grid Grid.Row="1">
                                                     <Grid.ColumnDefinitions>
@@ -75,7 +81,13 @@
                                                         LineBreakMode="WordWrap"
                                                         Text="{Binding Source_Tag}"
                                                         TextColor="{DynamicResource ThirdColor}"
-                                                        VerticalOptions="Center" />
+                                                        VerticalOptions="Center">
+                                                        <Label.HorizontalTextAlignment>
+                                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                                                            </OnPlatform>
+                                                        </Label.HorizontalTextAlignment>
+                                                    </Label>
                                                     <Label
                                                         Grid.Row="0"
                                                         Grid.Column="1"

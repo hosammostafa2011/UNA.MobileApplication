@@ -54,8 +54,12 @@
                                         x:Name="lblTitle"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Medium"
-                                        HorizontalTextAlignment="{Binding HorizontalDirection}"
                                         Style="{StaticResource cardTitleStyle}">
+                                        <Label.HorizontalTextAlignment>
+                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                                            </OnPlatform>
+                                        </Label.HorizontalTextAlignment>
                                         <Label.FormattedText>
                                             <FormattedString>
                                                 <Span LineHeight="1.3" Text="{Binding SelectedNews.Title}" />
@@ -98,10 +102,15 @@
                                         Grid.Row="0"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="{Binding FontSize}"
-                                        HorizontalTextAlignment="{Binding HorizontalDirection}"
                                         LineHeight="0.8"
                                         Text="{Binding SelectedNews.Details}"
-                                        TextColor="{DynamicResource secondaryLabel}" />
+                                        TextColor="{DynamicResource secondaryLabel}">
+                                        <Label.HorizontalTextAlignment>
+                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                                            </OnPlatform>
+                                        </Label.HorizontalTextAlignment>
+                                    </Label>
                                 </Grid>
                             </yummy:PancakeView>
                             <StackLayout Grid.Row="3" HeightRequest="50" />

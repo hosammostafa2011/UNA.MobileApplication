@@ -105,9 +105,14 @@ namespace UNA.MobileApplication.ViewModels
                         vNEWS.FavouriteImage = "star.png";
                     }
                     // direction
-                    vNEWS.HorizontalDirection = HelperManger.GetTextAlignment(_REQUEST.LANGUAGE);
+                    //vNEWS.HorizontalDirection = HelperManger.GetTextAlignment(_REQUEST.LANGUAGE);
                 }
                 NotifyPropertyChanged(nameof(obsCollectionNews));
+                if (Device.RuntimePlatform == Device.iOS)
+                {
+                    TextAlignment HorizontalDirection = base.HorizontalDirection;
+                    NotifyPropertyChanged(nameof(HorizontalDirection));
+                }
             }
             catch (Exception ex)
             {

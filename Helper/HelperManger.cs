@@ -78,32 +78,32 @@ namespace Helper
             PageDialog.Toast(tc);
         }
 
-        private static FlowDirection DEVICE_DIRECTION = Device.FlowDirection;
+        //private static FlowDirection DEVICE_DIRECTION = Device.FlowDirection;
 
-        public static TextAlignment GetTextAlignment(string pLANGUAGE)
+        /*public static TextAlignment GetTextAlignment(string pLANGUAGE)
         {
             if (DEVICE_DIRECTION.Equals(FlowDirection.RightToLeft)) // Arabic
             {
                 if (pLANGUAGE.Equals("1"))
                 {
-                    return TextAlignment.Start;
+                    return Device.RuntimePlatform == Device.iOS ? TextAlignment.Start : TextAlignment.End;
                 }
                 else
                 {
-                    return TextAlignment.End;
+                    return Device.RuntimePlatform == Device.iOS ? TextAlignment.End : TextAlignment.Start;
                 }
             }
             else
             {
                 if (pLANGUAGE.Equals("1"))
                 {
-                    return TextAlignment.End;
+                    return Device.RuntimePlatform == Device.iOS ? TextAlignment.End : TextAlignment.Start;
                 }
                 else
                 {
-                    return TextAlignment.Start;
+                    return Device.RuntimePlatform == Device.iOS ? TextAlignment.Start : TextAlignment.End;
                 }
             }
-        }
+        }*/
     }
 }

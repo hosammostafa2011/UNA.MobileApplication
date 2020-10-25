@@ -117,6 +117,8 @@ namespace UNA.MobileApplication
                         shell_section.Items.Add(new ShellContent() { Content = new MostReadPage("1400", string.Empty, string.Empty) });
                     else if (objCATEGORY.Category_ID == "1600")
                         shell_section.Items.Add(new ShellContent() { Content = new ContactUs(string.Empty, string.Empty, string.Empty) });
+                    else if (objCATEGORY.Category_ID == "1500")
+                        shell_section.Items.Add(new ShellContent() { Content = new SettingViewPage(string.Empty, string.Empty, string.Empty) });
                     else
                         shell_section.Items.Add(new ShellContent() { Content = new NewsList(objCATEGORY.Category_ID, objCATEGORY.CategoryName, string.Empty) });
                     lstCategory.Items.Add(shell_section);

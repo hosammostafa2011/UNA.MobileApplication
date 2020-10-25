@@ -35,7 +35,6 @@ namespace UNA.MobileApplication.ViewModels
 
         //public REQUEST _REQUEST = new REQUEST("", "");
         public REQUEST _REQUEST = new REQUEST();
-
         public static string FCM_TOKEN { get { return CrossSecureStorage.Current.GetValue("FCMToken"); } }
         private bool isBusy = false;
 
@@ -125,7 +124,7 @@ namespace UNA.MobileApplication.ViewModels
             }
         }
 
-        private TextAlignment _hPos;
+        private TextAlignment _horizontalDirection;
 
         public TextAlignment HorizontalDirection
         {
@@ -137,29 +136,25 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     if (USER_LANGUAGE.Equals("1"))
                     {
-                        return TextAlignment.Start;
+                        _horizontalDirection = Device.RuntimePlatform == Device.iOS ? TextAlignment.Start : TextAlignment.End;
                     }
                     else
                     {
-                        return TextAlignment.End;
+                        _horizontalDirection = Device.RuntimePlatform == Device.iOS ? TextAlignment.End : TextAlignment.Start;
                     }
                 }
                 else
                 {
                     if (USER_LANGUAGE.Equals("1"))
                     {
-                        return TextAlignment.End;
+                        _horizontalDirection = Device.RuntimePlatform == Device.iOS ? TextAlignment.End : TextAlignment.Start;
                     }
                     else
                     {
-                        return TextAlignment.Start;
+                        _horizontalDirection = Device.RuntimePlatform == Device.iOS ? TextAlignment.Start : TextAlignment.End;
                     }
                 }
-            }
-            set
-            {
-                _hPos = value;
-                OnPropertyChanged();
+                return _horizontalDirection;
             }
         }
 

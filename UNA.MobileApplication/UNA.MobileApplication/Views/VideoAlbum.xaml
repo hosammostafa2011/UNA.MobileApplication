@@ -61,7 +61,13 @@
                                         LineBreakMode="TailTruncation"
                                         LineHeight="1.3"
                                         Text="{Binding Title}"
-                                        TextColor="#FFFFFF" />
+                                        TextColor="#FFFFFF">
+                                        <Label.HorizontalTextAlignment>
+                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                                            </OnPlatform>
+                                        </Label.HorizontalTextAlignment>
+                                    </Label>
                                 </Grid>
                             </Grid>
                         </ViewCell>

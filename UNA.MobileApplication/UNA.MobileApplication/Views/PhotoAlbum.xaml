@@ -67,7 +67,13 @@
                                         LineBreakMode="NoWrap"
                                         LineHeight="0.8"
                                         Text="{Binding Title}"
-                                        TextColor="#FFFFFF" />
+                                        TextColor="#FFFFFF">
+                                        <Label.HorizontalTextAlignment>
+                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                                            </OnPlatform>
+                                        </Label.HorizontalTextAlignment>
+                                    </Label>
 
                                     <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
                                     <!--<Label
