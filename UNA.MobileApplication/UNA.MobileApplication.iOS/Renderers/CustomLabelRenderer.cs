@@ -26,21 +26,29 @@ namespace UNA.MobileApplication.iOS.Renderers
             {
                 return;
             }
-
-            var labelString = new NSMutableAttributedString(label.Text);
-            var paragraphStyle = new NSMutableParagraphStyle
+            if( label.Direction.Equals("RTL"))
             {
-                LineSpacing = (nfloat)label.LineHeight,
-                //Alignment = UITextAlignment.Right
-                //Alignment = UITextAlignment.Justified
-            };
-            var style = UIStringAttributeKey.ParagraphStyle;
-            var range = new NSRange(0, labelString.Length);
+                Control.TextAlignment = UITextAlignment.Right;
+            }
+            else
+            {
+                Control.TextAlignment = UITextAlignment.Left;
+            }
+            
 
-            labelString.AddAttribute(style, paragraphStyle, range);
+            //var labelString = new NSMutableAttributedString(label.Text);
+            //var paragraphStyle = new NSMutableParagraphStyle
+            //{
+            //    LineSpacing = (nfloat)label.LineHeight,
+            //    //Alignment = UITextAlignment.Right
+            //    //Alignment = UITextAlignment.Justified
+            //};
+            //var style = UIStringAttributeKey.ParagraphStyle;
+            //var range = new NSRange(0, labelString.Length);
+
+            //labelString.AddAttribute(style, paragraphStyle, range);
             //Control.TextAlignment = UITextAlignment.Justified;
-            //Control.TextAlignment = UITextAlignment.Right;
-            Control.AttributedText = labelString;
+            //Control.AttributedText = labelString;
         }
     }
 }

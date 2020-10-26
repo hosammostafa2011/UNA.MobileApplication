@@ -9,5 +9,6 @@ namespace UNA.MobileApplication.Controls
     {
         // make it bindable, shortened for simplicity here
         public double LineHeight { get; set; }
+        public string Direction { get; set; }
     }
 }

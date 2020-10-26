@@ -50,17 +50,14 @@
                                         <RowDefinition Height="Auto" />
                                         <!--<RowDefinition Height="Auto" />-->
                                     </Grid.RowDefinitions>
-                                    <Label
+                                    <controls:CustomLabel
                                         x:Name="lblTitle"
+                                        Direction="RTL"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Medium"
                                         Style="{StaticResource cardTitleStyle}">
-                                        <Label.HorizontalTextAlignment>
-                                            <OnPlatform x:TypeArguments="TextAlignment">
-                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
-                                            </OnPlatform>
-                                        </Label.HorizontalTextAlignment>
-                                        <Label.FormattedText>
+
+                                        <controls:CustomLabel.FormattedText>
                                             <FormattedString>
                                                 <Span LineHeight="1.3" Text="{Binding SelectedNews.Title}" />
                                                 <Span
@@ -68,8 +65,8 @@
                                                     Text="{Binding SelectedNews.Source_Tag, StringFormat='  ({0})'}"
                                                     TextColor="{DynamicResource ThirdColor}" />
                                             </FormattedString>
-                                        </Label.FormattedText>
-                                    </Label>
+                                        </controls:CustomLabel.FormattedText>
+                                    </controls:CustomLabel>
                                     <!--<Label
                                         Grid.Row="1"
                                         Margin="10,0,0,10"
@@ -98,19 +95,14 @@
                                         HorizontalTextAlignment="Start"
                                         Text="{Binding SelectedNews.Details}" />-->
 
-                                    <Label
+                                    <controls:CustomLabel
                                         Grid.Row="0"
+                                        Direction="RTL"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="{Binding FontSize}"
                                         LineHeight="0.8"
                                         Text="{Binding SelectedNews.Details}"
-                                        TextColor="{DynamicResource secondaryLabel}">
-                                        <Label.HorizontalTextAlignment>
-                                            <OnPlatform x:TypeArguments="TextAlignment">
-                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
-                                            </OnPlatform>
-                                        </Label.HorizontalTextAlignment>
-                                    </Label>
+                                        TextColor="{DynamicResource secondaryLabel}" />
                                 </Grid>
                             </yummy:PancakeView>
                             <StackLayout Grid.Row="3" HeightRequest="50" />
