@@ -53,6 +53,12 @@ namespace Helper.Interface
         [Post("/UNA/SET_FCM_TOKEN")]
         Task<string> SET_FCM_TOKEN([Body] REQUEST request);
 
+        [Post("/UNA/GET_SUBSCRIBE")]
+        Task<string> GET_SUBSCRIBE([Body] REQUEST request);
+
+        [Post("/UNA/SET_SUBSCRIBE")]
+        Task<string> SET_SUBSCRIBE([Body] REQUEST request);
+
         #endregion UNA APP
     }
 }

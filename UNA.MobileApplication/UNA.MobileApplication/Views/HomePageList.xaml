@@ -51,11 +51,11 @@
                                                 MaxLines="3"
                                                 Text="{Binding Title}"
                                                 TextColor="{DynamicResource primaryColor}">
-                                                <Label.HorizontalTextAlignment>
+                                                <!--<Label.HorizontalTextAlignment>
                                                     <OnPlatform x:TypeArguments="TextAlignment">
                                                         <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
                                                     </OnPlatform>
-                                                </Label.HorizontalTextAlignment>
+                                                </Label.HorizontalTextAlignment>-->
                                             </Label>
                                         </StackLayout>
                                         <Grid Grid.Row="1">
@@ -72,11 +72,11 @@
                                                 Text="{Binding Source_Tag}"
                                                 TextColor="{DynamicResource ThirdColor}"
                                                 VerticalOptions="Start">
-                                                <Label.HorizontalTextAlignment>
+                                                <!--<Label.HorizontalTextAlignment>
                                                     <OnPlatform x:TypeArguments="TextAlignment">
                                                         <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
                                                     </OnPlatform>
-                                                </Label.HorizontalTextAlignment>
+                                                </Label.HorizontalTextAlignment>-->
                                             </Label>
                                             <Label
                                                 Grid.Row="0"
@@ -123,11 +123,11 @@
                                     LineHeight="0.8"
                                     Text="{Binding Title}"
                                     TextColor="{DynamicResource primaryColor}">
-                                    <Label.HorizontalTextAlignment>
+                                    <!--<Label.HorizontalTextAlignment>
                                         <OnPlatform x:TypeArguments="TextAlignment">
                                             <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
                                         </OnPlatform>
-                                    </Label.HorizontalTextAlignment>
+                                    </Label.HorizontalTextAlignment>-->
                                 </Label>
                             </StackLayout>
                         </StackLayout>
@@ -190,7 +190,6 @@
                 Source="logowhite.png" />
         </StackLayout>
     </Shell.TitleView>
-
 
     <ContentPage.Content>
 

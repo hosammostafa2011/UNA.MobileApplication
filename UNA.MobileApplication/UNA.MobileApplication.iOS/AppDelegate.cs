@@ -36,7 +36,7 @@ namespace UNA.MobileApplication.iOS
 
             LoadApplication(new App());
 
-            if (false)
+            if (true)
             {
                 FirebasePushNotificationManager.Initialize(options, new NotificationUserCategory[]
                             {
@@ -83,34 +83,34 @@ namespace UNA.MobileApplication.iOS
                     CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
                     MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
 
-                //System.Diagnostics.Debug.WriteLine($"TOKEN : {p.Token}");
-                //UIPasteboard clipboard = UIPasteboard.General;
-                //clipboard.String = p.Token;
-                //Helper.Settings.Token = p.Token;
-            };
+                    //System.Diagnostics.Debug.WriteLine($"TOKEN : {p.Token}");
+                    //UIPasteboard clipboard = UIPasteboard.General;
+                    //clipboard.String = p.Token;
+                    //Helper.Settings.Token = p.Token;
+                };
 
                 CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
                 {
                     Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
-                // if (dic["targetUserId"].ToString() != null && Helper.Settings.UserId == dic["targetUserId"].ToString())
-                // {
-                System.Diagnostics.Debug.WriteLine("Received");
-                //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
-                //Helper.Settings.callingStatus = true;
-                // Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
-                FirebasePushNotificationManager.CurrentNotificationPresentationOption = UNNotificationPresentationOptions.Alert;
-                //  MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
-                // }
-            };
+                    // if (dic["targetUserId"].ToString() != null && Helper.Settings.UserId == dic["targetUserId"].ToString())
+                    // {
+                    System.Diagnostics.Debug.WriteLine("Received");
+                    //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
+                    //Helper.Settings.callingStatus = true;
+                    // Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
+                    FirebasePushNotificationManager.CurrentNotificationPresentationOption = UNNotificationPresentationOptions.Alert;
+                    //  MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
+                    // }
+                };
 
                 CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
                 {
-                //Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
-                //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
-                //Helper.Settings.callingStatus = true;
-                //Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
-                //MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
-            };
+                    //Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
+                    //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
+                    //Helper.Settings.callingStatus = true;
+                    //Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
+                    //MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
+                };
             }
 
             return base.FinishedLaunching(app, options);

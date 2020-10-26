@@ -157,7 +157,6 @@ namespace Helper.Service
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -236,6 +235,20 @@ namespace Helper.Service
         {
             var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
             var response = await apiresponse.SET_FCM_TOKEN(request);
+            return response;
+        }
+
+        public async Task<string> GET_SUBSCRIBE(REQUEST request)
+        {
+            var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+            var response = await apiresponse.GET_SUBSCRIBE(request);
+            return response;
+        }
+
+        public async Task<string> SET_SUBSCRIBE(REQUEST request)
+        {
+            var apiresponse = RestService.For<IMobileApiManager>(Constant.ApiUrl);
+            var response = await apiresponse.SET_SUBSCRIBE(request);
             return response;
         }
 
