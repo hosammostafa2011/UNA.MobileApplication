@@ -2,7 +2,7 @@
 <ContentPage
     x:Class="UNA.MobileApplication.Views.NationPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
     BackgroundColor="{DynamicResource entryBackground}"
     FlowDirection="MatchParent">
     <ContentPage.Content>
@@ -48,7 +48,7 @@
                                     Grid.Row="0"
                                     HeightRequest="50"
                                     Source="{Binding icon_name}" />
-                                <Label
+                                <controls:CustomLabel
                                     Grid.Column="1"
                                     FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Large"

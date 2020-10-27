@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
 using Foundation;
+using Plugin.SecureStorage;
 using UIKit;
 using UNA.MobileApplication.Controls;
 using UNA.MobileApplication.iOS.Renderers;
@@ -26,15 +28,38 @@ namespace UNA.MobileApplication.iOS.Renderers
             {
                 return;
             }
-            if( label.Direction.Equals("RTL"))
+            string USER_LANGUAGE = "1";
+            try
             {
-                Control.TextAlignment = UITextAlignment.Right;
+                USER_LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
             }
-            else
+            catch (Exception)
             {
-                Control.TextAlignment = UITextAlignment.Left;
+                USER_LANGUAGE = "1";
             }
-            
+            switch (label.Direction)
+            {
+                case "Start":
+                    Control.TextAlignment = USER_LANGUAGE.Equals("1") ? UITextAlignment.Right : UITextAlignment.Left;
+                    break;
+
+                case "End":
+                    Control.TextAlignment = USER_LANGUAGE.Equals("1") ? UITextAlignment.Left : UITextAlignment.Right;
+
+                    break;
+
+                case "Center":
+                    Control.TextAlignment = UITextAlignment.Center;
+                    break;
+
+                case "Justified":
+                    UpdateTextOnControl();
+                    break;
+
+                default:
+                    Control.TextAlignment = USER_LANGUAGE.Equals("1") ? UITextAlignment.Right : UITextAlignment.Left;
+                    break;
+            }
 
             //var labelString = new NSMutableAttributedString(label.Text);
             //var paragraphStyle = new NSMutableParagraphStyle
@@ -49,6 +74,37 @@ namespace UNA.MobileApplication.iOS.Renderers
             //labelString.AddAttribute(style, paragraphStyle, range);
             //Control.TextAlignment = UITextAlignment.Justified;
             //Control.AttributedText = labelString;
+        }
+
+        private void UpdateTextOnControl()
+        {
+            if (Control == null)
+                return;
+
+            //define paragraph-style
+            var style = new NSMutableParagraphStyle()
+            {
+                Alignment = UITextAlignment.Justified,
+                FirstLineHeadIndent = 0.001f,
+            };
+
+            //define attributes that use both paragraph-style, and font-style
+            var uiAttr = new UIStringAttributes()
+            {
+                ParagraphStyle = style,
+                BaselineOffset = 0,
+
+                Font = Control.Font
+            };
+
+            //define frame to ensure justify alignment is applied
+            Control.Frame = new RectangleF(0, 0, (float)Element.Width, (float)Element.Height);
+
+            //set new text with ui-style-attributes to native control (UILabel)
+            var stringToJustify = Control.Text ?? string.Empty;
+            var attributedString = new Foundation.NSAttributedString(stringToJustify, uiAttr.Dictionary);
+            Control.AttributedText = attributedString;
+            Control.Lines = 0;
         }
     }
 }

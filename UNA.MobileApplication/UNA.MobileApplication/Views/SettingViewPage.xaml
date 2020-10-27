@@ -2,7 +2,7 @@
 <ContentPage
     x:Class="UNA.MobileApplication.Views.SettingViewPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:UNA.MobileApplication.Controls">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -10,7 +10,7 @@
                 <RowDefinition Height="70*" />
             </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical">
-                <Label
+                <controls:CustomLabel
                     Margin="5"
                     FontSize="Medium"
                     Text="لغة التطيبق" />
@@ -34,7 +34,7 @@
                                 <TapGestureRecognizer Tapped="Arabic_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
+                        <controls:CustomLabel
                             Grid.Column="1"
                             Margin="2,-5"
                             FontFamily="{StaticResource HelveticaNeue}"
@@ -45,7 +45,7 @@
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="Arabic_Tapped" />
                             </Label.GestureRecognizers>
-                        </Label>
+                        </controls:CustomLabel>
                     </Grid>
 
                     <Grid Grid.Column="1" VerticalOptions="CenterAndExpand">
@@ -62,7 +62,7 @@
                                 <TapGestureRecognizer Tapped="English_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
+                        <controls:CustomLabel
                             Grid.Column="1"
                             Margin="2,-5"
                             FontFamily="{StaticResource HelveticaNeue}"
@@ -73,7 +73,7 @@
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="English_Tapped" />
                             </Label.GestureRecognizers>
-                        </Label>
+                        </controls:CustomLabel>
                     </Grid>
 
                     <Grid Grid.Column="2" VerticalOptions="CenterAndExpand">
@@ -90,7 +90,7 @@
                                 <TapGestureRecognizer Tapped="French_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
+                        <controls:CustomLabel
                             Grid.Column="1"
                             Margin="2,-5"
                             FontFamily="{StaticResource HelveticaNeue}"
@@ -101,7 +101,7 @@
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="French_Tapped" />
                             </Label.GestureRecognizers>
-                        </Label>
+                        </controls:CustomLabel>
                     </Grid>
                 </Grid>
                 <BoxView
@@ -123,7 +123,7 @@
                                     <ColumnDefinition Width="95*" />
                                     <ColumnDefinition Width="5*" />
                                 </Grid.ColumnDefinitions>
-                                <Label
+                                <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
                                     FontSize="Medium"
@@ -142,7 +142,7 @@
                                     <ColumnDefinition Width="95*" />
                                     <ColumnDefinition Width="5*" />
                                 </Grid.ColumnDefinitions>
-                                <Label
+                                <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
                                     FontSize="Medium"
@@ -162,7 +162,7 @@
                                     <ColumnDefinition Width="95*" />
                                     <ColumnDefinition Width="5*" />
                                 </Grid.ColumnDefinitions>
-                                <Label
+                                <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
                                     FontSize="Medium"

@@ -3,6 +3,7 @@
     x:Class="UNA.MobileApplication.Views.ContactUs"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     Title="{Binding TitleName, Mode=OneWay}"
     BackgroundColor="{StaticResource GrayColor}">
@@ -118,11 +119,11 @@
                 <StackLayout Margin="10" Spacing="10">
                     <Frame Style="{StaticResource DefaultFrame}">
                         <StackLayout>
-                            <Label
+                            <controls:CustomLabel
                                 FontAttributes="Bold"
                                 FontSize="Medium"
                                 Text="{Binding TITLE_01, Mode=OneWay}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"
@@ -132,11 +133,11 @@
                     </Frame>
                     <Frame Style="{StaticResource DefaultFrame}">
                         <StackLayout>
-                            <Label
+                            <controls:CustomLabel
                                 FontAttributes="Bold"
                                 FontSize="Medium"
                                 Text="{Binding TITLE_02, Mode=OneWay}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"
@@ -146,12 +147,11 @@
                     </Frame>
                     <Frame Style="{StaticResource DefaultFrame}">
                         <StackLayout>
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Medium"
-                                LineBreakMode="WordWrap"
                                 LineHeight="1"
                                 Text="{Binding TITLE_03, Mode=OneWay}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"
@@ -161,11 +161,11 @@
                     </Frame>
                     <Frame Style="{StaticResource DefaultFrame}">
                         <StackLayout>
-                            <Label
+                            <controls:CustomLabel
                                 FontAttributes="Bold"
                                 FontSize="Medium"
                                 Text="{Binding TITLE_04, Mode=OneWay}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"
@@ -175,11 +175,11 @@
                     </Frame>
                     <Frame Style="{StaticResource DefaultFrame}">
                         <StackLayout>
-                            <Label
+                            <controls:CustomLabel
                                 FontAttributes="Bold"
                                 FontSize="Medium"
                                 Text="{Binding TITLE_05, Mode=OneWay}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"
@@ -189,23 +189,23 @@
                     </Frame>
                     <Frame Style="{StaticResource DefaultFrame}">
                         <StackLayout>
-                            <Label
+                            <controls:CustomLabel
                                 FontAttributes="Bold"
                                 FontSize="Medium"
                                 Text="{Binding TITLE_06, Mode=OneWay}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"
                                 Text="{Binding TITLE_06_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"
                                 Text="{Binding TITLE_07, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
-                            <Label
+                            <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
                                 LineHeight="1"

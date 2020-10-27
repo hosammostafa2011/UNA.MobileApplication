@@ -52,7 +52,7 @@
                                     </Grid.RowDefinitions>
                                     <controls:CustomLabel
                                         x:Name="lblTitle"
-                                        Direction="RTL"
+                                        Direction="Start"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Medium"
                                         Style="{StaticResource cardTitleStyle}">
@@ -67,13 +67,6 @@
                                             </FormattedString>
                                         </controls:CustomLabel.FormattedText>
                                     </controls:CustomLabel>
-                                    <!--<Label
-                                        Grid.Row="1"
-                                        Margin="10,0,0,10"
-                                        FontFamily="{StaticResource HelveticaNeue}"
-                                        FontSize="Small"
-                                        Text="{Binding SelectedNews.Source_Tag}"
-                                        TextColor="{DynamicResource ThirdColor}" />-->
                                 </Grid>
                             </yummy:PancakeView>
 
@@ -88,20 +81,12 @@
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
-                                    <!--<htmlLabel:HtmlLabel
-                                        Grid.Row="0"
-
-                                        HorizontalOptions="StartAndExpand"
-                                        HorizontalTextAlignment="Start"
-                                        Text="{Binding SelectedNews.Details}" />-->
-
                                     <controls:CustomLabel
                                         Grid.Row="0"
-                                        Direction="RTL"
+                                        Direction="Justified"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="{Binding FontSize}"
-                                        LineHeight="0.8"
-                                        Text="{Binding SelectedNews.Details}"
+                                        Text="{Binding SelectedNews.Details, Mode=TwoWay}"
                                         TextColor="{DynamicResource secondaryLabel}" />
                                 </Grid>
                             </yummy:PancakeView>

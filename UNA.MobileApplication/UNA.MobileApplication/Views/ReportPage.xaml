@@ -6,7 +6,7 @@
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
     Title="{Binding TitleName, Mode=OneWay}"
     sharedTransitions:SharedTransitionShell.TransitionSelectedGroup="{Binding SelectedNews.News_ID}">
     <ContentPage.Content>
@@ -55,26 +55,26 @@
                                                     <RowDefinition Height="Auto" />
                                                 </Grid.RowDefinitions>
                                                 <StackLayout Grid.Row="0" HeightRequest="70">
-                                                    <Label
+                                                    <controls:CustomLabel
                                                         FontFamily="{StaticResource HelveticaNeue}"
                                                         FontSize="Small"
                                                         LineBreakMode="WordWrap"
                                                         LineHeight="0.8"
                                                         Text="{Binding Title}"
                                                         TextColor="{DynamicResource primaryColor}">
-                                                        <Label.HorizontalTextAlignment>
+                                                        <!--<Label.HorizontalTextAlignment>
                                                             <OnPlatform x:TypeArguments="TextAlignment">
                                                                 <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
                                                             </OnPlatform>
-                                                        </Label.HorizontalTextAlignment>
-                                                    </Label>
+                                                        </Label.HorizontalTextAlignment>-->
+                                                    </controls:CustomLabel>
                                                 </StackLayout>
                                                 <Grid Grid.Row="1">
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition Width="50*" />
                                                         <ColumnDefinition Width="50*" />
                                                     </Grid.ColumnDefinitions>
-                                                    <Label
+                                                    <controls:CustomLabel
                                                         Grid.Row="0"
                                                         Grid.Column="0"
                                                         FontFamily="{StaticResource HelveticaNeue}"
@@ -83,7 +83,7 @@
                                                         Text="{Binding Source_Tag}"
                                                         TextColor="{DynamicResource ThirdColor}"
                                                         VerticalOptions="Center" />
-                                                    <Label
+                                                    <controls:CustomLabel
                                                         Grid.Row="0"
                                                         Grid.Column="1"
                                                         FontFamily="{StaticResource HelveticaNeue}"
