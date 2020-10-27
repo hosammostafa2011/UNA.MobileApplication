@@ -34,6 +34,7 @@ namespace UNA.MobileApplication.Views
                 CrossSecureStorage.Current.SetValue("Language", "1");
             }
             NavigationPage.SetHasNavigationBar(this, false);
+            Shell.SetNavBarIsVisible(this, false);
 
             BindingContext = newsDetailsViewModel;
         }

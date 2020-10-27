@@ -71,7 +71,16 @@ namespace UNA.MobileApplication.Views
             if (item == null)
                 return;
             ItemsListView.SelectedItem = null;
-            await Navigation.PushAsync(new NewsList(string.Empty, item.Nation_Name, item.Nation_id));//for shared
+            if (item.Nation_id.Equals("0"))
+            {
+                //   await Navigation.PushAsync(new HomePageList(string.Empty, string.Empty, string.Empty));
+                if (Device.RuntimePlatform == Device.iOS)
+                    Xamarin.Forms.Application.Current.MainPage = new RootPage();
+                else
+                    Xamarin.Forms.Application.Current.MainPage = new AppShell();
+            }
+            else
+                await Navigation.PushAsync(new NewsList(string.Empty, item.Nation_Name, item.Nation_id));
         }
 
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
