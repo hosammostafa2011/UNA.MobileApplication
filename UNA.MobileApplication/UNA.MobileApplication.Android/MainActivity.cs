@@ -13,6 +13,7 @@ using Firebase.Iid;
 using Plugin.FirebasePushNotification;
 using Firebase.Messaging;
 using Android.Content;
+using Xamarin.Forms;
 
 namespace UNA.MobileApplication.Droid
 {
@@ -49,6 +50,30 @@ namespace UNA.MobileApplication.Droid
 #else
                           FirebasePushNotificationManager.Initialize(this,false);
 #endif*/
+            MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
+            {
+                switch (arg.ToString())
+                {
+                    case "1":
+                        CrossFirebasePushNotification.Current.Subscribe("1");
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
+                        break;
+
+                    case "2":
+                        CrossFirebasePushNotification.Current.Subscribe("2");
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
+                        break;
+
+                    case "3":
+                        CrossFirebasePushNotification.Current.Subscribe("3");
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
+                        break;
+
+                    default:
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
+                        break;
+                }
+            });
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

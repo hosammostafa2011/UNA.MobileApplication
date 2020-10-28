@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FirebaseAdmin.Messaging;
 using Foundation;
 using LabelHtml.Forms.Plugin.iOS;
 using Plugin.FirebasePushNotification;
@@ -88,6 +88,31 @@ namespace UNA.MobileApplication.iOS
                     //clipboard.String = p.Token;
                     //Helper.Settings.Token = p.Token;
                 };
+
+                MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
+                {
+                    switch (arg.ToString())
+                    {
+                        case "1":
+                            CrossFirebasePushNotification.Current.Subscribe("1");
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
+                            break;
+
+                        case "2":
+                            CrossFirebasePushNotification.Current.Subscribe("2");
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
+                            break;
+
+                        case "3":
+                            CrossFirebasePushNotification.Current.Subscribe("3");
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
+                            break;
+
+                        default:
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
+                            break;
+                    }
+                });
 
                 CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
                 {
