@@ -51,8 +51,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>Apple Development: mustafa kandil (7SSCT99EVW)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>None</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
     <CodesignProvision>VS: com.marshal.iina Development</CodesignProvision>
