@@ -2,12 +2,14 @@
 <ContentPage
     x:Class="UNA.MobileApplication.Views.SettingViewPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:UNA.MobileApplication.Controls">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:UNA.MobileApplication.Controls">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30*" />
-                <RowDefinition Height="70*" />
+                <RowDefinition Height="60*" />
+                <RowDefinition Height="10*" />
             </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical">
                 <controls:CustomLabel
@@ -130,8 +132,9 @@
                                     Text="السماح للإشعارات بالعربية" />
                                 <Switch
                                     Grid.Row="0"
-                                    Grid.Column="0" Toggled="Switch_Toggled_Arabic"
-                                    IsToggled="{Binding ArabicIsToggled, Mode=TwoWay}" />
+                                    Grid.Column="0"
+                                    IsToggled="{Binding ArabicIsToggled, Mode=TwoWay}"
+                                    Toggled="Switch_Toggled_Arabic" />
                             </Grid>
                         </ViewCell>
                     </TableSection>
@@ -150,8 +153,8 @@
                                 <Switch
                                     Grid.Row="0"
                                     Grid.Column="0"
-                                     Toggled="Switch_Toggled_English"
-                                    IsToggled="{Binding EnglishIsToggled, Mode=TwoWay}" />
+                                    IsToggled="{Binding EnglishIsToggled, Mode=TwoWay}"
+                                    Toggled="Switch_Toggled_English" />
                             </Grid>
                         </ViewCell>
                     </TableSection>
@@ -169,14 +172,18 @@
                                     Text="Autoriser les notifications en anglais" />
                                 <Switch
                                     Grid.Row="0"
-                                    Grid.Column="0" Toggled="Switch_Toggled_French"
+                                    Grid.Column="0"
                                     HorizontalOptions="End"
-                                    IsToggled="{Binding FrenchIsToggled, Mode=TwoWay}" />
+                                    IsToggled="{Binding FrenchIsToggled, Mode=TwoWay}"
+                                    Toggled="Switch_Toggled_French" />
                             </Grid>
                         </ViewCell>
                     </TableSection>
                 </TableRoot>
             </TableView>
+            <StackLayout Grid.Row="2">
+                <Button Command="{Binding SaveCommand}" Text="save" />
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

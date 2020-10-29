@@ -12,6 +12,6 @@
       <string>app-usage</string>
     </array>
     <key>aps-environment</key>
-    <string>production</string>
+    <string>developer</string>
   </dict>
 </plist>

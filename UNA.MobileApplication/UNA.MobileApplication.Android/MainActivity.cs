@@ -32,7 +32,7 @@ namespace UNA.MobileApplication.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
             base.OnCreate(savedInstanceState);
-            /*Task.Run(() =>
+            Task.Run(() =>
             {
                 var instanceid = FirebaseInstanceId.Instance;
                 instanceid.DeleteInstanceId();
@@ -49,7 +49,7 @@ namespace UNA.MobileApplication.Droid
             FirebasePushNotificationManager.Initialize(this, true);
 #else
                           FirebasePushNotificationManager.Initialize(this,false);
-#endif*/
+#endif
             MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
             {
                 switch (arg.ToString())

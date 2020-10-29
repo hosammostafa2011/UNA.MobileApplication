@@ -14,9 +14,41 @@ namespace UNA.MobileApplication.ViewModels
 {
     public class SettingViewModel : BaseViewModel
     {
+        public ICommand SaveCommand { get; set; }
+
         public SettingViewModel()
         {
             Device.BeginInvokeOnMainThread(async () => await RunSafe(GetNotificationAsync(), true));
+            SaveCommand = new Command(async () => await RunSafe(Save()));
+        }
+
+        private async Task Save()
+        {
+            string FCM = string.Empty;
+            FCM = CrossSecureStorage.Current.GetValue("FCMToken");
+
+            if (ArabicIsToggled)
+                _REQUEST.LANGUAGE = "1";
+            else if (EnglishIsToggled)
+                _REQUEST.LANGUAGE = "2";
+            else if (FrenchIsToggled)
+                _REQUEST.LANGUAGE = "3";
+            else
+                _REQUEST.LANGUAGE = string.Empty;
+            _REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
+            _REQUEST.USER_TOKEN = "Aa159357";
+            _REQUEST.FCM_TOKEN = FCM;
+            _REQUEST.JSON = string.Empty;
+            string result = await ApiManager.SET_SUBSCRIBE(_REQUEST);
+            if (!string.IsNullOrEmpty(result))
+            {
+                _RESPONSE = HelperManger.CastToResponse(result);
+                if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
+                {
+                    MessagingCenter.Send<string, string>("MyApp", "Subscribe", _REQUEST.LANGUAGE);
+                }
+                //NotifyAllPropertiesChanged();
+            }
         }
 
         private async Task GetNotificationAsync()
