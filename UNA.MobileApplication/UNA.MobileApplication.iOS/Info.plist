@@ -35,7 +35,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.02</string>
+	<string>3.03</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 	<key>UIBackgroundModes</key>
@@ -61,6 +61,6 @@
 		<true/>
 	</dict>
 	<key>CFBundleVersion</key>
-	<string>302</string>
+	<string>303</string>
 </dict>
 </plist>

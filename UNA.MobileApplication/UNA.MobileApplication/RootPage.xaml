@@ -11,6 +11,7 @@
         <pages:RootPageMaster x:Name="MasterPage" IconImageSource="hamburguer_icon" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
+
         <sharedTransitions:SharedTransitionNavigationPage BarBackgroundColor="#016b56" BarTextColor="White">
             <x:Arguments>
                 <pages1:HomePageList />

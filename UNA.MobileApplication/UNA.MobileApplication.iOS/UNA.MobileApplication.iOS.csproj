@@ -14,7 +14,7 @@
     <AssemblyName>UNA.MobileApplication.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
-    <ProvisioningType>automatic</ProvisioningType>
+    <ProvisioningType>manual</ProvisioningType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1275,5 +1275,14 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\hamburguer_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blank%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blank%402x.png" />
   </ItemGroup>
 </Project>

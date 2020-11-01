@@ -18,6 +18,21 @@ namespace UNA.MobileApplication.Views
         public HomePageList()
         {
             InitializeComponent();
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                ToolbarItems.Add(new ToolbarItem()
+                {
+                    IconImageSource = "logowhite.png",
+                    Order = ToolbarItemOrder.Primary,
+                    Priority = 1
+                });
+                ToolbarItems.Add(new ToolbarItem()
+                {
+                    IconImageSource = "blank.png",
+                    Order = ToolbarItemOrder.Primary,
+                    Priority = 2
+                });
+            }
 
             try
             {
