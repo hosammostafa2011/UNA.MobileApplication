@@ -36,11 +36,11 @@ namespace UNA.MobileApplication
                 centerImage.TranslateTo (0, 100, 1000)
         };
             await Task.WhenAll(animationTasks);
-            /*
+
             if (Device.RuntimePlatform == Device.iOS)
                 Application.Current.MainPage = new RootPage();
             else
-                Application.Current.MainPage = new AppShell();*/
+                Application.Current.MainPage = new AppShell();
         }
     }
 }

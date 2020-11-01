@@ -1285,4 +1285,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\blank%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\worldmap.png" />
+  </ItemGroup>
 </Project>
