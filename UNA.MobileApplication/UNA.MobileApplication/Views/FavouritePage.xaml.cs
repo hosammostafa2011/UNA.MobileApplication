@@ -52,7 +52,7 @@ namespace UNA.MobileApplication.Views
                     break;
 
                 case "3":
-                    _title = "Préférée";
+                    _title = "Mes favoris";
                     break;
             }
             BindingContext = _newsListViewModel = new NewsListViewModel("7000", _title, string.Empty);

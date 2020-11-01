@@ -1297,4 +1297,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\brand%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\worldmapicon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\worldmapicon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\worldmapicon%401x.png" />
+  </ItemGroup>
 </Project>
