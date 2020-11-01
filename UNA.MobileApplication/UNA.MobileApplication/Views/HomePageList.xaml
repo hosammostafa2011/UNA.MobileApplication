@@ -3,10 +3,11 @@
     x:Class="UNA.MobileApplication.Views.HomePageList"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:local="clr-namespace:UNA.MobileApplication.Util"
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     x:Name="MainPage"
     sharedTransitions:SharedTransitionNavigationPage.BackgroundAnimation="SlideFromRight"
     sharedTransitions:SharedTransitionShell.TransitionSelectedGroup="{Binding SelectedNews.News_ID}"
@@ -175,13 +176,44 @@
                 TemplateThree="{StaticResource listNewsViewTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
+
     <!--<ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="more.png" Order="Primary" />
-        <ToolbarItem
-            x:Name="logo"
-            IconImageSource="logo.png"
-            Order="Secondary" />
+
+        <OnPlatform x:TypeArguments="ToolbarItem">
+            <OnPlatform.iOS>
+                <ToolbarItem
+                    IconImageSource="logowhite.png"
+                    Order="Primary"
+                    Priority="1" />
+            </OnPlatform.iOS>
+        </OnPlatform>
+
+        <OnPlatform x:TypeArguments="ToolbarItem">
+            <OnPlatform.iOS>
+
+                <ToolbarItem
+                    IconImageSource="blank.png"
+                    Order="Primary"
+                    Priority="2" />
+            </OnPlatform.iOS>
+        </OnPlatform>
     </ContentPage.ToolbarItems>-->
+
+    <!--<NavigationPage.TitleView>
+
+        <StackLayout
+            Margin="0,0,70,10"
+            HeightRequest="40"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Image
+                HeightRequest="40"
+                HorizontalOptions="Center"
+                Source="logowhite.png"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>-->
+
     <Shell.TitleView>
         <StackLayout HeightRequest="10" VerticalOptions="CenterAndExpand">
             <Image

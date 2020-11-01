@@ -14,6 +14,7 @@ using Plugin.FirebasePushNotification;
 using Firebase.Messaging;
 using Android.Content;
 using Xamarin.Forms;
+using Firebase;
 
 namespace UNA.MobileApplication.Droid
 {
@@ -38,18 +39,29 @@ namespace UNA.MobileApplication.Droid
                 instanceid.DeleteInstanceId();
             });
 
+            //FirebaseApp.InitializeApp(this);
+            //Set the default notification channel for your app when running Android Oreo
             if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.O)
             {
+                //Change for your default notification channel id here
                 FirebasePushNotificationManager.DefaultNotificationChannelId = "FirebasePushNotificationChannel";
 
+                //Change for your default notification channel name here
                 FirebasePushNotificationManager.DefaultNotificationChannelName = "General";
             }
 
+            //If debug you should reset the token each time.
 #if DEBUG
             FirebasePushNotificationManager.Initialize(this, true);
 #else
                           FirebasePushNotificationManager.Initialize(this,false);
 #endif
+
+            //Handle notification when app is closed here
+            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+            {
+            };
+
             MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
             {
                 switch (arg.ToString())

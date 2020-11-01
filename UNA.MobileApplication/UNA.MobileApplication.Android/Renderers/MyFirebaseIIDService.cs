@@ -21,30 +21,28 @@ namespace UNA.MobileApplication.Droid.Renderers
     [IntentFilter(new[] {
         "com.google.firebase.INSTANCE_ID_EVENT"
     })]
-    [Obsolete]
-    internal class MyFirebaseIIDService : FirebaseInstanceIdService
+
+    internal class MyFirebaseIIDService //: FirebaseInstanceIdService
     {
         private const string TAG = "MyFirebaseIIDService";
 
-        [Obsolete]
-        public async override void OnTokenRefresh()
-        {
-            /*
-            var refreshedToken = FirebaseInstanceId.Instance.Token;
+        //[Obsolete]
+        //public async override void OnTokenRefresh()
+        //{
+        //    var refreshedToken = FirebaseInstanceId.Instance.Token;
 
-            Log.Debug(TAG, "Refreshed token: " + refreshedToken);
-            SendRegistrationToServer(refreshedToken);
+        //    Log.Debug(TAG, "Refreshed token: " + refreshedToken);
+        //    SendRegistrationToServer(refreshedToken);
 
-            var response1 = FirebaseMessaging.Instance.SubscribeToTopic("1");
+        //    //var response1 = FirebaseMessaging.Instance.SubscribeToTopic("1");
 
-            MessagingCenter.Send<string, string>("MyApp", "TokenChanges", refreshedToken);
-            */
-        }
+        //    MessagingCenter.Send<string, string>("MyApp", "TokenChanges", refreshedToken);
+        //}
 
-        private void SendRegistrationToServer(string token)
-        {
-            if (!string.IsNullOrEmpty(token))
-                CrossSecureStorage.Current.SetValue("FCMToken", token);
-        }
+        //private void SendRegistrationToServer(string token)
+        //{
+        //    if (!string.IsNullOrEmpty(token))
+        //        CrossSecureStorage.Current.SetValue("FCMToken", token);
+        //}
     }
 }

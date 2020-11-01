@@ -36,7 +36,7 @@ namespace UNA.MobileApplication.iOS
 
             LoadApplication(new App());
 
-            if (true)
+            if (false)
             {
                 FirebasePushNotificationManager.Initialize(options, new NotificationUserCategory[]
                             {
