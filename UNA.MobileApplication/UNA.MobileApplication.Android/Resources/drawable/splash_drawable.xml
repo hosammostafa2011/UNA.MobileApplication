@@ -11,7 +11,7 @@
         android:bottom="0dip" />
     </shape>
   </item>
-  <item>
+  <!--<item>
     <bitmap
         android:src="@drawable/splashbackground"
 
@@ -19,5 +19,5 @@
     android:layout_gravity="center"
     android:scaleType="center"
         android:gravity="center" />
-  </item>
+  </item>-->
 </layer-list>

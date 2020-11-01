@@ -7,13 +7,14 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="30*" />
-                <RowDefinition Height="60*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="70*" />
                 <RowDefinition Height="10*" />
             </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical">
                 <controls:CustomLabel
                     Margin="5"
+                    FontFamily="{StaticResource HelveticaNeue}"
                     FontSize="Medium"
                     Text="لغة التطيبق" />
                 <Grid Margin="5" HeightRequest="25">
@@ -112,24 +113,33 @@
                     WidthRequest="1"
                     Color="#016b56" />
             </StackLayout>
-
-            <TableView Grid.Row="1" Margin="5,5,5,5">
+            <TableView Grid.Row="1">
                 <TableRoot>
-                    <TableSection Title="">
+                    <TableSection>
                         <ViewCell>
-                            <Grid>
+                            <StackLayout Grid.Row="0" Orientation="Vertical">
+                                <controls:CustomLabel
+                                    Margin="5"
+                                    FontFamily="{StaticResource HelveticaNeue}"
+                                    FontSize="Medium"
+                                    Text="لغة الإشعارات" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <Grid Margin="5">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="95*" />
-                                    <ColumnDefinition Width="5*" />
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
                                 </Grid.ColumnDefinitions>
                                 <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
+                                    FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Medium"
-                                    Text="السماح للإشعارات بالعربية" />
+                                    Text="العربية" />
                                 <Switch
                                     Grid.Row="0"
                                     Grid.Column="0"
@@ -140,16 +150,17 @@
                     </TableSection>
                     <TableSection Title="">
                         <ViewCell>
-                            <Grid>
+                            <Grid Margin="5">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="95*" />
-                                    <ColumnDefinition Width="5*" />
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
                                 </Grid.ColumnDefinitions>
                                 <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
+                                    FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Medium"
-                                    Text="Allow English notifications" />
+                                    Text="English" />
                                 <Switch
                                     Grid.Row="0"
                                     Grid.Column="0"
@@ -160,16 +171,17 @@
                     </TableSection>
                     <TableSection Title="">
                         <ViewCell>
-                            <Grid>
+                            <Grid Margin="5">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="95*" />
-                                    <ColumnDefinition Width="5*" />
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
                                 </Grid.ColumnDefinitions>
                                 <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
+                                    FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Medium"
-                                    Text="Autoriser les notifications en anglais" />
+                                    Text="Français" />
                                 <Switch
                                     Grid.Row="0"
                                     Grid.Column="0"
@@ -182,7 +194,10 @@
                 </TableRoot>
             </TableView>
             <StackLayout Grid.Row="2">
-                <Button Command="{Binding SaveCommand}" Text="save" />
+                <Button
+                    Command="{Binding SaveCommand}"
+                    FontFamily="{StaticResource HelveticaNeue}"
+                    Text="حفــظ" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>

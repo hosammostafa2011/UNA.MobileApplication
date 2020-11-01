@@ -83,7 +83,7 @@ namespace UNA.MobileApplication.Views
 
         private void Switch_Toggled_English(object sender, ToggledEventArgs e)
         {
-            _settingViewModel.EnglishIsToggled = !_settingViewModel.FrenchIsToggled;
+            _settingViewModel.EnglishIsToggled = !_settingViewModel.EnglishIsToggled;
         }
 
         private void Switch_Toggled_French(object sender, ToggledEventArgs e)
