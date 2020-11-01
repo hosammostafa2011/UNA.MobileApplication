@@ -3,40 +3,39 @@
     x:Class="UNA.MobileApplication.SplashPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="White"
-    BackgroundImageSource="worldmap.png">
+    BackgroundColor="White">
     <ContentPage.Content>
-        <Grid>
+        <Grid Margin="0,150,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="20*" />
-                <RowDefinition Height="20*" />
+                <RowDefinition Height="50*" />
+                <RowDefinition Height="30*" />
             </Grid.RowDefinitions>
             <Image
                 x:Name="logoImage"
                 Grid.Row="0"
                 HorizontalOptions="Center"
-                VerticalOptions="Center">
-                <Image.Source>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="Android, iOS">
-                            <FileImageSource File="logo.png" />
-                        </On>
-                    </OnPlatform>
-                </Image.Source>
-            </Image>
-            <Image
-                Grid.Row="1"
-                x:Name="centerImage"
-                HorizontalOptions="Center"
-                VerticalOptions="Center">
-                <Image.Source>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="Android, iOS">
-                            <FileImageSource File="una_logo.png" />
-                        </On>
-                    </OnPlatform>
-                </Image.Source>
-            </Image>
+                Source="logo"
+                VerticalOptions="Center" />
+            <StackLayout Grid.Row="1">
+                <Image
+                    x:Name="worldmap"
+                    Grid.Row="1"
+                    Aspect="Fill"
+                    HeightRequest="250"
+                    Source="worldmap"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Image
+                    x:Name="brand"
+                    HeightRequest="250"
+                    Source="brand"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <!--<StackLayout Grid.Row="2">
+                <Button Clicked="Button_Clicked" Text="click" />
+            </StackLayout>-->
         </Grid>
         <!--<Grid BackgroundColor="White">
             <Grid.RowDefinitions>
