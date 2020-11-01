@@ -58,7 +58,15 @@ namespace UNA.MobileApplication.Views
         private async void imgFavourite_Tapped(object sender, EventArgs e)
         {
             string NewsId = lblNews_ID.Text;
-
+            string lang = "1";
+            try
+            {
+                lang = CrossSecureStorage.Current.GetValue("Language");
+            }
+            catch (Exception)
+            {
+                lang = "1";
+            }
             if (CrossSecureStorage.Current.HasKey("FavouriteList"))
             {
                 string strFavouriteList = CrossSecureStorage.Current.GetValue("FavouriteList");
@@ -67,14 +75,23 @@ namespace UNA.MobileApplication.Views
                 {
                     FavouriteList.Remove(NewsId);
                     imgFavourite.Source = "star.png";
-
-                    HelperManger.ShowToast("تم ازالة الخبر من المفضلة");
+                    if (lang.Equals("1"))
+                        HelperManger.ShowToast("تم ازالة الخبر من المفضلة");
+                    else if (lang.Equals("2"))
+                        HelperManger.ShowToast("News removed from my favorites");
+                    else
+                        HelperManger.ShowToast("La nouvelle a été supprimée de mes favoris");
                 }
                 else
                 {
                     FavouriteList.Add(NewsId);
                     imgFavourite.Source = "star_sel.png";
-                    HelperManger.ShowToast("تم اضافة الخبر الى المفضلة");
+                    if (lang.Equals("1"))
+                        HelperManger.ShowToast("تم اضافة الخبر الى المفضلة!");
+                    else if (lang.Equals("2"))
+                        HelperManger.ShowToast("Sent to your favorites !");
+                    else
+                        HelperManger.ShowToast("Envoyé à vos favoris !");
                 }
                 strFavouriteList = String.Join(",", FavouriteList);
                 CrossSecureStorage.Current.SetValue("FavouriteList", strFavouriteList);
@@ -83,7 +100,12 @@ namespace UNA.MobileApplication.Views
             else
             {
                 CrossSecureStorage.Current.SetValue("FavouriteList", NewsId);
-                HelperManger.ShowToast("تم اضافة الخبر الى المفضلة");
+                if (lang.Equals("1"))
+                    HelperManger.ShowToast("تم اضافة الخبر الى المفضلة!");
+                else if (lang.Equals("2"))
+                    HelperManger.ShowToast("Sent to your favorites !");
+                else
+                    HelperManger.ShowToast("Envoyé à vos favoris !");
                 imgFavourite.Source = "star_sel.png";
             }
         }
