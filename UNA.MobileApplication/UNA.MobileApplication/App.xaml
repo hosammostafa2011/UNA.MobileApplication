@@ -3,6 +3,7 @@
     x:Class="UNA.MobileApplication.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
     <!--
@@ -116,6 +117,9 @@
         <Style TargetType="sharedTransitions:SharedTransitionNavigationPage">
             <Setter Property="BarBackgroundColor" Value="#016b56" />
             <Setter Property="BarTextColor" Value="White" />
+        </Style>
+        <Style TargetType="controls:CustomLabel">
+            <Setter Property="FontFamily" Value="{StaticResource HelveticaNeue}" />
         </Style>
     </Application.Resources>
 </Application>

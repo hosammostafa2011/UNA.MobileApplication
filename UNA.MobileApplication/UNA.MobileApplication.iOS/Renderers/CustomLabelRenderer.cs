@@ -37,6 +37,7 @@ namespace UNA.MobileApplication.iOS.Renderers
             {
                 USER_LANGUAGE = "1";
             }
+            label.LineHeight = 0.8;
             switch (label.Direction)
             {
                 case "Start":

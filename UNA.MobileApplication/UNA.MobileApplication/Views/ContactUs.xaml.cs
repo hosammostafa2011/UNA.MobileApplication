@@ -28,6 +28,25 @@ namespace UNA.MobileApplication.Views
                 FlowDirection = FlowDirection.RightToLeft;
                 CrossSecureStorage.Current.SetValue("Language", "1");
             }
+            string strLanguage = string.Empty;
+            if (CrossSecureStorage.Current.HasKey("Language"))
+                strLanguage = CrossSecureStorage.Current.GetValue("Language");
+            else
+                strLanguage = "1";
+            switch (strLanguage)
+            {
+                case "1":
+                    Title = "اتصل بنا";
+                    break;
+
+                case "2":
+                    Title = "Contact Us";
+                    break;
+
+                case "3":
+                    Title = "Contactez-nous";
+                    break;
+            }
             BindingContext = contactUsViewModel = new ContactUsViewModel();
         }
 

@@ -19,25 +19,6 @@
                 Orientation="Horizontal"
                 Spacing="10"
                 VerticalOptions="End">
-                <!--<StackLayout>
-                    <yummy:PancakeView
-                        BorderThickness="1"
-                        CornerRadius="20"
-                        Elevation="3"
-                        HeightRequest="60"
-                        HorizontalOptions="Center"
-                        WidthRequest="60">
-                        <Image
-                            Margin="15"
-                            Aspect="AspectFit"
-                            HeightRequest="60"
-                            Source="googleplus"
-                            WidthRequest="60" />
-                    </yummy:PancakeView>
-                    <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer CommandParameter="1" Tapped="GooglePlus_Tapped" />
-                    </StackLayout.GestureRecognizers>
-                </StackLayout>-->
                 <StackLayout>
                     <yummy:PancakeView
                         BorderThickness="1"
@@ -126,7 +107,6 @@
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_01_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                         </StackLayout>
@@ -140,21 +120,16 @@
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_02_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                         </StackLayout>
                     </Frame>
                     <Frame Style="{StaticResource DefaultFrame}">
                         <StackLayout>
-                            <controls:CustomLabel
-                                FontSize="Medium"
-                                LineHeight="1"
-                                Text="{Binding TITLE_03, Mode=OneWay}" />
+                            <controls:CustomLabel FontSize="Medium" Text="{Binding TITLE_03, Mode=OneWay}" />
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_03_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                         </StackLayout>
@@ -168,7 +143,6 @@
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_04_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                         </StackLayout>
@@ -182,7 +156,6 @@
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_05_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                         </StackLayout>
@@ -196,19 +169,16 @@
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_06_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_07, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                             <controls:CustomLabel
                                 FontSize="Body"
                                 LineBreakMode="WordWrap"
-                                LineHeight="1"
                                 Text="{Binding TITLE_07_VAL, Mode=OneWay}"
                                 TextColor="{DynamicResource ThirdColor}" />
                         </StackLayout>

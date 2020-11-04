@@ -55,15 +55,11 @@
                                         Direction="Start"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Medium"
-                                        LineHeight="1"
                                         Style="{StaticResource cardTitleStyle}">
                                         <controls:CustomLabel.FormattedText>
                                             <FormattedString>
-                                                <Span LineHeight="1.3" Text="{Binding SelectedNews.Title}" />
-                                                <Span
-                                                    LineHeight="1.3"
-                                                    Text="{Binding SelectedNews.Source_Tag, StringFormat='  ({0})'}"
-                                                    TextColor="{DynamicResource ThirdColor}" />
+                                                <Span Text="{Binding SelectedNews.Title}" />
+                                                <Span Text="{Binding SelectedNews.Source_Tag, StringFormat='  ({0})'}" TextColor="{DynamicResource ThirdColor}" />
                                             </FormattedString>
                                         </controls:CustomLabel.FormattedText>
                                     </controls:CustomLabel>
@@ -83,10 +79,9 @@
                                     </Grid.RowDefinitions>
                                     <controls:CustomLabel
                                         Grid.Row="0"
-                                        Direction="Justified"
+                                        Direction="Start"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="{Binding FontSize}"
-                                        LineHeight="0.8"
                                         Text="{Binding SelectedNews.Details, Mode=TwoWay}"
                                         TextColor="{DynamicResource secondaryLabel}" />
                                 </Grid>

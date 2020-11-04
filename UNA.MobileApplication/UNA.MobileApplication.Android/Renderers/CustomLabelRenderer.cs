@@ -34,7 +34,8 @@ namespace UNA.MobileApplication.Droid.Renderers
             {
                 this.CustomLabel = (CustomLabel)this.Element;
             }
-            double lineSpacing = this.CustomLabel.LineHeight;
+            //*double lineSpacing = this.CustomLabel.LineHeight;
+            double lineSpacing = 0.8;
             if (lineSpacing > 0)
             {
                 this.Control.SetLineSpacing(1f, (float)lineSpacing);
