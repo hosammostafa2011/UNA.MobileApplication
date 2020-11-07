@@ -61,7 +61,7 @@
                                         Grid.ColumnSpan="3"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         LineBreakMode="NoWrap"
-                                        LineHeight="0.8"
+                                        
                                         Text="{Binding Title}"
                                         TextColor="#FFFFFF" />
                                 </Grid>

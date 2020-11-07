@@ -60,7 +60,7 @@
                                                         FontFamily="{StaticResource HelveticaNeue}"
                                                         FontSize="Small"
                                                         LineBreakMode="WordWrap"
-                                                        LineHeight="0.8"
+                                                        
                                                         MaxLines="3"
                                                         Text="{Binding Title}"
                                                         TextColor="{DynamicResource primaryColor}" />

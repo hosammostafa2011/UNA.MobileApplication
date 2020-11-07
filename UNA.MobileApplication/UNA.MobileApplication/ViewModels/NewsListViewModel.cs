@@ -33,6 +33,8 @@ namespace UNA.MobileApplication.ViewModels
             RegiesterMessageCenter();
             LoadNewsCommand = new Command(async () =>
             await RunSafe(ExecuteLoadItemsCommandAsync(categoryID, categoryName, Nation_id, false, false), true));
+            TextAlignment xx = base.HorizontalDirection;
+            NotifyPropertyChanged(nameof(HorizontalDirection));
         }
 
         private string _TitleName;
@@ -139,6 +141,10 @@ namespace UNA.MobileApplication.ViewModels
                     {
                         if (!string.IsNullOrEmpty(vNEWS.Details))
                             vNEWS.Details = HtmlToPlainText(vNEWS.Details);
+                        if (_REQUEST.LANGUAGE == "1")
+                            vNEWS.Alignment = TextAlignment.End;
+                        else
+                            vNEWS.Alignment = TextAlignment.Start;
                         try
                         {
                             vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID);

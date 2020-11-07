@@ -52,17 +52,18 @@
                                     </Grid.RowDefinitions>
                                     <controls:CustomLabel
                                         x:Name="lblTitle"
-                                        Direction="Start"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Medium"
-                                        Style="{StaticResource cardTitleStyle}">
-                                        <controls:CustomLabel.FormattedText>
+                                        HorizontalTextAlignment="Start"
+                                        Style="{StaticResource cardTitleStyle}"
+                                        Text="{Binding SelectedNews.Title_Source_Tag}" />
+                                    <!--<controls:CustomLabel.FormattedText>
                                             <FormattedString>
                                                 <Span Text="{Binding SelectedNews.Title}" />
                                                 <Span Text="{Binding SelectedNews.Source_Tag, StringFormat='  ({0})'}" TextColor="{DynamicResource ThirdColor}" />
                                             </FormattedString>
                                         </controls:CustomLabel.FormattedText>
-                                    </controls:CustomLabel>
+                                    </controls:CustomLabel>-->
                                 </Grid>
                             </yummy:PancakeView>
 

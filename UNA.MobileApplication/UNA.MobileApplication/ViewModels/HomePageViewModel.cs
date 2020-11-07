@@ -98,6 +98,10 @@ namespace UNA.MobileApplication.ViewModels
                 {
                     try
                     {
+                        if (_REQUEST.LANGUAGE == "1")
+                            vNEWS.Alignment = TextAlignment.End;
+                        else
+                            vNEWS.Alignment = TextAlignment.Start;
                         vNEWS.FavouriteImage = GetFavouriteImage(vNEWS.News_ID);
                     }
                     catch (Exception)

@@ -130,6 +130,7 @@ namespace UNA.MobileApplication.ViewModels
         {
             get
             {
+                /*
                 // get the device language and the current seelct user language and compare
                 //FlowDirection xx = DEVICE_DIRECTION;
                 if (DEVICE_DIRECTION.Equals(FlowDirection.RightToLeft)) // Arabic
@@ -153,7 +154,8 @@ namespace UNA.MobileApplication.ViewModels
                     {
                         _horizontalDirection = Device.RuntimePlatform == Device.iOS ? TextAlignment.Start : TextAlignment.End;
                     }
-                }
+                }*/
+                _horizontalDirection = TextAlignment.Start;
                 return _horizontalDirection;
             }
         }

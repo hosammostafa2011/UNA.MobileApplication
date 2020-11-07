@@ -38,7 +38,7 @@ namespace UNA.MobileApplication.iOS.Renderers
                 USER_LANGUAGE = "1";
             }
             label.LineHeight = 0.8;
-            switch (label.Direction)
+            /*switch (label.Direction)
             {
                 case "Start":
                     Control.TextAlignment = USER_LANGUAGE.Equals("1") ? UITextAlignment.Right : UITextAlignment.Left;
@@ -61,7 +61,7 @@ namespace UNA.MobileApplication.iOS.Renderers
                     Control.TextAlignment = USER_LANGUAGE.Equals("1") ? UITextAlignment.Right : UITextAlignment.Left;
                     break;
             }
-
+            */
             //var labelString = new NSMutableAttributedString(label.Text);
             //var paragraphStyle = new NSMutableParagraphStyle
             //{

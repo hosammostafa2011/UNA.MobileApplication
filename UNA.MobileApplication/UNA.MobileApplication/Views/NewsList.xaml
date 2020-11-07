@@ -3,10 +3,11 @@
     x:Class="UNA.MobileApplication.Views.NewsList"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     Title="{Binding TitleName, Mode=OneWay}"
     sharedTransitions:SharedTransitionShell.TransitionSelectedGroup="{Binding SelectedNews.News_ID}">
     <ContentPage.Content>
@@ -58,17 +59,17 @@
                                                     <controls:CustomLabel
                                                         FontFamily="{StaticResource HelveticaNeue}"
                                                         FontSize="Small"
+                                                        HorizontalTextAlignment="Start"
                                                         LineBreakMode="WordWrap"
-                                                        LineHeight="0.8"
                                                         MaxLines="3"
                                                         Text="{Binding Title}"
-                                                        TextColor="{DynamicResource primaryColor}">
-                                                        <!--<Label.HorizontalTextAlignment>
+                                                        TextColor="{DynamicResource primaryColor}" />
+                                                    <!--<Label.HorizontalTextAlignment>
                                                             <OnPlatform x:TypeArguments="TextAlignment">
-                                                                <On Platform="iOS" Value="{Binding HorizontalDirection, Mode=OneWay}" />
+                                                                <On Platform="iOS" Value="{Binding Alignment, Mode=OneWay}" />
                                                             </OnPlatform>
-                                                        </Label.HorizontalTextAlignment>-->
-                                                    </controls:CustomLabel>
+                                                        </Label.HorizontalTextAlignment>
+                                                    </controls:CustomLabel>-->
                                                 </StackLayout>
                                                 <Grid Grid.Row="1">
                                                     <Grid.ColumnDefinitions>
@@ -80,24 +81,38 @@
                                                         Grid.Column="0"
                                                         FontFamily="{StaticResource HelveticaNeue}"
                                                         FontSize="12"
-                                                        LineBreakMode="WordWrap"
+                                                        HorizontalTextAlignment="Start"
                                                         Text="{Binding Source_Tag}"
                                                         TextColor="{DynamicResource ThirdColor}"
                                                         VerticalOptions="Center" />
+                                                    <!--<Label.HorizontalTextAlignment>
+                                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                                <On Platform="iOS" Value="{Binding Alignment, Mode=OneWay}" />
+                                                            </OnPlatform>
+                                                        </Label.HorizontalTextAlignment>
+                                                    </controls:CustomLabel>-->
                                                     <controls:CustomLabel
                                                         Grid.Row="0"
                                                         Grid.Column="1"
                                                         FontSize="12"
+                                                        HorizontalTextAlignment="Start"
                                                         LineBreakMode="WordWrap"
                                                         Text="{Binding Publish_Date}"
                                                         TextColor="{DynamicResource SecondColor}"
                                                         VerticalOptions="End" />
+                                                    <!--<Label.HorizontalTextAlignment>
+                                                            <OnPlatform x:TypeArguments="TextAlignment">
+                                                                <On Platform="iOS" Value="{Binding Alignment, Mode=OneWay}" />
+                                                            </OnPlatform>
+                                                        </Label.HorizontalTextAlignment>
+                                                    </controls:CustomLabel>-->
                                                 </Grid>
                                             </Grid>
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
                             </Grid>
+
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
