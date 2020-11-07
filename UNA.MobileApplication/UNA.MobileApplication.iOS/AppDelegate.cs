@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Firebase.CloudMessaging;
 using FirebaseAdmin.Messaging;
 using Foundation;
 using LabelHtml.Forms.Plugin.iOS;
@@ -35,111 +36,107 @@ namespace UNA.MobileApplication.iOS
             PathManager_IOS pathManager = new PathManager_IOS();
 
             LoadApplication(new App());
+            
 
-            if (false)
+            FirebasePushNotificationManager.Initialize(options, true);
+            CrossFirebasePushNotification.Current.RegisterForPushNotifications();
+
+            //if (false)
+            //{
+            //    FirebasePushNotificationManager.Initialize(options, new NotificationUserCategory[]
+            //                {
+            //    new NotificationUserCategory("message",new List<NotificationUserAction> {
+            //        new NotificationUserAction("Reply","Reply",NotificationActionType.Foreground)
+            //    }),
+            //    new NotificationUserCategory("request",new List<NotificationUserAction> {
+            //        new NotificationUserAction("Accept","Accept"),
+            //        new NotificationUserAction("Reject","Reject",NotificationActionType.Destructive)
+            //    })
+            //                });
+
+            //    var notificationSettings = UIUserNotificationSettings.GetSettingsForTypes(
+            //        UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, null
+            //    );
+            //    app.RegisterUserNotificationSettings(notificationSettings);
+
+            //    if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+            //    {
+            //        UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.Sound,
+            //                                                                (granted, error) =>
+            //                                                                {
+            //                                                                    if (granted)
+            //                                                                        InvokeOnMainThread(UIApplication.SharedApplication.RegisterForRemoteNotifications);
+            //                                                                });
+            //    }
+            //    else if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
+            //    {
+            //        var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
+            //                UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
+            //                new NSSet());
+
+            //        UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
+            //        UIApplication.SharedApplication.RegisterForRemoteNotifications();
+            //    }
+            //    else
+            //    {
+            //        UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
+            //        UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
+            //    }
+
+
+
+            //    MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
+            //    {
+            //        CrossFirebasePushNotification.Current.Subscribe("1");
+
+            //        //switch (arg.ToString())
+            //        //{
+            //        //    case "1":
+            //        //        CrossFirebasePushNotification.Current.Subscribe("1");
+            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
+            //        //        break;
+
+            //        //    case "2":
+            //        //        CrossFirebasePushNotification.Current.Subscribe("2");
+            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
+            //        //        break;
+
+            //        //    case "3":
+            //        //        CrossFirebasePushNotification.Current.Subscribe("3");
+            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
+            //        //        break;
+
+            //        //    default:
+            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
+            //        //        break;
+            //        //}
+            //    });
+
+
+            //}
+
+            CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
             {
-                FirebasePushNotificationManager.Initialize(options, new NotificationUserCategory[]
-                            {
-                new NotificationUserCategory("message",new List<NotificationUserAction> {
-                    new NotificationUserAction("Reply","Reply",NotificationActionType.Foreground)
-                }),
-                new NotificationUserCategory("request",new List<NotificationUserAction> {
-                    new NotificationUserAction("Accept","Accept"),
-                    new NotificationUserAction("Reject","Reject",NotificationActionType.Destructive)
-                })
-                            });
+                CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
+                MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
 
-                var notificationSettings = UIUserNotificationSettings.GetSettingsForTypes(
-                    UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, null
-                );
-                app.RegisterUserNotificationSettings(notificationSettings);
+            };
+            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+            {
+                Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
+                System.Diagnostics.Debug.WriteLine("Received");
+                FirebasePushNotificationManager.CurrentNotificationPresentationOption = UNNotificationPresentationOptions.Alert;
+                
+            };
 
-                if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
-                {
-                    UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.Sound,
-                                                                            (granted, error) =>
-                                                                            {
-                                                                                if (granted)
-                                                                                    InvokeOnMainThread(UIApplication.SharedApplication.RegisterForRemoteNotifications);
-                                                                            });
-                }
-                else if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
-                {
-                    var pushSettings = UIUserNotificationSettings.GetSettingsForTypes(
-                            UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound,
-                            new NSSet());
-
-                    UIApplication.SharedApplication.RegisterUserNotificationSettings(pushSettings);
-                    UIApplication.SharedApplication.RegisterForRemoteNotifications();
-                }
-                else
-                {
-                    UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
-                    UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
-                }
-
-                CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
-                {
-                    CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
-                    MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
-
-                    //System.Diagnostics.Debug.WriteLine($"TOKEN : {p.Token}");
-                    //UIPasteboard clipboard = UIPasteboard.General;
-                    //clipboard.String = p.Token;
-                    //Helper.Settings.Token = p.Token;
-                };
-
-                MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
-                {
-                    switch (arg.ToString())
-                    {
-                        case "1":
-                            CrossFirebasePushNotification.Current.Subscribe("1");
-                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
-                            break;
-
-                        case "2":
-                            CrossFirebasePushNotification.Current.Subscribe("2");
-                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
-                            break;
-
-                        case "3":
-                            CrossFirebasePushNotification.Current.Subscribe("3");
-                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
-                            break;
-
-                        default:
-                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
-                            break;
-                    }
-                });
-
-                CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
-                {
-                    Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
-                    // if (dic["targetUserId"].ToString() != null && Helper.Settings.UserId == dic["targetUserId"].ToString())
-                    // {
-                    System.Diagnostics.Debug.WriteLine("Received");
-                    //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
-                    //Helper.Settings.callingStatus = true;
-                    // Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
-                    FirebasePushNotificationManager.CurrentNotificationPresentationOption = UNNotificationPresentationOptions.Alert;
-                    //  MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
-                    // }
-                };
-
-                CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
-                {
-                    //Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
-                    //Helper.Settings.userWhoSentNotiId = dic["userWhoSentNotiId"].ToString();
-                    //Helper.Settings.callingStatus = true;
-                    //Xamarin.Forms.Application.Current.Properties["callingStatus"] = true;
-                    //MessagingCenter.Send<object, string>(this, "CallingNotifications", dic["callingName"].ToString());
-                };
-            }
+            CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
+            {
+                
+            };
 
             return base.FinishedLaunching(app, options);
         }
+
 
         public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
         {
@@ -149,8 +146,8 @@ namespace UNA.MobileApplication.iOS
         public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
         {
             FirebasePushNotificationManager.RemoteNotificationRegistrationFailed(error);
-        }
 
+        }
         // To receive notifications in foregroung on iOS 9 and below.
         // To receive notifications in background in any iOS version
         public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
@@ -158,7 +155,7 @@ namespace UNA.MobileApplication.iOS
             // If you are receiving a notification message while your app is in the background,
             // this callback will not be fired 'till the user taps on the notification launching the application.
 
-            // If you disable method swizzling, you'll need to call this method.
+            // If you disable method swizzling, you'll need to call this method. 
             // This lets FCM track message delivery and analytics, which is performed
             // automatically with method swizzling enabled.
             FirebasePushNotificationManager.DidReceiveMessage(userInfo);
@@ -167,5 +164,8 @@ namespace UNA.MobileApplication.iOS
 
             completionHandler(UIBackgroundFetchResult.NewData);
         }
+
+
+
     }
 }
