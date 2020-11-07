@@ -2,6 +2,7 @@
 using Helper;
 using Helper.Model;
 using Newtonsoft.Json;
+using Plugin.FirebasePushNotification;
 using Plugin.SecureStorage;
 using System;
 using System.Collections.Generic;
@@ -27,14 +28,41 @@ namespace UNA.MobileApplication.ViewModels
             string FCM = string.Empty;
             FCM = CrossSecureStorage.Current.GetValue("FCMToken");
 
-            if (ArabicIsToggled)
-                _REQUEST.LANGUAGE = "1";
-            else if (EnglishIsToggled)
-                _REQUEST.LANGUAGE = "2";
-            else if (FrenchIsToggled)
-                _REQUEST.LANGUAGE = "3";
-            else
-                _REQUEST.LANGUAGE = string.Empty;
+            //if (ArabicIsToggled)
+            //    _REQUEST.LANGUAGE = "1";
+            //else if (EnglishIsToggled)
+            //    _REQUEST.LANGUAGE = "2";
+            //else if (FrenchIsToggled)
+            //    _REQUEST.LANGUAGE = "3";
+            //else
+            //    _REQUEST.LANGUAGE = string.Empty;
+            _REQUEST.LANGUAGE = "1";
+            CrossFirebasePushNotification.Current.Unsubscribe("1");            
+            CrossFirebasePushNotification.Current.Unsubscribe("2");
+            CrossFirebasePushNotification.Current.Unsubscribe("3");
+
+            //switch (_REQUEST.LANGUAGE)
+            //{
+            //    case "1":
+            //        CrossFirebasePushNotification.Current.Subscribe("1");
+            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
+            //        break;
+
+            //    case "2":
+            //        CrossFirebasePushNotification.Current.Subscribe("2");
+            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
+            //        break;
+
+            //    case "3":
+            //        CrossFirebasePushNotification.Current.Subscribe("3");
+            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
+            //        break;
+
+            //    default:
+            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
+            //        break;
+            //}
+            HelperManger.ShowToast(_REQUEST.LANGUAGE);
             _REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
             _REQUEST.USER_TOKEN = "Aa159357";
             _REQUEST.FCM_TOKEN = FCM;

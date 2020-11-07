@@ -85,32 +85,32 @@ namespace UNA.MobileApplication.iOS
 
 
 
-            //    MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
-            //    {
-            //        CrossFirebasePushNotification.Current.Subscribe("1");
+            MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
+            {
+                //CrossFirebasePushNotification.Current.Subscribe("1");
 
-            //        //switch (arg.ToString())
-            //        //{
-            //        //    case "1":
-            //        //        CrossFirebasePushNotification.Current.Subscribe("1");
-            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
-            //        //        break;
+                switch (arg.ToString())
+                {
+                    case "1":
+                        CrossFirebasePushNotification.Current.Subscribe("1");
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
+                        break;
 
-            //        //    case "2":
-            //        //        CrossFirebasePushNotification.Current.Subscribe("2");
-            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
-            //        //        break;
+                    case "2":
+                        CrossFirebasePushNotification.Current.Subscribe("2");
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
+                        break;
 
-            //        //    case "3":
-            //        //        CrossFirebasePushNotification.Current.Subscribe("3");
-            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
-            //        //        break;
+                    case "3":
+                        CrossFirebasePushNotification.Current.Subscribe("3");
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
+                        break;
 
-            //        //    default:
-            //        //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
-            //        //        break;
-            //        //}
-            //    });
+                    default:
+                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
+                        break;
+                }
+            });
 
 
             //}
