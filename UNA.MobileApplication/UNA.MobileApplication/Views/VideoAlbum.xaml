@@ -58,7 +58,6 @@
                                         Grid.ColumnSpan="3"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         LineBreakMode="TailTruncation"
-                                        LineHeight="1.3"
                                         Text="{Binding Title}"
                                         TextColor="#FFFFFF">
                                     </controls:CustomLabel>

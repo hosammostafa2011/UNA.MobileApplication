@@ -173,7 +173,6 @@
                                     FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Small"
                                     LineBreakMode="WordWrap"
-                                    LineHeight="1"
                                     Text="{Binding Title}"
                                     TextColor="{DynamicResource mainLabel}" />
                             </StackLayout>
