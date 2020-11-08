@@ -3,8 +3,9 @@
     x:Class="UNA.MobileApplication.Views.VideoAlbum"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:controls="clr-namespace:UNA.MobileApplication.Controls"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     x:Name="frmVideo"
     Title="{Binding TitleName, Mode=OneWay}"
     BackgroundColor="{DynamicResource entryBackground}">
@@ -59,8 +60,7 @@
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         LineBreakMode="TailTruncation"
                                         Text="{Binding Title}"
-                                        TextColor="#FFFFFF">
-                                    </controls:CustomLabel>
+                                        TextColor="#FFFFFF" />
                                 </Grid>
                             </Grid>
                         </ViewCell>
