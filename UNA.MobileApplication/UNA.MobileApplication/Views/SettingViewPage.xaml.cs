@@ -39,14 +39,21 @@ namespace UNA.MobileApplication.Views
             {
                 case "1":
                     Title = "الإعدادات";
+                    lblAppLang.Text = "لغة التطبيق";
+                    lblNotifyLang.Text = "لغة الإشعارات";
+                    btnSave.Text = "حفــظ";
                     break;
-
                 case "2":
                     Title = "Setting";
+                    lblAppLang.Text = "Language";
+                    lblNotifyLang.Text = "Notification language";
+                    btnSave.Text = "Save";
                     break;
-
                 case "3":
                     Title = "Réglage";
+                    lblAppLang.Text = "Langue";
+                    lblNotifyLang.Text = "Langue de notification";
+                    btnSave.Text = "Enregistrer";
                     break;
             }
             BindingContext = _settingViewModel = new SettingViewModel();
@@ -55,40 +62,61 @@ namespace UNA.MobileApplication.Views
         {
             CrossSecureStorage.Current.SetValue("Language", "1");
             HelperManger.ShowToast("تم تغيير لغة التطبيق إلى العربية");
-            //myshell.FlowDirection = FlowDirection.RightToLeft;
-            (Application.Current).MainPage = new AppShell();
+            if (Device.RuntimePlatform == Device.Android)
+                (Application.Current).MainPage = new AppShell();
+            else
+                (Application.Current).MainPage = new RootPage();
         }
 
         private void English_Tapped(object sender, EventArgs e)
         {
             CrossSecureStorage.Current.SetValue("Language", "2");
             HelperManger.ShowToast("The language of the application has been changed to English");
-            //myshell.FlowDirection = FlowDirection.LeftToRight;
-            (Application.Current).MainPage = new AppShell();
+            if (Device.RuntimePlatform == Device.Android)
+                (Application.Current).MainPage = new AppShell();
+            else
+                (Application.Current).MainPage = new RootPage();
         }
 
         private void French_Tapped(object sender, EventArgs e)
         {
             CrossSecureStorage.Current.SetValue("Language", "3");
             HelperManger.ShowToast("La langue de l’application a été modifiée pour Français");
-            //myshell.FlowDirection = FlowDirection.LeftToRight;
-            (Application.Current).MainPage = new AppShell();
+            if (Device.RuntimePlatform == Device.Android)
+                (Application.Current).MainPage = new AppShell();
+            else
+                (Application.Current).MainPage = new RootPage();
         }
 
         private void Switch_Toggled_Arabic(object sender, ToggledEventArgs e)
         {
             //((SettingViewModel)this.BindingContext).ArabicIsToggled=
-            _settingViewModel.ArabicIsToggled = !_settingViewModel.ArabicIsToggled;
+            if (chkArabic.IsToggled)
+            {
+                chkEnglish.IsToggled = chkFrench.IsToggled = false;
+                _settingViewModel.ArabicIsToggled = true;
+                _settingViewModel.EnglishIsToggled = _settingViewModel.FrenchIsToggled = false;
+            }
         }
 
         private void Switch_Toggled_English(object sender, ToggledEventArgs e)
         {
-            _settingViewModel.EnglishIsToggled = !_settingViewModel.EnglishIsToggled;
+            if (chkEnglish.IsToggled)
+            {
+                chkArabic.IsToggled = chkFrench.IsToggled = false;
+                _settingViewModel.EnglishIsToggled = true;
+                _settingViewModel.ArabicIsToggled = _settingViewModel.FrenchIsToggled = false;
+            }
         }
 
         private void Switch_Toggled_French(object sender, ToggledEventArgs e)
         {
-            _settingViewModel.FrenchIsToggled = !_settingViewModel.FrenchIsToggled;
+            if (chkFrench.IsToggled)
+            {
+                chkArabic.IsToggled = chkEnglish.IsToggled = false;
+                _settingViewModel.FrenchIsToggled = true;
+                _settingViewModel.ArabicIsToggled = _settingViewModel.EnglishIsToggled = false;
+            }
         }
     }
 }

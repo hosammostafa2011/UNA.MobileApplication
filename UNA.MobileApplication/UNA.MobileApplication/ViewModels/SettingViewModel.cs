@@ -25,47 +25,18 @@ namespace UNA.MobileApplication.ViewModels
 
         private async Task Save()
         {
-            string FCM = string.Empty;
-            FCM = CrossSecureStorage.Current.GetValue("FCMToken");
-
-            //if (ArabicIsToggled)
-            //    _REQUEST.LANGUAGE = "1";
-            //else if (EnglishIsToggled)
-            //    _REQUEST.LANGUAGE = "2";
-            //else if (FrenchIsToggled)
-            //    _REQUEST.LANGUAGE = "3";
-            //else
-            //    _REQUEST.LANGUAGE = string.Empty;
-            _REQUEST.LANGUAGE = "1";
-            CrossFirebasePushNotification.Current.Unsubscribe("1");            
-            CrossFirebasePushNotification.Current.Unsubscribe("2");
-            CrossFirebasePushNotification.Current.Unsubscribe("3");
-
-            //switch (_REQUEST.LANGUAGE)
-            //{
-            //    case "1":
-            //        CrossFirebasePushNotification.Current.Subscribe("1");
-            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
-            //        break;
-
-            //    case "2":
-            //        CrossFirebasePushNotification.Current.Subscribe("2");
-            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
-            //        break;
-
-            //    case "3":
-            //        CrossFirebasePushNotification.Current.Subscribe("3");
-            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
-            //        break;
-
-            //    default:
-            //        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
-            //        break;
-            //}
-            HelperManger.ShowToast(_REQUEST.LANGUAGE);
+            if (ArabicIsToggled)
+                _REQUEST.LANGUAGE = "1";
+            else if (EnglishIsToggled)
+                _REQUEST.LANGUAGE = "2";
+            else if (FrenchIsToggled)
+                _REQUEST.LANGUAGE = "3";
+            else
+                _REQUEST.LANGUAGE = string.Empty;
+            
             _REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
             _REQUEST.USER_TOKEN = "Aa159357";
-            _REQUEST.FCM_TOKEN = FCM;
+            _REQUEST.FCM_TOKEN = CrossFirebasePushNotification.Current.Token;
             _REQUEST.JSON = string.Empty;
             string result = await ApiManager.SET_SUBSCRIBE(_REQUEST);
             if (!string.IsNullOrEmpty(result))
@@ -73,7 +44,27 @@ namespace UNA.MobileApplication.ViewModels
                 _RESPONSE = HelperManger.CastToResponse(result);
                 if (string.IsNullOrEmpty(_RESPONSE[0].ERROR_MESSAGE))
                 {
-                    MessagingCenter.Send<string, string>("MyApp", "Subscribe", _REQUEST.LANGUAGE);
+                    switch (_REQUEST.LANGUAGE)
+                    {
+                        case "1":
+                            CrossFirebasePushNotification.Current.Subscribe("1");
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
+                            break;
+
+                        case "2":
+                            CrossFirebasePushNotification.Current.Subscribe("2");
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
+                            break;
+
+                        case "3":
+                            CrossFirebasePushNotification.Current.Subscribe("3");
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
+                            break;
+
+                        default:
+                            CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
+                            break;
+                    }
                 }
                 //NotifyAllPropertiesChanged();
             }

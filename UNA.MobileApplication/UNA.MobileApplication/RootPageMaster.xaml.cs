@@ -26,8 +26,6 @@ namespace UNA.MobileApplication
 
             BindingContext = new RootPageMasterViewModel();
             ListView = MenuItemsListView;
-            ListView.SeparatorVisibility = SeparatorVisibility.Default;
-            ListView.SeparatorColor = Color.FromHex("#016b56");
         }
 
         private void Arabic_Tapped(object sender, EventArgs e)

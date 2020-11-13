@@ -50,18 +50,26 @@ namespace UNA.MobileApplication
             var item = e.SelectedItem as RootPageMasterMenuItem;
             if (item == null)
                 return;
-            //categoryID, string categoryName, string nationID
-            var page = (Page)Activator.CreateInstance(
-                item.TargetType, new object[] { item.CategoryID, item.Title, item.NationID }
-                );
-            page.Title = item.Title;
-            
-            Detail = new SharedTransitionNavigationPage(page);
-            
-            //Navigation.PushAsync(new Profile());
-            IsPresented = false;
-            IconImageSource = "hamburguer_icon";
-            MasterPage.ListView.SelectedItem = null;
+            if (item.CategoryID == "0")
+            {
+                (Application.Current).MainPage = new RootPage();
+                return;
+            }
+            else
+            {
+                //categoryID, string categoryName, string nationID
+                var page = (Page)Activator.CreateInstance(
+                    item.TargetType, new object[] { item.CategoryID, item.Title, item.NationID }
+                    );
+                page.Title = item.Title;
+
+                Detail = new SharedTransitionNavigationPage(page);
+
+                //Navigation.PushAsync(new Profile());
+                IsPresented = false;
+                IconImageSource = "hamburguer_icon";
+                MasterPage.ListView.SelectedItem = null;
+            }
         }
     }
 }

@@ -129,7 +129,7 @@
                 </yummy:PancakeView>
             </ListView.Header>
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <!--<DataTemplate>
                     <ViewCell>
                         <Grid Padding="15,10" Style="{StaticResource FloutItemStyle}">
                             <Grid.ColumnDefinitions>
@@ -147,6 +147,39 @@
                                 FontFamily="{StaticResource HelveticaNeue}"
                                 Text="{Binding Title}"
                                 VerticalTextAlignment="Center" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>-->
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnSpacing="0" Style="{StaticResource FloutItemStyle}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*" />
+                                <ColumnDefinition Width="0.8*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Image
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="5"
+                                HeightRequest="15"
+                                Source="{Binding Icon}"
+                                WidthRequest="15" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                FontFamily="{StaticResource HelveticaNeue}"
+                                FontSize="Medium"
+                                Text="{Binding Title}"
+                                VerticalTextAlignment="Center" />
+                            <BoxView
+                                Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                BackgroundColor="#016b56"
+                                HeightRequest="1" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
