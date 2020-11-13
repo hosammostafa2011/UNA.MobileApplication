@@ -22,27 +22,20 @@ namespace UNA.MobileApplication.Droid.Renderers
         "com.google.firebase.INSTANCE_ID_EVENT"
     })]
 
-    internal class MyFirebaseIIDService //: FirebaseInstanceIdService
+    internal class MyFirebaseIIDService : FirebaseMessagingService
     {
         private const string TAG = "MyFirebaseIIDService";
+        public override void OnNewToken(string p0)
+        {
+            base.OnNewToken(p0);
+            SendRegistrationToServer(p0);
+            MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p0);
 
-        //[Obsolete]
-        //public async override void OnTokenRefresh()
-        //{
-        //    var refreshedToken = FirebaseInstanceId.Instance.Token;
-
-        //    Log.Debug(TAG, "Refreshed token: " + refreshedToken);
-        //    SendRegistrationToServer(refreshedToken);
-
-        //    //var response1 = FirebaseMessaging.Instance.SubscribeToTopic("1");
-
-        //    MessagingCenter.Send<string, string>("MyApp", "TokenChanges", refreshedToken);
-        //}
-
-        //private void SendRegistrationToServer(string token)
-        //{
-        //    if (!string.IsNullOrEmpty(token))
-        //        CrossSecureStorage.Current.SetValue("FCMToken", token);
-        //}
+        }
+        private void SendRegistrationToServer(string token)
+        {
+            if (!string.IsNullOrEmpty(token))
+                CrossSecureStorage.Current.SetValue("FCMToken", token);
+        }
     }
 }

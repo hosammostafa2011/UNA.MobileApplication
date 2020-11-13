@@ -25,6 +25,8 @@ namespace UNA.MobileApplication.ViewModels
 
         private async Task Save()
         {
+            MessagingCenter.Send<string, string>("MyApp", "TokenChanges", CrossFirebasePushNotification.Current.Token);
+
             if (ArabicIsToggled)
                 _REQUEST.LANGUAGE = "1";
             else if (EnglishIsToggled)

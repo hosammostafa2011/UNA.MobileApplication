@@ -15,6 +15,8 @@ using Firebase.Messaging;
 using Android.Content;
 using Xamarin.Forms;
 using Firebase;
+using System.Collections.Generic;
+using Plugin.SecureStorage;
 
 namespace UNA.MobileApplication.Droid
 {
@@ -33,7 +35,7 @@ namespace UNA.MobileApplication.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
             base.OnCreate(savedInstanceState);
-            /*Task.Run(() =>
+            Task.Run(() =>
             {
                 var instanceid = FirebaseInstanceId.Instance;
                 instanceid.DeleteInstanceId();
@@ -50,43 +52,40 @@ namespace UNA.MobileApplication.Droid
                 FirebasePushNotificationManager.DefaultNotificationChannelName = "General";
             }
 
-            //If debug you should reset the token each time.
-#if DEBUG
-            FirebasePushNotificationManager.Initialize(this, true);
-#else
-                          FirebasePushNotificationManager.Initialize(this,false);
-#endif
+            FirebasePushNotificationManager.Initialize(this, false);
 
+//            //If debug you should reset the token each time.
+//#if DEBUG
+//            FirebasePushNotificationManager.Initialize(this, true);
+//#else
+//                          FirebasePushNotificationManager.Initialize(this,false);
+//#endif
             //Handle notification when app is closed here
             CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
             {
             };
+            CrossFirebasePushNotification.Current.RegisterForPushNotifications();
 
-            MessagingCenter.Subscribe<string, string>("MyApp", "Subscribe", async (sender, arg) =>
+            CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
             {
-                switch (arg.ToString())
-                {
-                    case "1":
-                        CrossFirebasePushNotification.Current.Subscribe("1");
-                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "2", "3" });
-                        break;
+                CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
+                MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
 
-                    case "2":
-                        CrossFirebasePushNotification.Current.Subscribe("2");
-                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "3" });
-                        break;
+            };
+            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+            {
+                Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
+                System.Diagnostics.Debug.WriteLine("Received");
+                //FirebasePushNotificationManager.CurrentNotificationPresentationOption = UNNotificationPresentationOptions.Alert;
 
-                    case "3":
-                        CrossFirebasePushNotification.Current.Subscribe("3");
-                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2" });
-                        break;
+            };
 
-                    default:
-                        CrossFirebasePushNotification.Current.Unsubscribe(new string[] { "1", "2", "3" });
-                        break;
-                }
-            });
-            */
+            CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
+            {
+
+            };
+
+
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             HtmlLabelRenderer.Initialize();
