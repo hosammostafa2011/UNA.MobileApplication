@@ -52,14 +52,14 @@ namespace UNA.MobileApplication.Droid
                 FirebasePushNotificationManager.DefaultNotificationChannelName = "General";
             }
 
-            FirebasePushNotificationManager.Initialize(this, false);
+            //FirebasePushNotificationManager.Initialize(this, false);
 
-//            //If debug you should reset the token each time.
-//#if DEBUG
-//            FirebasePushNotificationManager.Initialize(this, true);
-//#else
-//                          FirebasePushNotificationManager.Initialize(this,false);
-//#endif
+            //If debug you should reset the token each time.
+#if DEBUG
+            FirebasePushNotificationManager.Initialize(this, true);
+#else
+                          FirebasePushNotificationManager.Initialize(this,false);
+#endif
             //Handle notification when app is closed here
             CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
             {
@@ -70,21 +70,17 @@ namespace UNA.MobileApplication.Droid
             {
                 CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
                 MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
-
             };
             CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
             {
                 Dictionary<string, object> dic = p.Data as Dictionary<string, object>;
                 System.Diagnostics.Debug.WriteLine("Received");
                 //FirebasePushNotificationManager.CurrentNotificationPresentationOption = UNNotificationPresentationOptions.Alert;
-
             };
 
             CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
             {
-
             };
-
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
