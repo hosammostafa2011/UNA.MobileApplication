@@ -34,6 +34,7 @@
                                 sharedTransitions:Transition.Group="{Binding News_ID}"
                                 sharedTransitions:Transition.Name="NewsImage"
                                 Aspect="AspectFill"
+                                LoadingPlaceholder="icon.png"
                                 HeightRequest="230"
                                 Source="{Binding SelectedNews.Main_Image_Path}" />
                             <yummy:PancakeView

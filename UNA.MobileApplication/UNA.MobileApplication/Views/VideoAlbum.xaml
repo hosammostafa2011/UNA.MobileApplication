@@ -36,6 +36,7 @@
                                 </Grid.RowDefinitions>
                                 <yummy:PancakeView Grid.RowSpan="2" CornerRadius="10">
                                     <ffimageloading:CachedImage
+                                        LoadingPlaceholder="icon.png"
                                         Aspect="AspectFill"
                                         HeightRequest="100"
                                         Source="{Binding Thumbnail_Image_Path}"

@@ -36,6 +36,7 @@
                                             sharedTransitions:Transition.Name="NewsImage"
                                             Aspect="AspectFill"
                                             HeightRequest="110"
+                                            LoadingPlaceholder="icon.png"
                                             Source="{Binding Main_Image_Path}"
                                             WidthRequest="150" />
                                     </yummy:PancakeView>
@@ -124,6 +125,7 @@
                                     sharedTransitions:Transition.Name="NewsImage"
                                     Aspect="AspectFill"
                                     HeightRequest="180"
+                                    LoadingPlaceholder="icon.png"
                                     Source="{Binding Main_Image_Path}" />
                             </yummy:PancakeView>
                             <StackLayout>

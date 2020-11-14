@@ -41,6 +41,7 @@
                                         <StackLayout Grid.Column="0">
                                             <yummy:PancakeView CornerRadius="10">
                                                 <ffimageloading:CachedImage
+                                                    LoadingPlaceholder="icon.png"
                                                     sharedTransitions:Transition.Group="{Binding News_ID}"
                                                     sharedTransitions:Transition.Name="NewsImage"
                                                     Aspect="AspectFill"

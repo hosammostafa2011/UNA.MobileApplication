@@ -143,6 +143,7 @@
                                 <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
+                                    Padding="10,0,10,0"
                                     FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Medium"
                                     Text="العربية" />
@@ -166,6 +167,7 @@
                                 <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
+                                    Padding="10,0,10,0"
                                     FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Medium"
                                     Text="English" />
@@ -189,6 +191,7 @@
                                 <controls:CustomLabel
                                     Grid.Row="0"
                                     Grid.Column="0"
+                                    Padding="10,0,10,0"
                                     FontFamily="{StaticResource HelveticaNeue}"
                                     FontSize="Medium"
                                     Text="Français" />
@@ -210,9 +213,10 @@
                     Command="{Binding SaveCommand}"
                     FontFamily="{StaticResource HelveticaNeue}"
                     FontSize="Medium"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"
                     Style="{StaticResource buttonStyle}"
-                    VerticalOptions="CenterAndExpand" />
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="150" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>
