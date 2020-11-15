@@ -75,9 +75,12 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="PathManager_IOS.cs" />
+    <Compile Include="Renderers\ChildViewController.cs" />
     <Compile Include="Renderers\CustomLabelRenderer.cs" />
     <Compile Include="Renderers\CustomWebViewRenderer.cs" />
     <Compile Include="Renderers\ExtendedScrollViewRenderer.cs" />
+    <Compile Include="Renderers\LocalizeService.cs" />
+    <Compile Include="Renderers\MasterDetailRenderer.cs" />
     <None Include="Entitlements.plist" />
     <BundleResource Include="GoogleService-Info.plist" />
     <None Include="Info.plist" />
@@ -1313,4 +1316,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\worldmapicon%401x.png" />
   </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

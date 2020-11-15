@@ -82,8 +82,9 @@ namespace UNA.MobileApplication.iOS
                     UIRemoteNotificationType notificationTypes = UIRemoteNotificationType.Alert | UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound;
                     UIApplication.SharedApplication.RegisterForRemoteNotificationTypes(notificationTypes);
                 }
+                CrossFirebasePushNotification.Current.RegisterForPushNotifications();
             }
-            CrossFirebasePushNotification.Current.RegisterForPushNotifications();
+            
 
             CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
             {
