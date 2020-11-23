@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="306" android:versionName="3.06" package="unaoic.org" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="307" android:versionName="3.07" package="unaoic.org" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
-	<application android:supportsRtl="true" android:hardwareAccelerated="false" 
-	android:largeHeap="true" android:allowBackup="true" 
-	android:label="UNA.MobileApplication.Android" android:theme="@style/MainTheme">
+	<application android:supportsRtl="true" android:hardwareAccelerated="false" android:largeHeap="true" android:allowBackup="true" android:label="UNA.MobileApplication.Android" android:theme="@style/MainTheme">
 		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
-		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" 
-		android:enabled="true" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:enabled="true" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
 			<intent-filter>
 				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
 				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
