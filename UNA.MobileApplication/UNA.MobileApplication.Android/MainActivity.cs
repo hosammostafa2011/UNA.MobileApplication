@@ -66,11 +66,11 @@ namespace UNA.MobileApplication.Droid
             };
             CrossFirebasePushNotification.Current.RegisterForPushNotifications();
 
-            CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
-            {
-                CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
-                MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
-            };
+            //CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
+            //{
+            //    CrossSecureStorage.Current.SetValue("FCMToken", p.Token);
+            //    MessagingCenter.Send<string, string>("MyApp", "TokenChanges", p.Token);
+            //};
             CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
             {
                 Dictionary<string, object> dic = p.Data as Dictionary<string, object>;

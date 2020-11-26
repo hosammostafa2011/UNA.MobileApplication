@@ -30,14 +30,11 @@ namespace UNA.MobileApplication.ViewModels
         {
             MessagingCenter.Subscribe<string, string>("MyApp", "TokenChanges", async (sender, arg) =>
             {
-                try
-                {
-                    _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
-                }
-                catch (Exception)
-                {
-                    _REQUEST.LANGUAGE = "1";
-                }
+                if (CrossSecureStorage.Current.HasKey("NotificationLanguage"))
+                    _REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("NotificationLanguage");
+                else
+                    _REQUEST.LANGUAGE = string.Empty;
+
                 _REQUEST.USER_TOKEN = "Aa@159357";
                 _REQUEST.FCM_TOKEN = arg.ToString();
                 _REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
