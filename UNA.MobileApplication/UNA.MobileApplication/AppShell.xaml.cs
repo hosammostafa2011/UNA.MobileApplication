@@ -62,14 +62,18 @@ namespace UNA.MobileApplication
             MessagingCenter.Subscribe<string, string>("MyApp", "TokenChanges", async (sender, arg) =>
             {
                 BaseViewModel obj = new BaseViewModel();
-                try
-                {
-                    obj._REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
-                }
-                catch (Exception)
-                {
-                    obj._REQUEST.LANGUAGE = "1";
-                }
+                //try
+                //{
+                //    obj._REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
+                //}
+                //catch (Exception)
+                //{
+                //    obj._REQUEST.LANGUAGE = "1";
+                //}
+                if (CrossSecureStorage.Current.HasKey("NotificationLanguage"))
+                    obj._REQUEST.LANGUAGE = CrossSecureStorage.Current.GetValue("NotificationLanguage");
+                else
+                    obj._REQUEST.LANGUAGE = string.Empty;
                 obj._REQUEST.USER_TOKEN = "Aa@159357";
                 obj._REQUEST.FCM_TOKEN = arg.ToString();
                 obj._REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();

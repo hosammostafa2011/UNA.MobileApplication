@@ -35,7 +35,9 @@ namespace UNA.MobileApplication.ViewModels
                 _REQUEST.LANGUAGE = "3";
             else
                 _REQUEST.LANGUAGE = string.Empty;
-            
+
+            CrossSecureStorage.Current.SetValue("NotificationLanguage", _REQUEST.LANGUAGE);
+
             _REQUEST.DEVICE_PLATFORM = DeviceInfo.Platform.ToString().ToLower();
             _REQUEST.USER_TOKEN = "Aa159357";
             _REQUEST.FCM_TOKEN = CrossFirebasePushNotification.Current.Token;
