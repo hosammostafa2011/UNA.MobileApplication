@@ -18,33 +18,49 @@ namespace UNA.MobileApplication.Views
         public HomePageList()
         {
             InitializeComponent();
-            if (Device.RuntimePlatform == Device.iOS)
-            {
-                ToolbarItems.Add(new ToolbarItem()
-                {
-                    IconImageSource = "logowhite.png",
-                    Order = ToolbarItemOrder.Primary,
-                    Priority = 1
-                });
-                ToolbarItems.Add(new ToolbarItem()
-                {
-                    IconImageSource = "blank.png",
-                    Order = ToolbarItemOrder.Primary,
-                    Priority = 2
-                });
-            }
-
+            //if (Device.RuntimePlatform == Device.iOS)
+            //{
+            //    ToolbarItems.Add(new ToolbarItem()
+            //    {
+            //        IconImageSource = "logowhite.png",
+            //        Order = ToolbarItemOrder.Primary,
+            //        Priority = 1
+            //    });
+            //    ToolbarItems.Add(new ToolbarItem()
+            //    {
+            //        IconImageSource = "blank.png",
+            //        Order = ToolbarItemOrder.Primary,
+            //        Priority = 2
+            //    });
+            //}
+            
             try
             {
                 if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                {
                     FlowDirection = FlowDirection.RightToLeft;
+                    if (Device.RuntimePlatform == Device.iOS)
+                        imgLogo.Margin = new Thickness(50, 0, 0, 0);
+                    else
+                        imgLogo.Margin = new Thickness(50, 4, 0, 0);
+                }
                 else
+                {
                     FlowDirection = FlowDirection.LeftToRight;
+                    if (Device.RuntimePlatform == Device.iOS)
+                        imgLogo.Margin = new Thickness(-50, 0, 0, 0);
+                    else
+                        imgLogo.Margin = new Thickness(50, 4, 0, 0);
+                }
             }
             catch (Exception)
             {
                 FlowDirection = FlowDirection.RightToLeft;
                 CrossSecureStorage.Current.SetValue("Language", "1");
+                if (Device.RuntimePlatform == Device.iOS)
+                    imgLogo.Margin = new Thickness(50, 0, 0, 0);
+                else
+                    imgLogo.Margin = new Thickness(50, 4, 0, 0);
             }
 
             BindingContext = _homePageViewModel = new HomePageViewModel();
@@ -64,6 +80,37 @@ namespace UNA.MobileApplication.Views
         {
             InitializeComponent();
             BindingContext = _homePageViewModel = new HomePageViewModel();
+
+            try
+            {
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                {
+                    FlowDirection = FlowDirection.RightToLeft;
+                    if (Device.RuntimePlatform == Device.iOS)
+                        imgLogo.Margin = new Thickness(50, 0, 0, 0);
+                    else
+                        imgLogo.Margin = new Thickness(50, 4, 0, 0);
+
+                }
+                else
+                {
+                    FlowDirection = FlowDirection.LeftToRight;
+                    if (Device.RuntimePlatform == Device.iOS)
+                        imgLogo.Margin = new Thickness(-50, 0, 0, 0);
+                    else
+                        imgLogo.Margin = new Thickness(50, 4, 0, 0);
+                }
+            }
+            catch (Exception)
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+                CrossSecureStorage.Current.SetValue("Language", "1");
+                if (Device.RuntimePlatform == Device.iOS)
+                    imgLogo.Margin = new Thickness(50, 0, 0, 0);
+                else
+                    imgLogo.Margin = new Thickness(50, 4, 0, 0); 
+            }
+
             try
             {
                 VersionTracking.Track();

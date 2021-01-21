@@ -229,9 +229,10 @@
     <Shell.TitleView>
         <StackLayout HeightRequest="10" VerticalOptions="CenterAndExpand">
             <Image
-                Margin="50,4,0,0"
+                x:Name="imgLogo"
                 HeightRequest="40"
-                Source="logowhite.png" />
+                Source="logowhite.png"
+                WidthRequest="40" />
         </StackLayout>
     </Shell.TitleView>
 

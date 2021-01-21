@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UNA.MobileApplication.ViewModels;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -37,6 +38,24 @@ namespace UNA.MobileApplication.Views
             Shell.SetNavBarIsVisible(this, false);
 
             BindingContext = newsDetailsViewModel;
+
+            string lang = "1";
+            try
+            {
+                lang = CrossSecureStorage.Current.GetValue("Language");
+            }
+            catch (Exception)
+            {
+                lang = "1";
+            }
+            if (lang.Equals("1"))
+                btnCopy.Text = "نسخ الخبر";
+            else if (lang.Equals("2"))
+                btnCopy.Text = "Copy News";
+            else
+                btnCopy.Text = "Copier les actualités";
+
+
         }
 
         protected override void OnAppearing()
@@ -120,6 +139,28 @@ namespace UNA.MobileApplication.Views
             else
                 _ShareMessage.Url = string.Format(Constant.NewsURL, lblNews_ID.Text);
             shareInfo.Share(_ShareMessage);
+        }
+
+        private async void btnCopy_Clicked(object sender, EventArgs e)
+        {
+            await Clipboard.SetTextAsync(lblDetail.Text);
+            string NewsId = lblNews_ID.Text;
+            string lang = "1";
+            try
+            {
+                lang = CrossSecureStorage.Current.GetValue("Language");
+            }
+            catch (Exception)
+            {
+                lang = "1";
+            }
+
+            if (lang.Equals("1"))
+                HelperManger.ShowToast("تم نسخ الخبر");
+            else if (lang.Equals("2"))
+                HelperManger.ShowToast("The news has been copied");
+            else
+                HelperManger.ShowToast("La nouvelle a été copiée");
         }
     }
 }

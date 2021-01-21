@@ -34,8 +34,8 @@
                                 sharedTransitions:Transition.Group="{Binding News_ID}"
                                 sharedTransitions:Transition.Name="NewsImage"
                                 Aspect="AspectFill"
-                                LoadingPlaceholder="icon.png"
                                 HeightRequest="230"
+                                LoadingPlaceholder="icon.png"
                                 Source="{Binding SelectedNews.Main_Image_Path}" />
                             <yummy:PancakeView
                                 x:Name="detailContainer"
@@ -80,6 +80,7 @@
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
                                     <controls:CustomLabel
+                                        x:Name="lblDetail"
                                         Grid.Row="0"
                                         Direction="Start"
                                         FontFamily="{StaticResource HelveticaNeue}"
@@ -88,7 +89,15 @@
                                         TextColor="{DynamicResource secondaryLabel}" />
                                 </Grid>
                             </yummy:PancakeView>
-                            <StackLayout Grid.Row="3" HeightRequest="50" />
+                            <StackLayout Grid.Row="3" HeightRequest="50">
+                                <Button
+                                    x:Name="btnCopy"
+                                    Margin="20,0,20,0"
+                                    BackgroundColor="{DynamicResource Primary}"
+                                    Clicked="btnCopy_Clicked"
+                                    Text="Copy News"
+                                    TextColor="White" />
+                            </StackLayout>
                         </Grid>
                     </StackLayout>
                 </controls:ExtendedScrollView>

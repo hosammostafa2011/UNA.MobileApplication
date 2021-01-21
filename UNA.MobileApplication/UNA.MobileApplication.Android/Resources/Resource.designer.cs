@@ -37,6 +37,18 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Animation.abc_slide_out_top = global::UNA.MobileApplication.Droid.Resource.Animation.abc_slide_out_top;
 			global::Acr.UserDialogs.Resource.Animation.abc_tooltip_enter = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Acr.UserDialogs.Resource.Animation.abc_tooltip_exit = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Acr.UserDialogs.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Acr.UserDialogs.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Acr.UserDialogs.Resource.Animation.design_bottom_sheet_slide_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Acr.UserDialogs.Resource.Animation.design_bottom_sheet_slide_out = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Acr.UserDialogs.Resource.Animation.design_snackbar_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_snackbar_in;
@@ -144,6 +156,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Attribute.buttonBarNeutralButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Acr.UserDialogs.Resource.Attribute.buttonBarPositiveButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Acr.UserDialogs.Resource.Attribute.buttonBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonCompat;
 			global::Acr.UserDialogs.Resource.Attribute.buttonGravity = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonGravity;
 			global::Acr.UserDialogs.Resource.Attribute.buttonIconDimen = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonIconDimen;
 			global::Acr.UserDialogs.Resource.Attribute.buttonPanelSideLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -237,7 +250,15 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Attribute.dividerHorizontal = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerHorizontal;
 			global::Acr.UserDialogs.Resource.Attribute.dividerPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerPadding;
 			global::Acr.UserDialogs.Resource.Attribute.dividerVertical = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerVertical;
+			global::Acr.UserDialogs.Resource.Attribute.drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Acr.UserDialogs.Resource.Attribute.drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableEndCompat;
+			global::Acr.UserDialogs.Resource.Attribute.drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Acr.UserDialogs.Resource.Attribute.drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableRightCompat;
 			global::Acr.UserDialogs.Resource.Attribute.drawableSize = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableSize;
+			global::Acr.UserDialogs.Resource.Attribute.drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableStartCompat;
+			global::Acr.UserDialogs.Resource.Attribute.drawableTint = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTint;
+			global::Acr.UserDialogs.Resource.Attribute.drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTopCompat;
 			global::Acr.UserDialogs.Resource.Attribute.drawerArrowStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Acr.UserDialogs.Resource.Attribute.dropdownListPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Acr.UserDialogs.Resource.Attribute.dropDownListViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -344,6 +365,8 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Attribute.lineHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.lineHeight;
 			global::Acr.UserDialogs.Resource.Attribute.lineSpacing = global::UNA.MobileApplication.Droid.Resource.Attribute.lineSpacing;
 			global::Acr.UserDialogs.Resource.Attribute.listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Acr.UserDialogs.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Acr.UserDialogs.Resource.Attribute.listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Acr.UserDialogs.Resource.Attribute.listItemLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listItemLayout;
 			global::Acr.UserDialogs.Resource.Attribute.listLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listLayout;
@@ -352,8 +375,10 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Acr.UserDialogs.Resource.Attribute.logo = global::UNA.MobileApplication.Droid.Resource.Attribute.logo;
 			global::Acr.UserDialogs.Resource.Attribute.logoDescription = global::UNA.MobileApplication.Droid.Resource.Attribute.logoDescription;
 			global::Acr.UserDialogs.Resource.Attribute.materialButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.materialButtonStyle;
@@ -395,6 +420,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyle;
 			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyleIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyleSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Acr.UserDialogs.Resource.Attribute.recyclerViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Acr.UserDialogs.Resource.Attribute.reverseLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.reverseLayout;
 			global::Acr.UserDialogs.Resource.Attribute.rippleColor = global::UNA.MobileApplication.Droid.Resource.Attribute.rippleColor;
 			global::Acr.UserDialogs.Resource.Attribute.scrimAnimationDuration = global::UNA.MobileApplication.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -495,6 +521,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Attribute.textColorSearchUrl = global::UNA.MobileApplication.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Acr.UserDialogs.Resource.Attribute.textEndPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textEndPadding;
 			global::Acr.UserDialogs.Resource.Attribute.textInputStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.textInputStyle;
+			global::Acr.UserDialogs.Resource.Attribute.textLocale = global::UNA.MobileApplication.Droid.Resource.Attribute.textLocale;
 			global::Acr.UserDialogs.Resource.Attribute.textStartPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textStartPadding;
 			global::Acr.UserDialogs.Resource.Attribute.theme = global::UNA.MobileApplication.Droid.Resource.Attribute.theme;
 			global::Acr.UserDialogs.Resource.Attribute.thickness = global::UNA.MobileApplication.Droid.Resource.Attribute.thickness;
@@ -719,6 +746,9 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_top_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Acr.UserDialogs.Resource.Dimension.abc_floating_window_z = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Acr.UserDialogs.Resource.Dimension.abc_list_item_height_large_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_list_item_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_list_item_height_small_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Acr.UserDialogs.Resource.Dimension.abc_list_item_padding_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Acr.UserDialogs.Resource.Dimension.abc_panel_menu_list_width = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Acr.UserDialogs.Resource.Dimension.abc_progress_bar_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -890,11 +920,13 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Drawable.abc_action_bar_item_background_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_borderless_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_colored_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_default_mtrl_shape = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Acr.UserDialogs.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -972,6 +1004,14 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Drawable.abc_vector_test = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_vector_test;
 			global::Acr.UserDialogs.Resource.Drawable.avd_hide_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_hide_password;
 			global::Acr.UserDialogs.Resource.Drawable.avd_show_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_show_password;
+			global::Acr.UserDialogs.Resource.Drawable.btn_checkbox_checked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Acr.UserDialogs.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Acr.UserDialogs.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Acr.UserDialogs.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Acr.UserDialogs.Resource.Drawable.btn_radio_off_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Acr.UserDialogs.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Acr.UserDialogs.Resource.Drawable.btn_radio_on_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Acr.UserDialogs.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Acr.UserDialogs.Resource.Drawable.design_bottom_navigation_item_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Acr.UserDialogs.Resource.Drawable.design_fab_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_fab_background;
 			global::Acr.UserDialogs.Resource.Drawable.design_ic_visibility = global::UNA.MobileApplication.Droid.Resource.Drawable.design_ic_visibility;
@@ -1002,6 +1042,39 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Drawable.roundedbgdark = global::UNA.MobileApplication.Droid.Resource.Drawable.roundedbgdark;
 			global::Acr.UserDialogs.Resource.Drawable.tooltip_frame_dark = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Acr.UserDialogs.Resource.Drawable.tooltip_frame_light = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Acr.UserDialogs.Resource.Id.accessibility_action_clickable_span = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_0 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_1 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_10 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_11 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_12 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_13 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_14 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_15 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_16 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_17 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_18 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_19 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_2 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_20 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_21 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_22 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_23 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_24 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_25 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_26 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_27 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_28 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_29 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_3 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_30 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_31 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_4 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_5 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_6 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_7 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_8 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Acr.UserDialogs.Resource.Id.accessibility_custom_action_9 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Acr.UserDialogs.Resource.Id.actions = global::UNA.MobileApplication.Droid.Resource.Id.actions;
 			global::Acr.UserDialogs.Resource.Id.action_bar = global::UNA.MobileApplication.Droid.Resource.Id.action_bar;
 			global::Acr.UserDialogs.Resource.Id.action_bar_activity_content = global::UNA.MobileApplication.Droid.Resource.Id.action_bar_activity_content;
@@ -1036,6 +1109,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Id.center_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.center_horizontal;
 			global::Acr.UserDialogs.Resource.Id.center_vertical = global::UNA.MobileApplication.Droid.Resource.Id.center_vertical;
 			global::Acr.UserDialogs.Resource.Id.checkbox = global::UNA.MobileApplication.Droid.Resource.Id.checkbox;
+			global::Acr.UserDialogs.Resource.Id.@checked = global::UNA.MobileApplication.Droid.Resource.Id.@checked;
 			global::Acr.UserDialogs.Resource.Id.chronometer = global::UNA.MobileApplication.Droid.Resource.Id.chronometer;
 			global::Acr.UserDialogs.Resource.Id.clip_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.clip_horizontal;
 			global::Acr.UserDialogs.Resource.Id.clip_vertical = global::UNA.MobileApplication.Droid.Resource.Id.clip_vertical;
@@ -1054,6 +1128,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Id.design_menu_item_action_area_stub = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Acr.UserDialogs.Resource.Id.design_menu_item_text = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_text;
 			global::Acr.UserDialogs.Resource.Id.design_navigation_view = global::UNA.MobileApplication.Droid.Resource.Id.design_navigation_view;
+			global::Acr.UserDialogs.Resource.Id.dialog_button = global::UNA.MobileApplication.Droid.Resource.Id.dialog_button;
 			global::Acr.UserDialogs.Resource.Id.disableHome = global::UNA.MobileApplication.Droid.Resource.Id.disableHome;
 			global::Acr.UserDialogs.Resource.Id.edit_query = global::UNA.MobileApplication.Droid.Resource.Id.edit_query;
 			global::Acr.UserDialogs.Resource.Id.end = global::UNA.MobileApplication.Droid.Resource.Id.end;
@@ -1070,6 +1145,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Id.forever = global::UNA.MobileApplication.Droid.Resource.Id.forever;
 			global::Acr.UserDialogs.Resource.Id.FUNCTION = global::UNA.MobileApplication.Droid.Resource.Id.FUNCTION;
 			global::Acr.UserDialogs.Resource.Id.ghost_view = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view;
+			global::Acr.UserDialogs.Resource.Id.ghost_view_holder = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view_holder;
 			global::Acr.UserDialogs.Resource.Id.group_divider = global::UNA.MobileApplication.Droid.Resource.Id.group_divider;
 			global::Acr.UserDialogs.Resource.Id.home = global::UNA.MobileApplication.Droid.Resource.Id.home;
 			global::Acr.UserDialogs.Resource.Id.homeAsUp = global::UNA.MobileApplication.Droid.Resource.Id.homeAsUp;
@@ -1105,6 +1181,8 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Id.notification_background = global::UNA.MobileApplication.Droid.Resource.Id.notification_background;
 			global::Acr.UserDialogs.Resource.Id.notification_main_column = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column;
 			global::Acr.UserDialogs.Resource.Id.notification_main_column_container = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column_container;
+			global::Acr.UserDialogs.Resource.Id.off = global::UNA.MobileApplication.Droid.Resource.Id.off;
+			global::Acr.UserDialogs.Resource.Id.on = global::UNA.MobileApplication.Droid.Resource.Id.on;
 			global::Acr.UserDialogs.Resource.Id.outline = global::UNA.MobileApplication.Droid.Resource.Id.outline;
 			global::Acr.UserDialogs.Resource.Id.parallax = global::UNA.MobileApplication.Droid.Resource.Id.parallax;
 			global::Acr.UserDialogs.Resource.Id.parentPanel = global::UNA.MobileApplication.Droid.Resource.Id.parentPanel;
@@ -1117,6 +1195,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Id.right_icon = global::UNA.MobileApplication.Droid.Resource.Id.right_icon;
 			global::Acr.UserDialogs.Resource.Id.right_side = global::UNA.MobileApplication.Droid.Resource.Id.right_side;
 			global::Acr.UserDialogs.Resource.Id.save_non_transition_alpha = global::UNA.MobileApplication.Droid.Resource.Id.save_non_transition_alpha;
+			global::Acr.UserDialogs.Resource.Id.save_overlay_view = global::UNA.MobileApplication.Droid.Resource.Id.save_overlay_view;
 			global::Acr.UserDialogs.Resource.Id.screen = global::UNA.MobileApplication.Droid.Resource.Id.screen;
 			global::Acr.UserDialogs.Resource.Id.scroll = global::UNA.MobileApplication.Droid.Resource.Id.scroll;
 			global::Acr.UserDialogs.Resource.Id.scrollable = global::UNA.MobileApplication.Droid.Resource.Id.scrollable;
@@ -1156,6 +1235,11 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Id.submit_area = global::UNA.MobileApplication.Droid.Resource.Id.submit_area;
 			global::Acr.UserDialogs.Resource.Id.SYM = global::UNA.MobileApplication.Droid.Resource.Id.SYM;
 			global::Acr.UserDialogs.Resource.Id.tabMode = global::UNA.MobileApplication.Droid.Resource.Id.tabMode;
+			global::Acr.UserDialogs.Resource.Id.tag_accessibility_actions = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_actions;
+			global::Acr.UserDialogs.Resource.Id.tag_accessibility_clickable_spans = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Acr.UserDialogs.Resource.Id.tag_accessibility_heading = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_heading;
+			global::Acr.UserDialogs.Resource.Id.tag_accessibility_pane_title = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Acr.UserDialogs.Resource.Id.tag_screen_reader_focusable = global::UNA.MobileApplication.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Acr.UserDialogs.Resource.Id.tag_transition_group = global::UNA.MobileApplication.Droid.Resource.Id.tag_transition_group;
 			global::Acr.UserDialogs.Resource.Id.tag_unhandled_key_event_manager = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Acr.UserDialogs.Resource.Id.tag_unhandled_key_listeners = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -1181,6 +1265,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Id.transition_position = global::UNA.MobileApplication.Droid.Resource.Id.transition_position;
 			global::Acr.UserDialogs.Resource.Id.transition_scene_layoutid_cache = global::UNA.MobileApplication.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Acr.UserDialogs.Resource.Id.transition_transform = global::UNA.MobileApplication.Droid.Resource.Id.transition_transform;
+			global::Acr.UserDialogs.Resource.Id.@unchecked = global::UNA.MobileApplication.Droid.Resource.Id.@unchecked;
 			global::Acr.UserDialogs.Resource.Id.uniform = global::UNA.MobileApplication.Droid.Resource.Id.uniform;
 			global::Acr.UserDialogs.Resource.Id.unlabeled = global::UNA.MobileApplication.Droid.Resource.Id.unlabeled;
 			global::Acr.UserDialogs.Resource.Id.up = global::UNA.MobileApplication.Droid.Resource.Id.up;
@@ -1204,6 +1289,13 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::UNA.MobileApplication.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Acr.UserDialogs.Resource.Integer.show_password_duration = global::UNA.MobileApplication.Droid.Resource.Integer.show_password_duration;
 			global::Acr.UserDialogs.Resource.Integer.status_bar_notification_info_maxnum = global::UNA.MobileApplication.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Acr.UserDialogs.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Acr.UserDialogs.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Acr.UserDialogs.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Acr.UserDialogs.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Acr.UserDialogs.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Acr.UserDialogs.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Acr.UserDialogs.Resource.Interpolator.fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Acr.UserDialogs.Resource.Interpolator.mtrl_fast_out_linear_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Acr.UserDialogs.Resource.Interpolator.mtrl_fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Acr.UserDialogs.Resource.Interpolator.mtrl_linear = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_linear;
@@ -1236,6 +1328,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Layout.abc_search_view = global::UNA.MobileApplication.Droid.Resource.Layout.abc_search_view;
 			global::Acr.UserDialogs.Resource.Layout.abc_select_dialog_material = global::UNA.MobileApplication.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Acr.UserDialogs.Resource.Layout.abc_tooltip = global::UNA.MobileApplication.Droid.Resource.Layout.abc_tooltip;
+			global::Acr.UserDialogs.Resource.Layout.custom_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.custom_dialog;
 			global::Acr.UserDialogs.Resource.Layout.design_bottom_navigation_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Acr.UserDialogs.Resource.Layout.design_bottom_sheet_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Acr.UserDialogs.Resource.Layout.design_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.design_layout_snackbar;
@@ -1495,6 +1588,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Spinner = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -1619,6 +1713,8 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dark = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Light = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -1751,6 +1847,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -1912,11 +2009,21 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableTint = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_lineHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarDivider = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -1990,14 +2097,18 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -2146,6 +2257,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Acr.UserDialogs.Resource.Styleable.CompoundButton = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton;
 			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_android_button = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_buttonCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_buttonTint = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_buttonTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout;
@@ -2376,6 +2488,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Acr.UserDialogs.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Acr.UserDialogs.Resource.Styleable.RecyclerView = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_android_clipToPadding = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_android_descendantFocusability = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_android_orientation = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollEnabled = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -2485,11 +2598,14 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColor = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColorLink = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textFontWeight = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textSize = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_typeface = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout;
 			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_android_hint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -2538,6 +2654,7 @@ namespace UNA.MobileApplication.Droid
 			global::Acr.UserDialogs.Resource.Styleable.Toolbar_logo = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logo;
 			global::Acr.UserDialogs.Resource.Styleable.Toolbar_logoDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Acr.UserDialogs.Resource.Styleable.Toolbar_maxButtonHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_menu = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_menu;
 			global::Acr.UserDialogs.Resource.Styleable.Toolbar_navigationContentDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Acr.UserDialogs.Resource.Styleable.Toolbar_navigationIcon = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Acr.UserDialogs.Resource.Styleable.Toolbar_popupTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -2616,6 +2733,18 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Animation.abc_slide_out_top = global::UNA.MobileApplication.Droid.Resource.Animation.abc_slide_out_top;
 			global::LabelHtml.Forms.Plugin.Resource.Animation.abc_tooltip_enter = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_enter;
 			global::LabelHtml.Forms.Plugin.Resource.Animation.abc_tooltip_exit = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_exit;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::LabelHtml.Forms.Plugin.Resource.Animation.design_bottom_sheet_slide_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::LabelHtml.Forms.Plugin.Resource.Animation.design_bottom_sheet_slide_out = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::LabelHtml.Forms.Plugin.Resource.Animation.design_snackbar_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_snackbar_in;
@@ -2715,6 +2844,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.buttonBarNeutralButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.buttonBarPositiveButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.buttonBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarStyle;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.buttonCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonCompat;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.buttonGravity = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonGravity;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.buttonIconDimen = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonIconDimen;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.buttonPanelSideLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -2808,7 +2938,15 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.dividerHorizontal = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerHorizontal;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.dividerPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerPadding;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.dividerVertical = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerVertical;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableBottomCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableEndCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableLeftCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableRightCompat;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableSize = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableSize;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableStartCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableTint = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTint;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTintMode;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTopCompat;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.drawerArrowStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.drawerArrowStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.dropdownListPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.dropDownListViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -2915,6 +3053,8 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.lineHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.lineHeight;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.lineSpacing = global::UNA.MobileApplication.Droid.Resource.Attribute.lineSpacing;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listItemLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listItemLayout;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listLayout;
@@ -2923,8 +3063,10 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.logo = global::UNA.MobileApplication.Droid.Resource.Attribute.logo;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.logoDescription = global::UNA.MobileApplication.Droid.Resource.Attribute.logoDescription;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.materialButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.materialButtonStyle;
@@ -2966,6 +3108,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.ratingBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.ratingBarStyleIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.ratingBarStyleSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.recyclerViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.recyclerViewStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.reverseLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.reverseLayout;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.rippleColor = global::UNA.MobileApplication.Droid.Resource.Attribute.rippleColor;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.scrimAnimationDuration = global::UNA.MobileApplication.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -3066,6 +3209,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.textColorSearchUrl = global::UNA.MobileApplication.Droid.Resource.Attribute.textColorSearchUrl;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.textEndPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textEndPadding;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.textInputStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.textInputStyle;
+			global::LabelHtml.Forms.Plugin.Resource.Attribute.textLocale = global::UNA.MobileApplication.Droid.Resource.Attribute.textLocale;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.textStartPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textStartPadding;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.theme = global::UNA.MobileApplication.Droid.Resource.Attribute.theme;
 			global::LabelHtml.Forms.Plugin.Resource.Attribute.thickness = global::UNA.MobileApplication.Droid.Resource.Attribute.thickness;
@@ -3295,6 +3439,9 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_edit_text_inset_top_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_floating_window_z = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_floating_window_z;
+			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_list_item_height_large_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_list_item_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_list_item_height_small_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_list_item_padding_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_panel_menu_list_width = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::LabelHtml.Forms.Plugin.Resource.Dimension.abc_progress_bar_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -3472,11 +3619,13 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_action_bar_item_background_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_borderless_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_check_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_check_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_colored_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_default_mtrl_shape = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_radio_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_radio_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -3554,6 +3703,14 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.abc_vector_test = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_vector_test;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.avd_hide_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_hide_password;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.avd_show_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_show_password;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_checkbox_checked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_radio_off_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_radio_on_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::LabelHtml.Forms.Plugin.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.design_bottom_navigation_item_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.design_fab_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_fab_background;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.design_ic_visibility = global::UNA.MobileApplication.Droid.Resource.Drawable.design_ic_visibility;
@@ -3580,6 +3737,39 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.notify_panel_notification_icon_bg = global::UNA.MobileApplication.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.tooltip_frame_dark = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::LabelHtml.Forms.Plugin.Resource.Drawable.tooltip_frame_light = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_light;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_action_clickable_span = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_0 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_0;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_1 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_1;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_10 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_10;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_11 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_11;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_12 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_12;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_13 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_13;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_14 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_14;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_15 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_15;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_16 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_16;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_17 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_17;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_18 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_18;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_19 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_19;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_2 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_2;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_20 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_20;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_21 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_21;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_22 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_22;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_23 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_23;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_24 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_24;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_25 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_25;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_26 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_26;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_27 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_27;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_28 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_28;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_29 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_29;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_3 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_3;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_30 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_30;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_31 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_31;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_4 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_4;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_5 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_5;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_6 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_6;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_7 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_7;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_8 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_8;
+			global::LabelHtml.Forms.Plugin.Resource.Id.accessibility_custom_action_9 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_9;
 			global::LabelHtml.Forms.Plugin.Resource.Id.action0 = global::UNA.MobileApplication.Droid.Resource.Id.action0;
 			global::LabelHtml.Forms.Plugin.Resource.Id.actions = global::UNA.MobileApplication.Droid.Resource.Id.actions;
 			global::LabelHtml.Forms.Plugin.Resource.Id.action_bar = global::UNA.MobileApplication.Droid.Resource.Id.action_bar;
@@ -3623,6 +3813,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.center_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.center_horizontal;
 			global::LabelHtml.Forms.Plugin.Resource.Id.center_vertical = global::UNA.MobileApplication.Droid.Resource.Id.center_vertical;
 			global::LabelHtml.Forms.Plugin.Resource.Id.checkbox = global::UNA.MobileApplication.Droid.Resource.Id.checkbox;
+			global::LabelHtml.Forms.Plugin.Resource.Id.@checked = global::UNA.MobileApplication.Droid.Resource.Id.@checked;
 			global::LabelHtml.Forms.Plugin.Resource.Id.chronometer = global::UNA.MobileApplication.Droid.Resource.Id.chronometer;
 			global::LabelHtml.Forms.Plugin.Resource.Id.clip_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.clip_horizontal;
 			global::LabelHtml.Forms.Plugin.Resource.Id.clip_vertical = global::UNA.MobileApplication.Droid.Resource.Id.clip_vertical;
@@ -3641,6 +3832,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.design_menu_item_action_area_stub = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::LabelHtml.Forms.Plugin.Resource.Id.design_menu_item_text = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_text;
 			global::LabelHtml.Forms.Plugin.Resource.Id.design_navigation_view = global::UNA.MobileApplication.Droid.Resource.Id.design_navigation_view;
+			global::LabelHtml.Forms.Plugin.Resource.Id.dialog_button = global::UNA.MobileApplication.Droid.Resource.Id.dialog_button;
 			global::LabelHtml.Forms.Plugin.Resource.Id.disableHome = global::UNA.MobileApplication.Droid.Resource.Id.disableHome;
 			global::LabelHtml.Forms.Plugin.Resource.Id.edit_query = global::UNA.MobileApplication.Droid.Resource.Id.edit_query;
 			global::LabelHtml.Forms.Plugin.Resource.Id.end = global::UNA.MobileApplication.Droid.Resource.Id.end;
@@ -3656,10 +3848,10 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.fill_vertical = global::UNA.MobileApplication.Droid.Resource.Id.fill_vertical;
 			global::LabelHtml.Forms.Plugin.Resource.Id.@fixed = global::UNA.MobileApplication.Droid.Resource.Id.@fixed;
 			global::LabelHtml.Forms.Plugin.Resource.Id.flyoutcontent_appbar = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_appbar;
-			global::LabelHtml.Forms.Plugin.Resource.Id.flyoutcontent_recycler = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_recycler;
 			global::LabelHtml.Forms.Plugin.Resource.Id.forever = global::UNA.MobileApplication.Droid.Resource.Id.forever;
 			global::LabelHtml.Forms.Plugin.Resource.Id.FUNCTION = global::UNA.MobileApplication.Droid.Resource.Id.FUNCTION;
 			global::LabelHtml.Forms.Plugin.Resource.Id.ghost_view = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view;
+			global::LabelHtml.Forms.Plugin.Resource.Id.ghost_view_holder = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view_holder;
 			global::LabelHtml.Forms.Plugin.Resource.Id.group_divider = global::UNA.MobileApplication.Droid.Resource.Id.group_divider;
 			global::LabelHtml.Forms.Plugin.Resource.Id.home = global::UNA.MobileApplication.Droid.Resource.Id.home;
 			global::LabelHtml.Forms.Plugin.Resource.Id.homeAsUp = global::UNA.MobileApplication.Droid.Resource.Id.homeAsUp;
@@ -3697,6 +3889,8 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.notification_background = global::UNA.MobileApplication.Droid.Resource.Id.notification_background;
 			global::LabelHtml.Forms.Plugin.Resource.Id.notification_main_column = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column;
 			global::LabelHtml.Forms.Plugin.Resource.Id.notification_main_column_container = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column_container;
+			global::LabelHtml.Forms.Plugin.Resource.Id.off = global::UNA.MobileApplication.Droid.Resource.Id.off;
+			global::LabelHtml.Forms.Plugin.Resource.Id.on = global::UNA.MobileApplication.Droid.Resource.Id.on;
 			global::LabelHtml.Forms.Plugin.Resource.Id.outline = global::UNA.MobileApplication.Droid.Resource.Id.outline;
 			global::LabelHtml.Forms.Plugin.Resource.Id.parallax = global::UNA.MobileApplication.Droid.Resource.Id.parallax;
 			global::LabelHtml.Forms.Plugin.Resource.Id.parentPanel = global::UNA.MobileApplication.Droid.Resource.Id.parentPanel;
@@ -3709,6 +3903,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.right_icon = global::UNA.MobileApplication.Droid.Resource.Id.right_icon;
 			global::LabelHtml.Forms.Plugin.Resource.Id.right_side = global::UNA.MobileApplication.Droid.Resource.Id.right_side;
 			global::LabelHtml.Forms.Plugin.Resource.Id.save_non_transition_alpha = global::UNA.MobileApplication.Droid.Resource.Id.save_non_transition_alpha;
+			global::LabelHtml.Forms.Plugin.Resource.Id.save_overlay_view = global::UNA.MobileApplication.Droid.Resource.Id.save_overlay_view;
 			global::LabelHtml.Forms.Plugin.Resource.Id.screen = global::UNA.MobileApplication.Droid.Resource.Id.screen;
 			global::LabelHtml.Forms.Plugin.Resource.Id.scroll = global::UNA.MobileApplication.Droid.Resource.Id.scroll;
 			global::LabelHtml.Forms.Plugin.Resource.Id.scrollable = global::UNA.MobileApplication.Droid.Resource.Id.scrollable;
@@ -3734,6 +3929,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.showCustom = global::UNA.MobileApplication.Droid.Resource.Id.showCustom;
 			global::LabelHtml.Forms.Plugin.Resource.Id.showHome = global::UNA.MobileApplication.Droid.Resource.Id.showHome;
 			global::LabelHtml.Forms.Plugin.Resource.Id.showTitle = global::UNA.MobileApplication.Droid.Resource.Id.showTitle;
+			global::LabelHtml.Forms.Plugin.Resource.Id.sliding_tabs = global::UNA.MobileApplication.Droid.Resource.Id.sliding_tabs;
 			global::LabelHtml.Forms.Plugin.Resource.Id.smallLabel = global::UNA.MobileApplication.Droid.Resource.Id.smallLabel;
 			global::LabelHtml.Forms.Plugin.Resource.Id.snackbar_action = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_action;
 			global::LabelHtml.Forms.Plugin.Resource.Id.snackbar_text = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_text;
@@ -3751,6 +3947,11 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.submit_area = global::UNA.MobileApplication.Droid.Resource.Id.submit_area;
 			global::LabelHtml.Forms.Plugin.Resource.Id.SYM = global::UNA.MobileApplication.Droid.Resource.Id.SYM;
 			global::LabelHtml.Forms.Plugin.Resource.Id.tabMode = global::UNA.MobileApplication.Droid.Resource.Id.tabMode;
+			global::LabelHtml.Forms.Plugin.Resource.Id.tag_accessibility_actions = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_actions;
+			global::LabelHtml.Forms.Plugin.Resource.Id.tag_accessibility_clickable_spans = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::LabelHtml.Forms.Plugin.Resource.Id.tag_accessibility_heading = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_heading;
+			global::LabelHtml.Forms.Plugin.Resource.Id.tag_accessibility_pane_title = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::LabelHtml.Forms.Plugin.Resource.Id.tag_screen_reader_focusable = global::UNA.MobileApplication.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::LabelHtml.Forms.Plugin.Resource.Id.tag_transition_group = global::UNA.MobileApplication.Droid.Resource.Id.tag_transition_group;
 			global::LabelHtml.Forms.Plugin.Resource.Id.tag_unhandled_key_event_manager = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::LabelHtml.Forms.Plugin.Resource.Id.tag_unhandled_key_listeners = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -3767,6 +3968,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.title = global::UNA.MobileApplication.Droid.Resource.Id.title;
 			global::LabelHtml.Forms.Plugin.Resource.Id.titleDividerNoCustom = global::UNA.MobileApplication.Droid.Resource.Id.titleDividerNoCustom;
 			global::LabelHtml.Forms.Plugin.Resource.Id.title_template = global::UNA.MobileApplication.Droid.Resource.Id.title_template;
+			global::LabelHtml.Forms.Plugin.Resource.Id.toolbar = global::UNA.MobileApplication.Droid.Resource.Id.toolbar;
 			global::LabelHtml.Forms.Plugin.Resource.Id.top = global::UNA.MobileApplication.Droid.Resource.Id.top;
 			global::LabelHtml.Forms.Plugin.Resource.Id.topPanel = global::UNA.MobileApplication.Droid.Resource.Id.topPanel;
 			global::LabelHtml.Forms.Plugin.Resource.Id.touch_outside = global::UNA.MobileApplication.Droid.Resource.Id.touch_outside;
@@ -3775,6 +3977,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Id.transition_position = global::UNA.MobileApplication.Droid.Resource.Id.transition_position;
 			global::LabelHtml.Forms.Plugin.Resource.Id.transition_scene_layoutid_cache = global::UNA.MobileApplication.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::LabelHtml.Forms.Plugin.Resource.Id.transition_transform = global::UNA.MobileApplication.Droid.Resource.Id.transition_transform;
+			global::LabelHtml.Forms.Plugin.Resource.Id.@unchecked = global::UNA.MobileApplication.Droid.Resource.Id.@unchecked;
 			global::LabelHtml.Forms.Plugin.Resource.Id.uniform = global::UNA.MobileApplication.Droid.Resource.Id.uniform;
 			global::LabelHtml.Forms.Plugin.Resource.Id.unlabeled = global::UNA.MobileApplication.Droid.Resource.Id.unlabeled;
 			global::LabelHtml.Forms.Plugin.Resource.Id.up = global::UNA.MobileApplication.Droid.Resource.Id.up;
@@ -3798,6 +4001,13 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::UNA.MobileApplication.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::LabelHtml.Forms.Plugin.Resource.Integer.show_password_duration = global::UNA.MobileApplication.Droid.Resource.Integer.show_password_duration;
 			global::LabelHtml.Forms.Plugin.Resource.Integer.status_bar_notification_info_maxnum = global::UNA.MobileApplication.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::LabelHtml.Forms.Plugin.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::LabelHtml.Forms.Plugin.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::LabelHtml.Forms.Plugin.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::LabelHtml.Forms.Plugin.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::LabelHtml.Forms.Plugin.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::LabelHtml.Forms.Plugin.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::LabelHtml.Forms.Plugin.Resource.Interpolator.fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::LabelHtml.Forms.Plugin.Resource.Interpolator.mtrl_fast_out_linear_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::LabelHtml.Forms.Plugin.Resource.Interpolator.mtrl_fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::LabelHtml.Forms.Plugin.Resource.Interpolator.mtrl_linear = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_linear;
@@ -3833,6 +4043,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Layout.BottomTabLayout = global::UNA.MobileApplication.Droid.Resource.Layout.BottomTabLayout;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.browser_actions_context_menu_page = global::UNA.MobileApplication.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.browser_actions_context_menu_row = global::UNA.MobileApplication.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::LabelHtml.Forms.Plugin.Resource.Layout.custom_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.custom_dialog;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.design_bottom_navigation_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.design_bottom_sheet_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.design_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.design_layout_snackbar;
@@ -3847,6 +4058,8 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Layout.design_navigation_menu = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.design_navigation_menu_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu_item;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.design_text_input_password_icon = global::UNA.MobileApplication.Droid.Resource.Layout.design_text_input_password_icon;
+			global::LabelHtml.Forms.Plugin.Resource.Layout.FallbackTabbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::LabelHtml.Forms.Plugin.Resource.Layout.FallbackToolbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.FlyoutContent = global::UNA.MobileApplication.Droid.Resource.Layout.FlyoutContent;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.mtrl_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.mtrl_layout_snackbar_include = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -3871,6 +4084,8 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Layout.select_dialog_singlechoice_material = global::UNA.MobileApplication.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.ShellContent = global::UNA.MobileApplication.Droid.Resource.Layout.ShellContent;
 			global::LabelHtml.Forms.Plugin.Resource.Layout.support_simple_spinner_dropdown_item = global::UNA.MobileApplication.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::LabelHtml.Forms.Plugin.Resource.Layout.Tabbar = global::UNA.MobileApplication.Droid.Resource.Layout.Tabbar;
+			global::LabelHtml.Forms.Plugin.Resource.Layout.Toolbar = global::UNA.MobileApplication.Droid.Resource.Layout.Toolbar;
 			global::LabelHtml.Forms.Plugin.Resource.String.abc_action_bar_home_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_home_description;
 			global::LabelHtml.Forms.Plugin.Resource.String.abc_action_bar_up_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_up_description;
 			global::LabelHtml.Forms.Plugin.Resource.String.abc_action_menu_overflow_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -4100,6 +4315,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Base_Widget_AppCompat_Spinner = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::LabelHtml.Forms.Plugin.Resource.Style.Base_Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Base_Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -4229,6 +4445,8 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dark = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::LabelHtml.Forms.Plugin.Resource.Style.ThemeOverlay_AppCompat_Light = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -4361,6 +4579,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::LabelHtml.Forms.Plugin.Resource.Style.Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::LabelHtml.Forms.Plugin.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -4522,11 +4741,21 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableTint = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_lineHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTextView_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_actionBarDivider = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -4600,14 +4829,18 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_panelBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -4756,6 +4989,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.ColorStateListItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.CompoundButton = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.CompoundButton_android_button = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.CompoundButton_buttonCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.CompoundButton_buttonTint = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.CompoundButton_buttonTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.CoordinatorLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout;
@@ -4973,6 +5207,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.RecyclerView = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.RecyclerView_android_clipToPadding = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.RecyclerView_android_descendantFocusability = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.RecyclerView_android_orientation = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.RecyclerView_fastScrollEnabled = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -5082,11 +5317,14 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_android_textColor = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_android_textColorLink = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_android_textFontWeight = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_android_textSize = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_android_textStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_android_typeface = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextAppearance_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextInputLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextInputLayout_android_hint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.TextInputLayout_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -5135,6 +5373,7 @@ namespace UNA.MobileApplication.Droid
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.Toolbar_logo = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logo;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.Toolbar_logoDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.Toolbar_maxButtonHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::LabelHtml.Forms.Plugin.Resource.Styleable.Toolbar_menu = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_menu;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.Toolbar_navigationContentDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.Toolbar_navigationIcon = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::LabelHtml.Forms.Plugin.Resource.Styleable.Toolbar_popupTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -5178,6 +5417,18 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Animation.abc_slide_out_top = global::UNA.MobileApplication.Droid.Resource.Animation.abc_slide_out_top;
 			global::Plugin.SharedTransitions.Resource.Animation.abc_tooltip_enter = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Plugin.SharedTransitions.Resource.Animation.abc_tooltip_exit = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Plugin.SharedTransitions.Resource.Animation.design_bottom_sheet_slide_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Plugin.SharedTransitions.Resource.Animation.design_bottom_sheet_slide_out = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Plugin.SharedTransitions.Resource.Animation.design_snackbar_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_snackbar_in;
@@ -5198,6 +5449,13 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Animation.fade_out = global::UNA.MobileApplication.Droid.Resource.Animation.fade_out;
 			global::Plugin.SharedTransitions.Resource.Animation.flip_in = global::UNA.MobileApplication.Droid.Resource.Animation.flip_in;
 			global::Plugin.SharedTransitions.Resource.Animation.flip_out = global::UNA.MobileApplication.Droid.Resource.Animation.flip_out;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_close_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_close_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_close_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_close_exit;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_fade_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fade_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_fade_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fade_exit;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_fast_out_extra_slow_in = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fast_out_extra_slow_in;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_open_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_open_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_open_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_open_exit;
 			global::Plugin.SharedTransitions.Resource.Animator.design_appbar_state_list_animator = global::UNA.MobileApplication.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Plugin.SharedTransitions.Resource.Animator.design_fab_hide_motion_spec = global::UNA.MobileApplication.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Plugin.SharedTransitions.Resource.Animator.design_fab_show_motion_spec = global::UNA.MobileApplication.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -5289,6 +5547,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarNeutralButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarPositiveButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonCompat;
 			global::Plugin.SharedTransitions.Resource.Attribute.buttonGravity = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonGravity;
 			global::Plugin.SharedTransitions.Resource.Attribute.buttonIconDimen = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonIconDimen;
 			global::Plugin.SharedTransitions.Resource.Attribute.buttonPanelSideLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -5382,7 +5641,15 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Attribute.dividerHorizontal = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerHorizontal;
 			global::Plugin.SharedTransitions.Resource.Attribute.dividerPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerPadding;
 			global::Plugin.SharedTransitions.Resource.Attribute.dividerVertical = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerVertical;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableEndCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableRightCompat;
 			global::Plugin.SharedTransitions.Resource.Attribute.drawableSize = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableStartCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableTint = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTopCompat;
 			global::Plugin.SharedTransitions.Resource.Attribute.drawerArrowStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Plugin.SharedTransitions.Resource.Attribute.dropdownListPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Plugin.SharedTransitions.Resource.Attribute.dropDownListViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -5489,6 +5756,8 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Attribute.lineHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.lineHeight;
 			global::Plugin.SharedTransitions.Resource.Attribute.lineSpacing = global::UNA.MobileApplication.Droid.Resource.Attribute.lineSpacing;
 			global::Plugin.SharedTransitions.Resource.Attribute.listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Plugin.SharedTransitions.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Plugin.SharedTransitions.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Plugin.SharedTransitions.Resource.Attribute.listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Plugin.SharedTransitions.Resource.Attribute.listItemLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listItemLayout;
 			global::Plugin.SharedTransitions.Resource.Attribute.listLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listLayout;
@@ -5497,8 +5766,10 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Plugin.SharedTransitions.Resource.Attribute.logo = global::UNA.MobileApplication.Droid.Resource.Attribute.logo;
 			global::Plugin.SharedTransitions.Resource.Attribute.logoDescription = global::UNA.MobileApplication.Droid.Resource.Attribute.logoDescription;
 			global::Plugin.SharedTransitions.Resource.Attribute.materialButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.materialButtonStyle;
@@ -5540,6 +5811,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Attribute.ratingBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyle;
 			global::Plugin.SharedTransitions.Resource.Attribute.ratingBarStyleIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Plugin.SharedTransitions.Resource.Attribute.ratingBarStyleSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Plugin.SharedTransitions.Resource.Attribute.recyclerViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Plugin.SharedTransitions.Resource.Attribute.reverseLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.reverseLayout;
 			global::Plugin.SharedTransitions.Resource.Attribute.rippleColor = global::UNA.MobileApplication.Droid.Resource.Attribute.rippleColor;
 			global::Plugin.SharedTransitions.Resource.Attribute.scrimAnimationDuration = global::UNA.MobileApplication.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -5640,6 +5912,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Attribute.textColorSearchUrl = global::UNA.MobileApplication.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Plugin.SharedTransitions.Resource.Attribute.textEndPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textEndPadding;
 			global::Plugin.SharedTransitions.Resource.Attribute.textInputStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.textInputStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.textLocale = global::UNA.MobileApplication.Droid.Resource.Attribute.textLocale;
 			global::Plugin.SharedTransitions.Resource.Attribute.textStartPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textStartPadding;
 			global::Plugin.SharedTransitions.Resource.Attribute.theme = global::UNA.MobileApplication.Droid.Resource.Attribute.theme;
 			global::Plugin.SharedTransitions.Resource.Attribute.thickness = global::UNA.MobileApplication.Droid.Resource.Attribute.thickness;
@@ -5869,6 +6142,9 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Plugin.SharedTransitions.Resource.Dimension.abc_edit_text_inset_top_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Plugin.SharedTransitions.Resource.Dimension.abc_floating_window_z = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_height_large_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_height_small_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_padding_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Plugin.SharedTransitions.Resource.Dimension.abc_panel_menu_list_width = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Plugin.SharedTransitions.Resource.Dimension.abc_progress_bar_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -6046,11 +6322,13 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_action_bar_item_background_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_borderless_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_colored_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_default_mtrl_shape = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -6128,6 +6406,14 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Drawable.abc_vector_test = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_vector_test;
 			global::Plugin.SharedTransitions.Resource.Drawable.avd_hide_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_hide_password;
 			global::Plugin.SharedTransitions.Resource.Drawable.avd_show_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_show_password;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_checked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_off_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_on_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Plugin.SharedTransitions.Resource.Drawable.design_bottom_navigation_item_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Plugin.SharedTransitions.Resource.Drawable.design_fab_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_fab_background;
 			global::Plugin.SharedTransitions.Resource.Drawable.design_ic_visibility = global::UNA.MobileApplication.Droid.Resource.Drawable.design_ic_visibility;
@@ -6154,6 +6440,39 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Drawable.notify_panel_notification_icon_bg = global::UNA.MobileApplication.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Plugin.SharedTransitions.Resource.Drawable.tooltip_frame_dark = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Plugin.SharedTransitions.Resource.Drawable.tooltip_frame_light = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_action_clickable_span = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_0 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_1 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_10 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_11 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_12 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_13 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_14 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_15 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_16 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_17 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_18 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_19 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_2 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_20 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_21 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_22 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_23 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_24 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_25 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_26 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_27 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_28 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_29 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_3 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_30 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_31 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_4 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_5 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_6 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_7 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_8 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_9 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Plugin.SharedTransitions.Resource.Id.action0 = global::UNA.MobileApplication.Droid.Resource.Id.action0;
 			global::Plugin.SharedTransitions.Resource.Id.actions = global::UNA.MobileApplication.Droid.Resource.Id.actions;
 			global::Plugin.SharedTransitions.Resource.Id.action_bar = global::UNA.MobileApplication.Droid.Resource.Id.action_bar;
@@ -6197,6 +6516,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.center_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.center_horizontal;
 			global::Plugin.SharedTransitions.Resource.Id.center_vertical = global::UNA.MobileApplication.Droid.Resource.Id.center_vertical;
 			global::Plugin.SharedTransitions.Resource.Id.checkbox = global::UNA.MobileApplication.Droid.Resource.Id.checkbox;
+			global::Plugin.SharedTransitions.Resource.Id.@checked = global::UNA.MobileApplication.Droid.Resource.Id.@checked;
 			global::Plugin.SharedTransitions.Resource.Id.chronometer = global::UNA.MobileApplication.Droid.Resource.Id.chronometer;
 			global::Plugin.SharedTransitions.Resource.Id.clip_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.clip_horizontal;
 			global::Plugin.SharedTransitions.Resource.Id.clip_vertical = global::UNA.MobileApplication.Droid.Resource.Id.clip_vertical;
@@ -6215,6 +6535,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.design_menu_item_action_area_stub = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Plugin.SharedTransitions.Resource.Id.design_menu_item_text = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_text;
 			global::Plugin.SharedTransitions.Resource.Id.design_navigation_view = global::UNA.MobileApplication.Droid.Resource.Id.design_navigation_view;
+			global::Plugin.SharedTransitions.Resource.Id.dialog_button = global::UNA.MobileApplication.Droid.Resource.Id.dialog_button;
 			global::Plugin.SharedTransitions.Resource.Id.disableHome = global::UNA.MobileApplication.Droid.Resource.Id.disableHome;
 			global::Plugin.SharedTransitions.Resource.Id.edit_query = global::UNA.MobileApplication.Droid.Resource.Id.edit_query;
 			global::Plugin.SharedTransitions.Resource.Id.end = global::UNA.MobileApplication.Droid.Resource.Id.end;
@@ -6230,10 +6551,11 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.fill_vertical = global::UNA.MobileApplication.Droid.Resource.Id.fill_vertical;
 			global::Plugin.SharedTransitions.Resource.Id.@fixed = global::UNA.MobileApplication.Droid.Resource.Id.@fixed;
 			global::Plugin.SharedTransitions.Resource.Id.flyoutcontent_appbar = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_appbar;
-			global::Plugin.SharedTransitions.Resource.Id.flyoutcontent_recycler = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Plugin.SharedTransitions.Resource.Id.forever = global::UNA.MobileApplication.Droid.Resource.Id.forever;
+			global::Plugin.SharedTransitions.Resource.Id.fragment_container_view_tag = global::UNA.MobileApplication.Droid.Resource.Id.fragment_container_view_tag;
 			global::Plugin.SharedTransitions.Resource.Id.FUNCTION = global::UNA.MobileApplication.Droid.Resource.Id.FUNCTION;
 			global::Plugin.SharedTransitions.Resource.Id.ghost_view = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view;
+			global::Plugin.SharedTransitions.Resource.Id.ghost_view_holder = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view_holder;
 			global::Plugin.SharedTransitions.Resource.Id.group_divider = global::UNA.MobileApplication.Droid.Resource.Id.group_divider;
 			global::Plugin.SharedTransitions.Resource.Id.home = global::UNA.MobileApplication.Droid.Resource.Id.home;
 			global::Plugin.SharedTransitions.Resource.Id.homeAsUp = global::UNA.MobileApplication.Droid.Resource.Id.homeAsUp;
@@ -6271,6 +6593,8 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.notification_background = global::UNA.MobileApplication.Droid.Resource.Id.notification_background;
 			global::Plugin.SharedTransitions.Resource.Id.notification_main_column = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column;
 			global::Plugin.SharedTransitions.Resource.Id.notification_main_column_container = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column_container;
+			global::Plugin.SharedTransitions.Resource.Id.off = global::UNA.MobileApplication.Droid.Resource.Id.off;
+			global::Plugin.SharedTransitions.Resource.Id.on = global::UNA.MobileApplication.Droid.Resource.Id.on;
 			global::Plugin.SharedTransitions.Resource.Id.outline = global::UNA.MobileApplication.Droid.Resource.Id.outline;
 			global::Plugin.SharedTransitions.Resource.Id.parallax = global::UNA.MobileApplication.Droid.Resource.Id.parallax;
 			global::Plugin.SharedTransitions.Resource.Id.parentPanel = global::UNA.MobileApplication.Droid.Resource.Id.parentPanel;
@@ -6283,6 +6607,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.right_icon = global::UNA.MobileApplication.Droid.Resource.Id.right_icon;
 			global::Plugin.SharedTransitions.Resource.Id.right_side = global::UNA.MobileApplication.Droid.Resource.Id.right_side;
 			global::Plugin.SharedTransitions.Resource.Id.save_non_transition_alpha = global::UNA.MobileApplication.Droid.Resource.Id.save_non_transition_alpha;
+			global::Plugin.SharedTransitions.Resource.Id.save_overlay_view = global::UNA.MobileApplication.Droid.Resource.Id.save_overlay_view;
 			global::Plugin.SharedTransitions.Resource.Id.screen = global::UNA.MobileApplication.Droid.Resource.Id.screen;
 			global::Plugin.SharedTransitions.Resource.Id.scroll = global::UNA.MobileApplication.Droid.Resource.Id.scroll;
 			global::Plugin.SharedTransitions.Resource.Id.scrollable = global::UNA.MobileApplication.Droid.Resource.Id.scrollable;
@@ -6308,6 +6633,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.showCustom = global::UNA.MobileApplication.Droid.Resource.Id.showCustom;
 			global::Plugin.SharedTransitions.Resource.Id.showHome = global::UNA.MobileApplication.Droid.Resource.Id.showHome;
 			global::Plugin.SharedTransitions.Resource.Id.showTitle = global::UNA.MobileApplication.Droid.Resource.Id.showTitle;
+			global::Plugin.SharedTransitions.Resource.Id.sliding_tabs = global::UNA.MobileApplication.Droid.Resource.Id.sliding_tabs;
 			global::Plugin.SharedTransitions.Resource.Id.smallLabel = global::UNA.MobileApplication.Droid.Resource.Id.smallLabel;
 			global::Plugin.SharedTransitions.Resource.Id.snackbar_action = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_action;
 			global::Plugin.SharedTransitions.Resource.Id.snackbar_text = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_text;
@@ -6325,6 +6651,11 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.submit_area = global::UNA.MobileApplication.Droid.Resource.Id.submit_area;
 			global::Plugin.SharedTransitions.Resource.Id.SYM = global::UNA.MobileApplication.Droid.Resource.Id.SYM;
 			global::Plugin.SharedTransitions.Resource.Id.tabMode = global::UNA.MobileApplication.Droid.Resource.Id.tabMode;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_actions = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_actions;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_clickable_spans = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_heading = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_heading;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_pane_title = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Plugin.SharedTransitions.Resource.Id.tag_screen_reader_focusable = global::UNA.MobileApplication.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Plugin.SharedTransitions.Resource.Id.tag_transition_group = global::UNA.MobileApplication.Droid.Resource.Id.tag_transition_group;
 			global::Plugin.SharedTransitions.Resource.Id.tag_unhandled_key_event_manager = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Plugin.SharedTransitions.Resource.Id.tag_unhandled_key_listeners = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -6341,6 +6672,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.title = global::UNA.MobileApplication.Droid.Resource.Id.title;
 			global::Plugin.SharedTransitions.Resource.Id.titleDividerNoCustom = global::UNA.MobileApplication.Droid.Resource.Id.titleDividerNoCustom;
 			global::Plugin.SharedTransitions.Resource.Id.title_template = global::UNA.MobileApplication.Droid.Resource.Id.title_template;
+			global::Plugin.SharedTransitions.Resource.Id.toolbar = global::UNA.MobileApplication.Droid.Resource.Id.toolbar;
 			global::Plugin.SharedTransitions.Resource.Id.top = global::UNA.MobileApplication.Droid.Resource.Id.top;
 			global::Plugin.SharedTransitions.Resource.Id.topPanel = global::UNA.MobileApplication.Droid.Resource.Id.topPanel;
 			global::Plugin.SharedTransitions.Resource.Id.touch_outside = global::UNA.MobileApplication.Droid.Resource.Id.touch_outside;
@@ -6349,12 +6681,14 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Id.transition_position = global::UNA.MobileApplication.Droid.Resource.Id.transition_position;
 			global::Plugin.SharedTransitions.Resource.Id.transition_scene_layoutid_cache = global::UNA.MobileApplication.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Plugin.SharedTransitions.Resource.Id.transition_transform = global::UNA.MobileApplication.Droid.Resource.Id.transition_transform;
+			global::Plugin.SharedTransitions.Resource.Id.@unchecked = global::UNA.MobileApplication.Droid.Resource.Id.@unchecked;
 			global::Plugin.SharedTransitions.Resource.Id.uniform = global::UNA.MobileApplication.Droid.Resource.Id.uniform;
 			global::Plugin.SharedTransitions.Resource.Id.unlabeled = global::UNA.MobileApplication.Droid.Resource.Id.unlabeled;
 			global::Plugin.SharedTransitions.Resource.Id.up = global::UNA.MobileApplication.Droid.Resource.Id.up;
 			global::Plugin.SharedTransitions.Resource.Id.useLogo = global::UNA.MobileApplication.Droid.Resource.Id.useLogo;
 			global::Plugin.SharedTransitions.Resource.Id.view_offset_helper = global::UNA.MobileApplication.Droid.Resource.Id.view_offset_helper;
 			global::Plugin.SharedTransitions.Resource.Id.visible = global::UNA.MobileApplication.Droid.Resource.Id.visible;
+			global::Plugin.SharedTransitions.Resource.Id.visible_removing_fragment_view_tag = global::UNA.MobileApplication.Droid.Resource.Id.visible_removing_fragment_view_tag;
 			global::Plugin.SharedTransitions.Resource.Id.withText = global::UNA.MobileApplication.Droid.Resource.Id.withText;
 			global::Plugin.SharedTransitions.Resource.Id.wrap_content = global::UNA.MobileApplication.Droid.Resource.Id.wrap_content;
 			global::Plugin.SharedTransitions.Resource.Integer.abc_config_activityDefaultDur = global::UNA.MobileApplication.Droid.Resource.Integer.abc_config_activityDefaultDur;
@@ -6372,6 +6706,13 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::UNA.MobileApplication.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Plugin.SharedTransitions.Resource.Integer.show_password_duration = global::UNA.MobileApplication.Droid.Resource.Integer.show_password_duration;
 			global::Plugin.SharedTransitions.Resource.Integer.status_bar_notification_info_maxnum = global::UNA.MobileApplication.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Plugin.SharedTransitions.Resource.Interpolator.mtrl_fast_out_linear_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Plugin.SharedTransitions.Resource.Interpolator.mtrl_fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Plugin.SharedTransitions.Resource.Interpolator.mtrl_linear = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_linear;
@@ -6407,6 +6748,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Layout.BottomTabLayout = global::UNA.MobileApplication.Droid.Resource.Layout.BottomTabLayout;
 			global::Plugin.SharedTransitions.Resource.Layout.browser_actions_context_menu_page = global::UNA.MobileApplication.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::Plugin.SharedTransitions.Resource.Layout.browser_actions_context_menu_row = global::UNA.MobileApplication.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Plugin.SharedTransitions.Resource.Layout.custom_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.custom_dialog;
 			global::Plugin.SharedTransitions.Resource.Layout.design_bottom_navigation_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Plugin.SharedTransitions.Resource.Layout.design_bottom_sheet_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Plugin.SharedTransitions.Resource.Layout.design_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.design_layout_snackbar;
@@ -6421,6 +6763,8 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_menu = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu;
 			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_menu_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Plugin.SharedTransitions.Resource.Layout.design_text_input_password_icon = global::UNA.MobileApplication.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Plugin.SharedTransitions.Resource.Layout.FallbackTabbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::Plugin.SharedTransitions.Resource.Layout.FallbackToolbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Plugin.SharedTransitions.Resource.Layout.FlyoutContent = global::UNA.MobileApplication.Droid.Resource.Layout.FlyoutContent;
 			global::Plugin.SharedTransitions.Resource.Layout.mtrl_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Plugin.SharedTransitions.Resource.Layout.mtrl_layout_snackbar_include = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -6445,6 +6789,8 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Layout.select_dialog_singlechoice_material = global::UNA.MobileApplication.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::Plugin.SharedTransitions.Resource.Layout.ShellContent = global::UNA.MobileApplication.Droid.Resource.Layout.ShellContent;
 			global::Plugin.SharedTransitions.Resource.Layout.support_simple_spinner_dropdown_item = global::UNA.MobileApplication.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Plugin.SharedTransitions.Resource.Layout.Tabbar = global::UNA.MobileApplication.Droid.Resource.Layout.Tabbar;
+			global::Plugin.SharedTransitions.Resource.Layout.Toolbar = global::UNA.MobileApplication.Droid.Resource.Layout.Toolbar;
 			global::Plugin.SharedTransitions.Resource.String.abc_action_bar_home_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_home_description;
 			global::Plugin.SharedTransitions.Resource.String.abc_action_bar_up_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_up_description;
 			global::Plugin.SharedTransitions.Resource.String.abc_action_menu_overflow_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -6674,6 +7020,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Spinner = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -6803,6 +7150,8 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dark = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Light = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -6935,6 +7284,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -7096,11 +7446,21 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableTint = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_lineHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarDivider = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -7174,14 +7534,18 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_panelBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -7330,6 +7694,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Styleable.ColorStateListItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton;
 			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_android_button = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_buttonCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_buttonTint = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_buttonTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout;
@@ -7396,6 +7761,13 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::Plugin.SharedTransitions.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::Plugin.SharedTransitions.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment;
+			global::Plugin.SharedTransitions.Resource.Styleable.FragmentContainerView = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView;
+			global::Plugin.SharedTransitions.Resource.Styleable.FragmentContainerView_android_name = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView_android_name;
+			global::Plugin.SharedTransitions.Resource.Styleable.FragmentContainerView_android_tag = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView_android_tag;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment_android_id = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_id;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment_android_name = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_name;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment_android_tag = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_tag;
 			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColor;
 			global::Plugin.SharedTransitions.Resource.Styleable.GradientColorItem = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColorItem;
 			global::Plugin.SharedTransitions.Resource.Styleable.GradientColorItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColorItem_android_color;
@@ -7547,6 +7919,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Plugin.SharedTransitions.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_android_clipToPadding = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_android_descendantFocusability = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_android_orientation = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_fastScrollEnabled = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -7656,11 +8029,14 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textColor = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textColorLink = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textFontWeight = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textSize = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_typeface = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_android_hint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -7709,6 +8085,7 @@ namespace UNA.MobileApplication.Droid
 			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_logo = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logo;
 			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_logoDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_maxButtonHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_menu = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_menu;
 			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_navigationContentDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_navigationIcon = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_popupTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -8547,7 +8924,6 @@ namespace UNA.MobileApplication.Droid
 			global::Prism.Resource.Id.fill_vertical = global::UNA.MobileApplication.Droid.Resource.Id.fill_vertical;
 			global::Prism.Resource.Id.@fixed = global::UNA.MobileApplication.Droid.Resource.Id.@fixed;
 			global::Prism.Resource.Id.flyoutcontent_appbar = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_appbar;
-			global::Prism.Resource.Id.flyoutcontent_recycler = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Prism.Resource.Id.forever = global::UNA.MobileApplication.Droid.Resource.Id.forever;
 			global::Prism.Resource.Id.FUNCTION = global::UNA.MobileApplication.Droid.Resource.Id.FUNCTION;
 			global::Prism.Resource.Id.ghost_view = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view;
@@ -9751,6 +10127,39 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::UNA.MobileApplication.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::UNA.MobileApplication.Droid.Resource.Drawable.notification_tile_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::UNA.MobileApplication.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.accessibility_action_clickable_span = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_0 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_1 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_10 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_11 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_12 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_13 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_14 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_15 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_16 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_17 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_18 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_19 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_2 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_20 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_21 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_22 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_23 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_24 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_25 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_26 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_27 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_28 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_29 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_3 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_30 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_31 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_4 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_5 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_6 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_7 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_8 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_9 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Essentials.Resource.Id.actions = global::UNA.MobileApplication.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.action_container = global::UNA.MobileApplication.Droid.Resource.Id.action_container;
 			global::Xamarin.Essentials.Resource.Id.action_divider = global::UNA.MobileApplication.Droid.Resource.Id.action_divider;
@@ -9771,6 +10180,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Essentials.Resource.Id.chronometer = global::UNA.MobileApplication.Droid.Resource.Id.chronometer;
 			global::Xamarin.Essentials.Resource.Id.clip_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.clip_horizontal;
 			global::Xamarin.Essentials.Resource.Id.clip_vertical = global::UNA.MobileApplication.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Essentials.Resource.Id.dialog_button = global::UNA.MobileApplication.Droid.Resource.Id.dialog_button;
 			global::Xamarin.Essentials.Resource.Id.end = global::UNA.MobileApplication.Droid.Resource.Id.end;
 			global::Xamarin.Essentials.Resource.Id.fill = global::UNA.MobileApplication.Droid.Resource.Id.fill;
 			global::Xamarin.Essentials.Resource.Id.fill_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.fill_horizontal;
@@ -9792,6 +10202,11 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Essentials.Resource.Id.right_icon = global::UNA.MobileApplication.Droid.Resource.Id.right_icon;
 			global::Xamarin.Essentials.Resource.Id.right_side = global::UNA.MobileApplication.Droid.Resource.Id.right_side;
 			global::Xamarin.Essentials.Resource.Id.start = global::UNA.MobileApplication.Droid.Resource.Id.start;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_actions = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_actions;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_clickable_spans = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_heading = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_heading;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_pane_title = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Xamarin.Essentials.Resource.Id.tag_screen_reader_focusable = global::UNA.MobileApplication.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Essentials.Resource.Id.tag_transition_group = global::UNA.MobileApplication.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_event_manager = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_listeners = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -9803,6 +10218,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::UNA.MobileApplication.Droid.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::UNA.MobileApplication.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::UNA.MobileApplication.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Xamarin.Essentials.Resource.Layout.custom_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Essentials.Resource.Layout.notification_action = global::UNA.MobileApplication.Droid.Resource.Layout.notification_action;
 			global::Xamarin.Essentials.Resource.Layout.notification_action_tombstone = global::UNA.MobileApplication.Droid.Resource.Layout.notification_action_tombstone;
 			global::Xamarin.Essentials.Resource.Layout.notification_template_custom_big = global::UNA.MobileApplication.Droid.Resource.Layout.notification_template_custom_big;
@@ -9880,6 +10296,18 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_top = global::UNA.MobileApplication.Droid.Resource.Animation.abc_slide_out_top;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_tooltip_enter = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_tooltip_exit = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_snackbar_in;
@@ -9888,6 +10316,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::UNA.MobileApplication.Droid.Resource.Animation.EnterFromRight;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::UNA.MobileApplication.Droid.Resource.Animation.ExitToLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::UNA.MobileApplication.Droid.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_close_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_close_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_close_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_close_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_fade_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fade_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_fade_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fade_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_fast_out_extra_slow_in = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fast_out_extra_slow_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_open_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_open_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_open_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_open_exit;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::UNA.MobileApplication.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_hide_motion_spec = global::UNA.MobileApplication.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_show_motion_spec = global::UNA.MobileApplication.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -9979,6 +10414,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonGravity = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonIconDimen = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonIconDimen;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonPanelSideLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -10073,7 +10509,15 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerHorizontal = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerHorizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableEndCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableRightCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableStartCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTint = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTopCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -10180,6 +10624,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.lineHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.lineHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.lineSpacing = global::UNA.MobileApplication.Droid.Resource.Attribute.lineSpacing;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listItemLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listItemLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listLayout;
@@ -10188,8 +10634,10 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logo = global::UNA.MobileApplication.Droid.Resource.Attribute.logo;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logoDescription = global::UNA.MobileApplication.Droid.Resource.Attribute.logoDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.materialButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.materialButtonStyle;
@@ -10231,6 +10679,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.recyclerViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.reverseLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.reverseLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.rippleColor = global::UNA.MobileApplication.Droid.Resource.Attribute.rippleColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::UNA.MobileApplication.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -10332,6 +10781,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorSearchUrl = global::UNA.MobileApplication.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textEndPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textEndPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textInputStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.textInputStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textLocale = global::UNA.MobileApplication.Droid.Resource.Attribute.textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textStartPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textStartPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.theme = global::UNA.MobileApplication.Droid.Resource.Attribute.theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thickness = global::UNA.MobileApplication.Droid.Resource.Attribute.thickness;
@@ -10388,7 +10838,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_color_highlight_material = global::UNA.MobileApplication.Droid.Resource.Color.abc_color_highlight_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.abc_hint_foreground_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_light = global::UNA.MobileApplication.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_input_method_navigation_guard = global::UNA.MobileApplication.Droid.Resource.Color.abc_input_method_navigation_guard;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::UNA.MobileApplication.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.abc_primary_text_material_dark;
@@ -10407,6 +10856,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_switch_track = global::UNA.MobileApplication.Droid.Resource.Color.abc_tint_switch_track;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.accent_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_light = global::UNA.MobileApplication.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.androidx_core_ripple_material_light = global::UNA.MobileApplication.Droid.Resource.Color.androidx_core_ripple_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.androidx_core_secondary_text_default_material_light = global::UNA.MobileApplication.Droid.Resource.Color.androidx_core_secondary_text_default_material_light;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.background_floating_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_light = global::UNA.MobileApplication.Droid.Resource.Color.background_floating_material_light;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.background_material_dark;
@@ -10435,7 +10886,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_inner_color = global::UNA.MobileApplication.Droid.Resource.Color.design_fab_stroke_top_inner_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_outer_color = global::UNA.MobileApplication.Droid.Resource.Color.design_fab_stroke_top_outer_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.design_snackbar_background_color = global::UNA.MobileApplication.Droid.Resource.Color.design_snackbar_background_color;
-			global::Xamarin.Forms.Platform.Android.Resource.Color.design_tint_password_toggle = global::UNA.MobileApplication.Droid.Resource.Color.design_tint_password_toggle;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.dim_foreground_disabled_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_light = global::UNA.MobileApplication.Droid.Resource.Color.dim_foreground_disabled_material_light;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.dim_foreground_material_dark;
@@ -10460,7 +10910,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_900 = global::UNA.MobileApplication.Droid.Resource.Color.material_grey_900;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_bottom_nav_item_tint = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
-			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_btn_bg_color_disabled = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_btn_bg_color_selector = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_bg_color_selector;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_btn_ripple_color = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_ripple_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_btn_stroke_color_selector = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
@@ -10557,6 +11006,9 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_floating_window_z = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_large_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_small_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_panel_menu_list_width = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -10692,11 +11144,9 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_navigation_item_icon_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_snackbar_margin = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_snackbar_margin;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_box_padding_end = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
@@ -10716,10 +11166,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_subtext_size = global::UNA.MobileApplication.Droid.Resource.Dimension.notification_subtext_size;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad = global::UNA.MobileApplication.Droid.Resource.Dimension.notification_top_pad;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad_large_text = global::UNA.MobileApplication.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.subtitle_corner_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_corner_radius;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.subtitle_outline_width = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_outline_width;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.subtitle_shadow_offset = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_shadow_offset;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.subtitle_shadow_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_shadow_radius;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_corner_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.tooltip_corner_radius;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_horizontal_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.tooltip_horizontal_padding;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_margin = global::UNA.MobileApplication.Droid.Resource.Dimension.tooltip_margin;
@@ -10732,11 +11178,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_action_bar_item_background_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_borderless_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_colored_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -10814,6 +11262,14 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_checked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_off_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_on_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_bottom_navigation_item_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_fab_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_fab_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility = global::UNA.MobileApplication.Droid.Resource.Drawable.design_ic_visibility;
@@ -10823,7 +11279,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.ic_mtrl_chip_checked_black = global::UNA.MobileApplication.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.ic_mtrl_chip_checked_circle = global::UNA.MobileApplication.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.ic_mtrl_chip_close_circle = global::UNA.MobileApplication.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.mtrl_snackbar_background = global::UNA.MobileApplication.Droid.Resource.Drawable.mtrl_snackbar_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.mtrl_tabs_default_indicator = global::UNA.MobileApplication.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.navigation_empty_icon = global::UNA.MobileApplication.Droid.Resource.Drawable.navigation_empty_icon;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_action_background = global::UNA.MobileApplication.Droid.Resource.Drawable.notification_action_background;
@@ -10840,6 +11295,39 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::UNA.MobileApplication.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_action_clickable_span = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_0 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_1 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_10 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_11 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_12 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_13 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_14 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_15 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_16 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_17 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_18 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_19 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_2 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_20 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_21 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_22 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_23 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_24 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_25 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_26 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_27 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_28 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_29 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_3 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_30 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_31 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_4 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_5 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_6 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_7 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_8 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_9 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::UNA.MobileApplication.Droid.Resource.Id.action0;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::UNA.MobileApplication.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::UNA.MobileApplication.Droid.Resource.Id.action_bar;
@@ -10878,6 +11366,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.center_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.center_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.center_vertical = global::UNA.MobileApplication.Droid.Resource.Id.center_vertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.checkbox = global::UNA.MobileApplication.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@checked = global::UNA.MobileApplication.Droid.Resource.Id.@checked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.chronometer = global::UNA.MobileApplication.Droid.Resource.Id.chronometer;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.clip_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_vertical = global::UNA.MobileApplication.Droid.Resource.Id.clip_vertical;
@@ -10896,6 +11385,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area_stub = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_text = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_navigation_view = global::UNA.MobileApplication.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.dialog_button = global::UNA.MobileApplication.Droid.Resource.Id.dialog_button;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.disableHome = global::UNA.MobileApplication.Droid.Resource.Id.disableHome;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.edit_query = global::UNA.MobileApplication.Droid.Resource.Id.edit_query;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.end = global::UNA.MobileApplication.Droid.Resource.Id.end;
@@ -10911,10 +11401,11 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::UNA.MobileApplication.Droid.Resource.Id.fill_vertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::UNA.MobileApplication.Droid.Resource.Id.@fixed;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_appbar;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::UNA.MobileApplication.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fragment_container_view_tag = global::UNA.MobileApplication.Droid.Resource.Id.fragment_container_view_tag;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::UNA.MobileApplication.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view_holder = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view_holder;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.group_divider = global::UNA.MobileApplication.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::UNA.MobileApplication.Droid.Resource.Id.home;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.homeAsUp = global::UNA.MobileApplication.Droid.Resource.Id.homeAsUp;
@@ -10952,6 +11443,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_background = global::UNA.MobileApplication.Droid.Resource.Id.notification_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column_container = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.off = global::UNA.MobileApplication.Droid.Resource.Id.off;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.on = global::UNA.MobileApplication.Droid.Resource.Id.on;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.outline = global::UNA.MobileApplication.Droid.Resource.Id.outline;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.parallax = global::UNA.MobileApplication.Droid.Resource.Id.parallax;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.parentPanel = global::UNA.MobileApplication.Droid.Resource.Id.parentPanel;
@@ -10964,6 +11457,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.right_icon = global::UNA.MobileApplication.Droid.Resource.Id.right_icon;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.right_side = global::UNA.MobileApplication.Droid.Resource.Id.right_side;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.save_non_transition_alpha = global::UNA.MobileApplication.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_overlay_view = global::UNA.MobileApplication.Droid.Resource.Id.save_overlay_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::UNA.MobileApplication.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::UNA.MobileApplication.Droid.Resource.Id.scroll;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::UNA.MobileApplication.Droid.Resource.Id.scrollable;
@@ -10989,6 +11483,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::UNA.MobileApplication.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::UNA.MobileApplication.Droid.Resource.Id.showHome;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showTitle = global::UNA.MobileApplication.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.sliding_tabs = global::UNA.MobileApplication.Droid.Resource.Id.sliding_tabs;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.smallLabel = global::UNA.MobileApplication.Droid.Resource.Id.smallLabel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_action = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_action;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_text = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_text;
@@ -11006,6 +11501,11 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::UNA.MobileApplication.Droid.Resource.Id.submit_area;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::UNA.MobileApplication.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::UNA.MobileApplication.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_actions = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_clickable_spans = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_heading = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_heading;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_pane_title = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_screen_reader_focusable = global::UNA.MobileApplication.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::UNA.MobileApplication.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_event_manager = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_listeners = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -11017,11 +11517,11 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoButtons = global::UNA.MobileApplication.Droid.Resource.Id.textSpacerNoButtons;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoTitle = global::UNA.MobileApplication.Droid.Resource.Id.textSpacerNoTitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.textStart = global::UNA.MobileApplication.Droid.Resource.Id.textStart;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.text_input_password_toggle = global::UNA.MobileApplication.Droid.Resource.Id.text_input_password_toggle;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.time = global::UNA.MobileApplication.Droid.Resource.Id.time;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::UNA.MobileApplication.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::UNA.MobileApplication.Droid.Resource.Id.titleDividerNoCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.title_template = global::UNA.MobileApplication.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.toolbar = global::UNA.MobileApplication.Droid.Resource.Id.toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.top = global::UNA.MobileApplication.Droid.Resource.Id.top;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.topPanel = global::UNA.MobileApplication.Droid.Resource.Id.topPanel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.touch_outside = global::UNA.MobileApplication.Droid.Resource.Id.touch_outside;
@@ -11030,12 +11530,15 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_position = global::UNA.MobileApplication.Droid.Resource.Id.transition_position;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_scene_layoutid_cache = global::UNA.MobileApplication.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_transform = global::UNA.MobileApplication.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@unchecked = global::UNA.MobileApplication.Droid.Resource.Id.@unchecked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.uniform = global::UNA.MobileApplication.Droid.Resource.Id.uniform;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.unlabeled = global::UNA.MobileApplication.Droid.Resource.Id.unlabeled;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::UNA.MobileApplication.Droid.Resource.Id.up;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.useLogo = global::UNA.MobileApplication.Droid.Resource.Id.useLogo;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.view_offset_helper = global::UNA.MobileApplication.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.view_tree_saved_state_registry_owner = global::UNA.MobileApplication.Droid.Resource.Id.view_tree_saved_state_registry_owner;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.visible = global::UNA.MobileApplication.Droid.Resource.Id.visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.visible_removing_fragment_view_tag = global::UNA.MobileApplication.Droid.Resource.Id.visible_removing_fragment_view_tag;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.withText = global::UNA.MobileApplication.Droid.Resource.Id.withText;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.wrap_content = global::UNA.MobileApplication.Droid.Resource.Id.wrap_content;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityDefaultDur = global::UNA.MobileApplication.Droid.Resource.Integer.abc_config_activityDefaultDur;
@@ -11053,6 +11556,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::UNA.MobileApplication.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.show_password_duration = global::UNA.MobileApplication.Droid.Resource.Integer.show_password_duration;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.status_bar_notification_info_maxnum = global::UNA.MobileApplication.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_fast_out_linear_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_linear = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_linear;
@@ -11086,6 +11596,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::UNA.MobileApplication.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_tooltip = global::UNA.MobileApplication.Droid.Resource.Layout.abc_tooltip;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::UNA.MobileApplication.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.custom_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.design_layout_snackbar;
@@ -11099,7 +11610,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_subheader = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_item_subheader;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::UNA.MobileApplication.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackTabbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackToolbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::UNA.MobileApplication.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar_include = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -11124,6 +11636,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::UNA.MobileApplication.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::UNA.MobileApplication.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::UNA.MobileApplication.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.Tabbar = global::UNA.MobileApplication.Droid.Resource.Layout.Tabbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.Toolbar = global::UNA.MobileApplication.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -11355,6 +11869,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -11481,7 +11996,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_MaterialComponents_Overline = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_MaterialComponents_Tab = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
@@ -11489,6 +12003,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -11621,6 +12137,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -11782,11 +12299,21 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTint = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_lineHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -11860,14 +12387,18 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -12016,6 +12547,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_android_button = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTint = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout;
@@ -12029,9 +12561,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.DesignTheme;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle = global::UNA.MobileApplication.Droid.Resource.Styleable.DrawerArrowToggle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::UNA.MobileApplication.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::UNA.MobileApplication.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -12082,6 +12611,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Fragment = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FragmentContainerView = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FragmentContainerView_android_name = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView_android_name;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FragmentContainerView_android_tag = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView_android_tag;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Fragment_android_id = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Fragment_android_name = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_name;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Fragment_android_tag = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_tag;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColorItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColorItem_android_color;
@@ -12138,39 +12674,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialCardView = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialCardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialCardView_strokeColor = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialCardView_strokeColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialCardView_strokeWidth = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup = global::UNA.MobileApplication.Droid.Resource.Styleable.MenuGroup;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::UNA.MobileApplication.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_enabled = global::UNA.MobileApplication.Droid.Resource.Styleable.MenuGroup_android_enabled;
@@ -12235,6 +12738,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_clipToPadding = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_orientation = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -12346,11 +12850,14 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColor = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textFontWeight = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textSize = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_typeface = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_hint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -12399,6 +12906,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logo = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logo;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logoDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_menu = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationIcon = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_popupTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -12440,6 +12948,18 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_slide_out_top = global::UNA.MobileApplication.Droid.Resource.Animation.abc_slide_out_top;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_tooltip_enter = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_tooltip_exit = global::UNA.MobileApplication.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::UNA.MobileApplication.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_out = global::UNA.MobileApplication.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_in = global::UNA.MobileApplication.Droid.Resource.Animation.design_snackbar_in;
@@ -12448,6 +12968,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromRight = global::UNA.MobileApplication.Droid.Resource.Animation.EnterFromRight;
 			global::Xamarin.Forms.Platform.Resource.Animation.ExitToLeft = global::UNA.MobileApplication.Droid.Resource.Animation.ExitToLeft;
 			global::Xamarin.Forms.Platform.Resource.Animation.ExitToRight = global::UNA.MobileApplication.Droid.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.Platform.Resource.Animation.fragment_close_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_close_enter;
+			global::Xamarin.Forms.Platform.Resource.Animation.fragment_close_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_close_exit;
+			global::Xamarin.Forms.Platform.Resource.Animation.fragment_fade_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fade_enter;
+			global::Xamarin.Forms.Platform.Resource.Animation.fragment_fade_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fade_exit;
+			global::Xamarin.Forms.Platform.Resource.Animation.fragment_fast_out_extra_slow_in = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_fast_out_extra_slow_in;
+			global::Xamarin.Forms.Platform.Resource.Animation.fragment_open_enter = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_open_enter;
+			global::Xamarin.Forms.Platform.Resource.Animation.fragment_open_exit = global::UNA.MobileApplication.Droid.Resource.Animation.fragment_open_exit;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_appbar_state_list_animator = global::UNA.MobileApplication.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_hide_motion_spec = global::UNA.MobileApplication.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_show_motion_spec = global::UNA.MobileApplication.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -12539,6 +13066,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarNeutralButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarPositiveButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Resource.Attribute.buttonCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonGravity = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonGravity;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonIconDimen = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonIconDimen;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonPanelSideLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -12633,7 +13161,15 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerHorizontal = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerHorizontal;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerVertical = global::UNA.MobileApplication.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableEndCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableRightCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.drawableSize = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableStartCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTint = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTint;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTintMode;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Attribute.drawableTopCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.drawerArrowStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dropdownListPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dropDownListViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -12740,6 +13276,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.lineHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.lineHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.lineSpacing = global::UNA.MobileApplication.Droid.Resource.Attribute.lineSpacing;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listItemLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listItemLayout;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.listLayout;
@@ -12748,8 +13286,10 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Resource.Attribute.logo = global::UNA.MobileApplication.Droid.Resource.Attribute.logo;
 			global::Xamarin.Forms.Platform.Resource.Attribute.logoDescription = global::UNA.MobileApplication.Droid.Resource.Attribute.logoDescription;
 			global::Xamarin.Forms.Platform.Resource.Attribute.materialButtonStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.materialButtonStyle;
@@ -12791,6 +13331,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyleIndicator = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyleSmall = global::UNA.MobileApplication.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Resource.Attribute.recyclerViewStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.reverseLayout = global::UNA.MobileApplication.Droid.Resource.Attribute.reverseLayout;
 			global::Xamarin.Forms.Platform.Resource.Attribute.rippleColor = global::UNA.MobileApplication.Droid.Resource.Attribute.rippleColor;
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimAnimationDuration = global::UNA.MobileApplication.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -12892,6 +13433,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.textColorSearchUrl = global::UNA.MobileApplication.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textEndPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textEndPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textInputStyle = global::UNA.MobileApplication.Droid.Resource.Attribute.textInputStyle;
+			global::Xamarin.Forms.Platform.Resource.Attribute.textLocale = global::UNA.MobileApplication.Droid.Resource.Attribute.textLocale;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textStartPadding = global::UNA.MobileApplication.Droid.Resource.Attribute.textStartPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.theme = global::UNA.MobileApplication.Droid.Resource.Attribute.theme;
 			global::Xamarin.Forms.Platform.Resource.Attribute.thickness = global::UNA.MobileApplication.Droid.Resource.Attribute.thickness;
@@ -12948,7 +13490,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Color.abc_color_highlight_material = global::UNA.MobileApplication.Droid.Resource.Color.abc_color_highlight_material;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_hint_foreground_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.abc_hint_foreground_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_hint_foreground_material_light = global::UNA.MobileApplication.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_input_method_navigation_guard = global::UNA.MobileApplication.Droid.Resource.Color.abc_input_method_navigation_guard;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_disable_only_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_disable_only_material_light = global::UNA.MobileApplication.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.abc_primary_text_material_dark;
@@ -12967,6 +13508,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_switch_track = global::UNA.MobileApplication.Droid.Resource.Color.abc_tint_switch_track;
 			global::Xamarin.Forms.Platform.Resource.Color.accent_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.accent_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.accent_material_light = global::UNA.MobileApplication.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.Platform.Resource.Color.androidx_core_ripple_material_light = global::UNA.MobileApplication.Droid.Resource.Color.androidx_core_ripple_material_light;
+			global::Xamarin.Forms.Platform.Resource.Color.androidx_core_secondary_text_default_material_light = global::UNA.MobileApplication.Droid.Resource.Color.androidx_core_secondary_text_default_material_light;
 			global::Xamarin.Forms.Platform.Resource.Color.background_floating_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.background_floating_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.background_floating_material_light = global::UNA.MobileApplication.Droid.Resource.Color.background_floating_material_light;
 			global::Xamarin.Forms.Platform.Resource.Color.background_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.background_material_dark;
@@ -12995,7 +13538,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Color.design_fab_stroke_top_inner_color = global::UNA.MobileApplication.Droid.Resource.Color.design_fab_stroke_top_inner_color;
 			global::Xamarin.Forms.Platform.Resource.Color.design_fab_stroke_top_outer_color = global::UNA.MobileApplication.Droid.Resource.Color.design_fab_stroke_top_outer_color;
 			global::Xamarin.Forms.Platform.Resource.Color.design_snackbar_background_color = global::UNA.MobileApplication.Droid.Resource.Color.design_snackbar_background_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_tint_password_toggle = global::UNA.MobileApplication.Droid.Resource.Color.design_tint_password_toggle;
 			global::Xamarin.Forms.Platform.Resource.Color.dim_foreground_disabled_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.dim_foreground_disabled_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.dim_foreground_disabled_material_light = global::UNA.MobileApplication.Droid.Resource.Color.dim_foreground_disabled_material_light;
 			global::Xamarin.Forms.Platform.Resource.Color.dim_foreground_material_dark = global::UNA.MobileApplication.Droid.Resource.Color.dim_foreground_material_dark;
@@ -13020,7 +13562,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Color.material_grey_900 = global::UNA.MobileApplication.Droid.Resource.Color.material_grey_900;
 			global::Xamarin.Forms.Platform.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
 			global::Xamarin.Forms.Platform.Resource.Color.mtrl_bottom_nav_item_tint = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
-			global::Xamarin.Forms.Platform.Resource.Color.mtrl_btn_bg_color_disabled = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
 			global::Xamarin.Forms.Platform.Resource.Color.mtrl_btn_bg_color_selector = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_bg_color_selector;
 			global::Xamarin.Forms.Platform.Resource.Color.mtrl_btn_ripple_color = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_ripple_color;
 			global::Xamarin.Forms.Platform.Resource.Color.mtrl_btn_stroke_color_selector = global::UNA.MobileApplication.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
@@ -13117,6 +13658,9 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_top_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_floating_window_z = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_large_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_small_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_padding_horizontal_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_panel_menu_list_width = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_progress_bar_height_material = global::UNA.MobileApplication.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -13252,11 +13796,9 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_navigation_item_icon_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_snackbar_margin = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_snackbar_margin;
-			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
-			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_box_padding_end = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
@@ -13276,10 +13818,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.notification_subtext_size = global::UNA.MobileApplication.Droid.Resource.Dimension.notification_subtext_size;
 			global::Xamarin.Forms.Platform.Resource.Dimension.notification_top_pad = global::UNA.MobileApplication.Droid.Resource.Dimension.notification_top_pad;
 			global::Xamarin.Forms.Platform.Resource.Dimension.notification_top_pad_large_text = global::UNA.MobileApplication.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Xamarin.Forms.Platform.Resource.Dimension.subtitle_corner_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_corner_radius;
-			global::Xamarin.Forms.Platform.Resource.Dimension.subtitle_outline_width = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_outline_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.subtitle_shadow_offset = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_shadow_offset;
-			global::Xamarin.Forms.Platform.Resource.Dimension.subtitle_shadow_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.subtitle_shadow_radius;
 			global::Xamarin.Forms.Platform.Resource.Dimension.tooltip_corner_radius = global::UNA.MobileApplication.Droid.Resource.Dimension.tooltip_corner_radius;
 			global::Xamarin.Forms.Platform.Resource.Dimension.tooltip_horizontal_padding = global::UNA.MobileApplication.Droid.Resource.Dimension.tooltip_horizontal_padding;
 			global::Xamarin.Forms.Platform.Resource.Dimension.tooltip_margin = global::UNA.MobileApplication.Droid.Resource.Dimension.tooltip_margin;
@@ -13292,11 +13830,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_action_bar_item_background_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_borderless_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_colored_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_default_mtrl_shape = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_material = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_material_anim = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -13374,6 +13914,14 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_vector_test = global::UNA.MobileApplication.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Platform.Resource.Drawable.avd_hide_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Platform.Resource.Drawable.avd_show_password = global::UNA.MobileApplication.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_checked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_off_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_on_mtrl = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::UNA.MobileApplication.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_bottom_navigation_item_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_fab_background = global::UNA.MobileApplication.Droid.Resource.Drawable.design_fab_background;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_ic_visibility = global::UNA.MobileApplication.Droid.Resource.Drawable.design_ic_visibility;
@@ -13383,7 +13931,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.ic_mtrl_chip_checked_black = global::UNA.MobileApplication.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
 			global::Xamarin.Forms.Platform.Resource.Drawable.ic_mtrl_chip_checked_circle = global::UNA.MobileApplication.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
 			global::Xamarin.Forms.Platform.Resource.Drawable.ic_mtrl_chip_close_circle = global::UNA.MobileApplication.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
-			global::Xamarin.Forms.Platform.Resource.Drawable.mtrl_snackbar_background = global::UNA.MobileApplication.Droid.Resource.Drawable.mtrl_snackbar_background;
 			global::Xamarin.Forms.Platform.Resource.Drawable.mtrl_tabs_default_indicator = global::UNA.MobileApplication.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
 			global::Xamarin.Forms.Platform.Resource.Drawable.navigation_empty_icon = global::UNA.MobileApplication.Droid.Resource.Drawable.navigation_empty_icon;
 			global::Xamarin.Forms.Platform.Resource.Drawable.notification_action_background = global::UNA.MobileApplication.Droid.Resource.Drawable.notification_action_background;
@@ -13400,6 +13947,39 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.notify_panel_notification_icon_bg = global::UNA.MobileApplication.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Platform.Resource.Drawable.tooltip_frame_dark = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Platform.Resource.Drawable.tooltip_frame_light = global::UNA.MobileApplication.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_action_clickable_span = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_0 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_1 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_10 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_11 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_12 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_13 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_14 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_15 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_16 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_17 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_18 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_19 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_2 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_20 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_21 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_22 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_23 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_24 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_25 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_26 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_27 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_28 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_29 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_3 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_30 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_31 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_4 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_5 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_6 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_7 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_8 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_9 = global::UNA.MobileApplication.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Forms.Platform.Resource.Id.action0 = global::UNA.MobileApplication.Droid.Resource.Id.action0;
 			global::Xamarin.Forms.Platform.Resource.Id.actions = global::UNA.MobileApplication.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Resource.Id.action_bar = global::UNA.MobileApplication.Droid.Resource.Id.action_bar;
@@ -13438,6 +14018,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.center_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.center_horizontal;
 			global::Xamarin.Forms.Platform.Resource.Id.center_vertical = global::UNA.MobileApplication.Droid.Resource.Id.center_vertical;
 			global::Xamarin.Forms.Platform.Resource.Id.checkbox = global::UNA.MobileApplication.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Resource.Id.@checked = global::UNA.MobileApplication.Droid.Resource.Id.@checked;
 			global::Xamarin.Forms.Platform.Resource.Id.chronometer = global::UNA.MobileApplication.Droid.Resource.Id.chronometer;
 			global::Xamarin.Forms.Platform.Resource.Id.clip_horizontal = global::UNA.MobileApplication.Droid.Resource.Id.clip_horizontal;
 			global::Xamarin.Forms.Platform.Resource.Id.clip_vertical = global::UNA.MobileApplication.Droid.Resource.Id.clip_vertical;
@@ -13456,6 +14037,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.design_menu_item_action_area_stub = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Xamarin.Forms.Platform.Resource.Id.design_menu_item_text = global::UNA.MobileApplication.Droid.Resource.Id.design_menu_item_text;
 			global::Xamarin.Forms.Platform.Resource.Id.design_navigation_view = global::UNA.MobileApplication.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Resource.Id.dialog_button = global::UNA.MobileApplication.Droid.Resource.Id.dialog_button;
 			global::Xamarin.Forms.Platform.Resource.Id.disableHome = global::UNA.MobileApplication.Droid.Resource.Id.disableHome;
 			global::Xamarin.Forms.Platform.Resource.Id.edit_query = global::UNA.MobileApplication.Droid.Resource.Id.edit_query;
 			global::Xamarin.Forms.Platform.Resource.Id.end = global::UNA.MobileApplication.Droid.Resource.Id.end;
@@ -13471,10 +14053,11 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.fill_vertical = global::UNA.MobileApplication.Droid.Resource.Id.fill_vertical;
 			global::Xamarin.Forms.Platform.Resource.Id.@fixed = global::UNA.MobileApplication.Droid.Resource.Id.@fixed;
 			global::Xamarin.Forms.Platform.Resource.Id.flyoutcontent_appbar = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_appbar;
-			global::Xamarin.Forms.Platform.Resource.Id.flyoutcontent_recycler = global::UNA.MobileApplication.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Platform.Resource.Id.forever = global::UNA.MobileApplication.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.Platform.Resource.Id.fragment_container_view_tag = global::UNA.MobileApplication.Droid.Resource.Id.fragment_container_view_tag;
 			global::Xamarin.Forms.Platform.Resource.Id.FUNCTION = global::UNA.MobileApplication.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Platform.Resource.Id.ghost_view = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Resource.Id.ghost_view_holder = global::UNA.MobileApplication.Droid.Resource.Id.ghost_view_holder;
 			global::Xamarin.Forms.Platform.Resource.Id.group_divider = global::UNA.MobileApplication.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Platform.Resource.Id.home = global::UNA.MobileApplication.Droid.Resource.Id.home;
 			global::Xamarin.Forms.Platform.Resource.Id.homeAsUp = global::UNA.MobileApplication.Droid.Resource.Id.homeAsUp;
@@ -13512,6 +14095,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.notification_background = global::UNA.MobileApplication.Droid.Resource.Id.notification_background;
 			global::Xamarin.Forms.Platform.Resource.Id.notification_main_column = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column;
 			global::Xamarin.Forms.Platform.Resource.Id.notification_main_column_container = global::UNA.MobileApplication.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Resource.Id.off = global::UNA.MobileApplication.Droid.Resource.Id.off;
+			global::Xamarin.Forms.Platform.Resource.Id.on = global::UNA.MobileApplication.Droid.Resource.Id.on;
 			global::Xamarin.Forms.Platform.Resource.Id.outline = global::UNA.MobileApplication.Droid.Resource.Id.outline;
 			global::Xamarin.Forms.Platform.Resource.Id.parallax = global::UNA.MobileApplication.Droid.Resource.Id.parallax;
 			global::Xamarin.Forms.Platform.Resource.Id.parentPanel = global::UNA.MobileApplication.Droid.Resource.Id.parentPanel;
@@ -13524,6 +14109,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.right_icon = global::UNA.MobileApplication.Droid.Resource.Id.right_icon;
 			global::Xamarin.Forms.Platform.Resource.Id.right_side = global::UNA.MobileApplication.Droid.Resource.Id.right_side;
 			global::Xamarin.Forms.Platform.Resource.Id.save_non_transition_alpha = global::UNA.MobileApplication.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Resource.Id.save_overlay_view = global::UNA.MobileApplication.Droid.Resource.Id.save_overlay_view;
 			global::Xamarin.Forms.Platform.Resource.Id.screen = global::UNA.MobileApplication.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Platform.Resource.Id.scroll = global::UNA.MobileApplication.Droid.Resource.Id.scroll;
 			global::Xamarin.Forms.Platform.Resource.Id.scrollable = global::UNA.MobileApplication.Droid.Resource.Id.scrollable;
@@ -13549,6 +14135,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.showCustom = global::UNA.MobileApplication.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Resource.Id.showHome = global::UNA.MobileApplication.Droid.Resource.Id.showHome;
 			global::Xamarin.Forms.Platform.Resource.Id.showTitle = global::UNA.MobileApplication.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Resource.Id.sliding_tabs = global::UNA.MobileApplication.Droid.Resource.Id.sliding_tabs;
 			global::Xamarin.Forms.Platform.Resource.Id.smallLabel = global::UNA.MobileApplication.Droid.Resource.Id.smallLabel;
 			global::Xamarin.Forms.Platform.Resource.Id.snackbar_action = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_action;
 			global::Xamarin.Forms.Platform.Resource.Id.snackbar_text = global::UNA.MobileApplication.Droid.Resource.Id.snackbar_text;
@@ -13566,6 +14153,11 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.submit_area = global::UNA.MobileApplication.Droid.Resource.Id.submit_area;
 			global::Xamarin.Forms.Platform.Resource.Id.SYM = global::UNA.MobileApplication.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Resource.Id.tabMode = global::UNA.MobileApplication.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_actions = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_actions;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_clickable_spans = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_heading = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_heading;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_pane_title = global::UNA.MobileApplication.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_screen_reader_focusable = global::UNA.MobileApplication.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_transition_group = global::UNA.MobileApplication.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_unhandled_key_event_manager = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_unhandled_key_listeners = global::UNA.MobileApplication.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -13577,11 +14169,11 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.textSpacerNoButtons = global::UNA.MobileApplication.Droid.Resource.Id.textSpacerNoButtons;
 			global::Xamarin.Forms.Platform.Resource.Id.textSpacerNoTitle = global::UNA.MobileApplication.Droid.Resource.Id.textSpacerNoTitle;
 			global::Xamarin.Forms.Platform.Resource.Id.textStart = global::UNA.MobileApplication.Droid.Resource.Id.textStart;
-			global::Xamarin.Forms.Platform.Resource.Id.text_input_password_toggle = global::UNA.MobileApplication.Droid.Resource.Id.text_input_password_toggle;
 			global::Xamarin.Forms.Platform.Resource.Id.time = global::UNA.MobileApplication.Droid.Resource.Id.time;
 			global::Xamarin.Forms.Platform.Resource.Id.title = global::UNA.MobileApplication.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Platform.Resource.Id.titleDividerNoCustom = global::UNA.MobileApplication.Droid.Resource.Id.titleDividerNoCustom;
 			global::Xamarin.Forms.Platform.Resource.Id.title_template = global::UNA.MobileApplication.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Resource.Id.toolbar = global::UNA.MobileApplication.Droid.Resource.Id.toolbar;
 			global::Xamarin.Forms.Platform.Resource.Id.top = global::UNA.MobileApplication.Droid.Resource.Id.top;
 			global::Xamarin.Forms.Platform.Resource.Id.topPanel = global::UNA.MobileApplication.Droid.Resource.Id.topPanel;
 			global::Xamarin.Forms.Platform.Resource.Id.touch_outside = global::UNA.MobileApplication.Droid.Resource.Id.touch_outside;
@@ -13590,12 +14182,15 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.transition_position = global::UNA.MobileApplication.Droid.Resource.Id.transition_position;
 			global::Xamarin.Forms.Platform.Resource.Id.transition_scene_layoutid_cache = global::UNA.MobileApplication.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Xamarin.Forms.Platform.Resource.Id.transition_transform = global::UNA.MobileApplication.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Resource.Id.@unchecked = global::UNA.MobileApplication.Droid.Resource.Id.@unchecked;
 			global::Xamarin.Forms.Platform.Resource.Id.uniform = global::UNA.MobileApplication.Droid.Resource.Id.uniform;
 			global::Xamarin.Forms.Platform.Resource.Id.unlabeled = global::UNA.MobileApplication.Droid.Resource.Id.unlabeled;
 			global::Xamarin.Forms.Platform.Resource.Id.up = global::UNA.MobileApplication.Droid.Resource.Id.up;
 			global::Xamarin.Forms.Platform.Resource.Id.useLogo = global::UNA.MobileApplication.Droid.Resource.Id.useLogo;
 			global::Xamarin.Forms.Platform.Resource.Id.view_offset_helper = global::UNA.MobileApplication.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Resource.Id.view_tree_saved_state_registry_owner = global::UNA.MobileApplication.Droid.Resource.Id.view_tree_saved_state_registry_owner;
 			global::Xamarin.Forms.Platform.Resource.Id.visible = global::UNA.MobileApplication.Droid.Resource.Id.visible;
+			global::Xamarin.Forms.Platform.Resource.Id.visible_removing_fragment_view_tag = global::UNA.MobileApplication.Droid.Resource.Id.visible_removing_fragment_view_tag;
 			global::Xamarin.Forms.Platform.Resource.Id.withText = global::UNA.MobileApplication.Droid.Resource.Id.withText;
 			global::Xamarin.Forms.Platform.Resource.Id.wrap_content = global::UNA.MobileApplication.Droid.Resource.Id.wrap_content;
 			global::Xamarin.Forms.Platform.Resource.Integer.abc_config_activityDefaultDur = global::UNA.MobileApplication.Droid.Resource.Integer.abc_config_activityDefaultDur;
@@ -13613,6 +14208,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::UNA.MobileApplication.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Xamarin.Forms.Platform.Resource.Integer.show_password_duration = global::UNA.MobileApplication.Droid.Resource.Integer.show_password_duration;
 			global::Xamarin.Forms.Platform.Resource.Integer.status_bar_notification_info_maxnum = global::UNA.MobileApplication.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::UNA.MobileApplication.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_fast_out_linear_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_fast_out_slow_in = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_linear = global::UNA.MobileApplication.Droid.Resource.Interpolator.mtrl_linear;
@@ -13646,6 +14248,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_select_dialog_material = global::UNA.MobileApplication.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_tooltip = global::UNA.MobileApplication.Droid.Resource.Layout.abc_tooltip;
 			global::Xamarin.Forms.Platform.Resource.Layout.BottomTabLayout = global::UNA.MobileApplication.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Resource.Layout.custom_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_navigation_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_sheet_dialog = global::UNA.MobileApplication.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.design_layout_snackbar;
@@ -13659,7 +14262,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_item_subheader = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_item_subheader;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu_item = global::UNA.MobileApplication.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_text_input_password_icon = global::UNA.MobileApplication.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Resource.Layout.FallbackTabbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::Xamarin.Forms.Platform.Resource.Layout.FallbackToolbarDoNotUse = global::UNA.MobileApplication.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Xamarin.Forms.Platform.Resource.Layout.FlyoutContent = global::UNA.MobileApplication.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar_include = global::UNA.MobileApplication.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -13684,6 +14288,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_singlechoice_material = global::UNA.MobileApplication.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.ShellContent = global::UNA.MobileApplication.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.support_simple_spinner_dropdown_item = global::UNA.MobileApplication.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Resource.Layout.Tabbar = global::UNA.MobileApplication.Droid.Resource.Layout.Tabbar;
+			global::Xamarin.Forms.Platform.Resource.Layout.Toolbar = global::UNA.MobileApplication.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_menu_overflow_description = global::UNA.MobileApplication.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -13915,6 +14521,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -14041,7 +14648,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_MaterialComponents_Overline = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_MaterialComponents_Tab = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::UNA.MobileApplication.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
@@ -14049,6 +14655,8 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Light = global::UNA.MobileApplication.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -14181,6 +14789,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_TextView = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::UNA.MobileApplication.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -14342,11 +14951,21 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTint = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_lineHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_actionBarDivider = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -14420,14 +15039,18 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::UNA.MobileApplication.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -14576,6 +15199,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.ColorStateListItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_android_button = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonCompat = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTint = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTintMode = global::UNA.MobileApplication.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout;
@@ -14589,9 +15213,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DesignTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.DesignTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DesignTheme_bottomSheetStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle = global::UNA.MobileApplication.Droid.Resource.Styleable.DrawerArrowToggle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::UNA.MobileApplication.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::UNA.MobileApplication.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -14642,6 +15263,13 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::UNA.MobileApplication.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Resource.Styleable.Fragment = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment;
+			global::Xamarin.Forms.Platform.Resource.Styleable.FragmentContainerView = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView;
+			global::Xamarin.Forms.Platform.Resource.Styleable.FragmentContainerView_android_name = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView_android_name;
+			global::Xamarin.Forms.Platform.Resource.Styleable.FragmentContainerView_android_tag = global::UNA.MobileApplication.Droid.Resource.Styleable.FragmentContainerView_android_tag;
+			global::Xamarin.Forms.Platform.Resource.Styleable.Fragment_android_id = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_id;
+			global::Xamarin.Forms.Platform.Resource.Styleable.Fragment_android_name = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_name;
+			global::Xamarin.Forms.Platform.Resource.Styleable.Fragment_android_tag = global::UNA.MobileApplication.Droid.Resource.Styleable.Fragment_android_tag;
 			global::Xamarin.Forms.Platform.Resource.Styleable.GradientColor = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColor;
 			global::Xamarin.Forms.Platform.Resource.Styleable.GradientColorItem = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColorItem;
 			global::Xamarin.Forms.Platform.Resource.Styleable.GradientColorItem_android_color = global::UNA.MobileApplication.Droid.Resource.Styleable.GradientColorItem_android_color;
@@ -14698,39 +15326,6 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialCardView = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialCardView;
 			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialCardView_strokeColor = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialCardView_strokeColor;
 			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialCardView_strokeWidth = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup = global::UNA.MobileApplication.Droid.Resource.Styleable.MenuGroup;
 			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_checkableBehavior = global::UNA.MobileApplication.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
 			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_enabled = global::UNA.MobileApplication.Droid.Resource.Styleable.MenuGroup_android_enabled;
@@ -14795,6 +15390,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::UNA.MobileApplication.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_clipToPadding = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_descendantFocusability = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_orientation = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_fastScrollEnabled = global::UNA.MobileApplication.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -14906,11 +15502,14 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColor = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColorLink = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textFontWeight = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textSize = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textStyle = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_typeface = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_fontFamily = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_fontVariationSettings = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_textAllCaps = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_textLocale = global::UNA.MobileApplication.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_hint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_textColorHint = global::UNA.MobileApplication.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -14959,6 +15558,7 @@ namespace UNA.MobileApplication.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logo = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logo;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logoDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_maxButtonHeight = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_menu = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_menu;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationContentDescription = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationIcon = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_popupTheme = global::UNA.MobileApplication.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -19090,454 +19690,451 @@ namespace UNA.MobileApplication.Droid
 			public const int flyoutcontent_appbar = 2131230837;
 			
 			// aapt resource value: 0x7F080076
-			public const int flyoutcontent_recycler = 2131230838;
+			public const int forever = 2131230838;
 			
 			// aapt resource value: 0x7F080077
-			public const int forever = 2131230839;
-			
-			// aapt resource value: 0x7F080078
-			public const int fragment_container_view_tag = 2131230840;
+			public const int fragment_container_view_tag = 2131230839;
 			
 			// aapt resource value: 0x7F080002
 			public const int FUNCTION = 2131230722;
 			
+			// aapt resource value: 0x7F080078
+			public const int ghost_view = 2131230840;
+			
 			// aapt resource value: 0x7F080079
-			public const int ghost_view = 2131230841;
+			public const int ghost_view_holder = 2131230841;
 			
 			// aapt resource value: 0x7F08007A
-			public const int ghost_view_holder = 2131230842;
+			public const int group_divider = 2131230842;
 			
 			// aapt resource value: 0x7F08007B
-			public const int group_divider = 2131230843;
+			public const int home = 2131230843;
 			
 			// aapt resource value: 0x7F08007C
-			public const int home = 2131230844;
+			public const int homeAsUp = 2131230844;
 			
 			// aapt resource value: 0x7F08007D
-			public const int homeAsUp = 2131230845;
+			public const int icon = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int icon = 2131230846;
+			public const int icon_group = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int icon_group = 2131230847;
+			public const int icon_only = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int icon_only = 2131230848;
+			public const int ifRoom = 2131230848;
 			
 			// aapt resource value: 0x7F080081
-			public const int ifRoom = 2131230849;
+			public const int image = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int image = 2131230850;
+			public const int info = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int info = 2131230851;
+			public const int italic = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int italic = 2131230852;
+			public const int item_touch_helper_previous_elevation = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int item_touch_helper_previous_elevation = 2131230853;
+			public const int labeled = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int labeled = 2131230854;
+			public const int largeLabel = 2131230854;
 			
 			// aapt resource value: 0x7F080087
-			public const int largeLabel = 2131230855;
+			public const int left = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int left = 2131230856;
+			public const int light = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int light = 2131230857;
+			public const int line1 = 2131230857;
 			
 			// aapt resource value: 0x7F08008A
-			public const int line1 = 2131230858;
+			public const int line3 = 2131230858;
 			
 			// aapt resource value: 0x7F08008B
-			public const int line3 = 2131230859;
+			public const int listMode = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int listMode = 2131230860;
+			public const int list_item = 2131230860;
 			
 			// aapt resource value: 0x7F08008D
-			public const int list_item = 2131230861;
+			public const int loadingImage = 2131230861;
 			
 			// aapt resource value: 0x7F08008E
-			public const int loadingImage = 2131230862;
+			public const int loadingProgressBar = 2131230862;
 			
 			// aapt resource value: 0x7F08008F
-			public const int loadingProgressBar = 2131230863;
+			public const int loadingProgressWheel = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int loadingProgressWheel = 2131230864;
+			public const int main_appbar = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int main_appbar = 2131230865;
+			public const int main_tablayout = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int main_tablayout = 2131230866;
+			public const int main_toolbar = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int main_toolbar = 2131230867;
+			public const int main_viewpager = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int main_viewpager = 2131230868;
+			public const int masked = 2131230868;
 			
 			// aapt resource value: 0x7F080095
-			public const int masked = 2131230869;
+			public const int media_actions = 2131230869;
 			
 			// aapt resource value: 0x7F080096
-			public const int media_actions = 2131230870;
-			
-			// aapt resource value: 0x7F080097
-			public const int message = 2131230871;
+			public const int message = 2131230870;
 			
 			// aapt resource value: 0x7F080003
 			public const int META = 2131230723;
 			
+			// aapt resource value: 0x7F080097
+			public const int middle = 2131230871;
+			
 			// aapt resource value: 0x7F080098
-			public const int middle = 2131230872;
+			public const int mini = 2131230872;
 			
 			// aapt resource value: 0x7F080099
-			public const int mini = 2131230873;
+			public const int mtrl_child_content_container = 2131230873;
 			
 			// aapt resource value: 0x7F08009A
-			public const int mtrl_child_content_container = 2131230874;
+			public const int mtrl_internal_children_alpha_tag = 2131230874;
 			
 			// aapt resource value: 0x7F08009B
-			public const int mtrl_internal_children_alpha_tag = 2131230875;
+			public const int multiply = 2131230875;
 			
 			// aapt resource value: 0x7F08009C
-			public const int multiply = 2131230876;
+			public const int navigation_header_container = 2131230876;
 			
 			// aapt resource value: 0x7F08009D
-			public const int navigation_header_container = 2131230877;
+			public const int never = 2131230877;
 			
 			// aapt resource value: 0x7F08009E
-			public const int never = 2131230878;
+			public const int none = 2131230878;
 			
 			// aapt resource value: 0x7F08009F
-			public const int none = 2131230879;
+			public const int normal = 2131230879;
 			
 			// aapt resource value: 0x7F0800A0
-			public const int normal = 2131230880;
+			public const int notification_background = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int notification_background = 2131230881;
+			public const int notification_main_column = 2131230881;
 			
 			// aapt resource value: 0x7F0800A2
-			public const int notification_main_column = 2131230882;
+			public const int notification_main_column_container = 2131230882;
 			
 			// aapt resource value: 0x7F0800A3
-			public const int notification_main_column_container = 2131230883;
+			public const int off = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int off = 2131230884;
+			public const int on = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int on = 2131230885;
+			public const int outline = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int outline = 2131230886;
+			public const int parallax = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int parallax = 2131230887;
+			public const int parentPanel = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int parentPanel = 2131230888;
+			public const int parent_matrix = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int parent_matrix = 2131230889;
+			public const int pin = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int pin = 2131230890;
+			public const int progress_circular = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int progress_circular = 2131230891;
+			public const int progress_horizontal = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int progress_horizontal = 2131230892;
+			public const int radio = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int radio = 2131230893;
+			public const int right = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int right = 2131230894;
+			public const int right_icon = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int right_icon = 2131230895;
+			public const int right_side = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int right_side = 2131230896;
+			public const int save_non_transition_alpha = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int save_non_transition_alpha = 2131230897;
+			public const int save_overlay_view = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int save_overlay_view = 2131230898;
+			public const int screen = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int screen = 2131230899;
-			
-			// aapt resource value: 0x7F0800B4
-			public const int scroll = 2131230900;
-			
-			// aapt resource value: 0x7F0800B8
-			public const int scrollable = 2131230904;
-			
-			// aapt resource value: 0x7F0800B5
-			public const int scrollIndicatorDown = 2131230901;
-			
-			// aapt resource value: 0x7F0800B6
-			public const int scrollIndicatorUp = 2131230902;
+			public const int scroll = 2131230899;
 			
 			// aapt resource value: 0x7F0800B7
-			public const int scrollView = 2131230903;
+			public const int scrollable = 2131230903;
+			
+			// aapt resource value: 0x7F0800B4
+			public const int scrollIndicatorDown = 2131230900;
+			
+			// aapt resource value: 0x7F0800B5
+			public const int scrollIndicatorUp = 2131230901;
+			
+			// aapt resource value: 0x7F0800B6
+			public const int scrollView = 2131230902;
+			
+			// aapt resource value: 0x7F0800B8
+			public const int search_badge = 2131230904;
 			
 			// aapt resource value: 0x7F0800B9
-			public const int search_badge = 2131230905;
+			public const int search_bar = 2131230905;
 			
 			// aapt resource value: 0x7F0800BA
-			public const int search_bar = 2131230906;
+			public const int search_button = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int search_button = 2131230907;
+			public const int search_close_btn = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int search_close_btn = 2131230908;
+			public const int search_edit_frame = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int search_edit_frame = 2131230909;
+			public const int search_go_btn = 2131230909;
 			
 			// aapt resource value: 0x7F0800BE
-			public const int search_go_btn = 2131230910;
+			public const int search_mag_icon = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int search_mag_icon = 2131230911;
+			public const int search_plate = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int search_plate = 2131230912;
+			public const int search_src_text = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int search_src_text = 2131230913;
-			
-			// aapt resource value: 0x7F0800C2
-			public const int search_voice_btn = 2131230914;
-			
-			// aapt resource value: 0x7F0800C4
-			public const int selected = 2131230916;
+			public const int search_voice_btn = 2131230913;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int select_dialog_listview = 2131230915;
+			public const int selected = 2131230915;
+			
+			// aapt resource value: 0x7F0800C2
+			public const int select_dialog_listview = 2131230914;
+			
+			// aapt resource value: 0x7F0800C4
+			public const int shellcontent_appbar = 2131230916;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int shellcontent_appbar = 2131230917;
-			
-			// aapt resource value: 0x7F0800C6
-			public const int shellcontent_toolbar = 2131230918;
+			public const int shellcontent_toolbar = 2131230917;
 			
 			// aapt resource value: 0x7F080004
 			public const int SHIFT = 2131230724;
 			
+			// aapt resource value: 0x7F0800C6
+			public const int shortcut = 2131230918;
+			
 			// aapt resource value: 0x7F0800C7
-			public const int shortcut = 2131230919;
+			public const int showCustom = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int showCustom = 2131230920;
+			public const int showHome = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int showHome = 2131230921;
+			public const int showTitle = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int showTitle = 2131230922;
+			public const int sliding_tabs = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int sliding_tabs = 2131230923;
+			public const int smallLabel = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int smallLabel = 2131230924;
+			public const int snackbar_action = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int snackbar_action = 2131230925;
+			public const int snackbar_text = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int snackbar_text = 2131230926;
+			public const int snap = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int snap = 2131230927;
+			public const int snapMargins = 2131230927;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int snapMargins = 2131230928;
+			public const int spacer = 2131230928;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int spacer = 2131230929;
+			public const int split_action_bar = 2131230929;
 			
 			// aapt resource value: 0x7F0800D2
-			public const int split_action_bar = 2131230930;
+			public const int src_atop = 2131230930;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int src_atop = 2131230931;
+			public const int src_in = 2131230931;
 			
 			// aapt resource value: 0x7F0800D4
-			public const int src_in = 2131230932;
+			public const int src_over = 2131230932;
 			
 			// aapt resource value: 0x7F0800D5
-			public const int src_over = 2131230933;
+			public const int standard = 2131230933;
 			
 			// aapt resource value: 0x7F0800D6
-			public const int standard = 2131230934;
+			public const int start = 2131230934;
 			
 			// aapt resource value: 0x7F0800D7
-			public const int start = 2131230935;
+			public const int status_bar_latest_event_content = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int status_bar_latest_event_content = 2131230936;
+			public const int stretch = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int stretch = 2131230937;
+			public const int submenuarrow = 2131230937;
 			
 			// aapt resource value: 0x7F0800DA
-			public const int submenuarrow = 2131230938;
-			
-			// aapt resource value: 0x7F0800DB
-			public const int submit_area = 2131230939;
+			public const int submit_area = 2131230938;
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
 			
+			// aapt resource value: 0x7F0800DB
+			public const int tabMode = 2131230939;
+			
 			// aapt resource value: 0x7F0800DC
-			public const int tabMode = 2131230940;
+			public const int tag_accessibility_actions = 2131230940;
 			
 			// aapt resource value: 0x7F0800DD
-			public const int tag_accessibility_actions = 2131230941;
+			public const int tag_accessibility_clickable_spans = 2131230941;
 			
 			// aapt resource value: 0x7F0800DE
-			public const int tag_accessibility_clickable_spans = 2131230942;
+			public const int tag_accessibility_heading = 2131230942;
 			
 			// aapt resource value: 0x7F0800DF
-			public const int tag_accessibility_heading = 2131230943;
+			public const int tag_accessibility_pane_title = 2131230943;
 			
 			// aapt resource value: 0x7F0800E0
-			public const int tag_accessibility_pane_title = 2131230944;
+			public const int tag_screen_reader_focusable = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int tag_screen_reader_focusable = 2131230945;
+			public const int tag_transition_group = 2131230945;
 			
 			// aapt resource value: 0x7F0800E2
-			public const int tag_transition_group = 2131230946;
+			public const int tag_unhandled_key_event_manager = 2131230946;
 			
 			// aapt resource value: 0x7F0800E3
-			public const int tag_unhandled_key_event_manager = 2131230947;
+			public const int tag_unhandled_key_listeners = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int tag_unhandled_key_listeners = 2131230948;
+			public const int text = 2131230948;
 			
 			// aapt resource value: 0x7F0800E5
-			public const int text = 2131230949;
-			
-			// aapt resource value: 0x7F0800E6
-			public const int text2 = 2131230950;
-			
-			// aapt resource value: 0x7F0800EC
-			public const int textinput_counter = 2131230956;
-			
-			// aapt resource value: 0x7F0800ED
-			public const int textinput_error = 2131230957;
-			
-			// aapt resource value: 0x7F0800EE
-			public const int textinput_helper_text = 2131230958;
-			
-			// aapt resource value: 0x7F0800E7
-			public const int textSpacerNoButtons = 2131230951;
-			
-			// aapt resource value: 0x7F0800E8
-			public const int textSpacerNoTitle = 2131230952;
-			
-			// aapt resource value: 0x7F0800E9
-			public const int textStart = 2131230953;
-			
-			// aapt resource value: 0x7F0800EA
-			public const int textViewStatus = 2131230954;
+			public const int text2 = 2131230949;
 			
 			// aapt resource value: 0x7F0800EB
-			public const int text_input_password_toggle = 2131230955;
+			public const int textinput_counter = 2131230955;
+			
+			// aapt resource value: 0x7F0800EC
+			public const int textinput_error = 2131230956;
+			
+			// aapt resource value: 0x7F0800ED
+			public const int textinput_helper_text = 2131230957;
+			
+			// aapt resource value: 0x7F0800E6
+			public const int textSpacerNoButtons = 2131230950;
+			
+			// aapt resource value: 0x7F0800E7
+			public const int textSpacerNoTitle = 2131230951;
+			
+			// aapt resource value: 0x7F0800E8
+			public const int textStart = 2131230952;
+			
+			// aapt resource value: 0x7F0800E9
+			public const int textViewStatus = 2131230953;
+			
+			// aapt resource value: 0x7F0800EA
+			public const int text_input_password_toggle = 2131230954;
+			
+			// aapt resource value: 0x7F0800EE
+			public const int time = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int time = 2131230959;
+			public const int title = 2131230959;
 			
 			// aapt resource value: 0x7F0800F0
-			public const int title = 2131230960;
+			public const int titleDividerNoCustom = 2131230960;
 			
 			// aapt resource value: 0x7F0800F1
-			public const int titleDividerNoCustom = 2131230961;
+			public const int title_template = 2131230961;
 			
 			// aapt resource value: 0x7F0800F2
-			public const int title_template = 2131230962;
+			public const int toolbar = 2131230962;
 			
 			// aapt resource value: 0x7F0800F3
-			public const int toolbar = 2131230963;
+			public const int top = 2131230963;
 			
 			// aapt resource value: 0x7F0800F4
-			public const int top = 2131230964;
+			public const int topPanel = 2131230964;
 			
 			// aapt resource value: 0x7F0800F5
-			public const int topPanel = 2131230965;
+			public const int touch_outside = 2131230965;
 			
 			// aapt resource value: 0x7F0800F6
-			public const int touch_outside = 2131230966;
+			public const int transition_current_scene = 2131230966;
 			
 			// aapt resource value: 0x7F0800F7
-			public const int transition_current_scene = 2131230967;
+			public const int transition_layout_save = 2131230967;
 			
 			// aapt resource value: 0x7F0800F8
-			public const int transition_layout_save = 2131230968;
+			public const int transition_position = 2131230968;
 			
 			// aapt resource value: 0x7F0800F9
-			public const int transition_position = 2131230969;
+			public const int transition_scene_layoutid_cache = 2131230969;
 			
 			// aapt resource value: 0x7F0800FA
-			public const int transition_scene_layoutid_cache = 2131230970;
+			public const int transition_transform = 2131230970;
 			
 			// aapt resource value: 0x7F0800FB
-			public const int transition_transform = 2131230971;
+			public const int @unchecked = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int @unchecked = 2131230972;
+			public const int uniform = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int uniform = 2131230973;
+			public const int unlabeled = 2131230973;
 			
 			// aapt resource value: 0x7F0800FE
-			public const int unlabeled = 2131230974;
+			public const int up = 2131230974;
 			
 			// aapt resource value: 0x7F0800FF
-			public const int up = 2131230975;
+			public const int useLogo = 2131230975;
 			
 			// aapt resource value: 0x7F080100
-			public const int useLogo = 2131230976;
+			public const int view_offset_helper = 2131230976;
 			
 			// aapt resource value: 0x7F080101
-			public const int view_offset_helper = 2131230977;
+			public const int view_tree_saved_state_registry_owner = 2131230977;
 			
 			// aapt resource value: 0x7F080102
-			public const int view_tree_saved_state_registry_owner = 2131230978;
+			public const int visible = 2131230978;
 			
 			// aapt resource value: 0x7F080103
-			public const int visible = 2131230979;
+			public const int visible_removing_fragment_view_tag = 2131230979;
 			
 			// aapt resource value: 0x7F080104
-			public const int visible_removing_fragment_view_tag = 2131230980;
+			public const int wide = 2131230980;
 			
 			// aapt resource value: 0x7F080105
-			public const int wide = 2131230981;
+			public const int withText = 2131230981;
 			
 			// aapt resource value: 0x7F080106
-			public const int withText = 2131230982;
-			
-			// aapt resource value: 0x7F080107
-			public const int wrap_content = 2131230983;
+			public const int wrap_content = 2131230982;
 			
 			static Id()
 			{
@@ -19798,91 +20395,97 @@ namespace UNA.MobileApplication.Droid
 			public const int design_text_input_password_icon = 2131427373;
 			
 			// aapt resource value: 0x7F0B002E
-			public const int FlyoutContent = 2131427374;
+			public const int FallbackTabbarDoNotUse = 2131427374;
 			
 			// aapt resource value: 0x7F0B002F
-			public const int loading = 2131427375;
+			public const int FallbackToolbarDoNotUse = 2131427375;
 			
 			// aapt resource value: 0x7F0B0030
-			public const int loadingimage = 2131427376;
+			public const int FlyoutContent = 2131427376;
 			
 			// aapt resource value: 0x7F0B0031
-			public const int loadingprogress = 2131427377;
+			public const int loading = 2131427377;
 			
 			// aapt resource value: 0x7F0B0032
-			public const int mtrl_layout_snackbar = 2131427378;
+			public const int loadingimage = 2131427378;
 			
 			// aapt resource value: 0x7F0B0033
-			public const int mtrl_layout_snackbar_include = 2131427379;
+			public const int loadingprogress = 2131427379;
 			
 			// aapt resource value: 0x7F0B0034
-			public const int notification_action = 2131427380;
+			public const int mtrl_layout_snackbar = 2131427380;
 			
 			// aapt resource value: 0x7F0B0035
-			public const int notification_action_tombstone = 2131427381;
+			public const int mtrl_layout_snackbar_include = 2131427381;
 			
 			// aapt resource value: 0x7F0B0036
-			public const int notification_media_action = 2131427382;
+			public const int notification_action = 2131427382;
 			
 			// aapt resource value: 0x7F0B0037
-			public const int notification_media_cancel_action = 2131427383;
+			public const int notification_action_tombstone = 2131427383;
 			
 			// aapt resource value: 0x7F0B0038
-			public const int notification_template_big_media = 2131427384;
+			public const int notification_media_action = 2131427384;
 			
 			// aapt resource value: 0x7F0B0039
-			public const int notification_template_big_media_custom = 2131427385;
+			public const int notification_media_cancel_action = 2131427385;
 			
 			// aapt resource value: 0x7F0B003A
-			public const int notification_template_big_media_narrow = 2131427386;
+			public const int notification_template_big_media = 2131427386;
 			
 			// aapt resource value: 0x7F0B003B
-			public const int notification_template_big_media_narrow_custom = 2131427387;
+			public const int notification_template_big_media_custom = 2131427387;
 			
 			// aapt resource value: 0x7F0B003C
-			public const int notification_template_custom_big = 2131427388;
+			public const int notification_template_big_media_narrow = 2131427388;
 			
 			// aapt resource value: 0x7F0B003D
-			public const int notification_template_icon_group = 2131427389;
+			public const int notification_template_big_media_narrow_custom = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int notification_template_lines_media = 2131427390;
+			public const int notification_template_custom_big = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int notification_template_media = 2131427391;
+			public const int notification_template_icon_group = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
-			public const int notification_template_media_custom = 2131427392;
+			public const int notification_template_lines_media = 2131427392;
 			
 			// aapt resource value: 0x7F0B0041
-			public const int notification_template_part_chronometer = 2131427393;
+			public const int notification_template_media = 2131427393;
 			
 			// aapt resource value: 0x7F0B0042
-			public const int notification_template_part_time = 2131427394;
+			public const int notification_template_media_custom = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int RootLayout = 2131427395;
+			public const int notification_template_part_chronometer = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
-			public const int select_dialog_item_material = 2131427396;
+			public const int notification_template_part_time = 2131427396;
 			
 			// aapt resource value: 0x7F0B0045
-			public const int select_dialog_multichoice_material = 2131427397;
+			public const int RootLayout = 2131427397;
 			
 			// aapt resource value: 0x7F0B0046
-			public const int select_dialog_singlechoice_material = 2131427398;
+			public const int select_dialog_item_material = 2131427398;
 			
 			// aapt resource value: 0x7F0B0047
-			public const int ShellContent = 2131427399;
+			public const int select_dialog_multichoice_material = 2131427399;
 			
 			// aapt resource value: 0x7F0B0048
-			public const int support_simple_spinner_dropdown_item = 2131427400;
+			public const int select_dialog_singlechoice_material = 2131427400;
 			
 			// aapt resource value: 0x7F0B0049
-			public const int Tabbar = 2131427401;
+			public const int ShellContent = 2131427401;
 			
 			// aapt resource value: 0x7F0B004A
-			public const int Toolbar = 2131427402;
+			public const int support_simple_spinner_dropdown_item = 2131427402;
+			
+			// aapt resource value: 0x7F0B004B
+			public const int Tabbar = 2131427403;
+			
+			// aapt resource value: 0x7F0B004C
+			public const int Toolbar = 2131427404;
 			
 			static Layout()
 			{

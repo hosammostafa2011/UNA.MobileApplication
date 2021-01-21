@@ -35,7 +35,7 @@
     <PackageReference Include="refit" Version="5.1.67" />
     <PackageReference Include="sameerIOTApps.Plugin.SecureStorage" Version="2.0.0" />
     <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1905" />
   </ItemGroup>
 
 </Project>
