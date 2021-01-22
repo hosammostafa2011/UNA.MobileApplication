@@ -18,22 +18,36 @@ namespace UNA.MobileApplication.Views
         public HomePageList()
         {
             InitializeComponent();
-            //if (Device.RuntimePlatform == Device.iOS)
-            //{
-            //    ToolbarItems.Add(new ToolbarItem()
-            //    {
-            //        IconImageSource = "logowhite.png",
-            //        Order = ToolbarItemOrder.Primary,
-            //        Priority = 1
-            //    });
-            //    ToolbarItems.Add(new ToolbarItem()
-            //    {
-            //        IconImageSource = "blank.png",
-            //        Order = ToolbarItemOrder.Primary,
-            //        Priority = 2
-            //    });
-            //}
-            
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                //ToolbarItems.Add(new ToolbarItem()
+                //{
+                //    IconImageSource = "logowhite.png",
+                //    Order = ToolbarItemOrder.Primary,                    
+                //    Priority = 1
+                //});
+                //ToolbarItems.Add(new ToolbarItem()
+                //{
+                //    IconImageSource = "blank.png",
+                //    Order = ToolbarItemOrder.Primary,
+                //    Priority = 2
+                //});
+
+                if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))
+                {
+                    grdArabic.IsVisible = true;
+                    grdEnglish.IsVisible = false;
+                }
+                else
+                {
+                    grdArabic.IsVisible = false;
+                    grdEnglish.IsVisible = true;
+
+                }
+
+
+            }
+
             try
             {
                 if (CrossSecureStorage.Current.GetValue("Language").Equals("1"))

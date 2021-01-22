@@ -232,6 +232,58 @@
         </StackLayout>
     </NavigationPage.TitleView>-->
 
+    <NavigationPage.TitleView>
+        <!--<Grid x:Name="grdEnglish" BackgroundColor="AliceBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+
+            <Grid x:Name="grdBar" BackgroundColor="Red">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*" />
+                </Grid.ColumnDefinitions>
+                <Image
+                    HorizontalOptions="Center"
+                    Source="logowhite.png"
+                    VerticalOptions="End" />
+
+            </Grid>
+            <Image
+                Grid.Column="1"
+                BackgroundColor="Yellow"
+                Source="logowhite.png" />
+
+        </Grid>-->
+        <StackLayout>
+            <Grid x:Name="grdArabic" Padding="90,0,0,0">
+                <Image HorizontalOptions="Center" Source="logowhite.png" />
+
+            </Grid>
+            <Grid x:Name="grdEnglish">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="30" />
+                </Grid.ColumnDefinitions>
+
+
+                <Grid x:Name="grdBar">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*" />
+                    </Grid.ColumnDefinitions>
+                    <Image
+                        HorizontalOptions="Center"
+                        Source="logowhite.png"
+                        VerticalOptions="End" />
+
+                </Grid>
+                <Image Grid.Column="1" Source="blank.png" />
+
+            </Grid>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
     <Shell.TitleView>
         <StackLayout HeightRequest="10" VerticalOptions="CenterAndExpand">
             <Image
