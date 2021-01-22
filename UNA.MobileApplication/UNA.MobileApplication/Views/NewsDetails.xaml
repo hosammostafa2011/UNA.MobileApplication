@@ -33,56 +33,61 @@
                             <ffimageloading:CachedImage
                                 sharedTransitions:Transition.Group="{Binding News_ID}"
                                 sharedTransitions:Transition.Name="NewsImage"
-                                Aspect="AspectFill"
+                                Aspect="AspectFit"
                                 HeightRequest="230"
                                 LoadingPlaceholder="icon.png"
-                                Source="{Binding SelectedNews.Main_Image_Path}" />
+                                Source="{Binding SelectedNews.Main_Image_Path}"
+                                WidthRequest="800" />
                             <yummy:PancakeView
                                 x:Name="detailContainer"
                                 Grid.Row="1"
-                                Margin="20,-30,20,0"
+                                Margin="20,-50,20,0"
                                 Border="{yummy:BorderMarkup Color=#016b56,
                                                             Thickness=1}"
                                 BorderThickness="13"
                                 HasShadow="True"
                                 Style="{StaticResource cardContainerStyle}">
-                                <Grid Padding="8,0,0,8" RowSpacing="0">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="50*" />
-                                        <ColumnDefinition Width="50*" />
-                                    </Grid.ColumnDefinitions>
+                                <Grid
+                                    Padding="8,0,0,8"
+                                    ColumnSpacing="0"
+                                    RowSpacing="0">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
-
+                                        <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
                                     <controls:CustomLabel
                                         x:Name="lblTitle"
-                                        Grid.ColumnSpan="2"
+                                        Grid.Row="0"
                                         FontFamily="{StaticResource HelveticaNeue}"
                                         FontSize="Medium"
                                         HorizontalTextAlignment="Start"
                                         Style="{StaticResource cardTitleStyle}"
                                         Text="{Binding SelectedNews.Title}" />
-                                    <controls:CustomLabel
-                                        Grid.Row="1"
-                                        Padding="10,0"
-                                        FontFamily="{StaticResource HelveticaNeue}"
-                                        FontSize="Small"
-                                        HorizontalTextAlignment="Start"
-                                        Style="{StaticResource cardTitleStyle}"
-                                        Text="{Binding SelectedNews.Source_Tag}"
-                                        TextColor="{DynamicResource ThirdColor}" />
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50*" />
+                                            <ColumnDefinition Width="50*" />
+                                        </Grid.ColumnDefinitions>
 
-                                    <controls:CustomLabel
-                                        Grid.Row="1"
-                                        Grid.Column="1"
-                                        Padding="10,0"
-                                        FontFamily="{StaticResource HelveticaNeue}"
-                                        FontSize="Small"
-                                        HorizontalTextAlignment="End"
-                                        Style="{StaticResource cardTitleStyle}"
-                                        Text="{Binding SelectedNews.Publish_Date}"
-                                        TextColor="{DynamicResource SecondColor}" />
+                                        <controls:CustomLabel
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            Padding="10,0,0,0"
+                                            FontFamily="{StaticResource HelveticaNeue}"
+                                            FontSize="Small"
+                                            HorizontalTextAlignment="Start"
+                                            Text="{Binding SelectedNews.Source_Tag}"
+                                            TextColor="{DynamicResource ThirdColor}" />
+                                        <controls:CustomLabel
+                                            Grid.Row="0"
+                                            Grid.Column="1"
+                                            Padding="10,0,0,0"
+                                            FontFamily="{StaticResource HelveticaNeue}"
+                                            FontSize="Small"
+                                            HorizontalTextAlignment="End"
+                                            Text="{Binding SelectedNews.Publish_Date}"
+                                            TextColor="{DynamicResource SecondColor}" />
+                                    </Grid>
                                 </Grid>
                             </yummy:PancakeView>
 
