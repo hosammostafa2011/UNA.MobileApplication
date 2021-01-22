@@ -42,9 +42,9 @@ namespace UNA.MobileApplication
         };
             await Task.WhenAll(animationTasks);
 
-            //if (Device.RuntimePlatform == Device.iOS)
-            //    Application.Current.MainPage = new RootPage();
-            //else
+            if (Device.RuntimePlatform == Device.iOS)
+                Application.Current.MainPage = new RootPage();
+            else
                 Application.Current.MainPage = new AppShell();
         }
 

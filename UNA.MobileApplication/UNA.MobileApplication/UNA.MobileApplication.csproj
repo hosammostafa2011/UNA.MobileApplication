@@ -32,6 +32,9 @@
     <Compile Update="Views\ContactUs.xaml.cs">
       <DependentUpon>ContactUs.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MostReadPage.xaml.cs">
       <DependentUpon>MostReadPage.xaml</DependentUpon>
     </Compile>
@@ -91,13 +94,11 @@
     </EmbeddedResource>
   </ItemGroup>
 	<ItemGroup>
-		<Folder Include="Resources\" />
-		<Folder Include="Resources\Fonts\" />
-	</ItemGroup>
-	<ItemGroup>
+		<None Remove="Resources\Fonts\fasolid.ttf" />
 		<None Remove="Resources\Fonts\HelveticaNeue.ttf" />
 	</ItemGroup>
 	<ItemGroup>
+		<EmbeddedResource Include="Resources\Fonts\fasolid.ttf" />
 		<EmbeddedResource Include="Resources\Fonts\HelveticaNeue.ttf" />
 	</ItemGroup>
 </Project>

@@ -83,6 +83,8 @@ namespace UNA.MobileApplication.ViewModels
                             MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(ContactUs)));
                         else if (objCATEGORY.Category_ID == "1500")
                             MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(SettingViewPage)));
+                        else if (objCATEGORY.Category_ID == "1700")
+                            MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(SearchPage)));
                         else
                             MenuItems.Add(new RootPageMasterMenuItem(objCATEGORY.CategoryName, icon, objCATEGORY.Category_ID, typeof(NewsList)));
                     }

@@ -22,6 +22,8 @@ public class NEWS
     public string Category_ID { get; set; }
     public TextAlignment Alignment { get; set; }
     public string Title_Source_Tag { get { return string.Format("{0}  ({1})", Title, Source_Tag); } }
+
+    public string NEWS_TEXT { get; set; }
     //private static string USER_LANGUAGE = CrossSecureStorage.Current.GetValue("Language");
     //private static FlowDirection DEVICE_DIRECTION = Device.FlowDirection;
     //public TextAlignment _hPos;

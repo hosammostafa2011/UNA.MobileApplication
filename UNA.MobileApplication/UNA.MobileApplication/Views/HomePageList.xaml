@@ -149,7 +149,7 @@
                                 </controls:CustomLabel>
                             </StackLayout>
                         </StackLayout>
-                        <BoxView Grid.Row="1" BackgroundColor="{DynamicResource SecondColor}" />
+                        <BoxView Grid.Row="1" BackgroundColor="Transparent" />
 
                     </Grid>
                 </ViewCell>

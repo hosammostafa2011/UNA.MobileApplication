@@ -58,6 +58,8 @@ namespace Helper.Interface
 
         [Post("/UNA/SET_SUBSCRIBE")]
         Task<string> SET_SUBSCRIBE([Body] REQUEST request);
+        [Post("/UNA/GET_SEARCH_NEWS")]
+        Task<string> GET_SEARCH_NEWS([Body] REQUEST request);
 
         #endregion UNA APP
     }

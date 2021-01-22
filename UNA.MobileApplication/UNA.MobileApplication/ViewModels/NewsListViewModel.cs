@@ -119,6 +119,18 @@ namespace UNA.MobileApplication.ViewModels
                         _REQUEST.ROW_COUNT = Convert.ToString(50);
                         result = await ApiManager.GET_TOP_NEWS(_REQUEST);
                     }
+                    else if (categoryID == "1700")
+                    {
+                        if (string.IsNullOrEmpty(SEARCH_TEXT))
+                            return;
+                        else
+                        {
+                            NEWS objNews = new NEWS();
+                            objNews.NEWS_TEXT = SEARCH_TEXT.ToLower();
+                            _REQUEST.JSON = JsonConvert.SerializeObject(objNews);
+                            result = await ApiManager.GET_SEARCH_NEWS(_REQUEST);
+                        }
+                    }
                     else
                     {
                         CATEGORY objCATEGORY = new CATEGORY();
@@ -199,6 +211,8 @@ namespace UNA.MobileApplication.ViewModels
                 });
             }
         }
+
+        public string SEARCH_TEXT { get; set; }
 
         private string GetFavouriteImage(string pNews_ID)
         {
