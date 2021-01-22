@@ -109,11 +109,15 @@
             </DataTemplate>
             <DataTemplate x:Key="oneNewsViewTemplate">
                 <ViewCell>
-                    <Grid Padding="0,-7,0,0" RowSpacing="15">
+                    <Grid Padding="0,-7,0,10">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
+                            <RowDefinition Height="2" />
                         </Grid.RowDefinitions>
-                        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                        <StackLayout
+                            Margin="0,0,0,-10"
+                            Orientation="Vertical"
+                            VerticalOptions="FillAndExpand">
                             <yummy:PancakeView
                                 BackgroundColor="{DynamicResource background}"
                                 CornerRadius="10"
@@ -145,6 +149,8 @@
                                 </controls:CustomLabel>
                             </StackLayout>
                         </StackLayout>
+                        <BoxView Grid.Row="1" BackgroundColor="{DynamicResource SecondColor}" />
+
                     </Grid>
                 </ViewCell>
             </DataTemplate>
