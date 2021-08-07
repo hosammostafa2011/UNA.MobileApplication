@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using UNA.MobileApplication.Services;
 using UNA.MobileApplication.Views;
+using Plugin.SecureStorage;
 
 [assembly: ExportFont("HelveticaNeue.ttf", Alias = "HelveticaNeue")]
 
@@ -13,7 +14,16 @@ namespace UNA.MobileApplication
         public App()
         {
             InitializeComponent();
-            DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<MockDataStore>();
+            try
+            {                
+                if (string.IsNullOrEmpty(CrossSecureStorage.Current.GetValue("Language")))
+                    CrossSecureStorage.Current.SetValue("Language", "1");
+            }
+            catch (Exception)
+            {
+                CrossSecureStorage.Current.SetValue("Language", "1");
+            }
             MainPage = new SplashPage();
             /*if (Device.RuntimePlatform == Device.iOS)
             {

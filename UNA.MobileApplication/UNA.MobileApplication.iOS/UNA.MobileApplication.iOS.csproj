@@ -51,11 +51,10 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>Apple Development: mustafa kandil (7SSCT99EVW)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignEntitlements>Development.plist</CodesignEntitlements>
     <MtouchLink>None</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
-    <CodesignProvision>
-    </CodesignProvision>
+    <CodesignProvision>VS: com.marshal.iina Development</CodesignProvision>
     <IOSDebugOverWiFi>true</IOSDebugOverWiFi>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
@@ -82,6 +81,7 @@
     <Compile Include="Renderers\ExtendedScrollViewRenderer.cs" />
     <Compile Include="Renderers\LocalizeService.cs" />
     <Compile Include="Renderers\MasterDetailRenderer.cs" />
+    <None Include="Development.plist" />
     <None Include="Entitlements.plist" />
     <BundleResource Include="GoogleService-Info.plist" />
     <None Include="Info.plist" />
